@@ -1,0 +1,18 @@
+# Dependencias locales o artefactos de sistema
+.DS_Store
+Thumbs.db
+node_modules/
+
+# Archivos de editor/IDE
+.vscode/
+.idea/
+*.log
+
+# Archivos de build que no aplican (proyecto estático)
+dist/
+build/
+
+# Archivos temporales
+*.tmp
+*.swp
+*.bak

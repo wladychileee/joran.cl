@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRODUCTOS JORAN SPA - Todo lo que tu empresa necesita</title>
+    <meta name="description" content="PRODUCTOS JORAN SPA: Suministros empresariales, ferretería, insumos médicos, oficina y muebles. Atención 24/7 y cotizaciones personalizadas.">
+    <meta name="keywords" content="suministros, ferretería, insumos médicos, oficina, muebles, cotizaciones, empresa, Chile, Viña del Mar">
+    <meta name="author" content="PRODUCTOS JORAN SPA">
+    <link rel="canonical" href="https://wladychileee.github.io/pagina-web-joran/">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="PRODUCTOS JORAN SPA - Todo lo que tu empresa necesita">
+    <meta property="og:description" content="Suministros empresariales sin límites: ferretería, insumos médicos, oficina, muebles y más. Cotiza 24/7.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://wladychileee.github.io/pagina-web-joran/">
+    <meta property="og:image" content="https://wladychileee.github.io/pagina-web-joran/logo.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="PRODUCTOS JORAN SPA - Todo lo que tu empresa necesita">
+    <meta name="twitter:description" content="Suministros empresariales: ferretería, insumos médicos, oficina y muebles. Cotiza 24/7.">
+    <meta name="twitter:image" content="https://wladychileee.github.io/pagina-web-joran/logo.png">
+
+    <meta name="theme-color" content="#1e3a8a">
+
+    <!-- Favicon -->
+    <link rel="icon" href="logo.png" type="image/png">
+    <!-- Performance & Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "PRODUCTOS JORAN SPA",
+      "url": "https://wladychileee.github.io/pagina-web-joran/",
+      "logo": "https://wladychileee.github.io/pagina-web-joran/logo.png",
+      "contactPoint": [{
+        "@type": "ContactPoint",
+        "contactType": "sales",
+        "email": "cotizaciones@joran.cl",
+        "telephone": "+56 9 6237 8434",
+        "areaServed": "CL",
+        "availableLanguage": ["es"]
+      }],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "4 NORTE 1070 301 B",
+        "addressLocality": "VIÑA DEL MAR",
+        "addressCountry": "CL"
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "url": "https://wladychileee.github.io/pagina-web-joran/",
+      "name": "PRODUCTOS JORAN SPA",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://wladychileee.github.io/pagina-web-joran/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+</head>
+<body>
+    <!-- Gracias Banner -->
+    <div id="thanks-banner" class="thanks-banner" role="status" aria-live="polite">
+        GRACIAS POR CONFIAR EN NOSOTROS — SOLICITUD RECIBIDA. EN BREVE LO CONTACTAREMOS.
+        <button type="button" class="close-thanks" aria-label="Cerrar aviso">Cerrar</button>
+    </div>
+
+    <!-- Company Header -->
+    <header class="company-header">
+        <div class="container">
+            <div class="company-info">
+                <img src="logo.png" alt="PRODUCTOS JORAN SPA" class="company-logo" loading="eager">
+                <h1 class="company-name">PRODUCTOS JORAN SPA</h1>
+                <p class="company-tagline">Tu socio estratégico en suministros empresariales</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav class="navbar" role="navigation" aria-label="Principal">
+        <div class="nav-container">
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#inicio" class="nav-link">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#sobre-nosotros" class="nav-link">Sobre Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#productos" class="nav-link">Productos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contacto" class="nav-link">Contacto</a>
+                </li>
+            </ul>
+            <div class="nav-toggle" id="mobile-menu" role="button" aria-label="Abrir menú" tabindex="0">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    
+
+    <!-- Quote Modal (Formspree) -->
+    <div id="quote-modal" class="cart-modal">
+        <div class="cart-content">
+            <div class="cart-header">
+                <h3>Solicitar Cotización</h3>
+                <button class="close-cart" onclick="closeQuoteModal()">&times;</button>
+            </div>
+            <div class="quote-form-container">
+                <form id="quote-form" class="quote-form" action="https://formsubmit.co/ajax/cotizaciones@joran.cl" method="POST">
+                    <div class="form-group">
+                        <label for="quote-name">Nombre Completo *</label>
+                        <input type="text" id="quote-name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="quote-email">Correo Electrónico *</label>
+                        <input type="email" id="quote-email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="quote-company">Empresa</label>
+                        <input type="text" id="quote-company" name="company">
+                    </div>
+                    <div class="form-group">
+                        <label for="quote-phone">Teléfono</label>
+                        <input type="tel" id="quote-phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="quote-message">Mensaje Adicional</label>
+                        <textarea id="quote-message" name="message" rows="3" placeholder="Información adicional sobre su cotización..."></textarea>
+                    </div>
+                    <!-- Captcha amigable con rompecabezas -->
+                    <div class="puzzle-captcha" data-form="quote">
+                        <div class="puzzle-header">
+                            <img src="logo.png" alt="Logo" loading="lazy">
+                            <span>Arrastra el control para encajar la pieza en el recorte</span>
+                        </div>
+                        <div class="puzzle-stage">
+                            <div class="puzzle-cutout" aria-hidden="true"></div>
+                            <div class="puzzle-piece" aria-hidden="true"></div>
+                        </div>
+                        <div class="puzzle-track">
+                            <div class="puzzle-slider" role="slider" aria-label="Verificación de seguridad" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><i class="fas fa-arrows-alt-h"></i></div>
+                            <span class="puzzle-hint">Desliza para verificar</span>
+                        </div>
+                        <div class="puzzle-success"><i class="fas fa-check-circle"></i> Verificado</div>
+                        <input type="hidden" name="captcha_verified" value="false">
+                    </div>
+                    <div class="quote-footer">
+                        <button type="submit" class="btn btn-primary" disabled>
+                            <i class="fas fa-envelope"></i> Enviar Cotización
+                        </button>
+                        <button type="button" class="btn btn-secondary" onclick="closeQuoteModal()">
+                            Cancelar
+                        </button>
+                        <input type="hidden" name="_subject" value="Nueva solicitud de Cotización desde el sitio">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_next" value="https://wladychileee.github.io/pagina-web-joran/?enviado=1">
+                        <input type="hidden" name="_captcha" value="false">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quote Improvement Modal -->
+    <div id="improvement-modal" class="cart-modal">
+        <div class="cart-content">
+            <div class="cart-header">
+                <h3>Análisis de Cotización Competitiva</h3>
+                <button class="close-cart" onclick="closeImprovementModal()">&times;</button>
+            </div>
+            <div class="quote-form-container">
+                <div class="improvement-info">
+                    <div class="info-box">
+                        <i class="fas fa-info-circle"></i>
+                        <div>
+                            <h4>¿Cómo funciona?</h4>
+                            <p>Analizamos tu cotización actual para evaluar si podemos ofrecer mejores condiciones en precio, calidad o servicio.</p>
+                        </div>
+                    </div>
+                    <div class="disclaimer-box">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <div>
+                            <h4>Importante</h4>
+                            <p><strong>No garantizamos mejores precios.</strong> El análisis depende de disponibilidad, volumen y condiciones del mercado actual.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <form id="improvement-form" class="quote-form" action="https://formsubmit.co/cotizaciones@joran.cl" method="POST" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label for="imp-name">Nombre Completo *</label>
+                        <input type="text" id="imp-name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="imp-email">Correo Electrónico *</label>
+                        <input type="email" id="imp-email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="imp-company">Empresa *</label>
+                        <input type="text" id="imp-company" name="company" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="imp-phone">Teléfono</label>
+                        <input type="tel" id="imp-phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="imp-current-supplier">Proveedor Actual</label>
+                        <input type="text" id="imp-current-supplier" name="currentSupplier" placeholder="Nombre del proveedor actual (opcional)">
+                    </div>
+                    <div class="form-group">
+                        <label for="imp-quote-file">Cotización a Mejorar *</label>
+                        <div class="file-upload-area" onclick="document.getElementById('imp-quote-file').click()">
+                            <i class="fas fa-file-upload"></i>
+                            <p>Sube tu cotización actual</p>
+                            <small>PDF, Excel, Word, Imágenes</small>
+                        </div>
+                        <input type="file" id="imp-quote-file" name="file" accept=".pdf,.xlsx,.xls,.docx,.doc,.jpg,.jpeg,.png" onchange="handleImprovementFile(this)" style="display: none;" required>
+                        <div id="improvement-file-preview" class="file-preview"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="imp-deadline">¿Cuándo necesitas la respuesta?</label>
+                        <select id="imp-deadline" name="deadline">
+                            <option value="urgente">Urgente (24 horas)</option>
+                            <option value="rapido">Rápido (2-3 días)</option>
+                            <option value="normal" selected>Normal (1 semana)</option>
+                            <option value="flexible">Flexible (cuando sea posible)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="imp-message">Información Adicional</label>
+                        <textarea id="imp-message" name="message" rows="3" placeholder="Detalles sobre volumen, frecuencia de compra, o requisitos especiales..."></textarea>
+                    </div>
+                    <!-- Captcha amigable con rompecabezas -->
+                    <div class="puzzle-captcha" data-form="improvement">
+                        <div class="puzzle-header">
+                            <img src="logo.png" alt="Logo">
+                            <span>Arrastra el control para encajar la pieza en el recorte</span>
+                        </div>
+                        <div class="puzzle-stage">
+                            <div class="puzzle-cutout" aria-hidden="true"></div>
+                            <div class="puzzle-piece" aria-hidden="true"></div>
+                        </div>
+                        <div class="puzzle-track">
+                            <div class="puzzle-slider" role="slider" aria-label="Verificación de seguridad" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><i class="fas fa-arrows-alt-h"></i></div>
+                            <span class="puzzle-hint">Desliza para verificar</span>
+                        </div>
+                        <div class="puzzle-success"><i class="fas fa-check-circle"></i> Verificado</div>
+                        <input type="hidden" name="captcha_verified" value="false">
+                    </div>
+                    <div class="quote-footer">
+                        <button type="submit" class="btn btn-primary" disabled>
+                            <i class="fas fa-search"></i> Solicitar Análisis
+                        </button>
+                        <button type="button" class="btn btn-secondary" onclick="closeImprovementModal()">
+                            Cancelar
+                        </button>
+                        <input type="hidden" name="_subject" value="Nueva solicitud de Análisis de Cotización desde el sitio">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_next" value="https://wladychileee.github.io/pagina-web-joran/?enviado=1">
+                        <input type="hidden" name="_captcha" value="false">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title" id="typing-title">PRODUCTOS JORAN SPA</h1>
+                    <p class="hero-subtitle">Tu socio estratégico en suministros empresariales</p>
+                    <p class="hero-description">Ofrecemos una amplia gama de productos para empresas sin necesidad de inventario físico. Servicio personalizado y disponibilidad 24/7.</p>
+                    <a href="#contacto" class="btn btn-primary">Solicitar Cotización</a>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-graphic">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="sobre-nosotros" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>Sobre Nosotros</h2>
+                <p>Conoce nuestra filosofía de trabajo y compromiso con nuestros clientes</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>PRODUCTOS JORAN SPA</h3>
+                    <p>Somos una empresa especializada en la comercialización de productos para empresas. Nuestro modelo de negocio único nos permite ofrecer <strong>absolutamente todo</strong> lo que tu empresa necesita, sin limitaciones de stock o categorías.</p>
+                    <p>No manejamos bodega física, lo que nos permite ser más ágiles y competitivos. Nos encargamos de cotizar, buscar, comprar y entregar cualquier producto que requieras, garantizando siempre la mejor calidad y precio del mercado.</p>
+                    <div class="skills">
+                        <div class="skill-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Disponibles 24/7</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-handshake"></i>
+                            <span>Servicio Personalizado</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-star"></i>
+                            <span>Satisfacción Garantizada</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-building"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="productos" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nuestros Productos</h2>
+                <p>Vendemos absolutamente todo lo que tu empresa necesita</p>
+            </div>
+            <!-- Product Search & Filter -->
+            <div class="product-search" role="search" aria-label="Buscar productos">
+                <input type="search" id="product-search" placeholder="Buscar categorías o productos..." aria-label="Buscar" />
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Ferretería y Construcción</h3>
+                    <p>Herramientas y materiales especializados para construcción y reparaciones.</p>
+                    <button class="btn btn-primary view-products-btn" onclick="showProductPage('construccion')">Ver Productos</button>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3>Insumos Médicos y Farmacéuticos</h3>
+                    <p>Medicamentos, equipos médicos e insumos hospitalarios completos.</p>
+                    <button class="btn btn-primary view-products-btn" onclick="showProductPage('medicos')">Ver Productos</button>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shopping-basket"></i>
+                    </div>
+                    <h3>Suministros de Oficina</h3>
+                    <p>Todo lo necesario para el funcionamiento diario de tu oficina.</p>
+                    <button class="btn btn-primary view-products-btn" onclick="showProductPage('oficina')">Ver Productos</button>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chair"></i>
+                    </div>
+                    <h3>Muebles y Equipamiento</h3>
+                    <p>Mobiliario completo y equipos para oficinas modernas.</p>
+                    <button class="btn btn-primary view-products-btn" onclick="showProductPage('muebles')">Ver Productos</button>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Electrodomésticos</h3>
+                    <p>Equipos para cocinas de oficina y espacios corporativos.</p>
+                    <button class="btn btn-primary view-products-btn" onclick="showProductPage('electrodomesticos')">Ver Productos</button>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>Artículos de Librería</h3>
+                    <p>Papelería, útiles escolares y materiales de oficina especializados.</p>
+                    <button class="btn btn-primary view-products-btn" onclick="showProductPage('libreria')">Ver Productos</button>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-infinity"></i>
+                    </div>
+                    <h3>Y Mucho Más</h3>
+                    <p>Si tu empresa lo necesita, nosotros lo conseguimos. No hay límites en nuestro catálogo de productos.</p>
+                </div>
+            </div>
+        </div>
+        <div class="section-quick-links">
+            <h4>Enlaces Rápidos</h4>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contacto</h2>
+                <p>¿Necesitas cotizar productos para tu empresa? ¡Estamos disponibles 24/7!</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>cotizaciones@joran.cl</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Teléfono</h4>
+                            <p>+56 9 6237 8434</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Ubicación</h4>
+                            <p>4 NORTE 1070 301 B, VIÑA DEL MAR</p>
+                        </div>
+                    </div>
+                </div>
+                <form id="contact-form" class="contact-form" action="https://formsubmit.co/ajax/cotizaciones@joran.cl" method="POST" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <input type="text" name="company" placeholder="Nombre de tu Empresa" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Email Corporativo" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" name="phone" placeholder="Teléfono de Contacto" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Describe los productos que necesitas cotizar..." rows="5" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-file">Adjuntar cotización (opcional)</label>
+                        <input type="file" id="contact-file" name="file" accept=".pdf,.xlsx,.xls,.docx,.doc,.jpg,.jpeg,.png">
+                    </div>
+                    <!-- Captcha amigable con rompecabezas -->
+                    <div class="puzzle-captcha" data-form="contact">
+                        <div class="puzzle-header">
+                            <img src="logo.png" alt="Logo">
+                            <span>Arrastra el control para encajar la pieza en el recorte</span>
+                        </div>
+                        <div class="puzzle-stage">
+                            <div class="puzzle-cutout" aria-hidden="true"></div>
+                            <div class="puzzle-piece" aria-hidden="true"></div>
+                        </div>
+                        <div class="puzzle-track">
+                            <div class="puzzle-slider" role="slider" aria-label="Verificación de seguridad" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><i class="fas fa-arrows-alt-h"></i></div>
+                            <span class="puzzle-hint">Desliza para verificar</span>
+                        </div>
+                        <div class="puzzle-success"><i class="fas fa-check-circle"></i> Verificado</div>
+                        <input type="hidden" name="captcha_verified" value="false">
+                    </div>
+                    <input type="hidden" name="_subject" value="Nueva solicitud de Contacto desde el sitio">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_next" value="https://wladychileee.github.io/pagina-web-joran/?enviado=1">
+                    <input type="hidden" name="_captcha" value="false">
+                    <button type="submit" class="btn btn-primary" disabled>Solicitar Cotización</button>
+                </form>
+            </div>
+        </div>
+        <div class="section-quick-links">
+            <h4>Enlaces Rápidos</h4>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </section>
+    </main>
+
+    
+
+    <!-- Product Detail Pages -->
+    <div id="product-pages" class="main-content" style="display: none;">
+        <!-- Removed duplicate oficina-page -->
+ 
+        <!-- Construcción Page -->
+        <div id="construccion-page" class="product-page">
+            <div class="container">
+                <button class="back-btn" onclick="goBack()">
+                    <i class="fas fa-arrow-left"></i>
+                    Volver Atrás
+                </button>
+                <div class="section-header">
+                    <h2>Ferretería y Construcción</h2>
+                    <p>Herramientas y materiales especializados para construcción</p>
+                </div>
+                <div class="product-list">
+                    <h4>Herramientas Básicas:</h4>
+                    <ul>
+                        <li><span>Taladros, atornilladores, martillos</span></li>
+                        <li><span>Llaves inglesas, alicates, destornilladores</span></li>
+                        <li><span>Sierras, serruchos, cortadores</span></li>
+                        <li><span>Niveles, escuadras, metros</span></li>
+                        <li><span>Brocas para concreto, madera y metal</span></li>
+                        <li><span>Cinceles, formones, gubias</span></li>
+                        <li><span>Llaves de tubo, llaves mixtas</span></li>
+                        <li><span>Prensas, sargentos, mordazas</span></li>
+                        <li><span>Limas, escofinas, raspadores</span></li>
+                        <li><span>Compases, calibradores, micrómetros</span></li>
+                    </ul>
+                    <h4>Materiales de Construcción:</h4>
+                    <ul>
+                        <li>Cemento, mortero, adhesivos</li>
+                        <li>Clavos, tornillos, pernos</li>
+                        <li>Cerámicas, porcelanatos</li>
+                        <li>Pegamento cerámico, fragüe</li>
+                        <li>Siliconas, selladores</li>
+                        <li>Arena, ripio, gravilla</li>
+                        <li>Ladrillos, bloques, adoquines</li>
+                        <li>Fierros, mallas, alambre</li>
+                        <li>Tubos PVC, codos, uniones</li>
+                        <li>Aislantes térmicos y acústicos</li>
+                    </ul>
+                    <h4>Materiales Drywall:</h4>
+                    <ul>
+                        <li>Volcanitas, placas de yeso</li>
+                        <li>Montantes metálicos</li>
+                        <li>Tornillos para drywall</li>
+                        <li>Cinta de papel, masilla</li>
+                        <li>Perfiles y esquineros</li>
+                    </ul>
+                    <h4>Pinturas y Acabados:</h4>
+                    <ul>
+                        <li>Pinturas látex, esmaltes</li>
+                        <li>Barnices, selladores</li>
+                        <li>Brochas, rodillos, bandejas</li>
+                        <li>Lijas, espátulas</li>
+                        <li>Imprimantes, anticorrosivos</li>
+                    </ul>
+                    
+                    
+                    
+                    <!-- File Upload Section -->
+                    <div class="file-upload-section">
+                        <h4>¿Tienes una cotización existente?</h4>
+                        <p>Sube tu archivo para ayudarnos a entender mejor tus necesidades</p>
+                        <div class="file-upload-area" onclick="document.getElementById('file-upload-ferreteria').click()">
+                            <i class="fas fa-cloud-upload-alt"></i>
+                            <p>Click aquí o arrastra tu archivo</p>
+                            <small>PDF, Excel, Word, Imágenes</small>
+                            <input type="file" id="file-upload-ferreteria" accept=".pdf,.xlsx,.xls,.docx,.doc,.jpg,.jpeg,.png" onchange="handleFileUpload(this, 'ferreteria')" style="display: none;">
+                        </div>
+                        <div id="file-preview-ferreteria" class="file-preview"></div>
+                    </div>
+
+                    <div class="quote-improvement-section">
+                        <h4>¿Quieres mejorar una cotización de otro proveedor?</h4>
+                        <p class="improvement-disclaimer">
+                            <i class="fas fa-info-circle"></i>
+                            Comparte tu cotización actual y analizaremos si podemos ofrecer mejores condiciones. 
+                            <strong>No garantizamos mejores precios</strong>, pero evaluaremos cada caso según disponibilidad y condiciones del mercado.
+                        </p>
+                        <button class="btn btn-secondary" onclick="openImprovementModal()">
+                            <i class="fas fa-chart-line"></i> Solicitar Análisis de Cotización
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Médicos Page -->
+        <div id="medicos-page" class="product-page">
+            <div class="container">
+                <button class="back-btn" onclick="goBack()">
+                    <i class="fas fa-arrow-left"></i>
+                    Volver Atrás
+                </button>
+                <div class="section-header">
+                    <h2>Insumos Médicos</h2>
+                    <p>Equipos médicos e insumos hospitalarios especializados</p>
+                </div>
+                <div class="product-grid">
+                    <ul class="product-list">
+                        <li>Mascarillas quirúrgicas</li>
+                        <li>Guantes de nitrilo</li>
+                        <li>Alcohol gel</li>
+                        <li>Termómetros digitales</li>
+                        <li>Gasas estériles</li>
+                        <li>Vendas elásticas</li>
+                        <li>Jeringas desechables</li>
+                        <li>Estetoscopios</li>
+                        <li>Tensiómetros</li>
+                        <li>Camillas portátiles</li>
+                        <li>Oxímetros de pulso</li>
+                        <li>Suero fisiológico</li>
+                        <li>Batas médicas</li>
+                        <li>Desinfectantes hospitalarios</li>
+                        <li>Equipos de primeros auxilios</li>
+                    </ul>
+                    
+                    
+                    
+                    <!-- File Upload Section -->
+                    <div class="file-upload-section">
+                        <h4>¿Tienes una cotización existente?</h4>
+                        <p>Sube tu archivo para ayudarnos a entender mejor tus necesidades</p>
+                        <div class="file-upload-area" onclick="document.getElementById('file-upload-medicos').click()">
+                            <i class="fas fa-cloud-upload-alt"></i>
+                            <p>Click aquí o arrastra tu archivo</p>
+                            <small>PDF, Excel, Word, Imágenes</small>
+                            <input type="file" id="file-upload-medicos" accept=".pdf,.xlsx,.xls,.docx,.doc,.jpg,.jpeg,.png" onchange="handleFileUpload(this, 'medicos')" style="display: none;">
+                        </div>
+                        <div id="file-preview-medicos" class="file-preview"></div>
+                    </div>
+
+                    <div class="quote-improvement-section">
+                        <h4>¿Quieres mejorar una cotización de otro proveedor?</h4>
+                        <p class="improvement-disclaimer">
+                            <i class="fas fa-info-circle"></i>
+                            Comparte tu cotización actual y analizaremos si podemos ofrecer mejores condiciones. 
+                            <strong>No garantizamos mejores precios</strong>, pero evaluaremos cada caso según disponibilidad y condiciones del mercado.
+                        </p>
+                        <button class="btn btn-secondary" onclick="openImprovementModal()">
+                            <i class="fas fa-chart-line"></i> Solicitar Análisis de Cotización
+                        </button>
+                    </div>
+                    <div class="section-quick-links">
+                        <h4>Enlaces Rápidos</h4>
+                        <ul>
+                            <li><a href="#inicio">Inicio</a></li>
+                            <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+                            <li><a href="#productos">Productos</a></li>
+                            <li><a href="#contacto">Contacto</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Oficina Page -->
+        <div id="oficina-page" class="product-page">
+            <div class="container">
+                <button class="back-btn" onclick="goBack()">
+                    <i class="fas fa-arrow-left"></i>
+                    Volver Atrás
+                </button>
+                <div class="section-header">
+                    <h2>Suministros de Oficina</h2>
+                    <p>Todo lo necesario para el funcionamiento diario de tu oficina</p>
+                </div>
+                <div class="product-grid">
+                    <ul class="product-list">
+                        <li>Papel bond A4</li>
+                        <li>Carpetas archivadoras</li>
+                        <li>Bolígrafos</li>
+                        <li>Marcadores permanentes</li>
+                        <li>Grapas y grapadoras</li>
+                        <li>Clips y sujetadores</li>
+                        <li>Calculadoras</li>
+                        <li>Etiquetas adhesivas</li>
+                        <li>Sobres manila</li>
+                        <li>Tijeras de oficina</li>
+                        <li>Perforadoras</li>
+                        <li>Cintas adhesivas</li>
+                        <li>Organizadores de escritorio</li>
+                        <li>Agendas y cuadernos</li>
+                        <li>Tóner y cartuchos</li>
+                    </ul>
+                    
+                    
+                    
+                    <!-- File Upload Section -->
+                    <div class="file-upload-section">
+                        <h4>¿Tienes una cotización existente?</h4>
+                        <p>Sube tu archivo para ayudarnos a entender mejor tus necesidades</p>
+                        <div class="file-upload-area" onclick="document.getElementById('file-upload-oficina').click()">
+                            <i class="fas fa-cloud-upload-alt"></i>
+                            <p>Click aquí o arrastra tu archivo</p>
+                            <small>PDF, Excel, Word, Imágenes</small>
+                            <input type="file" id="file-upload-oficina" accept=".pdf,.xlsx,.xls,.docx,.doc,.jpg,.jpeg,.png" onchange="handleFileUpload(this, 'oficina')" style="display: none;">
+                        </div>
+                        <div id="file-preview-oficina" class="file-preview"></div>
+                    </div>
+
+                    <div class="quote-improvement-section">
+                        <h4>¿Quieres mejorar una cotización de otro proveedor?</h4>
+                        <p class="improvement-disclaimer">
+                            <i class="fas fa-info-circle"></i>
+                            Comparte tu cotización actual y analizaremos si podemos ofrecer mejores condiciones. 
+                            <strong>No garantizamos mejores precios</strong>, pero evaluaremos cada caso según disponibilidad y condiciones del mercado.
+                        </p>
+                        <button class="btn btn-secondary" onclick="openImprovementModal()">
+                            <i class="fas fa-chart-line"></i> Solicitar Análisis de Cotización
+                        </button>
+                    </div>
+                    <div class="section-quick-links">
+                        <h4>Enlaces Rápidos</h4>
+                        <ul>
+                            <li><a href="#inicio">Inicio</a></li>
+                            <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+                            <li><a href="#productos">Productos</a></li>
+                            <li><a href="#contacto">Contacto</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Muebles Page -->
+        <div id="muebles-page" class="product-page">
+            <div class="container">
+                <button class="back-btn" onclick="goBack()">
+                    <i class="fas fa-arrow-left"></i>
+                    Volver Atrás
+                </button>
+                <div class="section-header">
+                    <h2>Muebles</h2>
+                    <p>Mobiliario completo para oficinas y espacios comerciales</p>
+                </div>
+                <div class="product-grid">
+                    <ul class="product-list">
+                        <li>Escritorios ejecutivos</li>
+                        <li>Sillas ergonómicas</li>
+                        <li>Archivadores metálicos</li>
+                        <li>Mesas de reuniones</li>
+                        <li>Estanterías modulares</li>
+                        <li>Sillones de espera</li>
+                        <li>Pizarras acrílicas</li>
+                        <li>Cajas fuertes</li>
+                        <li>Biombo divisorio</li>
+                        <li>Muebles de recepción</li>
+                        <li>Casilleros metálicos</li>
+                        <li>Mesas de trabajo</li>
+                        <li>Vitrinas exhibidoras</li>
+                        <li>Sillas apilables</li>
+                        <li>Muebles modulares</li>
+                    </ul>
+                    
+                    
+                    
+                    <!-- File Upload Section -->
+                    <div class="file-upload-section">
+                        <h4>¿Tienes una cotización existente?</h4>
+                        <p>Sube tu archivo para ayudarnos a entender mejor tus necesidades</p>
+                        <div class="file-upload-area" onclick="document.getElementById('file-upload-muebles').click()">
+                            <i class="fas fa-cloud-upload-alt"></i>
+                            <p>Click aquí o arrastra tu archivo</p>
+                            <small>PDF, Excel, Word, Imágenes</small>
+                            <input type="file" id="file-upload-muebles" accept=".pdf,.xlsx,.xls,.docx,.doc,.jpg,.jpeg,.png" onchange="handleFileUpload(this, 'muebles')" style="display: none;">
+                        </div>
+                        <div id="file-preview-muebles" class="file-preview"></div>
+                    </div>
+
+                    <div class="quote-improvement-section">
+                        <h4>¿Quieres mejorar una cotización de otro proveedor?</h4>
+                        <p class="improvement-disclaimer">
+                            <i class="fas fa-info-circle"></i>
+                            Comparte tu cotización actual y analizaremos si podemos ofrecer mejores condiciones. 
+                            <strong>No garantizamos mejores precios</strong>, pero evaluaremos cada caso según disponibilidad y condiciones del mercado.
+                        </p>
+                        <button class="btn btn-secondary" onclick="openImprovementModal()">
+                            <i class="fas fa-chart-line"></i> Solicitar Análisis de Cotización
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Electrodomésticos Page -->
+        <div id="electrodomesticos-page" class="product-page">
+            <div class="container">
+                <button class="back-btn" onclick="goBack()">
+                    <i class="fas fa-arrow-left"></i>
+                    Volver Atrás
+                </button>
+                <div class="section-header">
+                    <h2>Electrodomésticos para Oficina</h2>
+                    <p>Equipos para cocinas de oficina y espacios corporativos</p>
+                </div>
+                <div class="product-list">
+                    <h4>Cocina de Oficina:</h4>
+                    <ul>
+                        <li>Refrigeradores compactos</li>
+                        <li>Microondas, hornos eléctricos</li>
+                        <li>Cafeteras automáticas, express</li>
+                        <li>Hervidores eléctricos</li>
+                        <li>Dispensadores de agua fría/caliente</li>
+                    </ul>
+                    <h4>Electrodomésticos Menores:</h4>
+                    <ul>
+                        <li>Licuadoras, procesadoras</li>
+                        <li>Tostadoras, sandwicheras</li>
+                        <li>Planchas, vaporizadores</li>
+                        <li>Aspiradoras de oficina</li>
+                        <li>Ventiladores, calefactores</li>
+                    </ul>
+                    <h4>Equipos de Climatización:</h4>
+                    <ul>
+                        <li>Aires acondicionados split</li>
+                        <li>Purificadores de aire</li>
+                        <li>Humidificadores, deshumidificadores</li>
+                        <li>Calefactores eléctricos</li>
+                        <li>Ventiladores de techo</li>
+                    </ul>
+                    <h4>Vajilla y Utensilios:</h4>
+                    <ul>
+                        <li>Vajillas, cristalería</li>
+                        <li>Cubiertos, utensilios de cocina</li>
+                        <li>Termos, botellas térmicas</li>
+                        <li>Bandejas, recipientes</li>
+                        <li>Manteles, servilletas</li>
+                    </ul>
+                </div>
+                <!-- File Upload Section (Electrodomésticos) -->
+                <div class="file-upload-section">
+                    <h4>¿Tienes una cotización existente?</h4>
+                    <p>Sube tu archivo para ayudarnos a entender mejor tus necesidades</p>
+                    <div class="file-upload-area" onclick="document.getElementById('file-upload-electrodomesticos').click()">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                        <p>Click aquí o arrastra tu archivo</p>
+                        <small>PDF, Excel, Word, Imágenes</small>
+                        <input type="file" id="file-upload-electrodomesticos" accept=".pdf,.xlsx,.xls,.docx,.doc,.jpg,.jpeg,.png" onchange="handleFileUpload(this, 'electrodomesticos')" style="display: none;">
+                    </div>
+                    <div id="file-preview-electrodomesticos" class="file-preview"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Librería Page -->
+        <div id="libreria-page" class="product-page">
+            <div class="container">
+                <button class="back-btn" onclick="goBack()">
+                    <i class="fas fa-arrow-left"></i>
+                    Volver Atrás
+                </button>
+                <div class="section-header">
+                    <h2>Artículos de Librería</h2>
+                    <p>Papelería, útiles escolares y materiales de oficina especializados</p>
+                </div>
+                <div class="product-list">
+                    <h4>Papelería Básica:</h4>
+                    <ul>
+                        <li>Papel bond A4, carta, oficio</li>
+                        <li>Cuadernos universitarios, espirales</li>
+                        <li>Blocks de notas, post-it</li>
+                        <li>Carpetas manila, colgantes</li>
+                        <li>Archivadores de palanca</li>
+                        <li>Sobres manila, blancos</li>
+                        <li>Papel carbón, papel calco</li>
+                        <li>Etiquetas adhesivas</li>
+                        <li>Papel milimetrado, cuadriculado</li>
+                        <li>Papel fotocopia, papel reciclado</li>
+                    </ul>
+                    <h4>Útiles de Escritura:</h4>
+                    <ul>
+                        <li>Bolígrafos azul, negro, rojo</li>
+                        <li>Lápices grafito HB, 2B, 4B</li>
+                        <li>Marcadores permanentes</li>
+                        <li>Resaltadores fluorescentes</li>
+                        <li>Plumones para pizarra</li>
+                        <li>Correctores líquidos, cintas</li>
+                        <li>Portaminas 0.5, 0.7, 0.9</li>
+                        <li>Minas de repuesto</li>
+                        <li>Plumas fuente, cartuchos</li>
+                        <li>Marcadores de tela, CD</li>
+                    </ul>
+                    <h4>Material de Oficina:</h4>
+                    <ul>
+                        <li>Grapas, clips, chinches</li>
+                        <li>Grapadoras, perforadoras</li>
+                        <li>Tijeras, cortadores</li>
+                        <li>Pegamento en barra, líquido</li>
+                        <li>Cinta adhesiva, cinta doble faz</li>
+                        <li>Reglas, escuadras</li>
+                        <li>Calculadoras básicas, científicas</li>
+                        <li>Sellos automáticos, tampones</li>
+                        <li>Bandejas porta documentos</li>
+                        <li>Organizadores de escritorio</li>
+                    </ul>
+                    <h4>Material Didáctico:</h4>
+                    <ul>
+                        <li>Cartulinas de colores</li>
+                        <li>Papel crepe, papel seda</li>
+                        <li>Témperas, acuarelas</li>
+                        <li>Pinceles, brochas</li>
+                        <li>Plastilina, masas de modelar</li>
+                        <li>Compases, transportadores</li>
+                        <li>Mapas, láminas educativas</li>
+                        <li>Pizarras acrílicas, magnéticas</li>
+                        <li>Marcadores de pizarra</li>
+                        <li>Borradores de pizarra</li>
+                    </ul>
+                </div>
+                <!-- File Upload Section (Librería) -->
+                <div class="file-upload-section">
+                    <h4>¿Tienes una cotización existente?</h4>
+                    <p>Sube tu archivo para ayudarnos a entender mejor tus necesidades</p>
+                    <div class="file-upload-area" onclick="document.getElementById('file-upload-libreria').click()">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                        <p>Click aquí o arrastra tu archivo</p>
+                        <small>PDF, Excel, Word, Imágenes</small>
+                        <input type="file" id="file-upload-libreria" accept=".pdf,.xlsx,.xls,.docx,.doc,.jpg,.jpeg,.png" onchange="handleFileUpload(this, 'libreria')" style="display: none;">
+                    </div>
+                    <div id="file-preview-libreria" class="file-preview"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer (moved to bottom) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>PRODUCTOS JORAN SPA</h3>
+                    <p>Todo lo que tu empresa necesita, cuando lo necesita</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Sígueme</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 PRODUCTOS JORAN SPA. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/56962378434?text=Hola,%20necesito%20cotizar%20productos%20para%20mi%20empresa" class="whatsapp-btn" target="_blank" aria-label="Abrir WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+    <script>
+      // Captcha amigable con rompecabezas (slider)
+      (function(){
+        function clamp(v,min,max){return Math.max(min,Math.min(max,v));}
+
+        function initPuzzleCaptcha(){
+          document.querySelectorAll('.puzzle-captcha').forEach(box => {
+            if (box.dataset.inited) return; // prevent double init
+            box.dataset.inited = '1';
+            const stage = box.querySelector('.puzzle-stage');
+            const cutout = box.querySelector('.puzzle-cutout');
+            const piece = box.querySelector('.puzzle-piece');
+            const track = box.querySelector('.puzzle-track');
+            const slider = box.querySelector('.puzzle-slider');
+            const hidden = box.querySelector('input[name="captcha_verified"]');
+            const form = box.closest('form');
+            const submitBtn = form ? form.querySelector('button[type="submit"]') : null;
+
+            if (!stage || !cutout || !piece || !track || !slider) return;
+
+            const startPieceLeft = 8; // CSS initial
+            function getTargetLeft(){
+              const rectStage = stage.getBoundingClientRect();
+              const rectCut = cutout.getBoundingClientRect();
+              return Math.round(rectCut.left - rectStage.left); // target for piece.left
+            }
+
+            function setVerified(){
+              box.classList.add('verified');
+              if (hidden) hidden.value = 'true';
+              if (submitBtn) submitBtn.disabled = false;
+              // lock slider
+              slider.style.pointerEvents = 'none';
+            }
+
+            function onDragStart(clientX){
+              const trackRect = track.getBoundingClientRect();
+              const sliderRect = slider.getBoundingClientRect();
+              const stageRect = stage.getBoundingClientRect();
+              const maxLeft = trackRect.width - sliderRect.width - 10; // 10px right padding
+              const minLeft = 10; // left padding per CSS
+              const originLeft = parseFloat(slider.style.left || sliderRect.left - trackRect.left) || minLeft;
+              const deltaX0 = clientX - (trackRect.left + originLeft);
+              const targetPieceLeft = getTargetLeft();
+              const pieceMax = targetPieceLeft; // we map end to target
+
+              function onDragMove(moveX){
+                let newLeft = clamp(moveX - trackRect.left - deltaX0, minLeft, maxLeft);
+                slider.style.left = newLeft + 'px';
+                slider.setAttribute('aria-valuenow', Math.round((newLeft-minLeft)/(maxLeft-minLeft)*100));
+                // map slider [minLeft,maxLeft] -> piece [startPieceLeft, pieceMax]
+                const t = (newLeft - minLeft) / (maxLeft - minLeft);
+                const pieceLeft = Math.round(startPieceLeft + t * (pieceMax - startPieceLeft));
+                piece.style.left = pieceLeft + 'px';
+              }
+
+              function onDragEnd(){
+                // success if piece near cutout (tolerance 6px)
+                const currentPieceLeft = parseInt(piece.style.left || startPieceLeft, 10) || startPieceLeft;
+                const target = targetPieceLeft;
+                if (Math.abs(currentPieceLeft - target) <= 6){
+                  // snap to target
+                  piece.style.left = target + 'px';
+                  setVerified();
+                } else {
+                  // reset slider and piece
+                  slider.style.left = minLeft + 'px';
+                  slider.setAttribute('aria-valuenow','0');
+                  piece.style.left = startPieceLeft + 'px';
+                }
+                window.removeEventListener('mousemove', onMM);
+                window.removeEventListener('touchmove', onTM);
+                window.removeEventListener('mouseup', onMU);
+                window.removeEventListener('touchend', onMU);
+              }
+
+              const onMM = (e)=>onDragMove(e.clientX);
+              const onTM = (e)=>{ if (e.touches && e.touches[0]) onDragMove(e.touches[0].clientX); };
+              const onMU = ()=>onDragEnd();
+              window.addEventListener('mousemove', onMM);
+              window.addEventListener('touchmove', onTM, {passive:false});
+              window.addEventListener('mouseup', onMU);
+              window.addEventListener('touchend', onMU);
+            }
+
+            // Setup interactions
+            slider.addEventListener('mousedown', (e)=>{ e.preventDefault(); onDragStart(e.clientX); });
+            slider.addEventListener('touchstart', (e)=>{ if (e.touches && e.touches[0]) { onDragStart(e.touches[0].clientX); } }, {passive:true});
+          });
+        }
+
+        function initThanksBanner(){
+          const params = new URLSearchParams(window.location.search);
+          const banner = document.getElementById('thanks-banner');
+          const closeBtn = banner ? banner.querySelector('.close-thanks') : null;
+          if (params.get('enviado') === '1' && banner) {
+            banner.style.display = 'block';
+            if (history.replaceState) {
+              params.delete('enviado');
+              const cleanUrl = window.location.pathname + (params.toString() ? ('?' + params.toString()) : '') + window.location.hash;
+              history.replaceState({}, document.title, cleanUrl);
+            }
+          }
+          if (closeBtn) closeBtn.addEventListener('click', ()=> banner.style.display = 'none');
+        }
+
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', () => { initPuzzleCaptcha(); initThanksBanner(); });
+        } else {
+          initPuzzleCaptcha(); initThanksBanner();
+        }
+      })();
+    </script>
+</body>
+</html>

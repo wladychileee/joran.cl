@@ -1,0 +1,57 @@
+{
+  "construccion": {
+    "title": "Ferretería y Construcción",
+    "items": [
+      { "name": "Taladro percutor 750W", "desc": "Velocidad variable, mandril 13mm" },
+      { "name": "Juego de destornilladores", "desc": "Philips/Plano, aislados" },
+      { "name": "Brocas mixtas 15 pcs", "desc": "Madera, metal y concreto" },
+      { "name": "Nivel de burbuja 60cm", "desc": "Aluminio, alta precisión" },
+      { "name": "Cincel frío 12mm", "desc": "Acero al carbono" }
+    ]
+  },
+  "medicos": {
+    "title": "Insumos Médicos",
+    "items": [
+      { "name": "Guantes nitrilo (caja x100)", "desc": "Libre de látex, tallas S/M/L" },
+      { "name": "Mascarillas quirúrgicas", "desc": "Triple capa, certificadas" },
+      { "name": "Alcohol gel 1L", "desc": "70% alcohol" },
+      { "name": "Gasas estériles", "desc": "10x10 cm, sobres individuales" }
+    ]
+  },
+  "oficina": {
+    "title": "Suministros de Oficina",
+    "items": [
+      { "name": "Papel bond A4 75g", "desc": "Caja x5 resmas" },
+      { "name": "Tóner negro", "desc": "Compatibles y originales" },
+      { "name": "Marcadores permanentes", "desc": "Colores surtidos" },
+      { "name": "Carpetas archivadoras", "desc": "Tamaños oficio y carta" }
+    ]
+  },
+  "muebles": {
+    "title": "Muebles y Equipamiento",
+    "items": [
+      { "name": "Silla ergonómica malla", "desc": "Apoyo lumbar, brazos 2D" },
+      { "name": "Escritorio 140x60", "desc": "Cubierta melamina 25mm" },
+      { "name": "Archivador metálico 3 cajones", "desc": "Cierre centralizado" },
+      { "name": "Mesa de reuniones 200x100", "desc": "Patas metálicas" }
+    ]
+  },
+  "electrodomesticos": {
+    "title": "Electrodomésticos",
+    "items": [
+      { "name": "Refrigerador compacto", "desc": "90-120L, bajo consumo" },
+      { "name": "Microondas 23L", "desc": "Descongelado rápido" },
+      { "name": "Cafetera automática", "desc": "Programable, 12 tazas" },
+      { "name": "Hervidor eléctrico", "desc": "Acero inoxidable" }
+    ]
+  },
+  "libreria": {
+    "title": "Artículos de Librería",
+    "items": [
+      { "name": "Cuadernos universitarios", "desc": "80 hojas, distintos diseños" },
+      { "name": "Resaltadores", "desc": "Set x5 colores" },
+      { "name": "Etiquetas adhesivas", "desc": "Tamaños variados" },
+      { "name": "Tijeras 8\"", "desc": "Punta roma" }
+    ]
+  }
+}

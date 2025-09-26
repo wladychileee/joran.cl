@@ -1,0 +1,14 @@
+[build]
+publish = "."
+
+# Cabeceras básicas de caché (puedes ajustarlo más adelante)
+[[headers]]
+for = "/*"
+  [headers.values]
+  Cache-Control = "public, max-age=600"
+
+# Forzar 404.html (si existiera) en rutas desconocidas (opcional)
+#[[redirects]]
+#from = "/*"
+#to = "/404.html"
+#status = 404
