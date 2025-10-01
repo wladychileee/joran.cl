@@ -410,6 +410,7 @@ function handleFileUpload(input, category) {
     }
     
     uploadedFiles[category].push(fileInfo);
+    console.log('[upload] file selected for', category, file.name);
     displayFilePreview(fileInfo, category);
     
     // Show notification
@@ -426,30 +427,101 @@ function formatFileSize(bytes) {
 
 function displayFilePreview(fileInfo, category) {
     const preview = document.getElementById(`file-preview-${category}`);
-    
     const fileIcon = getFileIcon(fileInfo.type);
-    
-    const fileElement = document.createElement('div');
-    fileElement.className = 'file-item';
-    fileElement.innerHTML = `
-        <div class="file-info">
+
+    // Limpia el preview del category (un archivo a la vez para simplificar UX)
+    preview.innerHTML = '';
+
+    const wrap = document.createElement('div');
+    wrap.className = 'file-item';
+    const formId = `attach-inline-${category}-${fileInfo.id}`;
+
+    wrap.innerHTML = `
+        <div class="file-info" style="align-items:flex-start;gap:12px;">
             <i class="${fileIcon} file-icon"></i>
             <div class="file-details">
-                <h5>${fileInfo.name}</h5>
+                <h5 style="margin:0 0 4px 0;">${fileInfo.name}</h5>
                 <small>${fileInfo.size}</small>
             </div>
         </div>
-        <div class="file-actions">
-            <button class="file-btn send-file" onclick="sendFileViaWhatsApp(${fileInfo.id}, '${category}')">
-                <i class="fas fa-paper-plane"></i> Enviar
-            </button>
-            <button class="file-btn remove-file" onclick="removeFile(${fileInfo.id}, '${category}')">
-                <i class="fas fa-trash"></i>
-            </button>
-        </div>
+        <form id="${formId}" class="quote-form" style="margin-top:12px; width:100%;">
+            <div class="form-group"><label>Nombre Personal *</label>
+                <input type="text" name="name" placeholder="Tu nombre" required>
+            </div>
+            <div class="form-group"><label>Nombre de la Empresa *</label>
+                <input type="text" name="company" placeholder="Nombre de tu empresa" required>
+            </div>
+            <div class="form-group"><label>Correo Electr&oacute;nico *</label>
+                <input type="email" name="email" placeholder="correo@empresa.cl" required>
+            </div>
+            <div class="form-group"><label>Tel&eacute;fono *</label>
+                <input type="tel" name="phone" placeholder="+56 9 1234 5678" required>
+            </div>
+            <div class="quote-footer" style="display:flex; gap:8px;">
+                <button type="submit" class="btn btn-primary" disabled>
+                    <i class="fas fa-paper-plane"></i> Enviar
+                </button>
+                <button type="button" class="btn btn-secondary" data-remove="1">
+                    Eliminar
+                </button>
+            </div>
+            <input type="hidden" name="_subject" value="Adjunto de Cotizaci&oacute;n desde secci&oacute;n ${category}">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_next" value="thanks.html">
+            <input type="hidden" name="_captcha" value="false">
+        </form>
     `;
-    
-    preview.appendChild(fileElement);
+
+    preview.appendChild(wrap);
+    try { preview.scrollIntoView({ behavior: 'smooth', block: 'nearest' }); } catch(_) {}
+
+    // Validación simple para habilitar Enviar
+    const formEl = document.getElementById(formId);
+    const submitBtn = formEl.querySelector('button[type="submit"]');
+    const removeBtn = formEl.querySelector('button[data-remove="1"]');
+    const requiredInputs = Array.from(formEl.querySelectorAll('input[required]'));
+
+    function validate() {
+        const allOk = requiredInputs.every(inp => (inp.value || '').trim().length > 0);
+        submitBtn.disabled = !allOk;
+    }
+    requiredInputs.forEach(inp => inp.addEventListener('input', validate));
+    validate();
+
+    // Manejar envío AJAX con FormSubmit incluyendo el archivo seleccionado
+    formEl.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        try {
+            submitBtn.disabled = true;
+            const originalHTML = submitBtn.innerHTML;
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Enviando...';
+
+            const action = 'https://formsubmit.co/ajax/cotizaciones@joran.cl';
+            const fd = new FormData(formEl);
+            // Adjuntar el archivo real
+            if (fileInfo && fileInfo.file) {
+                fd.append('file', fileInfo.file, fileInfo.name);
+            }
+            const res = await fetch(action, { method: 'POST', body: fd, headers: { 'Accept': 'application/json' } });
+            if (!res.ok) throw new Error('send_error');
+            try { await res.json(); } catch(_) {}
+            // Redirigir a gracias
+            console.log('[upload] sent successfully for', category);
+            window.location.href = 'thanks.html';
+        } catch(err) {
+            alert('No se pudo enviar el formulario. Inténtalo nuevamente.');
+            submitBtn.disabled = false;
+        }
+    });
+
+    // Remover archivo y limpiar preview
+    removeBtn.addEventListener('click', () => {
+        // limpiar data en memoria
+        if (uploadedFiles[category]) {
+            uploadedFiles[category] = uploadedFiles[category].filter(f => f.id !== fileInfo.id);
+        }
+        preview.innerHTML = '';
+    });
 }
 
 function getFileIcon(fileType) {
