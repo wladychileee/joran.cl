@@ -730,12 +730,6 @@ function setupAjaxForm(formId) {
             submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Enviando...';
         }
         try {
-            // Validar captcha si existe
-            const puzzle = form.querySelector('.puzzle-captcha');
-            const hidden = puzzle ? puzzle.querySelector('input[name="captcha_verified"]') : null;
-            if (puzzle && (!hidden || hidden.value !== 'true')) {
-                throw new Error('captcha_not_verified');
-            }
             const formData = new FormData(form);
             const res = await fetch(action, { method: 'POST', body: formData, headers: { 'Accept': 'application/json' } });
             if (!res.ok) throw new Error('Error de envío');
@@ -748,19 +742,11 @@ function setupAjaxForm(formId) {
             // Redirigir a página de agradecimiento en español
             window.location.href = 'thanks.html';
         } catch (err) {
-            if (String(err && err.message) === 'captcha_not_verified') {
-                const puzzle = form.querySelector('.puzzle-captcha');
-                const hint = puzzle ? puzzle.querySelector('.puzzle-hint') : null;
-                if (hint) { hint.textContent = 'Desliza para verificar y habilitar el envío'; hint.style.color = '#b91c1c'; }
-                const slider = puzzle ? puzzle.querySelector('.puzzle-slider') : null;
-                if (slider) { const prev = slider.style.boxShadow; slider.style.boxShadow = '0 0 0 3px rgba(239,68,68,0.35)'; setTimeout(() => { slider.style.boxShadow = prev; }, 900); }
-            } else {
-                alert('Hubo un problema al enviar el formulario. Por favor, inténtalo nuevamente.');
-            }
+            alert('Hubo un problema al enviar el formulario. Por favor, inténtalo nuevamente.');
         } finally {
             if (submitBtn) {
                 submitBtn.innerHTML = originalHTML || 'Enviar';
-                if (!form.querySelector('.puzzle-captcha')) submitBtn.disabled = false;
+                submitBtn.disabled = false;
             }
         }
     }, { capture: true });
@@ -773,8 +759,9 @@ function initFormsAndButtons() {
         // Activar AJAX en formularios principales
         setupAjaxForm('contact-form');
         setupAjaxForm('quote-form');
+        setupAjaxForm('attach-quote-form');
         // Asegurar que los botones de envío estén habilitados desde el inicio
-        ['contact-form','quote-form'].forEach(id => {
+        ['contact-form','quote-form','attach-quote-form'].forEach(id => {
             const f = document.getElementById(id);
             const btn = f ? f.querySelector('button[type="submit"]') : null;
             if (btn) btn.disabled = false;
