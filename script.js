@@ -18,21 +18,6 @@ if (mobileMenu && navMenu) {
             toggleNav();
         }
     });
-
-// Expose functions to global scope for inline HTML handlers
-window.showProductPage = showProductPage;
-window.goBack = goBack;
-window.openImprovementModal = openImprovementModal;
-window.closeImprovementModal = closeImprovementModal;
-window.openQuoteModal = openQuoteModal;
-window.closeQuoteModal = closeQuoteModal;
-window.handleFileUpload = handleFileUpload;
-window.handleImprovementFile = handleImprovementFile;
-window.removeImprovementFile = removeImprovementFile;
-window.handleImprovementSubmission = handleImprovementSubmission;
-window.sendImprovementRequest = sendImprovementRequest;
-window.handleQuoteSubmission = handleQuoteSubmission;
-window.sendQuoteEmail = sendQuoteEmail;
 }
 
 // Close mobile menu when clicking on a link
@@ -769,6 +754,12 @@ document.addEventListener('DOMContentLoaded', () => {
     // Activar AJAX en formularios principales
     setupAjaxForm('contact-form');
     setupAjaxForm('quote-form');
+    // Asegurar que los botones de envío estén habilitados desde el inicio
+    ['contact-form','quote-form'].forEach(id => {
+        const f = document.getElementById(id);
+        const btn = f ? f.querySelector('button[type="submit"]') : null;
+        if (btn) btn.disabled = false;
+    });
 });
 // Global exposure for inline handlers (ensures availability)
 window.showProductPage = showProductPage;
