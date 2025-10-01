@@ -1,4 +1,4 @@
-/* Reset and Base Styles */
+﻿/* Reset and Base Styles */
 * {
     margin: 0;
     padding: 0;
@@ -727,7 +727,7 @@ section {
 }
 
 .product-list li::before {
-    content: "•";
+    content: ".";
     color: #3b82f6;
     font-weight: bold;
     position: absolute;
@@ -1432,7 +1432,7 @@ section {
 }
 
 .product-list li::before {
-    content: "▸";
+    content: "?";
     color: var(--primary-color);
     font-weight: bold;
     position: absolute;
@@ -1619,3 +1619,4 @@ input:invalid:focus, textarea:invalid:focus, select:invalid:focus {
 /* Force-hide improvement feature site-wide */
 #improvement-modal { display: none !important; }
 .quote-improvement-section { display: none !important; }
+

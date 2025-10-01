@@ -1,4 +1,4 @@
-// Mobile Navigation Toggle
+﻿// Mobile Navigation Toggle
 const mobileMenu = document.getElementById('mobile-menu');
 const navMenu = document.querySelector('.nav-menu');
 
@@ -107,12 +107,12 @@ let productsData = null;
 const productsRendered = {}; // pageId -> true
 
 async function loadProductsData() {
-    // No-op: no cargar ejemplos dinámicos
+    // No-op: no cargar ejemplos din�micos
     return null;
 }
 
 async function renderCategoryIfNeeded(pageId) {
-    // No-op: no renderizar ejemplos dinámicos
+    // No-op: no renderizar ejemplos din�micos
     return;
 }
 
@@ -143,7 +143,7 @@ if (contactForm) {
             submitBtn.disabled = true;
             
             setTimeout(() => {
-                alert('¡Mensaje enviado correctamente! Te contactaré pronto.');
+                alert('�Mensaje enviado correctamente! Te contactar� pronto.');
                 contactForm.reset();
                 submitBtn.textContent = originalText;
                 submitBtn.disabled = false;
@@ -246,7 +246,7 @@ window.addEventListener('scroll', () => {
 
 // Product page navigation
 function showProductPage(pageId) {
-    console.log('Mostrando página:', pageId); // Debug
+    console.log('Mostrando p�gina:', pageId); // Debug
     
     // Hide main content
     document.body.classList.add('product-view');
@@ -259,7 +259,7 @@ function showProductPage(pageId) {
     
     // Show selected product page
     const targetPage = document.getElementById(pageId + '-page');
-    console.log('Página encontrada:', targetPage); // Debug
+    console.log('P�gina encontrada:', targetPage); // Debug
     
     if (targetPage) {
         targetPage.style.display = 'block';
@@ -271,14 +271,14 @@ function showProductPage(pageId) {
             productPagesContainer.style.display = 'block';
         }
     }
-    // No render de ejemplos dinámicos
+    // No render de ejemplos din�micos
     
     // Scroll to top
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 function goBack() {
-    console.log('Volviendo atrás'); // Debug
+    console.log('Volviendo atr�s'); // Debug
     
     // Show main content
     document.body.classList.remove('product-view');
@@ -451,10 +451,10 @@ function displayFilePreview(fileInfo, category) {
             <div class="form-group"><label>Nombre de la Empresa *</label>
                 <input type="text" name="company" placeholder="Nombre de tu empresa" required>
             </div>
-            <div class="form-group"><label>Correo Electrónico *</label>
+            <div class="form-group"><label>Correo Electr�nico *</label>
                 <input type="email" name="email" placeholder="correo@empresa.cl" required>
             </div>
-            <div class="form-group"><label>Teléfono *</label>
+            <div class="form-group"><label>Tel�fono *</label>
                 <input type="tel" name="phone" placeholder="+56 9 1234 5678" required>
             </div>
             <div class="quote-footer" style="display:flex; gap:8px;">
@@ -465,7 +465,7 @@ function displayFilePreview(fileInfo, category) {
                     Eliminar
                 </button>
             </div>
-            <input type="hidden" name="_subject" value="Adjunto de Cotización desde sección ${category}">
+            <input type="hidden" name="_subject" value="Adjunto de Cotizaci�n desde secci�n ${category}">
             <input type="hidden" name="_template" value="table">
             <input type="hidden" name="_next" value="thanks.html">
             <input type="hidden" name="_captcha" value="false">
@@ -475,7 +475,7 @@ function displayFilePreview(fileInfo, category) {
     preview.appendChild(wrap);
     try { preview.scrollIntoView({ behavior: 'smooth', block: 'nearest' }); } catch(_) {}
 
-    // Validación simple para habilitar Enviar
+    // Validaci�n simple para habilitar Enviar
     const formEl = document.getElementById(formId);
     const submitBtn = formEl.querySelector('button[type="submit"]');
     const removeBtn = formEl.querySelector('button[data-remove="1"]');
@@ -488,7 +488,7 @@ function displayFilePreview(fileInfo, category) {
     requiredInputs.forEach(inp => inp.addEventListener('input', validate));
     validate();
 
-    // Manejar envío AJAX con FormSubmit incluyendo el archivo seleccionado
+    // Manejar env�o AJAX con FormSubmit incluyendo el archivo seleccionado
     formEl.addEventListener('submit', async (e) => {
         e.preventDefault();
         try {
@@ -509,7 +509,7 @@ function displayFilePreview(fileInfo, category) {
             console.log('[upload] sent successfully for', category);
             window.location.href = 'thanks.html';
         } catch(err) {
-            alert('No se pudo enviar el formulario. Inténtalo nuevamente.');
+            alert('No se pudo enviar el formulario. Int�ntalo nuevamente.');
             submitBtn.disabled = false;
         }
     });
@@ -536,7 +536,7 @@ function sendFileViaWhatsApp(fileId, category) {
     const fileInfo = uploadedFiles[category]?.find(f => f.id === fileId);
     if (!fileInfo) return;
     
-    const message = `Hola, tengo una cotización que necesito procesar. He subido el archivo: "${fileInfo.name}" (${fileInfo.size}). Por favor, ayúdenme con este pedido.`;
+    const message = `Hola, tengo una cotizaci�n que necesito procesar. He subido el archivo: "${fileInfo.name}" (${fileInfo.size}). Por favor, ay�denme con este pedido.`;
     const whatsappUrl = `https://wa.me/56962378434?text=${encodeURIComponent(message)}`;
     
     window.open(whatsappUrl, '_blank');
@@ -647,30 +647,30 @@ function sendImprovementRequest(formData) {
     setTimeout(() => {
         const deadlineText = {
             'urgente': 'Urgente (24 horas)',
-            'rapido': 'Rápido (2-3 días)', 
+            'rapido': 'R�pido (2-3 d�as)', 
             'normal': 'Normal (1 semana)',
             'flexible': 'Flexible (cuando sea posible)'
         };
         
         const emailContent = `
-Nueva Solicitud de Análisis de Cotización Competitiva
+Nueva Solicitud de An�lisis de Cotizaci�n Competitiva
 
 Datos del Cliente:
 - Nombre: ${formData.name}
 - Email: ${formData.email}
 - Empresa: ${formData.company}
-- Teléfono: ${formData.phone || 'No especificado'}
+- Tel�fono: ${formData.phone || 'No especificado'}
 - Proveedor Actual: ${formData.currentSupplier || 'No especificado'}
 
 Urgencia: ${deadlineText[formData.deadline]}
 
 Archivo adjunto: ${formData.file ? formData.file.name : 'No adjuntado'}
 
-Información adicional:
+Informaci�n adicional:
 ${formData.message || 'Ninguna'}
 
 IMPORTANTE: El cliente entiende que no se garantizan mejores precios, 
-solo se realizará un análisis según disponibilidad y condiciones del mercado.
+solo se realizar� un an�lisis seg�n disponibilidad y condiciones del mercado.
 
 ---
 Enviado desde el sitio web de PRODUCTOS JORAN SPA
@@ -678,7 +678,7 @@ Enviado desde el sitio web de PRODUCTOS JORAN SPA
         
         console.log('Solicitud de mejora enviada a cotizaciones@joran.cl:', emailContent);
         
-        showCartNotification('Solicitud enviada. Te contactaremos para analizar tu cotización.');
+        showCartNotification('Solicitud enviada. Te contactaremos para analizar tu cotizaci�n.');
         
         closeImprovementModal();
         
@@ -738,17 +738,17 @@ function sendQuoteEmail(formData) {
     setTimeout(() => {
         // Create email content
         const productList = formData.products.map(item => 
-            `• ${item.name}${item.custom ? ' (Personalizado)' : ''}`
+            `. ${item.name}${item.custom ? ' (Personalizado)' : ''}`
         ).join('\n');
         
         const emailContent = `
-Nueva Solicitud de Cotización
+Nueva Solicitud de Cotizaci�n
 
 Datos del Cliente:
 - Nombre: ${formData.name}
 - Email: ${formData.email}
 - Empresa: ${formData.company || 'No especificada'}
-- Teléfono: ${formData.phone || 'No especificado'}
+- Tel�fono: ${formData.phone || 'No especificado'}
 
 Productos solicitados:
 ${productList}
@@ -764,7 +764,7 @@ Enviado desde el sitio web de PRODUCTOS JORAN SPA
         console.log('Email enviado a cotizaciones@joran.cl:', emailContent);
         
         // Show success message
-        showCartNotification('Cotización enviada correctamente al correo cotizaciones@joran.cl');
+        showCartNotification('Cotizaci�n enviada correctamente al correo cotizaciones@joran.cl');
         
         // Reset form and close modal
         closeQuoteModal();
@@ -777,7 +777,7 @@ Enviado desde el sitio web de PRODUCTOS JORAN SPA
     }, 2000);
 }
 
-// Asegurar que el body siempre esté visible (eliminar animación anterior)
+// Asegurar que el body siempre est� visible (eliminar animaci�n anterior)
 window.addEventListener('load', () => {
     try {
         document.body.style.opacity = '1';
@@ -785,7 +785,7 @@ window.addEventListener('load', () => {
     } catch(_) {}
 });
 
-// --- Envío AJAX a FormSubmit con redirección a thanks.html ---
+// --- Env�o AJAX a FormSubmit con redirecci�n a thanks.html ---
 function setupAjaxForm(formId) {
     const form = document.getElementById(formId);
     if (!form) return;
@@ -804,17 +804,17 @@ function setupAjaxForm(formId) {
         try {
             const formData = new FormData(form);
             const res = await fetch(action, { method: 'POST', body: formData, headers: { 'Accept': 'application/json' } });
-            if (!res.ok) throw new Error('Error de envío');
+            if (!res.ok) throw new Error('Error de env�o');
             try { await res.json(); } catch(_) {}
 
-            // Cerrar modal si es el de cotización
+            // Cerrar modal si es el de cotizaci�n
             if (formId === 'quote-form' && typeof closeQuoteModal === 'function') {
                 closeQuoteModal();
             }
-            // Redirigir a página de agradecimiento en español
+            // Redirigir a p�gina de agradecimiento en espa�ol
             window.location.href = 'thanks.html';
         } catch (err) {
-            alert('Hubo un problema al enviar el formulario. Por favor, inténtalo nuevamente.');
+            alert('Hubo un problema al enviar el formulario. Por favor, int�ntalo nuevamente.');
         } finally {
             if (submitBtn) {
                 submitBtn.innerHTML = originalHTML || 'Enviar';
@@ -832,7 +832,7 @@ function initFormsAndButtons() {
         setupAjaxForm('contact-form');
         setupAjaxForm('quote-form');
         setupAjaxForm('attach-quote-form');
-        // Asegurar que los botones de envío estén habilitados desde el inicio
+        // Asegurar que los botones de env�o est�n habilitados desde el inicio
         ['contact-form','quote-form','attach-quote-form'].forEach(id => {
             const f = document.getElementById(id);
             const btn = f ? f.querySelector('button[type="submit"]') : null;
@@ -861,3 +861,4 @@ window.handleImprovementSubmission = handleImprovementSubmission;
 window.sendImprovementRequest = sendImprovementRequest;
 window.handleQuoteSubmission = handleQuoteSubmission;
 window.sendQuoteEmail = sendQuoteEmail;
+
