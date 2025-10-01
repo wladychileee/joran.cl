@@ -451,10 +451,10 @@ function displayFilePreview(fileInfo, category) {
             <div class="form-group"><label>Nombre de la Empresa *</label>
                 <input type="text" name="company" placeholder="Nombre de tu empresa" required>
             </div>
-            <div class="form-group"><label>Correo Electr&oacute;nico *</label>
+            <div class="form-group"><label>Correo Electrónico *</label>
                 <input type="email" name="email" placeholder="correo@empresa.cl" required>
             </div>
-            <div class="form-group"><label>Tel&eacute;fono *</label>
+            <div class="form-group"><label>Teléfono *</label>
                 <input type="tel" name="phone" placeholder="+56 9 1234 5678" required>
             </div>
             <div class="quote-footer" style="display:flex; gap:8px;">
@@ -465,7 +465,7 @@ function displayFilePreview(fileInfo, category) {
                     Eliminar
                 </button>
             </div>
-            <input type="hidden" name="_subject" value="Adjunto de Cotizaci&oacute;n desde secci&oacute;n ${category}">
+            <input type="hidden" name="_subject" value="Adjunto de Cotización desde sección ${category}">
             <input type="hidden" name="_template" value="table">
             <input type="hidden" name="_next" value="thanks.html">
             <input type="hidden" name="_captcha" value="false">
