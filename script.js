@@ -750,17 +750,26 @@ function setupAjaxForm(formId) {
     }, { capture: true });
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-    // Activar AJAX en formularios principales
-    setupAjaxForm('contact-form');
-    setupAjaxForm('quote-form');
-    // Asegurar que los botones de envío estén habilitados desde el inicio
-    ['contact-form','quote-form'].forEach(id => {
-        const f = document.getElementById(id);
-        const btn = f ? f.querySelector('button[type="submit"]') : null;
-        if (btn) btn.disabled = false;
-    });
-});
+function initFormsAndButtons() {
+    try {
+        // Activar AJAX en formularios principales
+        setupAjaxForm('contact-form');
+        setupAjaxForm('quote-form');
+        // Asegurar que los botones de envío estén habilitados desde el inicio
+        ['contact-form','quote-form'].forEach(id => {
+            const f = document.getElementById(id);
+            const btn = f ? f.querySelector('button[type="submit"]') : null;
+            if (btn) btn.disabled = false;
+        });
+    } catch(_) {}
+}
+
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initFormsAndButtons, { once: true });
+} else {
+    // DOM ya cargado: inicializar de inmediato (caso GitHub Pages primera carga)
+    initFormsAndButtons();
+}
 // Global exposure for inline handlers (ensures availability)
 window.showProductPage = showProductPage;
 window.goBack = goBack;
