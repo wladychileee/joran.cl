@@ -29,7 +29,7 @@
     <!-- Performance & Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.min.css?v=20251001">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
@@ -73,7 +73,7 @@
 </head>
 <body>
     <!-- Gracias Banner -->
-    <div id="thanks-banner" class="thanks-banner" role="status" aria-live="polite">
+    <div id="thanks-banner" class="thanks-banner" role="status" aria-live="polite" style="display: none;">
         GRACIAS POR CONFIAR EN NOSOTROS — SOLICITUD RECIBIDA. EN BREVE LO CONTACTAREMOS.
         <button type="button" class="close-thanks" aria-label="Cerrar aviso">Cerrar</button>
     </div>
@@ -475,20 +475,7 @@
                             <input type="file" id="file-upload-ferreteria" accept=".pdf,.xlsx,.xls,.docx,.doc,.jpg,.jpeg,.png" onchange="handleFileUpload(this, 'ferreteria')" style="display: none;">
                         </div>
                         <div id="file-preview-ferreteria" class="file-preview"></div>
-                    </div>
-
-                    <div class="quote-improvement-section">
-                        <h4>¿Quieres mejorar una cotización de otro proveedor?</h4>
-                        <p class="improvement-disclaimer">
-                            <i class="fas fa-info-circle"></i>
-                            Comparte tu cotización actual y analizaremos si podemos ofrecer mejores condiciones. 
-                            <strong>No garantizamos mejores precios</strong>, pero evaluaremos cada caso según disponibilidad y condiciones del mercado.
-                        </p>
-                        <button class="btn btn-secondary" onclick="openImprovementModal()">
-                            <i class="fas fa-chart-line"></i> Solicitar Análisis de Cotización
-                        </button>
-                    </div>
-                </div>
+                    </div></div>
             </div>
         </div>
 
@@ -535,20 +522,7 @@
                             <input type="file" id="file-upload-medicos" accept=".pdf,.xlsx,.xls,.docx,.doc,.jpg,.jpeg,.png" onchange="handleFileUpload(this, 'medicos')" style="display: none;">
                         </div>
                         <div id="file-preview-medicos" class="file-preview"></div>
-                    </div>
-
-                    <div class="quote-improvement-section">
-                        <h4>¿Quieres mejorar una cotización de otro proveedor?</h4>
-                        <p class="improvement-disclaimer">
-                            <i class="fas fa-info-circle"></i>
-                            Comparte tu cotización actual y analizaremos si podemos ofrecer mejores condiciones. 
-                            <strong>No garantizamos mejores precios</strong>, pero evaluaremos cada caso según disponibilidad y condiciones del mercado.
-                        </p>
-                        <button class="btn btn-secondary" onclick="openImprovementModal()">
-                            <i class="fas fa-chart-line"></i> Solicitar Análisis de Cotización
-                        </button>
-                    </div>
-                    <div class="section-quick-links">
+                    </div><div class="section-quick-links">
                         <h4>Enlaces Rápidos</h4>
                         <ul>
                             <li><a href="#inicio">Inicio</a></li>
@@ -604,20 +578,7 @@
                             <input type="file" id="file-upload-oficina" accept=".pdf,.xlsx,.xls,.docx,.doc,.jpg,.jpeg,.png" onchange="handleFileUpload(this, 'oficina')" style="display: none;">
                         </div>
                         <div id="file-preview-oficina" class="file-preview"></div>
-                    </div>
-
-                    <div class="quote-improvement-section">
-                        <h4>¿Quieres mejorar una cotización de otro proveedor?</h4>
-                        <p class="improvement-disclaimer">
-                            <i class="fas fa-info-circle"></i>
-                            Comparte tu cotización actual y analizaremos si podemos ofrecer mejores condiciones. 
-                            <strong>No garantizamos mejores precios</strong>, pero evaluaremos cada caso según disponibilidad y condiciones del mercado.
-                        </p>
-                        <button class="btn btn-secondary" onclick="openImprovementModal()">
-                            <i class="fas fa-chart-line"></i> Solicitar Análisis de Cotización
-                        </button>
-                    </div>
-                    <div class="section-quick-links">
+                    </div><div class="section-quick-links">
                         <h4>Enlaces Rápidos</h4>
                         <ul>
                             <li><a href="#inicio">Inicio</a></li>
@@ -673,20 +634,7 @@
                             <input type="file" id="file-upload-muebles" accept=".pdf,.xlsx,.xls,.docx,.doc,.jpg,.jpeg,.png" onchange="handleFileUpload(this, 'muebles')" style="display: none;">
                         </div>
                         <div id="file-preview-muebles" class="file-preview"></div>
-                    </div>
-
-                    <div class="quote-improvement-section">
-                        <h4>¿Quieres mejorar una cotización de otro proveedor?</h4>
-                        <p class="improvement-disclaimer">
-                            <i class="fas fa-info-circle"></i>
-                            Comparte tu cotización actual y analizaremos si podemos ofrecer mejores condiciones. 
-                            <strong>No garantizamos mejores precios</strong>, pero evaluaremos cada caso según disponibilidad y condiciones del mercado.
-                        </p>
-                        <button class="btn btn-secondary" onclick="openImprovementModal()">
-                            <i class="fas fa-chart-line"></i> Solicitar Análisis de Cotización
-                        </button>
-                    </div>
-                </div>
+                    </div></div>
             </div>
         </div>
 
@@ -860,7 +808,7 @@
         <i class="fab fa-whatsapp"></i>
     </a>
 
-    <script src="script.js"></script>
+    <script src="script.js?v=20251001"></script>
     <script>
       // Captcha amigable con rompecabezas (slider)
       (function(){
@@ -976,3 +924,4 @@
     </script>
 </body>
 </html>
+
