@@ -1517,7 +1517,7 @@ body.product-view .navbar {
 .puzzle-stage { position:relative; height:80px; border-radius:10px; overflow:hidden; background:#e2e8f0 url('logo.png') center/contain no-repeat; }
 .puzzle-cutout { position:absolute; top:20px; left:calc(50% - 30px); width:60px; height:40px; border:2px dashed rgba(0,0,0,0.2); border-radius:8px; background:rgba(255,255,255,0.3); }
 .puzzle-piece { position:absolute; top:20px; left:8px; width:60px; height:40px; border-radius:8px; background:#ffffff; box-shadow:0 3px 10px rgba(0,0,0,0.15); background:url('logo.png') center/contain no-repeat; }
-.puzzle-track { position:relative; margin-top:10px; height:34px; background:#e5e7eb; border-radius:999px; display:flex; align-items:center; padding:0 10px; }
+.puzzle-track { position:relative; margin-top:10px; height:34px; background:#e5e7eb; border-radius:999px; display:flex; align-items:center; padding:0 10px; overflow:hidden; }
 .puzzle-slider { position:absolute; left:10px; width:34px; height:34px; background:#10b981; color:#fff; border-radius:999px; display:flex; align-items:center; justify-content:center; cursor:grab; box-shadow:0 4px 10px rgba(16,185,129,0.3); }
 .puzzle-slider:active { cursor:grabbing; }
 .puzzle-hint { margin-left:52px; color:#64748b; font-size:13px; }
@@ -1525,6 +1525,13 @@ body.product-view .navbar {
 .puzzle-captcha.verified .puzzle-success { display:block; }
 .puzzle-captcha.verified .puzzle-stage,
 .puzzle-captcha.verified .puzzle-track { outline:2px solid #10b981; }
+
+/* Ensure product-page back button stays clickable above captcha or previews */
+.back-btn { position: relative; z-index: 5; }
+
+/* Prevent file preview blocks from overlapping interactive controls */
+.file-preview,
+.file-upload-section { position: relative; z-index: 1; }
 
 /* Product Search */
 .product-search { display:flex; justify-content:center; margin: 0 0 24px 0; }
