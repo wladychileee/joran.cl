@@ -20,6 +20,22 @@ if (mobileMenu && navMenu) {
     });
 }
 
+// Hide all quote-improvement UI globally as per requirement
+function disableQuoteImprovementFeature() {
+    try {
+        // Inject CSS to hide any remaining sections
+        const style = document.createElement('style');
+        style.setAttribute('data-hide-improvement', '1');
+        style.textContent = `.quote-improvement-section{display:none !important;}`;
+        document.head.appendChild(style);
+        // Remove improvement modal if present in DOM
+        const impModal = document.getElementById('improvement-modal');
+        if (impModal && impModal.parentElement) {
+            impModal.parentElement.removeChild(impModal);
+        }
+    } catch(_) {}
+}
+
 // Close mobile menu when clicking on a link
 document.querySelectorAll('.nav-link').forEach(link => {
     link.addEventListener('click', () => {
@@ -752,6 +768,8 @@ function setupAjaxForm(formId) {
 
 function initFormsAndButtons() {
     try {
+        // Disable quote improvement feature globally
+        disableQuoteImprovementFeature();
         // Activar AJAX en formularios principales
         setupAjaxForm('contact-form');
         setupAjaxForm('quote-form');
