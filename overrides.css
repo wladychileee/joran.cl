@@ -1,0 +1,52 @@
+/* Overrides to align mini-form and back button to blue palette */
+
+/* Mini-form inside file preview (inline product quote) */
+.file-preview .quote-form {
+  background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #60a5fa 100%);
+  color: #ffffff;
+  border: 0;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(30, 58, 138, 0.25);
+}
+.file-preview .quote-form label {
+  color: #ffffff;
+  font-weight: 700;
+}
+.file-preview .quote-form input[type="text"],
+.file-preview .quote-form input[type="email"],
+.file-preview .quote-form input[type="tel"],
+.file-preview .quote-form textarea {
+  background: #ffffff;
+  color: #111827;
+  border: 0;
+}
+.file-preview .quote-form input:focus,
+.file-preview .quote-form textarea:focus {
+  outline: none;
+  border-color: #1e3a8a;
+  box-shadow: 0 0 0 3px rgba(30, 58, 138, 0.15);
+}
+.file-preview .quote-form .btn.btn-primary {
+  background: #1e3a8a;
+  border: 0;
+  color: #ffffff;
+}
+.file-preview .quote-form .btn.btn-primary:hover {
+  background: #0f2f6a;
+}
+.file-preview .quote-form .btn.btn-secondary {
+  background: #0ea5e9;
+  border: 0;
+  color: #ffffff;
+}
+
+/* Back button on product pages */
+.back-btn {
+  background: #1e3a8a !important;
+  border: 0 !important;
+  box-shadow: 0 4px 15px rgba(30, 58, 138, 0.35) !important;
+}
+.back-btn:hover {
+  background: #0f2f6a !important;
+  box-shadow: 0 6px 20px rgba(30, 58, 138, 0.45) !important;
+}
