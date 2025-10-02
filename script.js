@@ -1,4 +1,4 @@
-﻿// Mobile Navigation Toggle
+// Mobile Navigation Toggle
 const mobileMenu = document.getElementById('mobile-menu');
 const navMenu = document.querySelector('.nav-menu');
 
@@ -451,10 +451,10 @@ function displayFilePreview(fileInfo, category) {
             <div class="form-group"><label>Nombre de la Empresa *</label>
                 <input type="text" name="company" placeholder="Nombre de tu empresa" required>
             </div>
-            <div class="form-group"><label>Correo Electr?nico *</label>
+            <div class="form-group"><label>Correo Electrónico *</label>
                 <input type="email" name="email" placeholder="correo@empresa.cl" required>
             </div>
-            <div class="form-group"><label>Tel?fono *</label>
+            <div class="form-group"><label>Teléfono *</label>
                 <input type="tel" name="phone" placeholder="+56 9 1234 5678" required>
             </div>
             <div class="quote-footer" style="display:flex; gap:8px;">
@@ -465,9 +465,9 @@ function displayFilePreview(fileInfo, category) {
                     Eliminar
                 </button>
             </div>
-            <input type="hidden" name="_subject" value="Adjunto de Cotizaci?n desde secci?n ${category}">
+            <input type="hidden" name="_subject" value="Adjunto de Cotización desde sección ${category}">
             <input type="hidden" name="_template" value="table">
-            <input type="hidden" name="_next" value="thanks.html">
+            <input type="hidden" name="_next" value="https://joran.cl/?enviado=1">
             <input type="hidden" name="_captcha" value="false">
         </form>
     `;
@@ -488,31 +488,24 @@ function displayFilePreview(fileInfo, category) {
     requiredInputs.forEach(inp => inp.addEventListener('input', validate));
     validate();
 
-    // Manejar env?o AJAX con FormSubmit incluyendo el archivo seleccionado
-    formEl.addEventListener('submit', async (e) => {
-        e.preventDefault();
-        try {
-            submitBtn.disabled = true;
-            const originalHTML = submitBtn.innerHTML;
-            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Enviando...';
-
-            const action = 'https://formsubmit.co/ajax/cotizaciones@joran.cl';
-            const fd = new FormData(formEl);
-            // Adjuntar el archivo real
-            if (fileInfo && fileInfo.file) {
-                fd.append('file', fileInfo.file, fileInfo.name);
-            }
-            const res = await fetch(action, { method: 'POST', body: fd, headers: { 'Accept': 'application/json' } });
-            if (!res.ok) throw new Error('send_error');
-            try { await res.json(); } catch(_) {}
-            // Redirigir a gracias
-            console.log('[upload] sent successfully for', category);
-            window.location.href = 'thanks.html';
-        } catch(err) {
-            alert('No se pudo enviar el formulario. Int?ntalo nuevamente.');
-            submitBtn.disabled = false;
+    // Configurar envío estándar para soportar adjuntos en FormSubmit
+    try {
+        // Usar endpoint estándar (no AJAX)
+        formEl.setAttribute('action', 'https://formsubmit.co/cotizaciones@joran.cl');
+        formEl.setAttribute('method', 'POST');
+        formEl.setAttribute('enctype', 'multipart/form-data');
+        // Mover el input real dentro del formulario (por id predecible en index.html)
+        const originalInput = document.getElementById(`file-upload-${category}`);
+        if (originalInput && originalInput.parentElement !== formEl) {
+            originalInput.name = 'attachment';
+            originalInput.style.display = 'none';
+            formEl.appendChild(originalInput);
         }
-    });
+        // Spinner de envío sin impedir el submit nativo
+        formEl.addEventListener('submit', () => {
+            try { submitBtn.disabled = true; submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Enviando...'; } catch(_) {}
+        }, { once: true });
+    } catch(_) {}
 
     // Remover archivo y limpiar preview
     removeBtn.addEventListener('click', () => {

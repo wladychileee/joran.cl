@@ -124,7 +124,7 @@
                 <button class="close-cart" onclick="closeQuoteModal()">&times;</button>
             </div>
             <div class="quote-form-container">
-                <form id="quote-form" class="quote-form" action="https://formsubmit.co/ajax/cotizaciones@joran.cl" method="POST">
+                <form id="quote-form" class="quote-form" action="https://formsubmit.co/cotizaciones@joran.cl" method="POST">
                     <div class="form-group">
                         <label for="quote-name">Nombre Completo *</label>
                         <input type="text" id="quote-name" name="name" required>
@@ -145,23 +145,7 @@
                         <label for="quote-message">Mensaje Adicional</label>
                         <textarea id="quote-message" name="message" rows="3" placeholder="Información adicional sobre su cotización..."></textarea>
                     </div>
-                    <!-- Captcha amigable con rompecabezas -->
-                    <div class="puzzle-captcha" data-form="quote">
-                        <div class="puzzle-header">
-                            <img src="logo.png" alt="Logo" loading="lazy">
-                            <span>Arrastra el control para encajar la pieza en el recorte</span>
-                        </div>
-                        <div class="puzzle-stage">
-                            <div class="puzzle-cutout" aria-hidden="true"></div>
-                            <div class="puzzle-piece" aria-hidden="true"></div>
-                        </div>
-                        <div class="puzzle-track">
-                            <div class="puzzle-slider" role="slider" aria-label="Verificación de seguridad" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><i class="fas fa-arrows-alt-h"></i></div>
-                            <span class="puzzle-hint">Desliza para verificar</span>
-                        </div>
-                        <div class="puzzle-success"><i class="fas fa-check-circle"></i> Verificado</div>
-                        <input type="hidden" name="captcha_verified" value="false">
-                    </div>
+                    
                     <div class="quote-footer">
                         <button type="submit" class="btn btn-primary" disabled>
                             <i class="fas fa-envelope"></i> Enviar Cotización
@@ -171,7 +155,7 @@
                         </button>
                         <input type="hidden" name="_subject" value="Nueva solicitud de Cotización desde el sitio">
                         <input type="hidden" name="_template" value="table">
-                        <input type="hidden" name="_next" value="https://wladychileee.github.io/pagina-web-joran/?enviado=1">
+                        <input type="hidden" name="_next" value="https://joran.cl/?enviado=1">
                         <input type="hidden" name="_captcha" value="false">
                     </div>
                 </form>
@@ -348,7 +332,7 @@
                         </div>
                     </div>
                 </div>
-                <form id="contact-form" class="contact-form" action="https://formsubmit.co/ajax/cotizaciones@joran.cl" method="POST" enctype="multipart/form-data">
+                <form id="contact-form" class="contact-form" action="https://formsubmit.co/cotizaciones@joran.cl" method="POST" enctype="multipart/form-data">
                     <div class="form-group">
                         <input type="text" name="company" placeholder="Nombre de tu Empresa" required>
                     </div>
@@ -363,28 +347,12 @@
                     </div>
                     <div class="form-group">
                         <label for="contact-file">Adjuntar cotización (opcional)</label>
-                        <input type="file" id="contact-file" name="file" accept=".pdf,.xlsx,.xls,.docx,.doc,.jpg,.jpeg,.png">
+                        <input type="file" id="contact-file" name="attachment" accept=".pdf,.xlsx,.xls,.docx,.doc,.jpg,.jpeg,.png">
                     </div>
-                    <!-- Captcha amigable con rompecabezas -->
-                    <div class="puzzle-captcha" data-form="contact">
-                        <div class="puzzle-header">
-                            <img src="logo.png" alt="Logo">
-                            <span>Arrastra el control para encajar la pieza en el recorte</span>
-                        </div>
-                        <div class="puzzle-stage">
-                            <div class="puzzle-cutout" aria-hidden="true"></div>
-                            <div class="puzzle-piece" aria-hidden="true"></div>
-                        </div>
-                        <div class="puzzle-track">
-                            <div class="puzzle-slider" role="slider" aria-label="Verificación de seguridad" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><i class="fas fa-arrows-alt-h"></i></div>
-                            <span class="puzzle-hint">Desliza para verificar</span>
-                        </div>
-                        <div class="puzzle-success"><i class="fas fa-check-circle"></i> Verificado</div>
-                        <input type="hidden" name="captcha_verified" value="false">
-                    </div>
+                    
                     <input type="hidden" name="_subject" value="Nueva solicitud de Contacto desde el sitio">
                     <input type="hidden" name="_template" value="table">
-                    <input type="hidden" name="_next" value="https://wladychileee.github.io/pagina-web-joran/?enviado=1">
+                    <input type="hidden" name="_next" value="https://joran.cl/?enviado=1">
                     <input type="hidden" name="_captcha" value="false">
                     <button type="submit" class="btn btn-primary" disabled>Solicitar Cotización</button>
                 </form>
@@ -811,96 +779,7 @@
 
     <script src="script.js"></script>
     <script>
-      // Captcha amigable con rompecabezas (slider)
       (function(){
-        function clamp(v,min,max){return Math.max(min,Math.min(max,v));}
-
-        function initPuzzleCaptcha(){
-          document.querySelectorAll('.puzzle-captcha').forEach(box => {
-            if (box.dataset.inited) return; // prevent double init
-            box.dataset.inited = '1';
-            const stage = box.querySelector('.puzzle-stage');
-            const cutout = box.querySelector('.puzzle-cutout');
-            const piece = box.querySelector('.puzzle-piece');
-            const track = box.querySelector('.puzzle-track');
-            const slider = box.querySelector('.puzzle-slider');
-            const hidden = box.querySelector('input[name="captcha_verified"]');
-            const form = box.closest('form');
-            const submitBtn = form ? form.querySelector('button[type="submit"]') : null;
-
-            if (!stage || !cutout || !piece || !track || !slider) return;
-
-            const startPieceLeft = 8; // CSS initial
-            function getTargetLeft(){
-              const rectStage = stage.getBoundingClientRect();
-              const rectCut = cutout.getBoundingClientRect();
-              return Math.round(rectCut.left - rectStage.left); // target for piece.left
-            }
-
-            function setVerified(){
-              box.classList.add('verified');
-              if (hidden) hidden.value = 'true';
-              if (submitBtn) submitBtn.disabled = false;
-              // lock slider
-              slider.style.pointerEvents = 'none';
-            }
-
-            function onDragStart(clientX){
-              const trackRect = track.getBoundingClientRect();
-              const sliderRect = slider.getBoundingClientRect();
-              const stageRect = stage.getBoundingClientRect();
-              const maxLeft = trackRect.width - sliderRect.width - 10; // 10px right padding
-              const minLeft = 10; // left padding per CSS
-              const originLeft = parseFloat(slider.style.left || sliderRect.left - trackRect.left) || minLeft;
-              const deltaX0 = clientX - (trackRect.left + originLeft);
-              const targetPieceLeft = getTargetLeft();
-              const pieceMax = targetPieceLeft; // we map end to target
-
-              function onDragMove(moveX){
-                let newLeft = clamp(moveX - trackRect.left - deltaX0, minLeft, maxLeft);
-                slider.style.left = newLeft + 'px';
-                slider.setAttribute('aria-valuenow', Math.round((newLeft-minLeft)/(maxLeft-minLeft)*100));
-                // map slider [minLeft,maxLeft] -> piece [startPieceLeft, pieceMax]
-                const t = (newLeft - minLeft) / (maxLeft - minLeft);
-                const pieceLeft = Math.round(startPieceLeft + t * (pieceMax - startPieceLeft));
-                piece.style.left = pieceLeft + 'px';
-              }
-
-              function onDragEnd(){
-                // success if piece near cutout (tolerance 6px)
-                const currentPieceLeft = parseInt(piece.style.left || startPieceLeft, 10) || startPieceLeft;
-                const target = targetPieceLeft;
-                if (Math.abs(currentPieceLeft - target) <= 6){
-                  // snap to target
-                  piece.style.left = target + 'px';
-                  setVerified();
-                } else {
-                  // reset slider and piece
-                  slider.style.left = minLeft + 'px';
-                  slider.setAttribute('aria-valuenow','0');
-                  piece.style.left = startPieceLeft + 'px';
-                }
-                window.removeEventListener('mousemove', onMM);
-                window.removeEventListener('touchmove', onTM);
-                window.removeEventListener('mouseup', onMU);
-                window.removeEventListener('touchend', onMU);
-              }
-
-              const onMM = (e)=>onDragMove(e.clientX);
-              const onTM = (e)=>{ if (e.touches && e.touches[0]) onDragMove(e.touches[0].clientX); };
-              const onMU = ()=>onDragEnd();
-              window.addEventListener('mousemove', onMM);
-              window.addEventListener('touchmove', onTM, {passive:false});
-              window.addEventListener('mouseup', onMU);
-              window.addEventListener('touchend', onMU);
-            }
-
-            // Setup interactions
-            slider.addEventListener('mousedown', (e)=>{ e.preventDefault(); onDragStart(e.clientX); });
-            slider.addEventListener('touchstart', (e)=>{ if (e.touches && e.touches[0]) { onDragStart(e.touches[0].clientX); } }, {passive:true});
-          });
-        }
-
         function initThanksBanner(){
           const params = new URLSearchParams(window.location.search);
           const banner = document.getElementById('thanks-banner');
@@ -915,11 +794,10 @@
           }
           if (closeBtn) closeBtn.addEventListener('click', ()=> banner.style.display = 'none');
         }
-
         if (document.readyState === 'loading') {
-          document.addEventListener('DOMContentLoaded', () => { initPuzzleCaptcha(); initThanksBanner(); });
+          document.addEventListener('DOMContentLoaded', initThanksBanner);
         } else {
-          initPuzzleCaptcha(); initThanksBanner();
+          initThanksBanner();
         }
       })();
     </script>
