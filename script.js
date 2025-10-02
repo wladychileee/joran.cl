@@ -20,8 +20,52 @@ if (mobileMenu && navMenu) {
     });
 }
 
+// --- FormSubmit AJAX fallback to avoid server 500 page ---
+async function submitFormViaFormSubmitAjax(formEl) {
+    try {
+        const fd = new FormData(formEl);
+        // Ensure target email
+        const endpoint = 'https://formsubmit.co/ajax/cotizaciones@joran.cl';
+        const resp = await fetch(endpoint, {
+            method: 'POST',
+            body: fd,
+        });
+        if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+        // On success, redirect to _next or thanks.html
+        const next = formEl.querySelector('input[name="_next"]')?.value || 'https://joran.cl/thanks.html';
+        window.location.href = next + (next.includes('?') ? '&' : '?') + 'enviado=1';
+    } catch (err) {
+        console.error('FormSubmit AJAX error', err);
+        showFileNotification('No se pudo enviar en este momento. Intenta nuevamente en unos minutos.');
+    }
+}
+
 // --- Contact form multi-file attachments (sequential) ---
 let contactFiles = [];
+const MAX_TOTAL_BYTES = Math.floor(4.5 * 1024 * 1024); // ~4.5MB safety under FormSubmit 5MB
+
+function formatBytes(n){
+    if (!Number.isFinite(n)) return '0 Bytes';
+    const k = 1024, sizes = ['Bytes','KB','MB','GB'];
+    const i = Math.floor(Math.log(Math.max(n,1)) / Math.log(k));
+    return `${(n/Math.pow(k,i)).toFixed(2)} ${sizes[i]}`;
+}
+
+function updateContactSizeInfo() {
+    const preview = document.getElementById('contact-file-preview');
+    if (!preview) return;
+    let info = document.getElementById('contact-file-size-info');
+    if (!info) {
+        info = document.createElement('div');
+        info.id = 'contact-file-size-info';
+        info.style.cssText = 'margin:6px 0 0 0; font-size:12px; color:#475569;';
+        preview.parentElement && preview.parentElement.appendChild(info);
+    }
+    const total = contactFiles.reduce((sum, f) => sum + (f.file?.size || 0), 0);
+    const ok = total <= MAX_TOTAL_BYTES;
+    info.textContent = `Tamaño total adjuntos: ${formatBytes(total)} / Límite recomendado: ${formatBytes(MAX_TOTAL_BYTES)}`;
+    info.style.color = ok ? '#475569' : '#dc2626';
+}
 
 function handleContactFileAttach(input) {
     const file = input.files && input.files[0];
@@ -36,7 +80,8 @@ function handleContactFileAttach(input) {
         id: fileId,
         name: file.name,
         size: formatFileSize(file.size),
-        type: file.type
+        type: file.type,
+        file: file
     };
     contactFiles.push(fileInfo);
 
@@ -64,7 +109,7 @@ function handleContactFileAttach(input) {
     const originalParent = input.parentElement;
     const originalId = input.id || 'contact-file';
     input.id = `${originalId}-${fileId}`;
-    input.name = 'attachments[]';
+    input.name = 'attachment';
     input.style.display = 'none';
     contactFormEl.appendChild(input);
     item.dataset.inputId = input.id;
@@ -79,6 +124,8 @@ function handleContactFileAttach(input) {
         originalParent.appendChild(replacement);
     }
 
+    updateContactSizeInfo();
+
     // Remove handler for this specific file
     const removeBtn = item.querySelector('.remove-file');
     removeBtn.addEventListener('click', () => {
@@ -89,6 +136,7 @@ function handleContactFileAttach(input) {
         if (inForm) contactFormEl.removeChild(inForm);
         // remove preview item
         item.remove();
+        updateContactSizeInfo();
     });
 }
 
@@ -97,6 +145,21 @@ document.addEventListener('DOMContentLoaded', () => {
     const contactInput = document.getElementById('contact-file');
     if (contactInput) {
         contactInput.addEventListener('change', function(){ handleContactFileAttach(this); });
+    }
+    // Add submit guard for total size on contact form
+    const contactFormEl = document.getElementById('contact-form');
+    if (contactFormEl) {
+        contactFormEl.addEventListener('submit', async (e) => {
+            const total = contactFiles.reduce((sum, f) => sum + (f.file?.size || 0), 0);
+            if (total > MAX_TOTAL_BYTES) {
+                e.preventDefault();
+                showFileNotification('Los adjuntos superan el límite permitido. Reduce el tamaño total.');
+                return;
+            }
+            // Use AJAX endpoint to avoid server 500 error page
+            e.preventDefault();
+            await submitFormViaFormSubmitAjax(contactFormEl);
+        });
     }
 });
 
@@ -554,6 +617,25 @@ function displayFilePreview(fileInfo, category) {
     const fileList = container.querySelector('.file-list');
     const submitBtn = formEl.querySelector('button[type="submit"]');
 
+    // Helper: total size and info UI per category
+    function totalCategoryBytes(){
+        const arr = uploadedFiles[category] || [];
+        return arr.reduce((s, f) => s + (f.file?.size || 0), 0);
+    }
+    function updateCategorySizeInfo(){
+        let info = container.querySelector('.size-info');
+        if (!info){
+            info = document.createElement('div');
+            info.className = 'size-info';
+            info.style.cssText = 'margin:6px 0 0 0; font-size:12px; color:#475569;';
+            container.appendChild(info);
+        }
+        const total = totalCategoryBytes();
+        const ok = total <= MAX_TOTAL_BYTES;
+        info.textContent = `Tamaño total adjuntos: ${formatBytes(total)} / Límite recomendado: ${formatBytes(MAX_TOTAL_BYTES)}`;
+        info.style.color = ok ? '#475569' : '#dc2626';
+    }
+
     // Añadir item visual para el archivo con botón eliminar por archivo
     const item = document.createElement('div');
     item.className = 'file-item';
@@ -577,9 +659,11 @@ function displayFilePreview(fileInfo, category) {
     function validate() {
         const allOk = requiredInputs.every(inp => (inp.value || '').trim().length > 0);
         const hasFiles = fileList.querySelectorAll('.file-item').length > 0;
-        submitBtn.disabled = !(allOk && hasFiles);
+        const sizeOk = totalCategoryBytes() <= MAX_TOTAL_BYTES;
+        submitBtn.disabled = !(allOk && hasFiles && sizeOk);
     }
     requiredInputs.forEach(inp => inp.addEventListener('input', validate));
+    updateCategorySizeInfo();
     validate();
 
     // Configurar envío estándar y anexar input real; crear reemplazo para mantener el área de carga activa
@@ -595,7 +679,7 @@ function displayFilePreview(fileInfo, category) {
             if (originalParent) {
                 // Mover input real al form (con id único) para que el navegador lo envíe
                 originalInput.id = `${originalId}-${fileInfo.id}`;
-                originalInput.name = 'attachments[]';
+                originalInput.name = 'attachment';
                 originalInput.style.display = 'none';
                 formEl.appendChild(originalInput);
 
@@ -613,9 +697,16 @@ function displayFilePreview(fileInfo, category) {
             }
         }
 
-        // Spinner de envío
-        formEl.addEventListener('submit', () => {
+        // Envío vía AJAX para evitar página 500 del servidor
+        formEl.addEventListener('submit', async (e) => {
+            if (totalCategoryBytes() > MAX_TOTAL_BYTES) {
+                e.preventDefault();
+                showFileNotification('Los adjuntos superan el límite permitido. Reduce el tamaño total.');
+                return;
+            }
+            e.preventDefault();
             try { submitBtn.disabled = true; submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Enviando...'; } catch(_) {}
+            await submitFormViaFormSubmitAjax(formEl);
         }, { once: true });
     } catch(_) {}
 
@@ -634,6 +725,8 @@ function displayFilePreview(fileInfo, category) {
         }
         // quitar del DOM
         item.remove();
+        updateCategorySizeInfo();
+        validate();
         // si ya no quedan archivos, quitar contenedor entero
         if (!fileList.querySelector('.file-item')) {
             container.remove();
