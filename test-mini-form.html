@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex,nofollow" />
+  <title>Prueba Mini‑Formulario con Adjuntos</title>
+  <link rel="icon" href="logo.png" type="image/png">
+  <link rel="stylesheet" href="styles.min.css?v=20251001">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body{max-width:860px;margin:32px auto;padding:0 16px}
+    .card{background:#fff;border:1px solid #e5e7eb;border-radius:16px;padding:20px;box-shadow:0 8px 24px rgba(0,0,0,.06)}
+    h1{margin:.2rem 0 1rem 0}
+    .hint{color:#475569;margin:.5rem 0 1rem 0}
+    .upload{border:2px dashed #93c5fd;border-radius:12px;padding:20px;text-align:center;cursor:pointer;background:linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #60a5fa 100%);color:#fff}
+    .quote-form{background:linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #60a5fa 100%);padding:16px;border-radius:12px;color:#fff;margin-top:12px}
+    .quote-form .form-group input{background:#ffffff;border:0;color:#111827}
+    .btn.btn-primary{background:#1e3a8a;border:0}
+    .btn.btn-secondary{background:#0ea5e9;border:0}
+  </style>
+</head>
+<body>
+  <main class="card">
+    <h1>Prueba: Mini‑Formulario con Adjuntos (FormSubmit)</h1>
+    <p class="hint">Este test replica el mini‑form con colores del sitio, envío estándar y adjunto real.</p>
+
+    <div class="upload" onclick="document.getElementById('file-test').click()">
+      <i class="fas fa-cloud-upload-alt"></i>
+      <p>Click aquí o arrastra tu archivo</p>
+      <small>PDF, Excel, Word, Imágenes</small>
+      <input type="file" id="file-test" accept=".pdf,.xlsx,.xls,.docx,.doc,.jpg,.jpeg,.png" style="display:none" onchange="renderMiniForm(this)">
+    </div>
+
+    <div id="mini-form-preview"></div>
+  </main>
+
+  <script>
+    function renderMiniForm(input){
+      const file = input.files[0];
+      if(!file) return;
+      const wrap = document.createElement('div');
+      wrap.innerHTML = `
+        <div class="file-info" style="align-items:flex-start;gap:12px;display:flex;margin-top:10px">
+          <i class="fas fa-file" style="font-size:22px"></i>
+          <div>
+            <h5 style="margin:0 0 4px 0;">${file.name}</h5>
+            <small>${(file.size/1024).toFixed(1)} KB</small>
+          </div>
+        </div>
+        <form id="mini-test-form" class="quote-form" method="POST" action="https://formsubmit.co/cotizaciones@joran.cl" enctype="multipart/form-data">
+          <div class="form-group"><label>Nombre Personal *</label>
+            <input type="text" name="name" placeholder="Tu nombre" required>
+          </div>
+          <div class="form-group"><label>Nombre de la Empresa *</label>
+            <input type="text" name="company" placeholder="Nombre de tu empresa" required>
+          </div>
+          <div class="form-group"><label>Correo Electrónico *</label>
+            <input type="email" name="email" placeholder="correo@empresa.cl" required>
+          </div>
+          <div class="form-group"><label>Teléfono *</label>
+            <input type="tel" name="phone" placeholder="+56 9 1234 5678" required>
+          </div>
+          <div class="quote-footer" style="display:flex; gap:8px;">
+            <button type="submit" class="btn btn-primary">
+              <i class="fas fa-paper-plane"></i> Enviar
+            </button>
+            <button type="button" class="btn btn-secondary" onclick="this.closest('main').querySelector('#mini-form-preview').innerHTML=''">
+              Eliminar
+            </button>
+          </div>
+          <input type="hidden" name="_subject" value="[TEST] Adjunto desde mini‑form">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_next" value="https://joran.cl/?enviado=1">
+          <input type="hidden" name="_captcha" value="false">
+        </form>
+      `;
+      const cont = document.getElementById('mini-form-preview');
+      cont.innerHTML = '';
+      cont.appendChild(wrap);
+      const formEl = document.getElementById('mini-test-form');
+      // Mover input real al form con nombre correcto
+      try { input.name = 'attachment'; input.style.display='none'; formEl.appendChild(input); } catch(e){}
+      formEl.addEventListener('submit', function(){
+        const btn = formEl.querySelector('button[type="submit"]');
+        if(btn){ btn.disabled = true; btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Enviando...'; }
+      }, {once:true});
+    }
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js" defer></script>
+</body>
+</html>

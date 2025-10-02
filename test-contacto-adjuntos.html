@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex,nofollow" />
+  <title>Prueba Contacto con Adjuntos</title>
+  <link rel="icon" href="logo.png" type="image/png">
+  <link rel="stylesheet" href="styles.min.css?v=20251001">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body{max-width:860px;margin:32px auto;padding:0 16px}
+    .card{background:#fff;border:1px solid #e5e7eb;border-radius:16px;padding:20px;box-shadow:0 8px 24px rgba(0,0,0,.06)}
+    h1{margin:.2rem 0 1rem 0}
+    .hint{color:#475569;margin:.5rem 0 1rem 0}
+    form{display:grid;gap:12px}
+    input,textarea,button{font:inherit}
+    input,textarea{padding:10px 12px;border:2px solid #e2e8f0;border-radius:8px}
+    button{padding:10px 14px;border:0;border-radius:999px;background:#1e3a8a;color:#fff;font-weight:700;cursor:pointer}
+  </style>
+</head>
+<body>
+  <main class="card">
+    <h1>Prueba: Contacto con Adjuntos (FormSubmit)</h1>
+    <p class="hint">Este formulario usa envío estándar y el campo <code>name="attachment"</code>. Debe redirigir a <code>/?enviado=1</code>.</p>
+
+    <form method="POST" action="https://formsubmit.co/cotizaciones@joran.cl" enctype="multipart/form-data">
+      <input type="text" name="company" placeholder="Nombre de tu Empresa" required>
+      <input type="email" name="email" placeholder="Email Corporativo" required>
+      <input type="tel" name="phone" placeholder="Teléfono de Contacto" required>
+      <textarea name="message" placeholder="Describe los productos que necesitas cotizar..." rows="4" required></textarea>
+      <label for="test-contact-file">Adjuntar cotización (opcional)</label>
+      <input type="file" id="test-contact-file" name="attachment" accept=".pdf,.xlsx,.xls,.docx,.doc,.jpg,.jpeg,.png">
+
+      <input type="hidden" name="_subject" value="[TEST] Contacto con adjunto">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_next" value="https://joran.cl/?enviado=1">
+      <input type="hidden" name="_captcha" value="false">
+
+      <button type="submit">Enviar Test</button>
+    </form>
+  </main>
+</body>
+</html>
