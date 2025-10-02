@@ -467,7 +467,7 @@ function displayFilePreview(fileInfo, category) {
             </div>
             <input type="hidden" name="_subject" value="Adjunto de Cotización desde sección ${category}">
             <input type="hidden" name="_template" value="table">
-            <input type="hidden" name="_next" value="https://joran.cl/?enviado=1">
+            <input type="hidden" name="_next" value="https://joran.cl/thanks.html">
             <input type="hidden" name="_captcha" value="false">
         </form>
     `;
@@ -529,7 +529,7 @@ function sendFileViaWhatsApp(fileId, category) {
     const fileInfo = uploadedFiles[category]?.find(f => f.id === fileId);
     if (!fileInfo) return;
     
-    const message = `Hola, tengo una cotizaci?n que necesito procesar. He subido el archivo: "${fileInfo.name}" (${fileInfo.size}). Por favor, ay?denme con este pedido.`;
+    const message = `Hola, tengo una cotización que necesito procesar. He subido el archivo: "${fileInfo.name}" (${fileInfo.size}). Por favor, ayúdenme con este pedido.`;
     const whatsappUrl = `https://wa.me/56962378434?text=${encodeURIComponent(message)}`;
     
     window.open(whatsappUrl, '_blank');
@@ -778,68 +778,7 @@ window.addEventListener('load', () => {
     } catch(_) {}
 });
 
-// --- Env?o AJAX a FormSubmit con redirecci?n a thanks.html ---
-function setupAjaxForm(formId) {
-    const form = document.getElementById(formId);
-    if (!form) return;
-    const action = form.getAttribute('action') || '';
-    // Solo actuar si el action es el endpoint AJAX de FormSubmit
-    if (!/^https:\/\/formsubmit\.co\/ajax\//.test(action)) return;
-
-    form.addEventListener('submit', async (e) => {
-        e.preventDefault();
-        const submitBtn = form.querySelector('button[type="submit"]');
-        const originalHTML = submitBtn ? submitBtn.innerHTML : '';
-        if (submitBtn) {
-            submitBtn.disabled = true;
-            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Enviando...';
-        }
-        try {
-            const formData = new FormData(form);
-            const res = await fetch(action, { method: 'POST', body: formData, headers: { 'Accept': 'application/json' } });
-            if (!res.ok) throw new Error('Error de env?o');
-            try { await res.json(); } catch(_) {}
-
-            // Cerrar modal si es el de cotizaci?n
-            if (formId === 'quote-form' && typeof closeQuoteModal === 'function') {
-                closeQuoteModal();
-            }
-            // Redirigir a p?gina de agradecimiento en espa?ol
-            window.location.href = 'thanks.html';
-        } catch (err) {
-            alert('Hubo un problema al enviar el formulario. Por favor, int?ntalo nuevamente.');
-        } finally {
-            if (submitBtn) {
-                submitBtn.innerHTML = originalHTML || 'Enviar';
-                submitBtn.disabled = false;
-            }
-        }
-    }, { capture: true });
-}
-
-function initFormsAndButtons() {
-    try {
-        // Disable quote improvement feature globally
-        disableQuoteImprovementFeature();
-        // Activar AJAX en formularios principales
-        setupAjaxForm('contact-form');
-        setupAjaxForm('quote-form');
-        setupAjaxForm('attach-quote-form');
-        // Asegurar que los botones de env?o est?n habilitados desde el inicio
-        ['contact-form','quote-form','attach-quote-form'].forEach(id => {
-            const f = document.getElementById(id);
-            const btn = f ? f.querySelector('button[type="submit"]') : null;
-            if (btn) btn.disabled = false;
-        });
-    } catch(_) {}
-}
-
-if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initFormsAndButtons, { once: true });
-} else {
-    // DOM ya cargado: inicializar de inmediato (caso GitHub Pages primera carga)
-    initFormsAndButtons();
-}
+// Eliminar flujo AJAX por completo: usamos envío estándar en todos los formularios
 // Global exposure for inline handlers (ensures availability)
 window.showProductPage = showProductPage;
 window.goBack = goBack;
