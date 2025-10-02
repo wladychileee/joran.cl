@@ -429,8 +429,7 @@ function displayFilePreview(fileInfo, category) {
     const preview = document.getElementById(`file-preview-${category}`);
     const fileIcon = getFileIcon(fileInfo.type);
 
-    // Limpia el preview del category (un archivo a la vez para simplificar UX)
-    preview.innerHTML = '';
+    // No limpiar el preview: permitir múltiples archivos (cada uno con su propio formulario)
 
     const wrap = document.createElement('div');
     wrap.className = 'file-item';
@@ -494,12 +493,27 @@ function displayFilePreview(fileInfo, category) {
         formEl.setAttribute('action', 'https://formsubmit.co/cotizaciones@joran.cl');
         formEl.setAttribute('method', 'POST');
         formEl.setAttribute('enctype', 'multipart/form-data');
-        // Mover el input real dentro del formulario (por id predecible en index.html)
+        // Mover el input real dentro del formulario y crear un reemplazo para mantener el click del área
         const originalInput = document.getElementById(`file-upload-${category}`);
-        if (originalInput && originalInput.parentElement !== formEl) {
-            originalInput.name = 'attachment';
-            originalInput.style.display = 'none';
-            formEl.appendChild(originalInput);
+        if (originalInput) {
+            const originalParent = originalInput.parentElement;
+            const originalId = originalInput.id;
+            if (originalParent && originalInput.parentElement !== formEl) {
+                // Renombrar id para evitar colisión y anexar al form
+                originalInput.id = `${originalId}-${fileInfo.id}`;
+                originalInput.name = 'attachment';
+                originalInput.style.display = 'none';
+                formEl.appendChild(originalInput);
+
+                // Crear input de reemplazo con el id original para que el área siga funcionando
+                const replacement = document.createElement('input');
+                replacement.type = 'file';
+                replacement.id = originalId; // mantener id que usa el onclick del área
+                replacement.accept = originalInput.accept || '.pdf,.xlsx,.xls,.docx,.doc,.jpg,.jpeg,.png';
+                replacement.style.display = 'none';
+                replacement.onchange = function(){ handleFileUpload(this, category); };
+                originalParent.appendChild(replacement);
+            }
         }
         // Spinner de envío sin impedir el submit nativo
         formEl.addEventListener('submit', () => {
