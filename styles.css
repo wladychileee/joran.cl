@@ -1,4 +1,4 @@
-﻿/* Reset and Base Styles */
+/* Reset and Base Styles */
 * {
     margin: 0;
     padding: 0;
@@ -779,26 +779,16 @@ section {
 }
 
 .back-btn {
-    background: #e74c3c;
-    color: white;
-    border: none;
-    padding: 12px 24px;
-    border-radius: 25px;
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
+    /* Inherits visual styles from .btn / .btn-primary; keep only layout tweaks */
     display: flex;
     align-items: center;
     gap: 8px;
     margin-bottom: 30px;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(231, 76, 60, 0.3);
 }
 
 .back-btn:hover {
+    /* Rely on .btn/.btn-primary hover; no custom colors here */
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(231, 76, 60, 0.4);
-    background: #c0392b;
 }
 
 .back-btn i {

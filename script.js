@@ -20,6 +20,86 @@ if (mobileMenu && navMenu) {
     });
 }
 
+// --- Contact form multi-file attachments (sequential) ---
+let contactFiles = [];
+
+function handleContactFileAttach(input) {
+    const file = input.files && input.files[0];
+    if (!file) return;
+
+    const contactFormEl = document.getElementById('contact-form');
+    const preview = document.getElementById('contact-file-preview');
+    if (!contactFormEl || !preview) return;
+
+    const fileId = Date.now();
+    const fileInfo = {
+        id: fileId,
+        name: file.name,
+        size: formatFileSize(file.size),
+        type: file.type
+    };
+    contactFiles.push(fileInfo);
+
+    const fileIcon = getFileIcon(fileInfo.type);
+
+    // Create preview item
+    const item = document.createElement('div');
+    item.className = 'file-item';
+    item.dataset.fileId = String(fileId);
+    item.innerHTML = `
+        <div class="file-info" style="align-items:flex-start;gap:12px;display:flex">
+            <i class="${fileIcon} file-icon"></i>
+            <div class="file-details">
+                <h5 style="margin:0 0 4px 0;">${fileInfo.name}</h5>
+                <small>${fileInfo.size}</small>
+            </div>
+        </div>
+        <div class="file-actions">
+            <button type="button" class="file-btn remove-file">Eliminar</button>
+        </div>
+    `;
+    preview.appendChild(item);
+
+    // Move the real input into the form so it's submitted
+    const originalParent = input.parentElement;
+    const originalId = input.id || 'contact-file';
+    input.id = `${originalId}-${fileId}`;
+    input.name = 'attachment';
+    input.style.display = 'none';
+    contactFormEl.appendChild(input);
+    item.dataset.inputId = input.id;
+
+    // Create replacement input to allow selecting additional files
+    if (originalParent) {
+        const replacement = document.createElement('input');
+        replacement.type = 'file';
+        replacement.id = originalId;
+        replacement.accept = input.accept || '.pdf,.xlsx,.xls,.docx,.doc,.jpg,.jpeg,.png';
+        replacement.addEventListener('change', function(){ handleContactFileAttach(this); });
+        originalParent.appendChild(replacement);
+    }
+
+    // Remove handler for this specific file
+    const removeBtn = item.querySelector('.remove-file');
+    removeBtn.addEventListener('click', () => {
+        // remove file from array
+        contactFiles = contactFiles.filter(f => f.id !== fileId);
+        // remove corresponding hidden input from form
+        const inForm = contactFormEl.querySelector(`#${CSS.escape(item.dataset.inputId || '')}`);
+        if (inForm) contactFormEl.removeChild(inForm);
+        // remove preview item
+        item.remove();
+    });
+}
+
+// Attach listener to contact-file on DOM ready
+document.addEventListener('DOMContentLoaded', () => {
+    const contactInput = document.getElementById('contact-file');
+    if (contactInput) {
+        contactInput.addEventListener('change', function(){ handleContactFileAttach(this); });
+    }
+});
+
 // Hide all quote-improvement UI globally as per requirement
 function disableQuoteImprovementFeature() {
     try {
@@ -429,105 +509,137 @@ function displayFilePreview(fileInfo, category) {
     const preview = document.getElementById(`file-preview-${category}`);
     const fileIcon = getFileIcon(fileInfo.type);
 
-    // No limpiar el preview: permitir múltiples archivos (cada uno con su propio formulario)
+    // Crear contenedor único del mini-form si no existe
+    // Asegurar id único por categoría y limpiar duplicados si existen
+    const containerId = `inline-quote-${category}`;
+    let container = preview.querySelector(`#${CSS.escape(containerId)}`) || preview.querySelector('.inline-quote');
+    if (!container) {
+        container = document.createElement('div');
+        container.className = 'inline-quote';
+        container.id = containerId;
+        container.innerHTML = `
+            <div class="file-list"></div>
+            <form id="attach-inline-${category}" class="quote-form" style="margin-top:12px; width:100%;">
+              <div class="form-group"><label>Nombre Personal *</label>
+                <input type="text" name="name" placeholder="Tu nombre" required>
+              </div>
+              <div class="form-group"><label>Nombre de la Empresa *</label>
+                <input type="text" name="company" placeholder="Nombre de tu empresa" required>
+              </div>
+              <div class="form-group"><label>Correo Electrónico *</label>
+                <input type="email" name="email" placeholder="correo@empresa.cl" required>
+              </div>
+              <div class="form-group"><label>Teléfono *</label>
+                <input type="tel" name="phone" placeholder="+56 9 1234 5678" required>
+              </div>
+              <div class="quote-footer" style="display:flex; gap:8px;">
+                <button type="submit" class="btn btn-primary" disabled>
+                  <i class="fas fa-paper-plane"></i> Enviar
+                </button>
+              </div>
+              <input type="hidden" name="_subject" value="Adjunto de Cotización desde sección ${category}">
+              <input type="hidden" name="_template" value="table">
+              <input type="hidden" name="_next" value="https://joran.cl/thanks.html">
+              <input type="hidden" name="_captcha" value="false">
+            </form>
+        `;
+        preview.appendChild(container);
+    } else {
+        // Si por algún motivo hay múltiples contenedores, mantener solo uno
+        const all = preview.querySelectorAll('.inline-quote');
+        all.forEach((el, idx) => { if (el !== container) el.remove(); });
+    }
 
-    const wrap = document.createElement('div');
-    wrap.className = 'file-item';
-    const formId = `attach-inline-${category}-${fileInfo.id}`;
+    const formEl = container.querySelector('form');
+    const fileList = container.querySelector('.file-list');
+    const submitBtn = formEl.querySelector('button[type="submit"]');
 
-    wrap.innerHTML = `
-        <div class="file-info" style="align-items:flex-start;gap:12px;">
+    // Añadir item visual para el archivo con botón eliminar por archivo
+    const item = document.createElement('div');
+    item.className = 'file-item';
+    item.dataset.fileId = String(fileInfo.id);
+    item.innerHTML = `
+        <div class="file-info" style="align-items:flex-start;gap:12px;display:flex">
             <i class="${fileIcon} file-icon"></i>
             <div class="file-details">
                 <h5 style="margin:0 0 4px 0;">${fileInfo.name}</h5>
                 <small>${fileInfo.size}</small>
             </div>
         </div>
-        <form id="${formId}" class="quote-form" style="margin-top:12px; width:100%;">
-            <div class="form-group"><label>Nombre Personal *</label>
-                <input type="text" name="name" placeholder="Tu nombre" required>
-            </div>
-            <div class="form-group"><label>Nombre de la Empresa *</label>
-                <input type="text" name="company" placeholder="Nombre de tu empresa" required>
-            </div>
-            <div class="form-group"><label>Correo Electrónico *</label>
-                <input type="email" name="email" placeholder="correo@empresa.cl" required>
-            </div>
-            <div class="form-group"><label>Teléfono *</label>
-                <input type="tel" name="phone" placeholder="+56 9 1234 5678" required>
-            </div>
-            <div class="quote-footer" style="display:flex; gap:8px;">
-                <button type="submit" class="btn btn-primary" disabled>
-                    <i class="fas fa-paper-plane"></i> Enviar
-                </button>
-                <button type="button" class="btn btn-secondary" data-remove="1">
-                    Eliminar
-                </button>
-            </div>
-            <input type="hidden" name="_subject" value="Adjunto de Cotización desde sección ${category}">
-            <input type="hidden" name="_template" value="table">
-            <input type="hidden" name="_next" value="https://joran.cl/thanks.html">
-            <input type="hidden" name="_captcha" value="false">
-        </form>
+        <div class="file-actions">
+            <button type="button" class="file-btn remove-file">Eliminar</button>
+        </div>
     `;
+    fileList.appendChild(item);
 
-    preview.appendChild(wrap);
-    try { preview.scrollIntoView({ behavior: 'smooth', block: 'nearest' }); } catch(_) {}
-
-    // Validaci?n simple para habilitar Enviar
-    const formEl = document.getElementById(formId);
-    const submitBtn = formEl.querySelector('button[type="submit"]');
-    const removeBtn = formEl.querySelector('button[data-remove="1"]');
+    // Validación: habilitar enviar cuando hay datos obligatorios y al menos 1 archivo
     const requiredInputs = Array.from(formEl.querySelectorAll('input[required]'));
-
     function validate() {
         const allOk = requiredInputs.every(inp => (inp.value || '').trim().length > 0);
-        submitBtn.disabled = !allOk;
+        const hasFiles = fileList.querySelectorAll('.file-item').length > 0;
+        submitBtn.disabled = !(allOk && hasFiles);
     }
     requiredInputs.forEach(inp => inp.addEventListener('input', validate));
     validate();
 
-    // Configurar envío estándar para soportar adjuntos en FormSubmit
+    // Configurar envío estándar y anexar input real; crear reemplazo para mantener el área de carga activa
     try {
-        // Usar endpoint estándar (no AJAX)
         formEl.setAttribute('action', 'https://formsubmit.co/cotizaciones@joran.cl');
         formEl.setAttribute('method', 'POST');
         formEl.setAttribute('enctype', 'multipart/form-data');
-        // Mover el input real dentro del formulario y crear un reemplazo para mantener el click del área
+
         const originalInput = document.getElementById(`file-upload-${category}`);
         if (originalInput) {
             const originalParent = originalInput.parentElement;
             const originalId = originalInput.id;
-            if (originalParent && originalInput.parentElement !== formEl) {
-                // Renombrar id para evitar colisión y anexar al form
+            if (originalParent) {
+                // Mover input real al form (con id único) para que el navegador lo envíe
                 originalInput.id = `${originalId}-${fileInfo.id}`;
                 originalInput.name = 'attachment';
                 originalInput.style.display = 'none';
                 formEl.appendChild(originalInput);
 
-                // Crear input de reemplazo con el id original para que el área siga funcionando
+                // Reponer un input nuevo con el id original para que el área siga funcionando
                 const replacement = document.createElement('input');
                 replacement.type = 'file';
-                replacement.id = originalId; // mantener id que usa el onclick del área
+                replacement.id = originalId;
                 replacement.accept = originalInput.accept || '.pdf,.xlsx,.xls,.docx,.doc,.jpg,.jpeg,.png';
                 replacement.style.display = 'none';
                 replacement.onchange = function(){ handleFileUpload(this, category); };
                 originalParent.appendChild(replacement);
+
+                // Guardar referencia al id del input clonado en el item para eliminarlo si se borra
+                item.dataset.inputId = originalInput.id;
             }
         }
-        // Spinner de envío sin impedir el submit nativo
+
+        // Spinner de envío
         formEl.addEventListener('submit', () => {
             try { submitBtn.disabled = true; submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Enviando...'; } catch(_) {}
         }, { once: true });
     } catch(_) {}
 
-    // Remover archivo y limpiar preview
+    // Eliminar sólo este archivo (no todo)
+    const removeBtn = item.querySelector('.remove-file');
     removeBtn.addEventListener('click', () => {
-        // limpiar data en memoria
+        // quitar del arreglo en memoria
         if (uploadedFiles[category]) {
             uploadedFiles[category] = uploadedFiles[category].filter(f => f.id !== fileInfo.id);
         }
-        preview.innerHTML = '';
+        // quitar input real del form
+        const inputId = item.dataset.inputId;
+        if (inputId) {
+            const inForm = formEl.querySelector(`#${CSS.escape(inputId)}`);
+            if (inForm) formEl.removeChild(inForm);
+        }
+        // quitar del DOM
+        item.remove();
+        // si ya no quedan archivos, quitar contenedor entero
+        if (!fileList.querySelector('.file-item')) {
+            container.remove();
+        } else {
+            validate();
+        }
     });
 }
 
