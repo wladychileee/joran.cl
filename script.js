@@ -64,7 +64,7 @@ function handleContactFileAttach(input) {
     const originalParent = input.parentElement;
     const originalId = input.id || 'contact-file';
     input.id = `${originalId}-${fileId}`;
-    input.name = 'attachment';
+    input.name = 'attachments[]';
     input.style.display = 'none';
     contactFormEl.appendChild(input);
     item.dataset.inputId = input.id;
@@ -595,7 +595,7 @@ function displayFilePreview(fileInfo, category) {
             if (originalParent) {
                 // Mover input real al form (con id único) para que el navegador lo envíe
                 originalInput.id = `${originalId}-${fileInfo.id}`;
-                originalInput.name = 'attachment';
+                originalInput.name = 'attachments[]';
                 originalInput.style.display = 'none';
                 formEl.appendChild(originalInput);
 
