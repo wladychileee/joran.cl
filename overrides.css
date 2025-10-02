@@ -40,13 +40,15 @@
   color: #ffffff;
 }
 
-/* Back button on product pages */
+/* Back button: match global red button palette */
 .back-btn {
-  background: #1e3a8a !important;
-  border: 0 !important;
-  box-shadow: 0 4px 15px rgba(30, 58, 138, 0.35) !important;
+  background: #dc3545 !important;
+  border: 2px solid #dc3545 !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 15px rgba(220, 53, 69, 0.35) !important;
 }
 .back-btn:hover {
-  background: #0f2f6a !important;
-  box-shadow: 0 6px 20px rgba(30, 58, 138, 0.45) !important;
+  background: #c82333 !important;
+  border-color: #c82333 !important;
+  box-shadow: 0 6px 20px rgba(220, 53, 69, 0.45) !important;
 }
