@@ -1,42 +1,121 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>PRODUCTOS JORAN</title>
-  <meta name="robots" content="noindex,nofollow" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PRODUCTOS JORAN SPA</title>
+  <meta name="robots" content="noindex" />
+  <link rel="icon" href="../logo.png" type="image/png" />
+  <link rel="stylesheet" href="../styles.min.css?v=20251001" />
+  <link rel="stylesheet" href="../overrides.css?v=20251001" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
   <style>
-    :root{color-scheme:light}
-    *{box-sizing:border-box}
-    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Helvetica,Arial,sans-serif;background:#0b0f1a;color:#fff}
-    .wrap{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px}
-    .card{max-width:560px;width:100%;background:#111a2b;border:1px solid #24304a;border-radius:18px;padding:22px;box-shadow:0 18px 50px rgba(0,0,0,.35)}
-    h1{margin:0 0 10px;font-size:22px;letter-spacing:.2px}
-    p{margin:0 0 18px;color:#cbd5e1;line-height:1.5}
-    .btn{display:block;text-decoration:none;text-align:center;padding:14px 16px;border-radius:14px;margin:12px 0;font-weight:800;letter-spacing:.2px}
-    .wa{background:#22c55e;color:#052e14}
-    .wa:hover{filter:brightness(1.03)}
-    .web{background:#2563eb;color:#eff6ff}
-    .web:hover{filter:brightness(1.03)}
-    .hint{font-size:12px;color:#94a3b8;margin-top:14px}
+    :root{
+      --brand-blue: #1e3a8a;
+      --brand-blue-2: #2563eb;
+      --surface: rgba(255,255,255,.92);
+      --surface-border: rgba(255,255,255,.22);
+      --shadow: 0 24px 70px rgba(0,0,0,.30);
+    }
+
+    body{
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:24px;
+      background:
+        radial-gradient(1100px 650px at 15% 20%, rgba(37,99,235,.45), transparent 55%),
+        radial-gradient(900px 520px at 85% 75%, rgba(30,58,138,.55), transparent 60%),
+        linear-gradient(135deg, #0b1f5e 0%, var(--brand-blue) 40%, #0b2a7a 100%);
+    }
+
+    .qr-card{
+      max-width:520px;
+      width:100%;
+      border-radius:22px;
+      padding:26px;
+      background: var(--surface);
+      border: 1px solid var(--surface-border);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+    }
+
+    .qr-header{
+      display:flex;
+      gap:14px;
+      align-items:center;
+      margin-bottom:18px;
+    }
+
+    .qr-logo{
+      width:54px;
+      height:54px;
+      border-radius:14px;
+      object-fit:contain;
+      background: rgba(255,255,255,.85);
+      padding:8px;
+      box-shadow: 0 10px 22px rgba(0,0,0,.10);
+    }
+
+    .qr-title{
+      margin:0;
+      font-size:18px;
+      line-height:1.2;
+      letter-spacing:.2px;
+    }
+
+    .qr-actions{display:grid;gap:12px;margin-top:12px}
+
+    .qr-actions a{
+      display:flex;
+      gap:10px;
+      align-items:center;
+      justify-content:center;
+      padding:14px 16px;
+      border-radius:14px;
+      text-decoration:none;
+      font-weight:800;
+      letter-spacing:.2px;
+      transform: translateZ(0);
+      transition: transform .12s ease, box-shadow .12s ease, filter .12s ease;
+      box-shadow: 0 12px 26px rgba(0,0,0,.16);
+    }
+
+    .qr-actions a:hover{transform: translateY(-1px);filter: brightness(1.02)}
+    .qr-actions a:active{transform: translateY(0px);filter: brightness(.98)}
+
+    .qr-actions .wa{background: linear-gradient(135deg, #22c55e, #16a34a);color:#fff}
+    .qr-actions .call{background: linear-gradient(135deg, #111827, #374151);color:#fff}
+    .qr-actions .web{background: linear-gradient(135deg, var(--brand-blue), var(--brand-blue-2));color:#fff}
+
+    .qr-actions i{font-size:18px}
   </style>
 </head>
 <body>
-  <div class="wrap">
-    <main class="card" role="main">
-      <h1>PRODUCTOS JORAN</h1>
-      <p>Elige una opción:</p>
+  <div class="qr-card">
+    <div class="qr-header">
+      <img class="qr-logo" src="../logo.png" alt="PRODUCTOS JORAN SPA" />
+      <div>
+        <h1 class="qr-title">PRODUCTOS JORAN SPA</h1>
+      </div>
+    </div>
 
-      <a class="btn wa" href="https://wa.me/56962378434?text=Hola%20PRODUCTOS%20JORAN%20quisiera%20consultar%20sobre" target="_blank" rel="noopener">
-        Hablar por WhatsApp
+    <div class="qr-actions">
+      <a class="wa" href="https://wa.me/56962378434?text=Hola,%20necesito%20cotizar%20productos%20para%20mi%20empresa" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-whatsapp" aria-hidden="true"></i>
+        Enviar WhatsApp
       </a>
-
-      <a class="btn web" href="https://joran.cl" target="_blank" rel="noopener">
-        Ir a joran.cl
+      <a class="call" href="tel:+56962378434">
+        <i class="fas fa-phone" aria-hidden="true"></i>
+        Llamar por teléfono
       </a>
-
-      <div class="hint">Si no se abre WhatsApp, verifica que esté instalado en tu teléfono.</div>
-    </main>
+      <a class="web" href="https://joran.cl" target="_blank" rel="noopener noreferrer">
+        <i class="fas fa-globe" aria-hidden="true"></i>
+        Abrir página web
+      </a>
+    </div>
   </div>
 </body>
 </html>
