@@ -2562,17 +2562,120 @@
           "opciones": [
             {
               "marca": "Microlife",
-              "modelo": "MT 1931 / punta rígida",
+              "modelo": "Línea completa · 5 modelos",
               "detalle": [
-                "Lectura en ~10 s"
-              ]
+                "Digital punta rígida",
+                "Digital punta flexible",
+                "Infrarrojo sin contacto"
+              ],
+              "modelos": [
+                {
+                  "nombre": "MT3001",
+                  "specs": [
+                    "Digital punta rígida",
+                    "Precisión ±0,1 °C"
+                  ]
+                },
+                {
+                  "nombre": "MT1031",
+                  "specs": [
+                    "Digital punta flexible",
+                    "Precisión ±0,1 °C"
+                  ]
+                },
+                {
+                  "nombre": "MT1931",
+                  "specs": [
+                    "Digital punta flexible",
+                    "100% a prueba de agua"
+                  ]
+                },
+                {
+                  "nombre": "NC 150",
+                  "specs": [
+                    "Infrarrojo sin contacto",
+                    "Medición en 3 s, 30 memorias"
+                  ]
+                },
+                {
+                  "nombre": "NC 200",
+                  "specs": [
+                    "Infrarrojo sin contacto",
+                    "Frente, objetos y ambiente"
+                  ]
+                }
+              ],
+              "fuente": "https://www.microlife.cl/"
             },
             {
               "marca": "Beurer",
-              "modelo": "FT 09",
+              "modelo": "Línea completa · 9 modelos",
               "detalle": [
-                "Punta flexible"
-              ]
+                "Digital punta rígida",
+                "Digital punta flexible",
+                "Digital, uso clínico básico"
+              ],
+              "modelos": [
+                {
+                  "nombre": "FT 09/1",
+                  "specs": [
+                    "Digital punta rígida"
+                  ]
+                },
+                {
+                  "nombre": "FT 15/1",
+                  "specs": [
+                    "Digital punta flexible"
+                  ]
+                },
+                {
+                  "nombre": "FT 16",
+                  "specs": [
+                    "Digital, uso clínico básico"
+                  ]
+                },
+                {
+                  "nombre": "FT 58",
+                  "specs": [
+                    "Termómetro de oído infrarrojo"
+                  ]
+                },
+                {
+                  "nombre": "FT 65",
+                  "specs": [
+                    "Multifunción oído/frente"
+                  ]
+                },
+                {
+                  "nombre": "FT 85",
+                  "specs": [
+                    "Infrarrojo sin contacto",
+                    "Alerta de fiebre ≥38 °C, 60 memorias"
+                  ]
+                },
+                {
+                  "nombre": "FT 90",
+                  "specs": [
+                    "Infrarrojo sin contacto",
+                    "Pantalla iluminada"
+                  ]
+                },
+                {
+                  "nombre": "FT 95",
+                  "specs": [
+                    "Infrarrojo sin contacto",
+                    "Bluetooth, indicador LED 3 colores"
+                  ]
+                },
+                {
+                  "nombre": "FT 100",
+                  "specs": [
+                    "Infrarrojo sin contacto",
+                    "Distancia de medición 5 cm"
+                  ]
+                }
+              ],
+              "fuente": "https://www.beurer.com/es/c/00108/"
             }
           ]
         },
@@ -2582,17 +2685,35 @@
           "opciones": [
             {
               "marca": "Omron",
-              "modelo": "Termómetro infrarrojo",
+              "modelo": "Línea completa · 3 modelos",
               "detalle": [
-                "Lectura de frente"
-              ]
-            },
-            {
-              "marca": "Microlife",
-              "modelo": "NC 200 sin contacto",
-              "detalle": [
-                "Lectura en 2 s"
-              ]
+                "Digital punta rígida",
+                "Digital punta flexible",
+                "Infrarrojo de frente sin contacto"
+              ],
+              "modelos": [
+                {
+                  "nombre": "MC-246",
+                  "specs": [
+                    "Digital punta rígida",
+                    "Resistente al agua"
+                  ]
+                },
+                {
+                  "nombre": "MC-343F",
+                  "specs": [
+                    "Digital punta flexible"
+                  ]
+                },
+                {
+                  "nombre": "MC-720",
+                  "specs": [
+                    "Infrarrojo de frente sin contacto",
+                    "Lectura en 1 s, 25 memorias"
+                  ]
+                }
+              ],
+              "fuente": "https://www.portalhealth.cl/producto/termometro-digital-de-frente-omron-mc-720/"
             }
           ]
         }
@@ -2790,10 +2911,57 @@
           "opciones": [
             {
               "marca": "Riester",
-              "modelo": "Duplex",
+              "modelo": "Línea completa · 7 modelos",
               "detalle": [
-                "Fabricación alemana"
-              ]
+                "Doble campana, uso general",
+                "Doble campana",
+                "Para recién nacidos"
+              ],
+              "modelos": [
+                {
+                  "nombre": "Duplex aluminio",
+                  "specs": [
+                    "Doble campana, uso general"
+                  ]
+                },
+                {
+                  "nombre": "Duplex 2.0 acero inoxidable",
+                  "specs": [
+                    "Doble campana"
+                  ]
+                },
+                {
+                  "nombre": "Duplex Baby (pediátrico)",
+                  "specs": [
+                    "Doble campana"
+                  ]
+                },
+                {
+                  "nombre": "Duplex Neonatal",
+                  "specs": [
+                    "Para recién nacidos"
+                  ]
+                },
+                {
+                  "nombre": "Ri-Pap",
+                  "specs": [
+                    "Tipo Rappaport, doble tubo"
+                  ]
+                },
+                {
+                  "nombre": "Anestophon",
+                  "specs": [
+                    "Campana simple, uso en anestesia"
+                  ]
+                },
+                {
+                  "nombre": "Cardiophon 2.0",
+                  "specs": [
+                    "Cardiología"
+                  ]
+                }
+              ],
+              "fuente": "https://dipromed.cl/15_riester"
             },
             {
               "marca": "Spirit",
@@ -2810,17 +2978,61 @@
           "opciones": [
             {
               "marca": "Littmann",
-              "modelo": "Classic III",
+              "modelo": "Línea completa · 7 modelos",
               "detalle": [
-                "Diafragma ajustable"
-              ]
-            },
-            {
-              "marca": "Littmann",
-              "modelo": "Cardiology IV",
-              "detalle": [
-                "Acústica superior"
-              ]
+                "Uso general, liviano",
+                "Uso general, alta sensibilidad acústica",
+                "Para pacientes pediátricos"
+              ],
+              "modelos": [
+                {
+                  "nombre": "Lightweight II S.E.",
+                  "specs": [
+                    "Uso general, liviano"
+                  ]
+                },
+                {
+                  "nombre": "Classic III",
+                  "specs": [
+                    "Uso general, alta sensibilidad acústica",
+                    "Diafragma ajustable en ambos lados"
+                  ]
+                },
+                {
+                  "nombre": "Classic II Pediátrico",
+                  "specs": [
+                    "Para pacientes pediátricos"
+                  ]
+                },
+                {
+                  "nombre": "Classic II Neonatal",
+                  "specs": [
+                    "Para recién nacidos"
+                  ]
+                },
+                {
+                  "nombre": "Cardiology IV",
+                  "specs": [
+                    "Cardiología, diafragma de una pieza",
+                    "Doble lumen"
+                  ]
+                },
+                {
+                  "nombre": "Master Cardiology",
+                  "specs": [
+                    "Mejor respuesta acústica mecánica",
+                    "Campana de acero inoxidable"
+                  ]
+                },
+                {
+                  "nombre": "CORE Digital",
+                  "specs": [
+                    "Digital, amplificación hasta 40x",
+                    "Cancelación activa de ruido, app"
+                  ]
+                }
+              ],
+              "fuente": "https://www.littmann.com/es-cl/home/products/"
             }
           ]
         }
@@ -2847,17 +3059,269 @@
           "opciones": [
             {
               "marca": "Omron",
-              "modelo": "HEM-7120",
+              "modelo": "Línea completa · 13 modelos",
               "detalle": [
-                "De brazo, automático"
-              ]
+                "Brazo automático",
+                "Presión arterial + ECG",
+                "Monitor profesional MRPA"
+              ],
+              "modelos": [
+                {
+                  "nombre": "HEM-7120",
+                  "specs": [
+                    "Brazo automático",
+                    "Básico, 30 memorias"
+                  ]
+                },
+                {
+                  "nombre": "HEM-7122",
+                  "specs": [
+                    "Brazo automático",
+                    "Detección de latido irregular"
+                  ]
+                },
+                {
+                  "nombre": "HEM-7142",
+                  "specs": [
+                    "Brazo automático",
+                    "Validado SOCHICAR, uso domiciliario"
+                  ]
+                },
+                {
+                  "nombre": "HEM-7130 Elite",
+                  "specs": [
+                    "Brazo automático",
+                    "Brazalete 22–42 cm, 60 memorias"
+                  ]
+                },
+                {
+                  "nombre": "HEM-7154 (M3)",
+                  "specs": [
+                    "Brazo automático",
+                    "Brazalete Intelli Wrap"
+                  ]
+                },
+                {
+                  "nombre": "HEM-7156T",
+                  "specs": [
+                    "Brazo automático",
+                    "Bluetooth, app OMRON connect"
+                  ]
+                },
+                {
+                  "nombre": "HEM-7188T",
+                  "specs": [
+                    "Brazo automático",
+                    "Bluetooth"
+                  ]
+                },
+                {
+                  "nombre": "HEM-7600T",
+                  "specs": [
+                    "Brazo automático",
+                    "Sin tubos, Bluetooth, premium"
+                  ]
+                },
+                {
+                  "nombre": "HEM-7530T Complete",
+                  "specs": [
+                    "Presión arterial + ECG",
+                    "Detección de fibrilación auricular"
+                  ]
+                },
+                {
+                  "nombre": "HEM-9200T",
+                  "specs": [
+                    "Monitor profesional MRPA",
+                    "Bluetooth, uso clínico"
+                  ]
+                },
+                {
+                  "nombre": "HEM-6124",
+                  "specs": [
+                    "Muñeca automático",
+                    "Compacto"
+                  ]
+                },
+                {
+                  "nombre": "HEM-6161 (RS2)",
+                  "specs": [
+                    "Muñeca automático",
+                    "Indicador de posición"
+                  ]
+                },
+                {
+                  "nombre": "HEM-6300 Elite+",
+                  "specs": [
+                    "Muñeca automático",
+                    "Sensor de posición"
+                  ]
+                }
+              ],
+              "fuente": "https://www.tubotiquin.cl/collections/omron"
             },
             {
               "marca": "Microlife",
-              "modelo": "BP A2 Basic",
+              "modelo": "Línea completa · 9 modelos",
               "detalle": [
-                "De brazo, detecta arritmia"
-              ]
+                "Muñeca automático",
+                "Brazo semiautomático",
+                "Brazo automático"
+              ],
+              "modelos": [
+                {
+                  "nombre": "BP 3NP1-3E",
+                  "specs": [
+                    "Muñeca automático",
+                    "99 memorias, semáforo de riesgo"
+                  ]
+                },
+                {
+                  "nombre": "BP W3 Comfort",
+                  "specs": [
+                    "Muñeca automático",
+                    "Detección de arritmia PAD"
+                  ]
+                },
+                {
+                  "nombre": "BP N2 Easy",
+                  "specs": [
+                    "Brazo semiautomático",
+                    "Inflado manual, un botón"
+                  ]
+                },
+                {
+                  "nombre": "BP A2 Classic",
+                  "specs": [
+                    "Brazo automático",
+                    "30 memorias, tecnología PAD"
+                  ]
+                },
+                {
+                  "nombre": "BP A3 Basic",
+                  "specs": [
+                    "Brazo automático",
+                    "99 memorias, PAD + MAM, 22–42 cm"
+                  ]
+                },
+                {
+                  "nombre": "BP B1 Classic",
+                  "specs": [
+                    "Brazo automático",
+                    "Uso domiciliario"
+                  ]
+                },
+                {
+                  "nombre": "BP B3 AFIB",
+                  "specs": [
+                    "Brazo automático",
+                    "Detección de fibrilación auricular"
+                  ]
+                },
+                {
+                  "nombre": "BP A6 BT AFIB",
+                  "specs": [
+                    "Brazo automático",
+                    "Bluetooth, detección AFIB"
+                  ]
+                },
+                {
+                  "nombre": "BP A7 Touch BT",
+                  "specs": [
+                    "Brazo automático",
+                    "Pantalla táctil, Bluetooth"
+                  ]
+                }
+              ],
+              "fuente": "https://www.microlife.cl/"
+            },
+            {
+              "marca": "Beurer",
+              "modelo": "Línea completa · 11 modelos",
+              "detalle": [
+                "Brazo automático",
+                "Muñeca automático"
+              ],
+              "modelos": [
+                {
+                  "nombre": "BM 25",
+                  "specs": [
+                    "Brazo automático",
+                    "Básico"
+                  ]
+                },
+                {
+                  "nombre": "BM 27",
+                  "specs": [
+                    "Brazo automático",
+                    "Detección de arritmia"
+                  ]
+                },
+                {
+                  "nombre": "BM 28",
+                  "specs": [
+                    "Brazo automático",
+                    "2 usuarios"
+                  ]
+                },
+                {
+                  "nombre": "BM 35",
+                  "specs": [
+                    "Brazo automático",
+                    "Pantalla grande"
+                  ]
+                },
+                {
+                  "nombre": "BM 38",
+                  "specs": [
+                    "Brazo automático",
+                    "Conexión USB"
+                  ]
+                },
+                {
+                  "nombre": "BM 54",
+                  "specs": [
+                    "Brazo automático",
+                    "Pantalla XL, Bluetooth"
+                  ]
+                },
+                {
+                  "nombre": "BM 59",
+                  "specs": [
+                    "Brazo automático",
+                    "Bluetooth, app HealthManager"
+                  ]
+                },
+                {
+                  "nombre": "BM 96",
+                  "specs": [
+                    "Brazo automático",
+                    "Con función ECG"
+                  ]
+                },
+                {
+                  "nombre": "BC 28",
+                  "specs": [
+                    "Muñeca automático",
+                    "Compacto"
+                  ]
+                },
+                {
+                  "nombre": "BC 54",
+                  "specs": [
+                    "Muñeca automático",
+                    "Bluetooth"
+                  ]
+                },
+                {
+                  "nombre": "BC 87",
+                  "specs": [
+                    "Muñeca automático",
+                    "Pantalla grande"
+                  ]
+                }
+              ],
+              "fuente": "https://beurerchile.cl/salud/tensiometros-de-brazo/"
             }
           ]
         },
@@ -2866,18 +3330,68 @@
           "descripcion": "Clínico / profesional.",
           "opciones": [
             {
-              "marca": "Omron",
-              "modelo": "HEM-7156 / línea Advanced",
-              "detalle": [
-                "Brazalete inteligente"
-              ]
-            },
-            {
               "marca": "Riester",
-              "modelo": "Esfigmomanómetro aneroide",
+              "modelo": "Línea completa · 8 modelos",
               "detalle": [
-                "Uso clínico"
-              ]
+                "Aneroide de mano",
+                "Aneroide resistente a golpes",
+                "Aneroide de pared"
+              ],
+              "modelos": [
+                {
+                  "nombre": "Ri-San",
+                  "specs": [
+                    "Aneroide de mano",
+                    "Varios colores, uso clínico"
+                  ]
+                },
+                {
+                  "nombre": "Exacta 1350",
+                  "specs": [
+                    "Aneroide de mano",
+                    "2 tubos, alta precisión"
+                  ]
+                },
+                {
+                  "nombre": "Precisa",
+                  "specs": [
+                    "Aneroide de mano",
+                    "Portátil, tensiómetro móvil"
+                  ]
+                },
+                {
+                  "nombre": "R1 Shockproof",
+                  "specs": [
+                    "Aneroide resistente a golpes"
+                  ]
+                },
+                {
+                  "nombre": "Big Ben mural",
+                  "specs": [
+                    "Aneroide de pared",
+                    "Esfera redonda o cuadrada"
+                  ]
+                },
+                {
+                  "nombre": "Smartpro",
+                  "specs": [
+                    "Digital de brazo automático"
+                  ]
+                },
+                {
+                  "nombre": "Ri-Champion",
+                  "specs": [
+                    "Digital clínico"
+                  ]
+                },
+                {
+                  "nombre": "Brazaletes lactante / pediátrico / obeso",
+                  "specs": [
+                    "Repuestos para aneroides"
+                  ]
+                }
+              ],
+              "fuente": "https://dipromed.cl/48-tensiometro"
             }
           ]
         }
@@ -2961,17 +3475,52 @@
           "opciones": [
             {
               "marca": "Beurer",
-              "modelo": "PO 30",
+              "modelo": "Línea completa · 3 modelos",
               "detalle": [
-                "Pantalla a color"
-              ]
+                "Oxímetro de dedo"
+              ],
+              "modelos": [
+                {
+                  "nombre": "PO 30",
+                  "specs": [
+                    "Oxímetro de dedo",
+                    "SpO₂ y pulso, pantalla color"
+                  ]
+                },
+                {
+                  "nombre": "PO 45",
+                  "specs": [
+                    "Oxímetro de dedo",
+                    "Pantalla con curva de pulso"
+                  ]
+                },
+                {
+                  "nombre": "PO 60",
+                  "specs": [
+                    "Oxímetro de dedo",
+                    "Bluetooth, app HealthManager"
+                  ]
+                }
+              ],
+              "fuente": "https://www.beurer.com/es/c/001/"
             },
             {
               "marca": "Microlife",
-              "modelo": "OXY 300",
+              "modelo": "Línea completa · 1 modelos",
               "detalle": [
-                "Compacto"
-              ]
+                "Oxímetro de dedo"
+              ],
+              "modelos": [
+                {
+                  "nombre": "OXY 300",
+                  "specs": [
+                    "Oxímetro de dedo",
+                    "OLED 2 colores, SpO₂ 70–100 %",
+                    "Adulto y pediátrico"
+                  ]
+                }
+              ],
+              "fuente": "https://www.microlife.es/consumer-products/respiratory-care/pulse-oximeter/oxy-300"
             }
           ]
         },
@@ -2988,10 +3537,35 @@
             },
             {
               "marca": "Nonin",
-              "modelo": "Onyx Vantage",
+              "modelo": "Línea completa · 3 modelos",
               "detalle": [
-                "Referencia profesional"
-              ]
+                "Oxímetro de dedo clínico",
+                "Oxímetro de mano"
+              ],
+              "modelos": [
+                {
+                  "nombre": "Onyx Vantage 9590",
+                  "specs": [
+                    "Oxímetro de dedo clínico",
+                    "Tecnología PureSAT, 4 años de garantía"
+                  ]
+                },
+                {
+                  "nombre": "3230 Bluetooth Smart",
+                  "specs": [
+                    "Oxímetro de dedo clínico",
+                    "Bluetooth LE"
+                  ]
+                },
+                {
+                  "nombre": "PalmSAT 2500",
+                  "specs": [
+                    "Oxímetro de mano",
+                    "Sensores intercambiables, uso hospitalario"
+                  ]
+                }
+              ],
+              "fuente": "https://www.nonin.com/products/9590/"
             }
           ]
         }
@@ -3202,17 +3776,117 @@
           "opciones": [
             {
               "marca": "Philips",
-              "modelo": "Desfibrilador HeartStart (DEA)",
+              "modelo": "Línea completa · 3 modelos",
               "detalle": [
-                "Uso por personal no médico"
-              ]
+                "DEA para oficinas, escuelas y comunidad",
+                "DEA robusto, 150 J adulto / 50 J pediátrico",
+                "Para instalación de DEA HS1/FRx"
+              ],
+              "modelos": [
+                {
+                  "nombre": "HeartStart HS1 (OnSite)",
+                  "specs": [
+                    "DEA para oficinas, escuelas y comunidad",
+                    "Cartuchos adulto y pediátrico"
+                  ]
+                },
+                {
+                  "nombre": "HeartStart FRx",
+                  "specs": [
+                    "DEA robusto, 150 J adulto / 50 J pediátrico",
+                    "Electrodos SMART II, batería 4 años"
+                  ]
+                },
+                {
+                  "nombre": "Gabinete con alarma y baliza",
+                  "specs": [
+                    "Para instalación de DEA HS1/FRx"
+                  ]
+                }
+              ],
+              "fuente": "https://topmedic.cl/collections/desfibrilador-dea"
             },
             {
               "marca": "Zoll",
-              "modelo": "AED Plus (DEA)",
+              "modelo": "Línea completa · 3 modelos",
               "detalle": [
-                "Guía de RCP"
-              ]
+                "DEA con Real CPR Help",
+                "DEA con pantalla a color y Wi-Fi",
+                "DEA para reanimadores capacitados"
+              ],
+              "modelos": [
+                {
+                  "nombre": "AED Plus",
+                  "specs": [
+                    "DEA con Real CPR Help",
+                    "IP55, baterías 123A de 5 años"
+                  ]
+                },
+                {
+                  "nombre": "AED 3",
+                  "specs": [
+                    "DEA con pantalla a color y Wi-Fi",
+                    "Parches universales adulto/pediátrico"
+                  ]
+                },
+                {
+                  "nombre": "AED 3 BLS",
+                  "specs": [
+                    "DEA para reanimadores capacitados",
+                    "CPR Dashboard, RapidShock"
+                  ]
+                }
+              ],
+              "fuente": "https://www.pvequip.cl/pdf/catalogo-zoll-2020.pdf"
+            },
+            {
+              "marca": "Mindray",
+              "modelo": "Línea completa · 1 modelos",
+              "detalle": [
+                "DEA hasta 360 J bifásico"
+              ],
+              "modelos": [
+                {
+                  "nombre": "BeneHeart C1A",
+                  "specs": [
+                    "DEA hasta 360 J bifásico",
+                    "Primera descarga en <8 s, IP55",
+                    "Electrodo híbrido adulto/pediátrico"
+                  ]
+                }
+              ],
+              "fuente": "https://deachile.cl/mindray-beneheart-c1a/"
+            },
+            {
+              "marca": "Schiller",
+              "modelo": "Línea completa · 3 modelos",
+              "detalle": [
+                "DEA automático",
+                "DEA semiautomático",
+                "Desfibrilador de bolsillo"
+              ],
+              "modelos": [
+                {
+                  "nombre": "FRED PA-1",
+                  "specs": [
+                    "DEA automático",
+                    "Uso público"
+                  ]
+                },
+                {
+                  "nombre": "FRED easy",
+                  "specs": [
+                    "DEA semiautomático"
+                  ]
+                },
+                {
+                  "nombre": "FRED easyport",
+                  "specs": [
+                    "Desfibrilador de bolsillo"
+                  ]
+                }
+              ],
+              "fuente": "https://www.portalhealth.cl/categoria-producto/seguridad-y-rescate/desfibriladores/"
             }
           ]
         }
