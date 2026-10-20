@@ -1,0 +1,116 @@
+{
+  "_ayuda": "Opciones por producto. La clave debe ser igual al nombre del producto en index.html. 'ejemplo': true muestra el aviso 'por confirmar'.",
+  "productos": {
+    "Papel bond A4": {
+      "ejemplo": true,
+      "gamas": [
+        { "nombre": "Económica", "descripcion": "Para impresiones internas y borradores.", "opciones": [
+          { "marca": "Marca genérica", "modelo": "75 g/m², resma 500 hojas", "detalle": ["Blancura estándar", "Uso diario"] }
+        ]},
+        { "nombre": "Estándar", "descripcion": "El más usado en oficinas.", "opciones": [
+          { "marca": "Report", "modelo": "75 g/m², resma 500 hojas", "detalle": ["Alta blancura", "Apto láser e inkjet"] },
+          { "marca": "Chamex", "modelo": "75 g/m², resma 500 hojas", "detalle": ["Alta blancura", "Apto láser e inkjet"] }
+        ]},
+        { "nombre": "Premium", "descripcion": "Para documentos de presentación.", "opciones": [
+          { "marca": "Double A", "modelo": "80 g/m², resma 500 hojas", "detalle": ["Mayor gramaje", "Impresión más nítida"] },
+          { "marca": "Navigator", "modelo": "80 g/m², resma 500 hojas", "detalle": ["Mayor gramaje", "Menos atascos"] }
+        ]}
+      ]
+    },
+    "Bolígrafos": {
+      "ejemplo": true,
+      "gamas": [
+        { "nombre": "Económica", "descripcion": "Uso masivo, caja por 50 unidades.", "opciones": [
+          { "marca": "Bic", "modelo": "Cristal", "detalle": ["Punta media 1.0 mm", "Azul, negro o rojo"] },
+          { "marca": "Paper Mate", "modelo": "Kilométrico", "detalle": ["Punta media", "Azul, negro o rojo"] }
+        ]},
+        { "nombre": "Estándar", "descripcion": "Escritura más suave, retráctiles o de gel.", "opciones": [
+          { "marca": "Pilot", "modelo": "G-2", "detalle": ["Tinta gel", "Retráctil"] },
+          { "marca": "Faber-Castell", "modelo": "Línea gel", "detalle": ["Tinta gel", "Grip de goma"] }
+        ]},
+        { "nombre": "Premium", "descripcion": "Para gerencia o regalo corporativo.", "opciones": [
+          { "marca": "Parker", "modelo": "Jotter", "detalle": ["Cuerpo metálico", "Se puede grabar con logo"] }
+        ]}
+      ]
+    },
+    "Marcadores permanentes": {
+      "ejemplo": true,
+      "gamas": [
+        { "nombre": "Económica", "descripcion": "Para rotulado general.", "opciones": [
+          { "marca": "Artel", "modelo": "Permanente punta redonda", "detalle": ["Negro, azul o rojo"] }
+        ]},
+        { "nombre": "Estándar", "descripcion": "Tinta resistente al agua, secado rápido.", "opciones": [
+          { "marca": "Sharpie", "modelo": "Fine Point", "detalle": ["Punta fina", "Escribe en casi cualquier superficie"] },
+          { "marca": "Faber-Castell", "modelo": "Permanente", "detalle": ["Punta redonda o biselada"] }
+        ]}
+      ]
+    },
+    "Grapas y grapadoras": {
+      "ejemplo": true,
+      "gamas": [
+        { "nombre": "Económica", "descripcion": "Para escritorio, hasta 20 hojas.", "opciones": [
+          { "marca": "Isofit", "modelo": "Corchetera de escritorio", "detalle": ["Grapas 26/6", "Hasta 20 hojas"] }
+        ]},
+        { "nombre": "Estándar", "descripcion": "Más resistentes, uso intensivo.", "opciones": [
+          { "marca": "Rapid", "modelo": "Corchetera metálica", "detalle": ["Grapas 24/6 y 26/6", "Hasta 30 hojas"] }
+        ]},
+        { "nombre": "Premium", "descripcion": "Alto volumen, sala de copiado.", "opciones": [
+          { "marca": "Rapid", "modelo": "Corchetera de alta capacidad", "detalle": ["Hasta 100+ hojas", "Uso industrial"] }
+        ]}
+      ]
+    },
+    "Calculadoras": {
+      "ejemplo": true,
+      "gamas": [
+        { "nombre": "Económica", "descripcion": "Básicas de escritorio.", "opciones": [
+          { "marca": "Casio", "modelo": "Calculadora de escritorio 12 dígitos", "detalle": ["Solar y batería"] }
+        ]},
+        { "nombre": "Estándar", "descripcion": "Con impresora o funciones comerciales.", "opciones": [
+          { "marca": "Casio", "modelo": "Calculadora con impresora", "detalle": ["Rollo de papel", "Para contabilidad"] }
+        ]},
+        { "nombre": "Premium", "descripcion": "Científicas o financieras.", "opciones": [
+          { "marca": "Casio", "modelo": "fx-82 (científica)", "detalle": ["Funciones científicas"] }
+        ]}
+      ]
+    },
+    "Cintas adhesivas": {
+      "ejemplo": true,
+      "gamas": [
+        { "nombre": "Económica", "descripcion": "Uso general.", "opciones": [
+          { "marca": "Adhesiva", "modelo": "Cinta transparente", "detalle": ["Varios anchos"] }
+        ]},
+        { "nombre": "Estándar", "descripcion": "Mejor adhesión y embalaje.", "opciones": [
+          { "marca": "3M Scotch", "modelo": "Cinta mágica / embalaje", "detalle": ["Invisible o de embalaje"] }
+        ]}
+      ]
+    },
+    "Agendas y cuadernos": {
+      "ejemplo": true,
+      "gamas": [
+        { "nombre": "Económica", "descripcion": "Cuadernos de uso diario.", "opciones": [
+          { "marca": "Colón", "modelo": "Cuaderno universitario", "detalle": ["100 hojas", "Matemática o líneas"] }
+        ]},
+        { "nombre": "Estándar", "descripcion": "Tapa dura, mejor papel.", "opciones": [
+          { "marca": "Torre", "modelo": "Cuaderno universitario tapa dura", "detalle": ["100 hojas"] },
+          { "marca": "Rhein", "modelo": "Cuaderno / agenda", "detalle": ["Tapa dura"] }
+        ]},
+        { "nombre": "Premium", "descripcion": "Agendas corporativas con logo.", "opciones": [
+          { "marca": "Personalizada", "modelo": "Agenda corporativa", "detalle": ["Logo de tu empresa", "Ideal para regalo"] }
+        ]}
+      ]
+    },
+    "Tóner y cartuchos": {
+      "ejemplo": true,
+      "gamas": [
+        { "nombre": "Económica", "descripcion": "Alternativos o compatibles.", "opciones": [
+          { "marca": "Compatible", "modelo": "Según el modelo de tu impresora", "detalle": ["Menor costo por página"] }
+        ]},
+        { "nombre": "Estándar", "descripcion": "Originales de la marca de tu impresora.", "opciones": [
+          { "marca": "HP", "modelo": "Original según impresora", "detalle": ["Indícanos el modelo"] },
+          { "marca": "Brother", "modelo": "Original según impresora", "detalle": ["Indícanos el modelo"] },
+          { "marca": "Epson / Canon", "modelo": "Original según impresora", "detalle": ["Indícanos el modelo"] }
+        ]}
+      ]
+    }
+  }
+}
