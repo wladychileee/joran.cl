@@ -16,3 +16,9 @@ build/
 *.tmp
 *.swp
 *.bak
+
+# Respaldos, pruebas y scripts locales (no publicar en el sitio)
+index.backup*.html
+index.before-*.html
+test-*.html
+*.ps1

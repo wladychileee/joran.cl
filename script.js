@@ -163,6 +163,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             mobileMenu.setAttribute('aria-expanded', 'false');
         }
 
+        if (history.replaceState) history.replaceState(null, '', href);
+
         // Wait a frame to allow layout to update before scrolling
         requestAnimationFrame(() => {
             target.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -326,7 +328,6 @@ window.addEventListener('scroll', () => {
 
 // Product page navigation
 function showProductPage(pageId) {
-    console.log('Mostrando p?gina:', pageId); // Debug
     
     // Hide main content
     document.body.classList.add('product-view');
@@ -339,7 +340,6 @@ function showProductPage(pageId) {
     
     // Show selected product page
     const targetPage = document.getElementById(pageId + '-page');
-    console.log('P?gina encontrada:', targetPage); // Debug
     
     if (targetPage) {
         targetPage.style.display = 'block';
@@ -353,12 +353,15 @@ function showProductPage(pageId) {
     }
     // No render de ejemplos din?micos
     
+    if (targetPage && location.hash !== '#' + pageId && history.pushState) {
+        history.pushState(null, '', '#' + pageId);
+    }
+
     // Scroll to top
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 function goBack() {
-    console.log('Volviendo atr?s'); // Debug
     
     // Show main content
     document.body.classList.remove('product-view');
@@ -375,6 +378,8 @@ function goBack() {
         productPagesContainer.style.display = 'none';
     }
     
+    if (history.replaceState) history.replaceState(null, '', '#productos');
+
     // Scroll to products section
     const productsSection = document.getElementById('productos');
     if (productsSection) {
@@ -540,7 +545,7 @@ function displayFilePreview(fileInfo, category) {
               <input type="hidden" name="_subject" value="Adjunto de Cotización desde sección ${category}">
               <input type="hidden" name="_template" value="table">
               <input type="hidden" name="_next" value="https://joran.cl/thanks.html">
-              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_captcha" value="true">
             </form>
         `;
         preview.appendChild(container);
@@ -921,3 +926,21 @@ window.handleQuoteSubmission = handleQuoteSubmission;
 window.sendQuoteEmail = sendQuoteEmail;
 
 
+
+// Category deep links (e.g. joran.cl/#construccion)
+function routeFromHash() {
+    const id = decodeURIComponent(location.hash.slice(1));
+    if (id && document.getElementById(id + '-page')) {
+        showProductPage(id);
+    } else if (document.body.classList.contains('product-view')) {
+        exitProductView();
+        const target = id && document.getElementById(id);
+        if (target) target.scrollIntoView({ block: 'start' });
+    }
+}
+window.addEventListener('popstate', routeFromHash);
+document.addEventListener('DOMContentLoaded', () => {
+    routeFromHash();
+    const year = document.getElementById('current-year');
+    if (year) year.textContent = new Date().getFullYear();
+});
