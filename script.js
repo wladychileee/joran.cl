@@ -316,14 +316,19 @@ window.addEventListener('load', () => {
 });
 
 // Add parallax effect to hero section
+// Offset is relative to the hero's own position so it is 0 when the hero is at the top
+// of the viewport (e.g. after navigating to #inicio); disabled on mobile.
 window.addEventListener('scroll', () => {
-    const scrolled = window.pageYOffset;
     const hero = document.querySelector('.hero');
     const heroContent = document.querySelector('.hero-content');
-    
-    if (hero && heroContent) {
-        heroContent.style.transform = `translateY(${scrolled * 0.5}px)`;
+    if (!hero || !heroContent) return;
+
+    if (window.matchMedia('(max-width: 768px)').matches) {
+        heroContent.style.transform = '';
+        return;
     }
+    const offset = Math.max(0, window.pageYOffset - hero.offsetTop);
+    heroContent.style.transform = `translateY(${offset * 0.5}px)`;
 });
 
 // Product page navigation
