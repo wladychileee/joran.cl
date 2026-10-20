@@ -31,6 +31,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="styles.min.css?v=20261020">
     <link rel="stylesheet" href="overrides.css?v=20261020b">
+    <link rel="stylesheet" href="features.css?v=20261020">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
@@ -74,6 +75,13 @@
         <button type="button" class="close-thanks" aria-label="Cerrar aviso">Cerrar</button>
     </div>
 
+    <!-- Banner de campaña: para cambiarlo, edita el texto y cambia data-campaign (así vuelve a mostrarse a quienes lo cerraron) -->
+    <div id="campaign-banner" class="campaign-banner" data-campaign="fin-de-ano-2026" hidden>
+        <p><strong>Fin de año:</strong> cotiza regalos corporativos y canastas navideñas para tu equipo.</p>
+        <a href="#kits" class="campaign-cta">Ver kits</a>
+        <button type="button" class="campaign-close" aria-label="Cerrar aviso">&times;</button>
+    </div>
+
     <!-- Company Header -->
     <header class="company-header">
         <div class="container">
@@ -97,6 +105,12 @@
                 </li>
                 <li class="nav-item">
                     <a href="#productos" class="nav-link">Productos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#kits" class="nav-link">Kits</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#preguntas-frecuentes" class="nav-link">Preguntas</a>
                 </li>
                 <li class="nav-item">
                     <a href="#contacto" class="nav-link">Contacto</a>
@@ -168,13 +182,46 @@
                     <h1 class="hero-title" id="typing-title">PRODUCTOS JORAN SPA</h1>
                     <p class="hero-subtitle">Tu socio estratégico en suministros empresariales</p>
                     <p class="hero-description">Ofrecemos una amplia gama de productos para empresas sin necesidad de inventario físico. Servicio personalizado y disponibilidad 24/7.</p>
-                    <a href="#contacto" class="btn btn-primary">Solicitar Cotización</a>
+                    <div class="hero-buttons">
+                        <a href="#contacto" class="btn btn-primary">Solicitar Cotización</a>
+                        <a href="#productos" class="btn btn-secondary">Armar mi lista</a>
+                    </div>
                 </div>
                 <div class="hero-image">
                     <div class="hero-graphic">
                         <i class="fas fa-shopping-cart"></i>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <!-- Cómo funciona -->
+        <section id="como-funciona" class="how-it-works">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Cómo funciona</h2>
+                    <p>Cotizar con nosotros es simple: tú nos dices qué necesitas y nosotros nos encargamos del resto</p>
+                </div>
+                <ol class="steps">
+                    <li class="step">
+                        <span class="step-number">1</span>
+                        <i class="fas fa-list-check"></i>
+                        <h3>Envíanos tu lista</h3>
+                        <p>Arma tu lista en la web, sube tu cotización o escríbenos por WhatsApp.</p>
+                    </li>
+                    <li class="step">
+                        <span class="step-number">2</span>
+                        <i class="fas fa-file-invoice-dollar"></i>
+                        <h3>Te cotizamos</h3>
+                        <p>Buscamos la mejor calidad y precio del mercado y te enviamos tu cotización.</p>
+                    </li>
+                    <li class="step">
+                        <span class="step-number">3</span>
+                        <i class="fas fa-truck"></i>
+                        <h3>Recibe tus productos</h3>
+                        <p>Compramos por ti y coordinamos la entrega en tu empresa.</p>
+                    </li>
+                </ol>
             </div>
         </section>
 
@@ -221,7 +268,14 @@
                 <h2>Nuestros Productos</h2>
                 <p>Vendemos absolutamente todo lo que tu empresa necesita</p>
             </div>
-            
+            <div class="product-search">
+                <label for="product-search-input" class="sr-only">Buscar producto</label>
+                <div class="product-search-box">
+                    <i class="fas fa-search" aria-hidden="true"></i>
+                    <input type="search" id="product-search-input" placeholder="¿Qué necesitas? Ej: guantes, tóner, silla..." autocomplete="off">
+                </div>
+                <div id="product-search-results" class="product-search-results" aria-live="polite"></div>
+            </div>
             <div class="services-grid">
                 <div class="service-card">
                     <div class="service-icon">
@@ -288,6 +342,121 @@
                 <li><a href="#productos">Productos</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
+        </div>
+    </section>
+
+    <!-- Kits -->
+    <section id="kits" class="kits">
+        <div class="container">
+            <div class="section-header">
+                <h2>Kits listos para cotizar</h2>
+                <p>Paquetes armados con lo más pedido. Cotízalos con un clic y ajusta las cantidades a tu medida.</p>
+            </div>
+            <div class="kits-grid">
+                    <div class="kit-card">
+                        <div class="service-icon"><i class="fas fa-briefcase"></i></div>
+                        <h3>Kit Oficina Nueva</h3>
+                        <p>Lo esencial para equipar un puesto de trabajo.</p>
+                        <ul>
+                            <li>Escritorios ejecutivos</li>
+                            <li>Sillas ergonómicas</li>
+                            <li>Archivadores metálicos</li>
+                            <li>Papel bond A4</li>
+                            <li>Carpetas archivadoras</li>
+                            <li>Bolígrafos</li>
+                            <li>Grapas y grapadoras</li>
+                            <li>Organizadores de escritorio</li>
+                        </ul>
+                        <button type="button" class="btn btn-primary kit-quote-btn">Cotizar este kit</button>
+                    </div>
+                    <div class="kit-card">
+                        <div class="service-icon"><i class="fas fa-kit-medical"></i></div>
+                        <h3>Kit Botiquín Empresa</h3>
+                        <p>Primeros auxilios para tu oficina, obra o local.</p>
+                        <ul>
+                            <li>Equipos de primeros auxilios</li>
+                            <li>Gasas estériles</li>
+                            <li>Vendas elásticas</li>
+                            <li>Alcohol gel</li>
+                            <li>Guantes de nitrilo</li>
+                            <li>Termómetros digitales</li>
+                            <li>Suero fisiológico</li>
+                            <li>Mascarillas quirúrgicas</li>
+                        </ul>
+                        <button type="button" class="btn btn-primary kit-quote-btn">Cotizar este kit</button>
+                    </div>
+                    <div class="kit-card">
+                        <div class="service-icon"><i class="fas fa-mug-hot"></i></div>
+                        <h3>Kit Cafetería</h3>
+                        <p>Equipa la cocina o sala de descanso de tu equipo.</p>
+                        <ul>
+                            <li>Cafeteras automáticas, express</li>
+                            <li>Hervidores eléctricos</li>
+                            <li>Microondas, hornos eléctricos</li>
+                            <li>Refrigeradores compactos</li>
+                            <li>Dispensadores de agua fría/caliente</li>
+                            <li>Vajillas, cristalería</li>
+                            <li>Cubiertos, utensilios de cocina</li>
+                        </ul>
+                        <button type="button" class="btn btn-primary kit-quote-btn">Cotizar este kit</button>
+                    </div>
+                    <div class="kit-card">
+                        <div class="service-icon"><i class="fas fa-pencil"></i></div>
+                        <h3>Kit Vuelta a Clases</h3>
+                        <p>Útiles para colegios, academias o los hijos de tu equipo.</p>
+                        <ul>
+                            <li>Cuadernos universitarios, espirales</li>
+                            <li>Lápices grafito HB, 2B, 4B</li>
+                            <li>Bolígrafos azul, negro, rojo</li>
+                            <li>Resaltadores fluorescentes</li>
+                            <li>Pegamento en barra, líquido</li>
+                            <li>Tijeras, cortadores</li>
+                            <li>Reglas, escuadras</li>
+                            <li>Cartulinas de colores</li>
+                        </ul>
+                        <button type="button" class="btn btn-primary kit-quote-btn">Cotizar este kit</button>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Preguntas frecuentes -->
+    <section id="preguntas-frecuentes" class="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2>Preguntas frecuentes</h2>
+                <p>Resolvemos las dudas más comunes antes de cotizar</p>
+            </div>
+            <div class="faq-list">
+                    <details class="faq-item">
+                        <summary>¿Cómo solicito una cotización?</summary>
+                        <p>Agrega productos a tu lista desde las categorías, el buscador o los kits y envíala por WhatsApp o correo. También puedes completar el formulario de contacto o escribirnos directamente.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>¿Qué productos venden?</summary>
+                        <p>Todo lo que tu empresa necesite: ferretería, insumos médicos, oficina, muebles, electrodomésticos, librería y mucho más. Si no aparece en nuestras listas, igual lo conseguimos.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>¿Puedo enviar mi propia lista o una cotización de otro proveedor?</summary>
+                        <p>Sí. Puedes adjuntar tu archivo (PDF, Excel, Word o imagen) en el formulario de contacto o en cualquier categoría, y lo revisamos para ofrecerte una alternativa.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>¿Cuánto tardan en responder?</summary>
+                        <p>Estamos disponibles 24/7 y respondemos lo antes posible. Por WhatsApp la respuesta suele ser más rápida.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>¿Emiten factura?</summary>
+                        <p>Sí, emitimos factura a nombre de tu empresa.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>¿Hacen despacho?</summary>
+                        <p>Coordinamos la entrega según tu ubicación y el tipo de producto. Te informamos las condiciones junto con tu cotización.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>¿Cuáles son las formas de pago?</summary>
+                        <p>Te informamos las formas y condiciones de pago disponibles junto con tu cotización.</p>
+                    </details>
+            </div>
         </div>
     </section>
 
@@ -771,6 +940,7 @@
     </a>
 
     <script src="script.js?v=20261020b"></script>
+    <script src="features.js?v=20261020"></script>
     <script>
       (function(){
         function initThanksBanner(){

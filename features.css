@@ -1,0 +1,122 @@
+/* Campaign banner, how-it-works, search, kits, FAQ, quote list and WhatsApp greeting */
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0; }
+
+/* Campaign banner */
+.campaign-banner { display: flex; align-items: center; justify-content: center; gap: 12px; flex-wrap: wrap; padding: 10px 48px 10px 16px; background: #dc3545; color: #fff; text-align: center; position: relative; font-size: .95rem; }
+.campaign-banner[hidden] { display: none; }
+.campaign-banner p { margin: 0; }
+.campaign-cta { background: #fff; color: #dc3545; padding: 4px 14px; border-radius: 999px; font-weight: 700; text-decoration: none; white-space: nowrap; }
+.campaign-cta:hover { background: #fde8ea; }
+.campaign-close { position: absolute; right: 10px; top: 50%; transform: translateY(-50%); background: transparent; border: 0; color: #fff; font-size: 1.6rem; line-height: 1; cursor: pointer; padding: 4px 8px; }
+
+/* Hero buttons */
+.hero-buttons { display: flex; gap: 1rem; flex-wrap: wrap; }
+
+/* How it works */
+.how-it-works { background: #fff; }
+.steps { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; counter-reset: none; }
+.step { position: relative; background: #f8fafc; border-radius: 20px; padding: 2.5rem 1.5rem 2rem; text-align: center; box-shadow: 0 10px 30px rgba(0, 0, 0, .06); }
+.step > i { font-size: 2.2rem; color: #3b82f6; margin-bottom: 1rem; display: block; }
+.step h3 { font-size: 1.25rem; margin-bottom: .5rem; color: #1e293b; }
+.step p { color: #64748b; margin: 0; }
+.step-number { position: absolute; top: -18px; left: 50%; transform: translateX(-50%); width: 36px; height: 36px; border-radius: 50%; background: #dc3545; color: #fff; font-weight: 700; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(220, 53, 69, .35); }
+
+/* Product search */
+.product-search { max-width: 640px; margin: -2rem auto 3rem; position: relative; }
+.product-search-box { display: flex; align-items: center; gap: 10px; background: #fff; border: 2px solid #e2e8f0; border-radius: 999px; padding: 0 20px; box-shadow: 0 10px 30px rgba(0, 0, 0, .08); transition: border-color .2s; }
+.product-search-box:focus-within { border-color: #3b82f6; }
+.product-search-box i { color: #94a3b8; }
+.product-search-box input { flex: 1; border: 0; outline: 0; padding: 16px 0; font: inherit; font-size: 1rem; background: transparent; min-width: 0; }
+.product-search-results { margin-top: 10px; }
+.product-search-results:empty { display: none; }
+.search-results-list { list-style: none; margin: 0; padding: 8px; background: #fff; border-radius: 16px; box-shadow: 0 10px 30px rgba(0, 0, 0, .1); }
+.search-result { display: flex; align-items: center; gap: 10px; padding: 10px 12px; border-radius: 10px; }
+.search-result:hover { background: #f1f5f9; }
+.search-result-name { flex: 1; color: #1e293b; }
+.search-result-cat { background: #e0ecff; color: #1e3a8a; border: 0; border-radius: 999px; padding: 4px 10px; font-size: .8rem; cursor: pointer; white-space: nowrap; }
+.search-result-cat:hover { background: #c7dbff; }
+.search-empty, .search-more { background: #fff; border-radius: 16px; padding: 16px; box-shadow: 0 10px 30px rgba(0, 0, 0, .1); text-align: center; color: #475569; }
+.search-more { box-shadow: none; background: transparent; padding: 10px 0 0; font-size: .9rem; }
+.search-empty p { margin: 0 0 10px; }
+.link-btn { background: none; border: 0; color: #1e3a8a; font-weight: 600; text-decoration: underline; cursor: pointer; font: inherit; }
+
+/* Add-to-list buttons */
+.ql-add { display: inline-flex; align-items: center; gap: 6px; background: #dc3545; color: #fff; border: 0; border-radius: 999px; padding: 5px 12px; font-size: .8rem; font-weight: 600; cursor: pointer; white-space: nowrap; margin-left: 10px; flex-shrink: 0; transition: background .2s, transform .2s; }
+.ql-add:hover { background: #c82333; transform: scale(1.05); }
+.ql-add.added { background: #10b981; }
+.product-page li { gap: 8px; }
+
+/* Kits */
+.kits { background: #f8f9fa; }
+.kits-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; }
+.kit-card { background: #fff; border-radius: 20px; padding: 2rem; box-shadow: 0 10px 30px rgba(0, 0, 0, .1); display: flex; flex-direction: column; text-align: center; transition: transform .3s; }
+.kit-card:hover { transform: translateY(-6px); }
+.kit-card h3 { font-size: 1.3rem; margin-bottom: .5rem; color: #1e293b; }
+.kit-card p { color: #64748b; margin-bottom: 1rem; }
+.kit-card ul { list-style: none; padding: 0; margin: 0 0 1.5rem; text-align: left; flex: 1; }
+.kit-card li { padding: 6px 0 6px 22px; position: relative; color: #334155; border-bottom: 1px solid #f1f5f9; font-size: .95rem; }
+.kit-card li:before { content: "\2713"; position: absolute; left: 0; color: #10b981; font-weight: 700; }
+.kit-quote-btn { align-self: center; }
+
+/* FAQ */
+.faq { background: #fff; }
+.faq-list { max-width: 800px; margin: 0 auto; }
+.faq-item { background: #f8fafc; border-radius: 14px; margin-bottom: 12px; border: 1px solid #e2e8f0; overflow: hidden; }
+.faq-item summary { cursor: pointer; padding: 18px 50px 18px 20px; font-weight: 600; color: #1e293b; list-style: none; position: relative; }
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary:after { content: "+"; position: absolute; right: 20px; top: 50%; transform: translateY(-50%); font-size: 1.5rem; color: #3b82f6; transition: transform .2s; }
+.faq-item[open] summary:after { content: "\2212"; }
+.faq-item p { padding: 0 20px 18px; margin: 0; color: #475569; line-height: 1.7; }
+
+/* Quote list: floating toggle, panel, toast */
+.ql-toggle { position: fixed; left: 20px; bottom: 20px; z-index: 1001; display: flex; align-items: center; gap: 8px; background: #1e3a8a; color: #fff; border: 0; border-radius: 999px; padding: 14px 20px; font-weight: 700; font-size: .95rem; cursor: pointer; box-shadow: 0 6px 20px rgba(30, 58, 138, .35); transition: transform .2s; }
+.ql-toggle:hover { transform: translateY(-2px); }
+.ql-toggle[hidden] { display: none; }
+.ql-count { background: #dc3545; border-radius: 999px; min-width: 24px; height: 24px; padding: 0 6px; display: inline-flex; align-items: center; justify-content: center; font-size: .8rem; }
+.ql-toggle.bump { animation: ql-bump .4s; }
+@keyframes ql-bump { 50% { transform: scale(1.12); } }
+.ql-backdrop { position: fixed; inset: 0; background: rgba(15, 23, 42, .45); z-index: 2500; }
+.ql-backdrop[hidden], .ql-panel[hidden] { display: none; }
+.ql-panel { position: fixed; top: 0; right: 0; bottom: 0; width: min(420px, 100%); background: #fff; z-index: 2501; display: flex; flex-direction: column; box-shadow: -10px 0 30px rgba(0, 0, 0, .2); }
+.ql-header { display: flex; align-items: center; justify-content: space-between; padding: 18px 20px; background: linear-gradient(135deg, #1e3a8a, #3b82f6); color: #fff; }
+.ql-header h3 { margin: 0; font-size: 1.2rem; }
+.ql-close { background: transparent; border: 0; color: #fff; font-size: 1.8rem; line-height: 1; cursor: pointer; }
+.ql-body { flex: 1; overflow-y: auto; padding: 16px 20px; }
+.ql-empty { color: #64748b; text-align: center; padding: 30px 10px; }
+.ql-items { list-style: none; margin: 0; padding: 0; }
+.ql-item { display: flex; align-items: center; gap: 10px; padding: 10px 0; border-bottom: 1px solid #e2e8f0; }
+.ql-item-info { flex: 1; min-width: 0; }
+.ql-item-name { display: block; color: #1e293b; font-weight: 500; overflow-wrap: anywhere; }
+.ql-item-cat { display: block; color: #94a3b8; font-size: .8rem; }
+.ql-qty { width: 64px; padding: 6px 8px; border: 2px solid #e2e8f0; border-radius: 8px; font: inherit; text-align: center; }
+.ql-remove { background: transparent; border: 0; color: #ef4444; cursor: pointer; font-size: 1rem; padding: 6px; }
+.ql-notes-label { display: block; margin: 16px 0 6px; font-weight: 600; color: #334155; }
+.ql-notes { width: 100%; border: 2px solid #e2e8f0; border-radius: 10px; padding: 10px; font: inherit; resize: vertical; }
+.ql-footer { padding: 16px 20px; border-top: 1px solid #e2e8f0; display: flex; flex-direction: column; gap: 10px; }
+.ql-footer .btn { width: 100%; text-align: center; }
+.ql-whatsapp { background: #25d366 !important; border-color: #25d366 !important; color: #fff; }
+.ql-whatsapp:hover { background: #128c7e !important; border-color: #128c7e !important; }
+.ql-email { background: #1e3a8a !important; border-color: #1e3a8a !important; color: #fff !important; }
+.ql-clear { align-self: center; }
+.ql-toast { position: fixed; left: 50%; top: 20px; transform: translate(-50%, -20px); background: #1e293b; color: #fff; padding: 10px 18px; border-radius: 999px; font-size: .9rem; opacity: 0; pointer-events: none; transition: opacity .25s, transform .25s; z-index: 3000; max-width: 90vw; text-align: center; }
+.ql-toast.show { opacity: 1; transform: translate(-50%, 0); }
+
+/* WhatsApp greeting bubble */
+.wa-bubble { position: fixed; right: 20px; bottom: 92px; z-index: 1001; background: #fff; color: #1e293b; border-radius: 16px; padding: 14px 36px 14px 16px; max-width: 260px; box-shadow: 0 10px 30px rgba(0, 0, 0, .18); cursor: pointer; animation: wa-in .35s ease-out; }
+.wa-bubble[hidden] { display: none; }
+.wa-bubble:after { content: ""; position: absolute; right: 24px; bottom: -8px; border: 8px solid transparent; border-top-color: #fff; border-bottom: 0; }
+.wa-bubble strong { display: block; margin-bottom: 2px; }
+.wa-bubble-close { position: absolute; top: 6px; right: 8px; background: transparent; border: 0; font-size: 1.2rem; color: #94a3b8; cursor: pointer; line-height: 1; }
+@keyframes wa-in { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+
+@media (max-width: 768px) {
+  .steps { grid-template-columns: 1fr; gap: 2.5rem; }
+  .product-search { margin-top: -1.5rem; }
+  .ql-toggle { left: 12px; bottom: 20px; padding: 12px 16px; }
+  .campaign-banner { font-size: .85rem; gap: 8px; padding: 8px 40px 8px 12px; }
+  .hero-buttons { justify-content: center; }
+  .product-page li { flex-wrap: wrap; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ql-toggle.bump, .wa-bubble { animation: none; }
+}
