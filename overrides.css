@@ -79,3 +79,6 @@
   .contact-map iframe { height: 260px; }
   .contact-item p { overflow-wrap: anywhere; }
 }
+
+/* Keep anchored sections clear of the sticky navbar */
+section[id] { scroll-margin-top: 70px; }
