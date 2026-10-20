@@ -2001,7 +2001,64 @@
               "modelo": "Llaves combinadas",
               "detalle": [
                 "Acabado cromado"
-              ]
+              ],
+              "modelos": [
+                {
+                  "nombre": "S240",
+                  "specs": [
+                    "Juego de dados 1/2\", 24 piezas"
+                  ]
+                },
+                {
+                  "nombre": "S240AF",
+                  "specs": [
+                    "Juego de dados 1/2\" en pulgadas"
+                  ]
+                },
+                {
+                  "nombre": "S800",
+                  "specs": [
+                    "Juego de dados y llaves 1/4\"–1/2\", 77 piezas"
+                  ]
+                },
+                {
+                  "nombre": "S400",
+                  "specs": [
+                    "Juego de dados 1/4\"–1/2\""
+                  ]
+                },
+                {
+                  "nombre": "S330",
+                  "specs": [
+                    "Juego de dados 1/4\""
+                  ]
+                },
+                {
+                  "nombre": "S160",
+                  "specs": [
+                    "Juego de dados 3/8\""
+                  ]
+                },
+                {
+                  "nombre": "S530T",
+                  "specs": [
+                    "Juego de dados 1/4\"+1/2\" en estuche"
+                  ]
+                },
+                {
+                  "nombre": "S106 / S108",
+                  "specs": [
+                    "Juegos de dados de impacto"
+                  ]
+                },
+                {
+                  "nombre": "Llaves combinadas serie 111",
+                  "specs": [
+                    "Juegos de llaves mixtas"
+                  ]
+                }
+              ],
+              "fuente": "https://www.bahco.com/"
             }
           ]
         },
@@ -2206,7 +2263,71 @@
               "modelo": "Pie de metro digital 500-196",
               "detalle": [
                 "150 mm, alta precisión"
-              ]
+              ],
+              "modelos": [
+                {
+                  "nombre": "500-196 Absolute Digimatic",
+                  "specs": [
+                    "Pie de metro digital 0–150 mm",
+                    "Resolución 0,01 mm"
+                  ]
+                },
+                {
+                  "nombre": "500-197 Absolute Digimatic",
+                  "specs": [
+                    "Pie de metro digital 0–200 mm"
+                  ]
+                },
+                {
+                  "nombre": "500-193 / 500-195",
+                  "specs": [
+                    "Pie de metro digital 0–300 mm"
+                  ]
+                },
+                {
+                  "nombre": "Pie de metro Coolant Proof",
+                  "specs": [
+                    "Digital IP67, resistente a refrigerante"
+                  ]
+                },
+                {
+                  "nombre": "103-137",
+                  "specs": [
+                    "Micrómetro de exteriores analógico 0–25 mm"
+                  ]
+                },
+                {
+                  "nombre": "293 Digimatic",
+                  "specs": [
+                    "Micrómetro digital de exteriores"
+                  ]
+                },
+                {
+                  "nombre": "QuantuMike",
+                  "specs": [
+                    "Micrómetro digital de avance rápido"
+                  ]
+                },
+                {
+                  "nombre": "Micrómetro de interiores / profundidad",
+                  "specs": [
+                    "Series Digimatic especiales"
+                  ]
+                },
+                {
+                  "nombre": "Medidor de alturas Digimatic",
+                  "specs": [
+                    "Height Gauge para taller"
+                  ]
+                },
+                {
+                  "nombre": "Transportador universal Digimatic",
+                  "specs": [
+                    "Medición angular"
+                  ]
+                }
+              ],
+              "fuente": "https://www.mitutoyo.com/"
             },
             {
               "marca": "Mitutoyo",
@@ -6391,7 +6512,47 @@
               "modelo": "Ladrillo hecho a máquina",
               "detalle": [
                 "Albañilería armada"
-              ]
+              ],
+              "modelos": [
+                {
+                  "nombre": "Ladrillo Princesa Santiago 7 / 9 / 11 / 14",
+                  "specs": [
+                    "Hecho a máquina, distintos espesores",
+                    "Muros de albañilería"
+                  ]
+                },
+                {
+                  "nombre": "Ladrillo Princesa Santiagote 7 / 9 / 11",
+                  "specs": [
+                    "Formato mayor, más rendimiento por m²"
+                  ]
+                },
+                {
+                  "nombre": "Medios ladrillos (mitades)",
+                  "specs": [
+                    "Para trabas y terminaciones"
+                  ]
+                },
+                {
+                  "nombre": "Ladrillo Fiscal Princesa",
+                  "specs": [
+                    "Tradicional macizo"
+                  ]
+                },
+                {
+                  "nombre": "Ladrillo Ducto",
+                  "specs": [
+                    "Para pasada de instalaciones"
+                  ]
+                },
+                {
+                  "nombre": "Mega Bloque",
+                  "specs": [
+                    "Bloque cerámico de gran formato"
+                  ]
+                }
+              ],
+              "fuente": "https://www.princesa.cl/"
             },
             {
               "marca": "Fabricación nacional",
@@ -6958,7 +7119,63 @@
               "modelo": "Tornillos para volcanita",
               "detalle": [
                 "Fosfatados"
-              ]
+              ],
+              "modelos": [
+                {
+                  "nombre": "Tornillo volcanita punta fina",
+                  "specs": [
+                    "Zinc, a perfil 0,5 mm",
+                    "Varios largos"
+                  ]
+                },
+                {
+                  "nombre": "Tornillo volcanita punta broca",
+                  "specs": [
+                    "Zinc, a perfil grueso"
+                  ]
+                },
+                {
+                  "nombre": "Tornillo volcanita rosca madera",
+                  "specs": [
+                    "Para estructura de madera"
+                  ]
+                },
+                {
+                  "nombre": "Tornillo volcanita a volcanita",
+                  "specs": [
+                    "Unión entre placas"
+                  ]
+                },
+                {
+                  "nombre": "Tornillo volcanita densidad dura",
+                  "specs": [
+                    "Para placas alta densidad"
+                  ]
+                },
+                {
+                  "nombre": "Tornillo framer punta fina / punta broca",
+                  "specs": [
+                    "Unión perfil-perfil"
+                  ]
+                },
+                {
+                  "nombre": "Tornillo cabeza lenteja con golilla",
+                  "specs": [
+                    "Punta fina o broca"
+                  ]
+                },
+                {
+                  "nombre": "Tornillo avellanante para fibrocemento",
+                  "specs": []
+                },
+                {
+                  "nombre": "Autoperforante hexagonal / lata-lata",
+                  "specs": [
+                    "Techumbres y planchas metálicas"
+                  ]
+                }
+              ],
+              "fuente": "https://www.mamut.cl/"
             }
           ]
         },
@@ -7443,7 +7660,34 @@
               "modelo": "Lijas",
               "detalle": [
                 "Larga duración"
-              ]
+              ],
+              "modelos": [
+                {
+                  "nombre": "Black Ice T-499",
+                  "specs": [
+                    "Lija al agua, granos hasta 2500"
+                  ]
+                },
+                {
+                  "nombre": "Lija para madera",
+                  "specs": [
+                    "Hojas óxido de aluminio"
+                  ]
+                },
+                {
+                  "nombre": "Lija para metal",
+                  "specs": [
+                    "Tela esmeril"
+                  ]
+                },
+                {
+                  "nombre": "Discos de lija velcro",
+                  "specs": [
+                    "Para lijadora orbital"
+                  ]
+                }
+              ],
+              "fuente": "https://www.nortonabrasives.com/"
             },
             {
               "marca": "Stanley",
@@ -7463,7 +7707,40 @@
               "modelo": "Lijas Pro",
               "detalle": [
                 "Antiembotamiento"
-              ]
+              ],
+              "modelos": [
+                {
+                  "nombre": "Wetordry",
+                  "specs": [
+                    "Lija al agua"
+                  ]
+                },
+                {
+                  "nombre": "Pro Grade",
+                  "specs": [
+                    "Lija para madera y pintura"
+                  ]
+                },
+                {
+                  "nombre": "Cubitron II",
+                  "specs": [
+                    "Discos de alto rendimiento"
+                  ]
+                },
+                {
+                  "nombre": "3M Xtract",
+                  "specs": [
+                    "Abrasivos con extracción de polvo"
+                  ]
+                },
+                {
+                  "nombre": "Esponjas abrasivas",
+                  "specs": [
+                    "Terminación en superficies irregulares"
+                  ]
+                }
+              ],
+              "fuente": "https://www.3m.cl/"
             },
             {
               "marca": "Bahco",
