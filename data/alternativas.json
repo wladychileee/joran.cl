@@ -3674,10 +3674,66 @@
           "opciones": [
             {
               "marca": "Ferno",
-              "modelo": "Camilla tipo Miller / plegable",
+              "modelo": "Línea completa · 8 modelos",
               "detalle": [
-                "Fabricación EE.UU."
-              ]
+                "Camilla plegable de emergencia",
+                "Camilla de cuchara (tijera)",
+                "Tabla espinal de aluminio"
+              ],
+              "modelos": [
+                {
+                  "nombre": "Model 11",
+                  "specs": [
+                    "Camilla plegable de emergencia",
+                    "Aluminio, ruedas plegables, 159 kg"
+                  ]
+                },
+                {
+                  "nombre": "Model 65 Scoop",
+                  "specs": [
+                    "Camilla de cuchara (tijera)",
+                    "Telescópica, plegable"
+                  ]
+                },
+                {
+                  "nombre": "Model 60",
+                  "specs": [
+                    "Tabla espinal de aluminio"
+                  ]
+                },
+                {
+                  "nombre": "Tabla espinal Miller / plástica",
+                  "specs": [
+                    "Inmovilización completa"
+                  ]
+                },
+                {
+                  "nombre": "Model 35-A",
+                  "specs": [
+                    "Camilla de ambulancia multinivel",
+                    "33,5 kg, respaldo a gas hasta 75°"
+                  ]
+                },
+                {
+                  "nombre": "Inmovilizadores de cabeza",
+                  "specs": [
+                    "Para tabla espinal"
+                  ]
+                },
+                {
+                  "nombre": "Colchón de vacío",
+                  "specs": [
+                    "Inmovilización"
+                  ]
+                },
+                {
+                  "nombre": "Correas Model 430 / 430-P",
+                  "specs": [
+                    "Sujeción de paciente"
+                  ]
+                }
+              ],
+              "fuente": "https://ferno.com/getmedia/6af500cf-a070-4836-9b52-728cf5ab9e05/ferno-international-ems-catalog-2026-7.pdf"
             },
             {
               "marca": "Genérica",
@@ -3692,13 +3748,6 @@
           "nombre": "Premium",
           "descripcion": "Uso clínico / masaje.",
           "opciones": [
-            {
-              "marca": "Ferno",
-              "modelo": "Camilla de rescate",
-              "detalle": [
-                "Alta resistencia"
-              ]
-            },
             {
               "marca": "Genérica",
               "modelo": "Camilla plegable de aluminio",
@@ -3848,17 +3897,98 @@
           "opciones": [
             {
               "marca": "Fresenius Kabi",
-              "modelo": "NaCl 0,9%",
+              "modelo": "Línea completa · 7 modelos",
               "detalle": [
-                "Varios formatos"
-              ]
+                "Plástica, caja x 100",
+                "Freeflex, caja x 20",
+                "Caja x 20"
+              ],
+              "modelos": [
+                {
+                  "nombre": "NaCl 0,9% ampolla 5 ml",
+                  "specs": [
+                    "Plástica, caja x 100"
+                  ]
+                },
+                {
+                  "nombre": "NaCl 0,9% ampolla 10 / 20 ml",
+                  "specs": [
+                    "Plástica, caja x 100"
+                  ]
+                },
+                {
+                  "nombre": "NaCl 0,9% matraz 100 ml",
+                  "specs": [
+                    "Freeflex, caja x 20"
+                  ]
+                },
+                {
+                  "nombre": "NaCl 0,9% matraz 250 ml",
+                  "specs": [
+                    "Caja x 20"
+                  ]
+                },
+                {
+                  "nombre": "NaCl 0,9% matraz 500 ml",
+                  "specs": [
+                    "Caja x 20"
+                  ]
+                },
+                {
+                  "nombre": "NaCl 0,9% matraz 1000 ml",
+                  "specs": [
+                    "Caja x 10"
+                  ]
+                },
+                {
+                  "nombre": "Agua estéril ampolla 5 ml",
+                  "specs": [
+                    "Para dilución"
+                  ]
+                }
+              ],
+              "fuente": "https://klinetix.cl/products/suero-fisiologico-fresenius-kabi"
             },
             {
               "marca": "B. Braun",
-              "modelo": "NaCl 0,9%",
+              "modelo": "Línea completa · 5 modelos",
               "detalle": [
-                "Ampollas y matraces"
-              ]
+                "Plástica",
+                "Ecoflac"
+              ],
+              "modelos": [
+                {
+                  "nombre": "NaCl 0,9% ampolla 10 / 20 ml",
+                  "specs": [
+                    "Plástica"
+                  ]
+                },
+                {
+                  "nombre": "NaCl 0,9% frasco 100 ml",
+                  "specs": [
+                    "Ecoflac"
+                  ]
+                },
+                {
+                  "nombre": "NaCl 0,9% frasco 250 ml",
+                  "specs": [
+                    "Ecoflac"
+                  ]
+                },
+                {
+                  "nombre": "NaCl 0,9% frasco 500 ml",
+                  "specs": [
+                    "Ecoflac"
+                  ]
+                },
+                {
+                  "nombre": "NaCl 0,9% frasco 1000 ml",
+                  "specs": [
+                    "Ecoflac"
+                  ]
+                }
+              ],
+              "fuente": "https://www.karudistribuidora.cl/insumos-medicos"
             }
           ]
         },
@@ -3868,10 +3998,43 @@
           "opciones": [
             {
               "marca": "Baxter",
-              "modelo": "NaCl 0,9% matraz",
+              "modelo": "Línea completa · 5 modelos",
               "detalle": [
-                "Uso hospitalario"
-              ]
+                "Bolsa flexible"
+              ],
+              "modelos": [
+                {
+                  "nombre": "NaCl 0,9% bolsa Viaflex 100 ml",
+                  "specs": [
+                    "Bolsa flexible"
+                  ]
+                },
+                {
+                  "nombre": "NaCl 0,9% bolsa Viaflex 250 ml",
+                  "specs": [
+                    "Bolsa flexible"
+                  ]
+                },
+                {
+                  "nombre": "NaCl 0,9% bolsa Viaflex 500 ml",
+                  "specs": [
+                    "Bolsa flexible"
+                  ]
+                },
+                {
+                  "nombre": "NaCl 0,9% bolsa Viaflex 1000 ml",
+                  "specs": [
+                    "Bolsa flexible"
+                  ]
+                },
+                {
+                  "nombre": "Ringer lactato 1000 ml",
+                  "specs": [
+                    "Bolsa flexible"
+                  ]
+                }
+              ],
+              "fuente": "https://www.karudistribuidora.cl/insumos-medicos"
             }
           ]
         }
