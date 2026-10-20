@@ -1,19 +1,46 @@
-// Product options modal: brand/model alternatives grouped by tier, loaded from data/alternativas.json.
+// Brand/model alternatives by tier, loaded from data/alternativas.json.
 // Depends on window.joranQuoteList (features.js).
 (function () {
     'use strict';
 
-    const DATA_URL = 'data/alternativas.json?v=20261020';
+    const DATA_URL = 'data/alternativas.json?v=20261020e';
+    const TIERS = {
+        economica: { icon: 'fa-tag', label: 'Económica' },
+        estandar: { icon: 'fa-check-circle', label: 'Estándar' },
+        premium: { icon: 'fa-crown', label: 'Premium' }
+    };
     const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
-    let modal, lastFocus, current;
+    const slug = (s) => String(s).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+    let modal, body, lastFocus, current, products = {};
 
     function productName(li) {
-        const node = li.childNodes[0];
-        return (node && node.nodeType === Node.TEXT_NODE ? node.textContent : li.textContent).trim();
+        const clone = li.cloneNode(true);
+        clone.querySelectorAll('button').forEach((b) => b.remove());
+        return clone.textContent.replace(/\s+/g, ' ').trim();
     }
 
-    function add(name, category) {
-        if (window.joranQuoteList) window.joranQuoteList.add(name, category);
+    function initials(brand) {
+        const words = brand.replace(/[()]/g, '').split(/[\s+/-]+/).filter(Boolean);
+        return (words.length > 1 ? words[0][0] + words[1][0] : brand.slice(0, 2)).toUpperCase();
+    }
+
+    function hue(brand) {
+        let h = 0;
+        for (const c of brand) h = (h * 31 + c.charCodeAt(0)) % 360;
+        return h;
+    }
+
+    function add(name, btn) {
+        if (!window.joranQuoteList) return;
+        window.joranQuoteList.add(name, current.category);
+        if (btn) {
+            btn.classList.add('added');
+            btn.innerHTML = '<i class="fas fa-check" aria-hidden="true"></i> Agregado';
+            setTimeout(() => {
+                btn.classList.remove('added');
+                btn.innerHTML = btn.dataset.html;
+            }, 1600);
+        }
     }
 
     function buildModal() {
@@ -23,120 +50,203 @@
         modal.innerHTML = `
             <div class="opt-backdrop"></div>
             <div class="opt-dialog" role="dialog" aria-modal="true" aria-labelledby="opt-title">
-                <div class="opt-header">
-                    <div>
-                        <p class="opt-kicker">Opciones disponibles</p>
+                <header class="opt-header">
+                    <div class="opt-header-text">
+                        <p class="opt-kicker"></p>
                         <h3 id="opt-title"></h3>
+                        <p class="opt-summary"></p>
                     </div>
-                    <button type="button" class="opt-close" aria-label="Cerrar">&times;</button>
-                </div>
+                    <button type="button" class="opt-close" aria-label="Cerrar"><i class="fas fa-times" aria-hidden="true"></i></button>
+                </header>
+                <div class="opt-filters" role="tablist" aria-label="Filtrar por gama"></div>
                 <div class="opt-body"></div>
+                <footer class="opt-footer">
+                    <label for="opt-custom-input">¿Buscas otra marca o modelo?</label>
+                    <div class="opt-custom-row">
+                        <input type="text" id="opt-custom-input" class="opt-custom-input" placeholder="Ej: marca, modelo o medida" autocomplete="off">
+                        <button type="button" class="opt-custom-btn"><i class="fas fa-plus" aria-hidden="true"></i><span>Agregar</span></button>
+                    </div>
+                    <button type="button" class="opt-view-list"><i class="fas fa-clipboard-list" aria-hidden="true"></i> Ver mi cotización</button>
+                </footer>
             </div>`;
         document.body.appendChild(modal);
+        body = modal.querySelector('.opt-body');
+
         modal.querySelector('.opt-backdrop').addEventListener('click', close);
         modal.querySelector('.opt-close').addEventListener('click', close);
-        document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !modal.hidden) close(); });
-        modal.querySelector('.opt-body').addEventListener('click', (e) => {
+        modal.querySelector('.opt-view-list').addEventListener('click', () => {
+            close();
+            if (window.joranQuoteList) window.joranQuoteList.open();
+        });
+        modal.querySelector('.opt-custom-btn').addEventListener('click', addCustom);
+        modal.querySelector('.opt-custom-input').addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') { e.preventDefault(); addCustom(); }
+        });
+        modal.querySelector('.opt-filters').addEventListener('click', (e) => {
+            const chip = e.target.closest('[data-filter]');
+            if (chip) filter(chip.dataset.filter);
+        });
+        body.addEventListener('click', (e) => {
             const btn = e.target.closest('[data-add]');
-            if (btn) {
-                add(btn.dataset.add, current.category);
-                btn.classList.add('added');
-                btn.textContent = 'Agregado ✓';
-                setTimeout(() => { btn.classList.remove('added'); btn.textContent = btn.dataset.label; }, 1500);
-                return;
-            }
-            if (e.target.closest('.opt-custom-btn')) addCustom();
+            if (btn) add(btn.dataset.add, btn);
         });
-        modal.querySelector('.opt-body').addEventListener('keydown', (e) => {
-            if (e.key === 'Enter' && e.target.classList.contains('opt-custom-input')) { e.preventDefault(); addCustom(); }
+        document.addEventListener('keydown', (e) => {
+            if (modal.hidden) return;
+            if (e.key === 'Escape') close();
+            if (e.key === 'Tab') trapFocus(e);
         });
+    }
+
+    function trapFocus(e) {
+        const items = [...modal.querySelectorAll('button, input')].filter((el) => el.offsetParent !== null);
+        if (!items.length) return;
+        const first = items[0];
+        const last = items[items.length - 1];
+        if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+        else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
     }
 
     function addCustom() {
         const input = modal.querySelector('.opt-custom-input');
         const value = input.value.trim();
         if (!value) { input.focus(); return; }
-        add(`${current.product} — ${value}`, current.category);
+        add(`${current.product} — ${value}`);
         input.value = '';
     }
 
-    function addButton(label, value) {
-        return `<button type="button" class="opt-add" data-add="${esc(value)}" data-label="${esc(label)}">${esc(label)}</button>`;
+    function filter(key) {
+        modal.querySelectorAll('.opt-chip').forEach((c) => {
+            const on = c.dataset.filter === key;
+            c.classList.toggle('active', on);
+            c.setAttribute('aria-selected', on ? 'true' : 'false');
+        });
+        body.querySelectorAll('.opt-tier').forEach((t) => { t.hidden = key !== 'all' && t.dataset.tier !== key; });
+        body.scrollTop = 0;
+    }
+
+    function addBtn(html, value, cls) {
+        return `<button type="button" class="${cls}" data-add="${esc(value)}" data-html="${esc(html)}">${html}</button>`;
+    }
+
+    function card(product, o) {
+        const label = `${o.marca}${o.modelo ? ' ' + o.modelo : ''}`;
+        return `
+            <article class="opt-card">
+                <div class="opt-card-top">
+                    <span class="opt-avatar" style="--h:${hue(o.marca)}" aria-hidden="true">${esc(initials(o.marca))}</span>
+                    <div class="opt-card-title">
+                        <strong class="opt-brand">${esc(o.marca)}</strong>
+                        ${o.modelo ? `<span class="opt-model">${esc(o.modelo)}</span>` : ''}
+                    </div>
+                </div>
+                ${(o.detalle || []).length ? `<ul class="opt-tags">${o.detalle.map((d) => `<li>${esc(d)}</li>`).join('')}</ul>` : ''}
+                ${addBtn('<i class="fas fa-plus" aria-hidden="true"></i> Agregar', `${product} — ${label}`, 'opt-add')}
+            </article>`;
     }
 
     function open(product, category, info) {
         current = { product, category };
         lastFocus = document.activeElement;
+        const brands = new Set();
+        info.gamas.forEach((g) => g.opciones.forEach((o) => brands.add(o.marca)));
+
+        modal.querySelector('.opt-kicker').textContent = category || 'Opciones';
         modal.querySelector('#opt-title').textContent = product;
-        const tiers = info.gamas.map((g) => `
-            <section class="opt-tier opt-tier-${esc(g.nombre.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase())}">
-                <div class="opt-tier-head">
-                    <h4>Gama ${esc(g.nombre)}</h4>
-                    ${g.descripcion ? `<p>${esc(g.descripcion)}</p>` : ''}
-                </div>
-                <div class="opt-cards">
-                    ${g.opciones.map((o) => `
-                        <div class="opt-card">
-                            <div class="opt-card-info">
-                                <strong class="opt-brand">${esc(o.marca)}</strong>
-                                <span class="opt-model">${esc(o.modelo || '')}</span>
-                                ${(o.detalle || []).length ? `<ul>${o.detalle.map((d) => `<li>${esc(d)}</li>`).join('')}</ul>` : ''}
-                            </div>
-                            ${addButton('Agregar esta opción', `${product} — ${o.marca}${o.modelo ? ' ' + o.modelo : ''}`)}
-                        </div>`).join('')}
-                </div>
-                ${addButton(`Cotizar gama ${g.nombre} (marca a elección)`, `${product} — gama ${g.nombre}`).replace('opt-add', 'opt-add opt-add-tier')}
-            </section>`).join('');
-        modal.querySelector('.opt-body').innerHTML = `
-            ${info.ejemplo ? '<p class="opt-note"><i class="fas fa-info-circle"></i> Marcas de ejemplo (por confirmar). Sujeto a disponibilidad.</p>' : '<p class="opt-note"><i class="fas fa-info-circle"></i> Sujeto a disponibilidad. Te confirmamos precio y stock en la cotización.</p>'}
-            ${tiers}
-            <div class="opt-custom">
-                <label for="opt-custom-input">¿Buscas otra marca o modelo?</label>
-                <div class="opt-custom-row">
-                    <input type="text" id="opt-custom-input" class="opt-custom-input" placeholder="Ej: marca, modelo, medida...">
-                    <button type="button" class="btn btn-primary opt-custom-btn">Agregar</button>
-                </div>
-            </div>`;
+        modal.querySelector('.opt-summary').textContent =
+            `${brands.size} ${brands.size === 1 ? 'marca' : 'marcas'} en ${info.gamas.length} ${info.gamas.length === 1 ? 'gama' : 'gamas'}`;
+
+        modal.querySelector('.opt-filters').innerHTML =
+            '<button type="button" class="opt-chip active" role="tab" aria-selected="true" data-filter="all">Todas</button>' +
+            info.gamas.map((g) => {
+                const key = slug(g.nombre);
+                const t = TIERS[key] || { icon: 'fa-circle' };
+                return `<button type="button" class="opt-chip opt-chip-${esc(key)}" role="tab" aria-selected="false" data-filter="${esc(key)}"><i class="fas ${t.icon}" aria-hidden="true"></i> ${esc(g.nombre)}</button>`;
+            }).join('');
+
+        body.innerHTML = `
+            <p class="opt-note"><i class="fas fa-info-circle" aria-hidden="true"></i>
+                ${info.ejemplo ? 'Marcas de ejemplo (por confirmar).' : 'Marcas de referencia que se comercializan en Chile.'}
+                Precio y disponibilidad se confirman en tu cotización.</p>
+            ${info.gamas.map((g) => {
+                const key = slug(g.nombre);
+                const t = TIERS[key] || { icon: 'fa-circle' };
+                return `
+                <section class="opt-tier opt-tier-${esc(key)}" data-tier="${esc(key)}">
+                    <div class="opt-tier-head">
+                        <span class="opt-tier-badge"><i class="fas ${t.icon}" aria-hidden="true"></i> Gama ${esc(g.nombre)}</span>
+                        ${g.descripcion ? `<p>${esc(g.descripcion)}</p>` : ''}
+                    </div>
+                    <div class="opt-cards">${g.opciones.map((o) => card(product, o)).join('')}</div>
+                    ${addBtn(`<i class="fas fa-random" aria-hidden="true"></i> Cotizar gama ${esc(g.nombre)} con la marca que nos recomiendes`, `${product} — gama ${g.nombre} (marca a elección)`, 'opt-add-tier')}
+                </section>`;
+            }).join('')}`;
+
+        modal.querySelector('.opt-custom-input').value = '';
         modal.hidden = false;
-        document.body.style.overflow = 'hidden';
-        modal.querySelector('.opt-body').scrollTop = 0;
+        document.body.classList.add('opt-lock');
+        requestAnimationFrame(() => modal.classList.add('open'));
+        body.scrollTop = 0;
         modal.querySelector('.opt-close').focus();
     }
 
     function close() {
+        modal.classList.remove('open');
         modal.hidden = true;
-        document.body.style.overflow = '';
-        if (lastFocus && typeof lastFocus.focus === 'function') lastFocus.focus();
+        document.body.classList.remove('opt-lock');
+        if (lastFocus && typeof lastFocus.focus === 'function' && document.contains(lastFocus)) lastFocus.focus();
     }
 
-    function decorate(data) {
-        const products = (data && data.productos) || {};
+    function makeButton(name, category) {
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 'opt-open';
+        btn.setAttribute('aria-label', `Ver marcas y modelos de ${name}`);
+        btn.innerHTML = '<i class="fas fa-layer-group" aria-hidden="true"></i><span>Ver marcas</span>';
+        btn.addEventListener('click', () => open(name, category, products[name]));
+        return btn;
+    }
+
+    function decorateItem(li, name, category) {
+        if (li.querySelector('.opt-open') || !products[name]) return;
+        li.insertBefore(makeButton(name, category), li.querySelector('.ql-add'));
+        li.classList.add('has-options');
+    }
+
+    function decoratePages() {
         document.querySelectorAll('.product-page').forEach((page) => {
             const h2 = page.querySelector('.section-header h2');
             const category = h2 ? h2.textContent.trim() : '';
             page.querySelectorAll('li').forEach((li) => {
-                if (li.closest('.section-quick-links') || li.querySelector('.opt-open')) return;
-                const name = productName(li);
-                const info = products[name];
-                if (!info || !Array.isArray(info.gamas) || !info.gamas.length) return;
-                const btn = document.createElement('button');
-                btn.type = 'button';
-                btn.className = 'opt-open';
-                btn.setAttribute('aria-label', `Ver marcas y modelos de ${name}`);
-                btn.innerHTML = '<i class="fas fa-layer-group" aria-hidden="true"></i><span>Opciones</span>';
-                btn.addEventListener('click', () => open(name, category, info));
-                const addBtn = li.querySelector('.ql-add');
-                li.insertBefore(btn, addBtn || null);
-                li.classList.add('has-options');
+                if (!li.closest('.section-quick-links')) decorateItem(li, productName(li), category);
             });
+            const header = page.querySelector('.section-header');
+            if (header && !header.querySelector('.opt-hint') && page.querySelector('.opt-open')) {
+                header.insertAdjacentHTML('beforeend', '<p class="opt-hint"><i class="fas fa-layer-group" aria-hidden="true"></i> Toca <strong>Ver marcas</strong> para comparar marcas y modelos por gama.</p>');
+            }
         });
+    }
+
+    function decorateSearch() {
+        const results = document.getElementById('product-search-results');
+        if (!results) return;
+        const run = () => results.querySelectorAll('.search-result').forEach((li) => {
+            const name = li.querySelector('.search-result-name');
+            const cat = li.querySelector('.search-result-cat');
+            if (name) decorateItem(li, name.textContent.trim(), cat ? cat.textContent.trim() : '');
+        });
+        new MutationObserver(run).observe(results, { childList: true, subtree: true });
+        run();
     }
 
     function init() {
         buildModal();
         fetch(DATA_URL)
             .then((r) => (r.ok ? r.json() : null))
-            .then(decorate)
+            .then((data) => {
+                products = (data && data.productos) || {};
+                decoratePages();
+                decorateSearch();
+            })
             .catch(() => { /* options are optional */ });
     }
 
