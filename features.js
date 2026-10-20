@@ -362,6 +362,7 @@
 
     function init() {
         buildListUI();
+        window.joranQuoteList = { add: addItem, open: openPanel };
         addButtonsToCategories();
         renderList();
         initSearch();
