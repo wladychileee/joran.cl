@@ -1127,7 +1127,46 @@
               "modelo": "Llave ajustable serie 80",
               "detalle": [
                 "Mandíbula de precisión"
-              ]
+              ],
+              "modelos": [
+                {
+                  "nombre": "Serie 90 ERGO",
+                  "specs": [
+                    "Llave ajustable, mango caucho, fosfatada"
+                  ]
+                },
+                {
+                  "nombre": "Serie 90C",
+                  "specs": [
+                    "Llave ajustable, cromada"
+                  ]
+                },
+                {
+                  "nombre": "Serie 90P",
+                  "specs": [
+                    "Llave ajustable con quijada reversible"
+                  ]
+                },
+                {
+                  "nombre": "Serie 80",
+                  "specs": [
+                    "Llave ajustable clásica"
+                  ]
+                },
+                {
+                  "nombre": "Alicates ERGO",
+                  "specs": [
+                    "Universal, punta y corte"
+                  ]
+                },
+                {
+                  "nombre": "Destornilladores ERGO",
+                  "specs": [
+                    "Paleta y Phillips"
+                  ]
+                }
+              ],
+              "fuente": "https://www.bahco.com/"
             }
           ]
         },
@@ -1140,14 +1179,80 @@
               "modelo": "Alicates universales y de corte",
               "detalle": [
                 "Acero alemán de alta dureza"
-              ]
+              ],
+              "modelos": [
+                {
+                  "nombre": "Cobra 87 01",
+                  "specs": [
+                    "Alicate para tubos ajustable"
+                  ]
+                },
+                {
+                  "nombre": "Pliers Wrench 86 03",
+                  "specs": [
+                    "Alicate-llave de mordazas paralelas"
+                  ]
+                },
+                {
+                  "nombre": "03 01 / 03 02",
+                  "specs": [
+                    "Alicate universal"
+                  ]
+                },
+                {
+                  "nombre": "70 01 / 70 02",
+                  "specs": [
+                    "Alicate de corte diagonal"
+                  ]
+                },
+                {
+                  "nombre": "26 11",
+                  "specs": [
+                    "Alicate de punta"
+                  ]
+                },
+                {
+                  "nombre": "13 66",
+                  "specs": [
+                    "Alicate pelacables"
+                  ]
+                }
+              ],
+              "fuente": "https://www.knipex.com/es"
             },
             {
               "marca": "Wera",
               "modelo": "Destornilladores Kraftform",
               "detalle": [
                 "Ergonomía profesional"
-              ]
+              ],
+              "modelos": [
+                {
+                  "nombre": "Kraftform Plus serie 300",
+                  "specs": [
+                    "Destornilladores profesionales"
+                  ]
+                },
+                {
+                  "nombre": "Kraftform Kompakt",
+                  "specs": [
+                    "Juegos de puntas compactos"
+                  ]
+                },
+                {
+                  "nombre": "Tool-Check Plus",
+                  "specs": [
+                    "Set de puntas y dados"
+                  ]
+                },
+                {
+                  "nombre": "Joker",
+                  "specs": [
+                    "Llaves combinadas"
+                  ]
+                }
+              ],
+              "fuente": "https://www-es.wera.de/"
             },
             {
               "marca": "Bahco",
@@ -1198,7 +1303,105 @@
               "modelo": "GST 90 BE (caladora)",
               "detalle": [
                 "650 W, velocidad variable"
-              ]
+              ],
+              "modelos": [
+                {
+                  "nombre": "GST 650",
+                  "specs": [
+                    "Sierra caladora",
+                    "450 W"
+                  ]
+                },
+                {
+                  "nombre": "GST 680",
+                  "specs": [
+                    "Sierra caladora",
+                    "500 W"
+                  ]
+                },
+                {
+                  "nombre": "GST 750",
+                  "specs": [
+                    "Sierra caladora",
+                    "520 W"
+                  ]
+                },
+                {
+                  "nombre": "GST 90 BE",
+                  "specs": [
+                    "Sierra caladora",
+                    "650 W"
+                  ]
+                },
+                {
+                  "nombre": "GST 75 E",
+                  "specs": [
+                    "Sierra caladora",
+                    "710 W"
+                  ]
+                },
+                {
+                  "nombre": "GST 12V-70",
+                  "specs": [
+                    "Caladora inalámbrica 12 V",
+                    "Corte en madera 70 mm"
+                  ]
+                },
+                {
+                  "nombre": "GST 183-LI",
+                  "specs": [
+                    "Caladora inalámbrica 18 V",
+                    "Corte en madera 95 mm"
+                  ]
+                },
+                {
+                  "nombre": "GST 185-LI",
+                  "specs": [
+                    "Caladora inalámbrica 18 V",
+                    "Corte en madera 125 mm"
+                  ]
+                },
+                {
+                  "nombre": "GKS 150",
+                  "specs": [
+                    "Sierra circular",
+                    "1.500 W"
+                  ]
+                },
+                {
+                  "nombre": "GKS 190",
+                  "specs": [
+                    "Sierra circular",
+                    "1.400 W"
+                  ]
+                },
+                {
+                  "nombre": "GKS 85 G",
+                  "specs": [
+                    "Sierra circular",
+                    "2.200 W"
+                  ]
+                },
+                {
+                  "nombre": "GKS 12V-26",
+                  "specs": [
+                    "Circular inalámbrica 12 V"
+                  ]
+                },
+                {
+                  "nombre": "GKS 18V-57 G",
+                  "specs": [
+                    "Circular inalámbrica 18 V"
+                  ]
+                },
+                {
+                  "nombre": "GKS 18V-57-2 GX",
+                  "specs": [
+                    "Circular inalámbrica 18 V"
+                  ]
+                }
+              ],
+              "fuente": "https://www.bosch-professional.com/cl/es/sierras-131474-ocs-c/"
             },
             {
               "marca": "Stanley",
@@ -1225,7 +1428,83 @@
               "modelo": "Sierra circular 7 1/4\"",
               "detalle": [
                 "Alta potencia"
-              ]
+              ],
+              "modelos": [
+                {
+                  "nombre": "4327",
+                  "specs": [
+                    "Sierra caladora",
+                    "450 W"
+                  ]
+                },
+                {
+                  "nombre": "JV0600K",
+                  "specs": [
+                    "Sierra caladora",
+                    "650 W"
+                  ]
+                },
+                {
+                  "nombre": "4350CT / 4350FCT",
+                  "specs": [
+                    "Sierra caladora",
+                    "720 W, velocidad variable"
+                  ]
+                },
+                {
+                  "nombre": "DJV186",
+                  "specs": [
+                    "Caladora inalámbrica 18 V LXT"
+                  ]
+                },
+                {
+                  "nombre": "JV002G",
+                  "specs": [
+                    "Caladora inalámbrica 40 V XGT"
+                  ]
+                },
+                {
+                  "nombre": "JR003G",
+                  "specs": [
+                    "Sierra sable 40 V XGT, sin carbones"
+                  ]
+                },
+                {
+                  "nombre": "HS7600K",
+                  "specs": [
+                    "Sierra circular 7 1/4\"",
+                    "1.200 W"
+                  ]
+                },
+                {
+                  "nombre": "HS7010",
+                  "specs": [
+                    "Sierra circular 7 1/4\"",
+                    "1.600 W"
+                  ]
+                },
+                {
+                  "nombre": "5007NK / 5007MGK",
+                  "specs": [
+                    "Sierra circular 7 1/4\"",
+                    "1.800 W"
+                  ]
+                },
+                {
+                  "nombre": "N5900B",
+                  "specs": [
+                    "Sierra circular 9 1/4\"",
+                    "2.000 W"
+                  ]
+                },
+                {
+                  "nombre": "LS1221",
+                  "specs": [
+                    "Tronzadora/ingleteadora 12\""
+                  ]
+                }
+              ],
+              "fuente": "https://makita.cl/productos/"
             },
             {
               "marca": "DeWalt",
@@ -1303,7 +1582,92 @@
               "modelo": "Nivel láser de líneas GLL",
               "detalle": [
                 "Autonivelante"
-              ]
+              ],
+              "modelos": [
+                {
+                  "nombre": "GLM 40",
+                  "specs": [
+                    "Medidor láser de distancias",
+                    "40 m"
+                  ]
+                },
+                {
+                  "nombre": "GLM 100-25 C",
+                  "specs": [
+                    "Medidor láser conectable",
+                    "100 m"
+                  ]
+                },
+                {
+                  "nombre": "GCL 2-15 / 2-15 G",
+                  "specs": [
+                    "Láser de líneas + puntos",
+                    "Rojo / verde"
+                  ]
+                },
+                {
+                  "nombre": "GCL 25",
+                  "specs": [
+                    "Láser de puntos y líneas"
+                  ]
+                },
+                {
+                  "nombre": "GCL 2-50 C",
+                  "specs": [
+                    "Láser combinado conectable"
+                  ]
+                },
+                {
+                  "nombre": "GCL 12V-50-22 CG",
+                  "specs": [
+                    "Láser combinado verde 12 V"
+                  ]
+                },
+                {
+                  "nombre": "GLL 2-10",
+                  "specs": [
+                    "Láser de líneas cruzadas"
+                  ]
+                },
+                {
+                  "nombre": "GLL 2-12 / 2-12 G",
+                  "specs": [
+                    "Láser de líneas cruzadas",
+                    "Rojo / verde"
+                  ]
+                },
+                {
+                  "nombre": "GLL 3-80",
+                  "specs": [
+                    "Láser de 3 planos 360°"
+                  ]
+                },
+                {
+                  "nombre": "GLL 18V-120-33 CG",
+                  "specs": [
+                    "Láser de 3 planos verde 18 V"
+                  ]
+                },
+                {
+                  "nombre": "GPL 5",
+                  "specs": [
+                    "Láser de 5 puntos"
+                  ]
+                },
+                {
+                  "nombre": "GRL 250 HV / GRL 300 HV",
+                  "specs": [
+                    "Láser rotativo"
+                  ]
+                },
+                {
+                  "nombre": "GOL 26 / GOL 26 D",
+                  "specs": [
+                    "Nivel óptico"
+                  ]
+                }
+              ],
+              "fuente": "https://www.bosch-professional.com/cl/es/"
             },
             {
               "marca": "Bosch",
@@ -1317,7 +1681,52 @@
               "modelo": "Nivel serie 80",
               "detalle": [
                 "Precisión certificada"
-              ]
+              ],
+              "modelos": [
+                {
+                  "nombre": "Tipo 70",
+                  "specs": [
+                    "Nivel de burbuja aluminio rectangular"
+                  ]
+                },
+                {
+                  "nombre": "Tipo 80 AS / 80 AS-2",
+                  "specs": [
+                    "Nivel profesional reforzado"
+                  ]
+                },
+                {
+                  "nombre": "Tipo 80 AS M",
+                  "specs": [
+                    "Con base magnética"
+                  ]
+                },
+                {
+                  "nombre": "Tipo 196-2",
+                  "specs": [
+                    "Nivel fundición, alta resistencia"
+                  ]
+                },
+                {
+                  "nombre": "Tipo 196-2 LED",
+                  "specs": [
+                    "Con burbuja iluminada"
+                  ]
+                },
+                {
+                  "nombre": "Tipo 83",
+                  "specs": [
+                    "Nivel perfil robusto"
+                  ]
+                },
+                {
+                  "nombre": "LA M / LA S / LA T",
+                  "specs": [
+                    "Escuadras y reglas de aluminio"
+                  ]
+                }
+              ],
+              "fuente": "https://www.stabila.com/es/"
             }
           ]
         }
@@ -1354,7 +1763,82 @@
               "modelo": "Set brocas X-Line",
               "detalle": [
                 "Concreto, madera y metal"
-              ]
+              ],
+              "modelos": [
+                {
+                  "nombre": "EXPERT SDS-plus-7X",
+                  "specs": [
+                    "Concreto armado, 4 filos"
+                  ]
+                },
+                {
+                  "nombre": "SDS-plus-5",
+                  "specs": [
+                    "Concreto, metal duro"
+                  ]
+                },
+                {
+                  "nombre": "SDS-plus-3",
+                  "specs": [
+                    "Concreto, uso general"
+                  ]
+                },
+                {
+                  "nombre": "SDS-plus-1",
+                  "specs": [
+                    "Concreto, económica"
+                  ]
+                },
+                {
+                  "nombre": "SDS-max-4 / -8",
+                  "specs": [
+                    "Para rotomartillos SDS-max"
+                  ]
+                },
+                {
+                  "nombre": "CYL-5 / CYL-3",
+                  "specs": [
+                    "Concreto y piedra, vástago cilíndrico"
+                  ]
+                },
+                {
+                  "nombre": "HSS-G",
+                  "specs": [
+                    "Metal, rectificada"
+                  ]
+                },
+                {
+                  "nombre": "HSS-TiN",
+                  "specs": [
+                    "Metal, recubrimiento de titanio"
+                  ]
+                },
+                {
+                  "nombre": "HSS PointTeQ",
+                  "specs": [
+                    "Metal, punta autocentrante"
+                  ]
+                },
+                {
+                  "nombre": "Multi Construction",
+                  "specs": [
+                    "Multimaterial"
+                  ]
+                },
+                {
+                  "nombre": "Self Cut Speed",
+                  "specs": [
+                    "Paleta para madera"
+                  ]
+                },
+                {
+                  "nombre": "EXPERT HEX-9",
+                  "specs": [
+                    "Cerámica dura y porcelanato"
+                  ]
+                }
+              ],
+              "fuente": "https://www.bosch-professional.com/cl/es/"
             },
             {
               "marca": "Irwin",
@@ -1381,7 +1865,28 @@
               "modelo": "Brocas cobalto",
               "detalle": [
                 "Acero inoxidable y metales duros"
-              ]
+              ],
+              "modelos": [
+                {
+                  "nombre": "EXTREME SDS-plus",
+                  "specs": [
+                    "Concreto, set 10 piezas"
+                  ]
+                },
+                {
+                  "nombre": "Brocas Impact Ready",
+                  "specs": [
+                    "Para atornillador de impacto"
+                  ]
+                },
+                {
+                  "nombre": "Brocas titanio Pilot Point",
+                  "specs": [
+                    "Metal"
+                  ]
+                }
+              ],
+              "fuente": "https://www.dewalt.cl/"
             },
             {
               "marca": "Makita",
@@ -5246,7 +5751,71 @@
               "modelo": "Tarugos y tornillos",
               "detalle": [
                 "Fijación en muros"
-              ]
+              ],
+              "modelos": [
+                {
+                  "nombre": "DuoPower",
+                  "specs": [
+                    "Tarugo universal bimaterial",
+                    "6–14 mm"
+                  ]
+                },
+                {
+                  "nombre": "DuoTec",
+                  "specs": [
+                    "Tarugo basculante para placas"
+                  ]
+                },
+                {
+                  "nombre": "DuoBlade",
+                  "specs": [
+                    "Autoperforante para volcanita"
+                  ]
+                },
+                {
+                  "nombre": "UX",
+                  "specs": [
+                    "Tarugo universal con collarín"
+                  ]
+                },
+                {
+                  "nombre": "SX / SX Plus",
+                  "specs": [
+                    "Tarugo de expansión para concreto"
+                  ]
+                },
+                {
+                  "nombre": "S",
+                  "specs": [
+                    "Tarugo nylon estándar"
+                  ]
+                },
+                {
+                  "nombre": "GKA",
+                  "specs": [
+                    "Autoperforante para yeso-cartón"
+                  ]
+                },
+                {
+                  "nombre": "SXRL",
+                  "specs": [
+                    "Tarugo largo para marcos"
+                  ]
+                },
+                {
+                  "nombre": "FAZ II",
+                  "specs": [
+                    "Anclaje mecánico perno"
+                  ]
+                },
+                {
+                  "nombre": "FIS V",
+                  "specs": [
+                    "Anclaje químico"
+                  ]
+                }
+              ],
+              "fuente": "https://www.fischer.cl/"
             }
           ]
         },
@@ -5259,7 +5828,58 @@
               "modelo": "Anclajes químicos y mecánicos",
               "detalle": [
                 "Alta carga"
-              ]
+              ],
+              "modelos": [
+                {
+                  "nombre": "HST3",
+                  "specs": [
+                    "Anclaje de expansión perno"
+                  ]
+                },
+                {
+                  "nombre": "HUS4",
+                  "specs": [
+                    "Tornillo de anclaje para concreto"
+                  ]
+                },
+                {
+                  "nombre": "HIT-RE 500 V4",
+                  "specs": [
+                    "Anclaje químico epóxico, alto desempeño"
+                  ]
+                },
+                {
+                  "nombre": "HIT-HY 200-R V3",
+                  "specs": [
+                    "Mortero híbrido inyectable"
+                  ]
+                },
+                {
+                  "nombre": "HIT-HY 170 / 270",
+                  "specs": [
+                    "Anclaje químico para mampostería"
+                  ]
+                },
+                {
+                  "nombre": "HIT-RE 100",
+                  "specs": [
+                    "Epóxico estándar"
+                  ]
+                },
+                {
+                  "nombre": "HVU2",
+                  "specs": [
+                    "Cápsula química"
+                  ]
+                },
+                {
+                  "nombre": "HAS-U",
+                  "specs": [
+                    "Varilla roscada para anclaje químico"
+                  ]
+                }
+              ],
+              "fuente": "https://www.hilti.cl/"
             },
             {
               "marca": "Fischer",
@@ -6699,7 +7319,38 @@
               "modelo": "Protector de madera",
               "detalle": [
                 "Exterior"
-              ]
+              ],
+              "modelos": [
+                {
+                  "nombre": "Barniz Vitrolux 63",
+                  "specs": [
+                    "Natural semibrillante"
+                  ]
+                },
+                {
+                  "nombre": "Barniz Vitrolux 65",
+                  "specs": [
+                    "Natural mate"
+                  ]
+                },
+                {
+                  "nombre": "Barniz Vitro Stone",
+                  "specs": [
+                    "Mate, para piedra"
+                  ]
+                },
+                {
+                  "nombre": "Barniz al agua",
+                  "specs": []
+                },
+                {
+                  "nombre": "Impregnante Pro",
+                  "specs": [
+                    "Protección de madera"
+                  ]
+                }
+              ],
+              "fuente": "https://www.chilcorrofin.cl/"
             }
           ]
         },
@@ -6856,7 +7507,34 @@
               "modelo": "Anticorrosivo",
               "detalle": [
                 "Uso industrial"
-              ]
+              ],
+              "modelos": [
+                {
+                  "nombre": "Anticorrosivo Esmalte Triple Protección",
+                  "specs": [
+                    "Anticorrosivo y terminación en uno"
+                  ]
+                },
+                {
+                  "nombre": "Esmalte anticorrosivo",
+                  "specs": []
+                },
+                {
+                  "nombre": "Bloqueador de humedad",
+                  "specs": []
+                },
+                {
+                  "nombre": "Impermeabilizante",
+                  "specs": []
+                },
+                {
+                  "nombre": "Techos 3 en 1",
+                  "specs": [
+                    "Pintura para techos"
+                  ]
+                }
+              ],
+              "fuente": "https://www.chilcorrofin.cl/"
             }
           ]
         },
