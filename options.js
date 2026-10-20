@@ -3,7 +3,7 @@
 (function () {
     'use strict';
 
-    const DATA_URL = 'data/alternativas.json?v=20261020m';
+    const DATA_URL = 'data/alternativas.json?v=20261020n';
     const TIERS = {
         economica: { icon: 'fa-tag', label: 'Económica' },
         estandar: { icon: 'fa-check-circle', label: 'Estándar' },

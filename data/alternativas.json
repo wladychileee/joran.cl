@@ -4343,10 +4343,31 @@
           "opciones": [
             {
               "marca": "Equalit",
-              "modelo": "75 g/m², resma 500",
+              "modelo": "Línea completa · 3 modelos",
               "detalle": [
-                "Multipropósito"
-              ]
+                "Resma 500 hojas"
+              ],
+              "modelos": [
+                {
+                  "nombre": "Multiuso carta 75 g",
+                  "specs": [
+                    "Resma 500 hojas"
+                  ]
+                },
+                {
+                  "nombre": "Multiuso oficio 75 g",
+                  "specs": [
+                    "Resma 500 hojas"
+                  ]
+                },
+                {
+                  "nombre": "Láser oficio 75 g",
+                  "specs": [
+                    "Resma 500 hojas"
+                  ]
+                }
+              ],
+              "fuente": "https://www.dcolon.cl/157-resmas"
             },
             {
               "marca": "Report",
@@ -4363,10 +4384,50 @@
           "opciones": [
             {
               "marca": "Chamex",
-              "modelo": "75 g/m²",
+              "modelo": "Línea completa · 6 modelos",
               "detalle": [
-                "Alta blancura"
-              ]
+                "Resma 500 hojas",
+                "Taco 80 x 115 mm"
+              ],
+              "modelos": [
+                {
+                  "nombre": "Carta 75 g",
+                  "specs": [
+                    "Resma 500 hojas"
+                  ]
+                },
+                {
+                  "nombre": "Oficio 75 g",
+                  "specs": [
+                    "Resma 500 hojas"
+                  ]
+                },
+                {
+                  "nombre": "A4 75 g",
+                  "specs": [
+                    "Resma 500 hojas"
+                  ]
+                },
+                {
+                  "nombre": "Doble carta 75 g",
+                  "specs": [
+                    "Resma 500 hojas"
+                  ]
+                },
+                {
+                  "nombre": "A3 75 g",
+                  "specs": [
+                    "Resma 500 hojas"
+                  ]
+                },
+                {
+                  "nombre": "Chamex Notes",
+                  "specs": [
+                    "Taco 80 x 115 mm"
+                  ]
+                }
+              ],
+              "fuente": "https://www.laprincipal.cl/87-resmas-de-papel"
             },
             {
               "marca": "Navigator",
@@ -4464,10 +4525,64 @@
           "opciones": [
             {
               "marca": "Bic",
-              "modelo": "Cristal",
+              "modelo": "Línea completa · 8 modelos",
               "detalle": [
-                "Punta media 1.0 mm"
-              ]
+                "Pasta 1,0 mm",
+                "Pasta fina 0,8 mm",
+                "Pasta 1,2–1,6 mm"
+              ],
+              "modelos": [
+                {
+                  "nombre": "Cristal Original",
+                  "specs": [
+                    "Pasta 1,0 mm",
+                    "Azul, negro, rojo, verde"
+                  ]
+                },
+                {
+                  "nombre": "Cristal Fine / Exact",
+                  "specs": [
+                    "Pasta fina 0,8 mm"
+                  ]
+                },
+                {
+                  "nombre": "Cristal Up / Large",
+                  "specs": [
+                    "Pasta 1,2–1,6 mm"
+                  ]
+                },
+                {
+                  "nombre": "Orange Fine",
+                  "specs": [
+                    "Pasta 0,8 mm"
+                  ]
+                },
+                {
+                  "nombre": "Round Stic",
+                  "specs": [
+                    "Pasta 1,0 mm"
+                  ]
+                },
+                {
+                  "nombre": "Clic / Atlantis",
+                  "specs": [
+                    "Pasta retráctil"
+                  ]
+                },
+                {
+                  "nombre": "4 Colores Original / Fine / Grip",
+                  "specs": [
+                    "Multicolor retráctil"
+                  ]
+                },
+                {
+                  "nombre": "Gel-ocity Quick Dry / Stic",
+                  "specs": [
+                    "Gel 0,7 mm"
+                  ]
+                }
+              ],
+              "fuente": "https://anyflip.com/cmugg/jfrq/basic"
             },
             {
               "marca": "Paper Mate",
@@ -4484,10 +4599,78 @@
           "opciones": [
             {
               "marca": "Pilot",
-              "modelo": "G-2",
+              "modelo": "Línea completa · 10 modelos",
               "detalle": [
-                "Tinta gel, retráctil"
-              ]
+                "Gel retráctil",
+                "Gel de capuchón",
+                "Gel económico"
+              ],
+              "modelos": [
+                {
+                  "nombre": "G-2 0,7 mm",
+                  "specs": [
+                    "Gel retráctil",
+                    "Azul, negro, rojo"
+                  ]
+                },
+                {
+                  "nombre": "G-1 0,7 mm",
+                  "specs": [
+                    "Gel de capuchón"
+                  ]
+                },
+                {
+                  "nombre": "Súper Gel 0,7 mm",
+                  "specs": [
+                    "Gel económico"
+                  ]
+                },
+                {
+                  "nombre": "Hi-Tecpoint V5 / V7",
+                  "specs": [
+                    "Tinta líquida",
+                    "Con o sin grip, BeGreen"
+                  ]
+                },
+                {
+                  "nombre": "V Ball Grip 0,7 mm",
+                  "specs": [
+                    "Tinta líquida"
+                  ]
+                },
+                {
+                  "nombre": "FriXion Ball / Clicker / Point",
+                  "specs": [
+                    "Gel borrable",
+                    "0,5 y 0,7 mm"
+                  ]
+                },
+                {
+                  "nombre": "BPS-GP / Super Grip",
+                  "specs": [
+                    "Pasta retráctil con grip"
+                  ]
+                },
+                {
+                  "nombre": "Bepete / BP1",
+                  "specs": [
+                    "Pasta 0,7 y 1,0 mm"
+                  ]
+                },
+                {
+                  "nombre": "V Signpen",
+                  "specs": [
+                    "Plumón de firma"
+                  ]
+                },
+                {
+                  "nombre": "G-Tec C-4",
+                  "specs": [
+                    "Gel 0,4 mm ultrafino"
+                  ]
+                }
+              ],
+              "fuente": "https://www.imex.cl/product-brands/pilot/"
             },
             {
               "marca": "Faber-Castell",
@@ -4548,10 +4731,64 @@
           "opciones": [
             {
               "marca": "Sharpie",
-              "modelo": "Fine Point",
+              "modelo": "Línea completa · 8 modelos",
               "detalle": [
-                "Resistente al agua"
-              ]
+                "Punta fina 1,0 mm",
+                "Punta ultrafina 0,5 mm",
+                "Doble punta fina/ultrafina"
+              ],
+              "modelos": [
+                {
+                  "nombre": "Fine Point",
+                  "specs": [
+                    "Punta fina 1,0 mm",
+                    "Negro, azul, rojo, verde y colores"
+                  ]
+                },
+                {
+                  "nombre": "Ultra Fine",
+                  "specs": [
+                    "Punta ultrafina 0,5 mm"
+                  ]
+                },
+                {
+                  "nombre": "Twin Tip",
+                  "specs": [
+                    "Doble punta fina/ultrafina"
+                  ]
+                },
+                {
+                  "nombre": "Chisel",
+                  "specs": [
+                    "Punta biselada"
+                  ]
+                },
+                {
+                  "nombre": "King Size",
+                  "specs": [
+                    "Punta biselada gruesa"
+                  ]
+                },
+                {
+                  "nombre": "Metálico plata / oro",
+                  "specs": [
+                    "Punta fina"
+                  ]
+                },
+                {
+                  "nombre": "Paint (base aceite)",
+                  "specs": [
+                    "Punta media, multisuperficie"
+                  ]
+                },
+                {
+                  "nombre": "Sets de colores 8 / 12 / 24",
+                  "specs": [
+                    "Punta fina"
+                  ]
+                }
+              ],
+              "fuente": "https://embalados.cl/marca-sharpie/"
             },
             {
               "marca": "Faber-Castell",
@@ -4566,13 +4803,6 @@
           "nombre": "Premium",
           "descripcion": "Industrial.",
           "opciones": [
-            {
-              "marca": "Sharpie",
-              "modelo": "Pro / Industrial",
-              "detalle": [
-                "Resiste altas temperaturas"
-              ]
-            },
             {
               "marca": "Edding",
               "modelo": "3000",
@@ -4612,10 +4842,69 @@
           "opciones": [
             {
               "marca": "Rexel",
-              "modelo": "Corchetera de escritorio",
+              "modelo": "Línea completa · 9 modelos",
               "detalle": [
-                "Hasta 30 hojas"
-              ]
+                "Corchetera de escritorio",
+                "Corchetera uso pesado",
+                "Corchetera eléctrica"
+              ],
+              "modelos": [
+                {
+                  "nombre": "Multiuso uso liviano",
+                  "specs": [
+                    "Corchetera de escritorio"
+                  ]
+                },
+                {
+                  "nombre": "Multiuso uso pesado",
+                  "specs": [
+                    "Corchetera de escritorio"
+                  ]
+                },
+                {
+                  "nombre": "Goliath",
+                  "specs": [
+                    "Corchetera uso pesado"
+                  ]
+                },
+                {
+                  "nombre": "Gladiator",
+                  "specs": [
+                    "Corchetera uso pesado"
+                  ]
+                },
+                {
+                  "nombre": "20EX",
+                  "specs": [
+                    "Corchetera eléctrica"
+                  ]
+                },
+                {
+                  "nombre": "Optima Grip",
+                  "specs": [
+                    "Corchetera eléctrica portátil"
+                  ]
+                },
+                {
+                  "nombre": "P240 / P265",
+                  "specs": [
+                    "Perforadora gran capacidad"
+                  ]
+                },
+                {
+                  "nombre": "Corchetes 23/8 a 23/24",
+                  "specs": [
+                    "Caja 1.000"
+                  ]
+                },
+                {
+                  "nombre": "Corchetes Giant 66/11",
+                  "specs": [
+                    "Caja 5.000"
+                  ]
+                }
+              ],
+              "fuente": "https://www.tienda-accobrands.cl/collections/vendors?q=rexel"
             },
             {
               "marca": "Swingline",
@@ -4630,13 +4919,6 @@
           "nombre": "Premium",
           "descripcion": "Alto volumen.",
           "opciones": [
-            {
-              "marca": "Rexel",
-              "modelo": "Corchetera tipo alicate / heavy duty",
-              "detalle": [
-                "Hasta 100+ hojas"
-              ]
-            },
             {
               "marca": "Swingline",
               "modelo": "Heavy duty",
@@ -4712,13 +4994,6 @@
           "descripcion": "Básicas.",
           "opciones": [
             {
-              "marca": "Casio",
-              "modelo": "MX-12B",
-              "detalle": [
-                "12 dígitos, solar"
-              ]
-            },
-            {
               "marca": "Genérica",
               "modelo": "Calculadora 8 dígitos",
               "detalle": [
@@ -4733,17 +5008,106 @@
           "opciones": [
             {
               "marca": "Casio",
-              "modelo": "DJ-120D Plus",
+              "modelo": "Línea completa · 13 modelos",
               "detalle": [
-                "12 dígitos, revisión de cálculos"
-              ]
-            },
-            {
-              "marca": "Casio",
-              "modelo": "fx-82 (científica)",
-              "detalle": [
-                "Uso técnico"
-              ]
+                "Calculadora de escritorio",
+                "Calculadora de escritorio grande",
+                "Calculadora con impresora"
+              ],
+              "modelos": [
+                {
+                  "nombre": "MX-12B",
+                  "specs": [
+                    "Calculadora de escritorio",
+                    "12 dígitos, solar + pila"
+                  ]
+                },
+                {
+                  "nombre": "GX-12B",
+                  "specs": [
+                    "Calculadora de escritorio grande",
+                    "12 dígitos"
+                  ]
+                },
+                {
+                  "nombre": "DJ-120D Plus",
+                  "specs": [
+                    "Calculadora de escritorio",
+                    "12 dígitos, revisión de 300 pasos"
+                  ]
+                },
+                {
+                  "nombre": "DH-12 / DH-14 / DH-16",
+                  "specs": [
+                    "Calculadora de escritorio",
+                    "12, 14 o 16 dígitos"
+                  ]
+                },
+                {
+                  "nombre": "HR-8RC",
+                  "specs": [
+                    "Calculadora con impresora",
+                    "Mini impresora, 12 dígitos"
+                  ]
+                },
+                {
+                  "nombre": "HR-100RC",
+                  "specs": [
+                    "Calculadora con impresora",
+                    "12 dígitos, 2 líneas/s"
+                  ]
+                },
+                {
+                  "nombre": "HR-150RC",
+                  "specs": [
+                    "Calculadora con impresora",
+                    "12 dígitos, impresión 2 colores"
+                  ]
+                },
+                {
+                  "nombre": "fx-82MS",
+                  "specs": [
+                    "Calculadora científica",
+                    "240 funciones, 2 líneas"
+                  ]
+                },
+                {
+                  "nombre": "fx-350MS",
+                  "specs": [
+                    "Calculadora científica",
+                    "240 funciones"
+                  ]
+                },
+                {
+                  "nombre": "fx-82LA Plus / X",
+                  "specs": [
+                    "Calculadora científica",
+                    "Pantalla natural"
+                  ]
+                },
+                {
+                  "nombre": "fx-570LA Plus / X",
+                  "specs": [
+                    "Calculadora científica",
+                    "Ecuaciones, matrices"
+                  ]
+                },
+                {
+                  "nombre": "fx-991LA Plus / CW ClassWiz",
+                  "specs": [
+                    "Calculadora científica",
+                    "Hoja de cálculo, QR"
+                  ]
+                },
+                {
+                  "nombre": "fx-CG100",
+                  "specs": [
+                    "Calculadora gráfica",
+                    "Pantalla a color"
+                  ]
+                }
+              ],
+              "fuente": "https://gerona.cl/casio-calculadoras-representado-exclusivamente-en-chile-por-gerona-brands/"
             }
           ]
         },
@@ -4751,13 +5115,6 @@
           "nombre": "Premium",
           "descripcion": "Con impresión / financiera.",
           "opciones": [
-            {
-              "marca": "Casio",
-              "modelo": "HR-100RC",
-              "detalle": [
-                "Imprime cálculos"
-              ]
-            },
             {
               "marca": "HP",
               "modelo": "10bII+ (financiera)",
@@ -4803,17 +5160,159 @@
           "opciones": [
             {
               "marca": "Brother",
-              "modelo": "P-touch",
+              "modelo": "Línea completa · 11 modelos",
               "detalle": [
-                "Etiquetas laminadas"
-              ]
+                "Rotuladora portátil",
+                "Rotuladora portátil compacta",
+                "Rotuladora de escritorio"
+              ],
+              "modelos": [
+                {
+                  "nombre": "PT-H110",
+                  "specs": [
+                    "Rotuladora portátil",
+                    "Cintas TZe 3,5–12 mm"
+                  ]
+                },
+                {
+                  "nombre": "PT-H200",
+                  "specs": [
+                    "Rotuladora portátil"
+                  ]
+                },
+                {
+                  "nombre": "PT-M95",
+                  "specs": [
+                    "Rotuladora portátil compacta"
+                  ]
+                },
+                {
+                  "nombre": "PT-D210",
+                  "specs": [
+                    "Rotuladora de escritorio",
+                    "Cintas TZe 3,5–12 mm"
+                  ]
+                },
+                {
+                  "nombre": "PT-D410",
+                  "specs": [
+                    "Rotuladora de escritorio",
+                    "Conexión USB"
+                  ]
+                },
+                {
+                  "nombre": "PT-D610BT",
+                  "specs": [
+                    "Rotuladora de escritorio",
+                    "USB y Bluetooth, hasta 24 mm"
+                  ]
+                },
+                {
+                  "nombre": "PT-E110",
+                  "specs": [
+                    "Rotuladora industrial portátil",
+                    "Con maletín"
+                  ]
+                },
+                {
+                  "nombre": "PT-E310BT",
+                  "specs": [
+                    "Rotuladora industrial",
+                    "Bluetooth, hasta 18 mm"
+                  ]
+                },
+                {
+                  "nombre": "PT-E560BT",
+                  "specs": [
+                    "Rotuladora industrial",
+                    "Conexión PC, hasta 24 mm"
+                  ]
+                },
+                {
+                  "nombre": "PT-P900W",
+                  "specs": [
+                    "Impresora de etiquetas",
+                    "USB/Wi-Fi, hasta 36 mm"
+                  ]
+                },
+                {
+                  "nombre": "QL-800 / QL-810W",
+                  "specs": [
+                    "Impresora de etiquetas térmica",
+                    "Etiquetas DK"
+                  ]
+                }
+              ],
+              "fuente": "https://storebrother.cl/categoria-producto/rotuladoras-y-etiquetadoras/rotuladoras-p-touch/"
             },
             {
               "marca": "Dymo",
-              "modelo": "LabelManager",
+              "modelo": "Línea completa · 9 modelos",
               "detalle": [
-                "Etiquetas resistentes"
-              ]
+                "Rotuladora portátil",
+                "Rotuladora Bluetooth",
+                "Rotuladora recargable"
+              ],
+              "modelos": [
+                {
+                  "nombre": "LetraTag LT-100H",
+                  "specs": [
+                    "Rotuladora portátil"
+                  ]
+                },
+                {
+                  "nombre": "LetraTag 200B",
+                  "specs": [
+                    "Rotuladora Bluetooth"
+                  ]
+                },
+                {
+                  "nombre": "LabelManager 160",
+                  "specs": [
+                    "Rotuladora portátil",
+                    "Cintas D1 6–12 mm"
+                  ]
+                },
+                {
+                  "nombre": "LabelManager 210D",
+                  "specs": [
+                    "Rotuladora portátil"
+                  ]
+                },
+                {
+                  "nombre": "LabelManager 280",
+                  "specs": [
+                    "Rotuladora recargable",
+                    "Conexión PC"
+                  ]
+                },
+                {
+                  "nombre": "LabelManager 420P",
+                  "specs": [
+                    "Rotuladora alto rendimiento",
+                    "Recargable, PC/Mac"
+                  ]
+                },
+                {
+                  "nombre": "LabelWriter 550 / 550 Turbo",
+                  "specs": [
+                    "Impresora de etiquetas térmica"
+                  ]
+                },
+                {
+                  "nombre": "LabelWriter 5XL",
+                  "specs": [
+                    "Impresora de etiquetas de envío"
+                  ]
+                },
+                {
+                  "nombre": "Rhino 5200",
+                  "specs": [
+                    "Rotuladora industrial"
+                  ]
+                }
+              ],
+              "fuente": "https://www.dymo.com/label-makers-printers/view-all/"
             }
           ]
         }
@@ -5004,10 +5503,78 @@
           "opciones": [
             {
               "marca": "Scotch (3M)",
-              "modelo": "Cinta mágica",
+              "modelo": "Línea completa · 10 modelos",
               "detalle": [
-                "Invisible, se puede escribir"
-              ]
+                "Invisible, se puede escribir encima",
+                "Transparente",
+                "Uso general"
+              ],
+              "modelos": [
+                {
+                  "nombre": "Cinta Mágica 810",
+                  "specs": [
+                    "Invisible, se puede escribir encima",
+                    "12–19 mm, con o sin dispensador"
+                  ]
+                },
+                {
+                  "nombre": "Cinta Cristal",
+                  "specs": [
+                    "Transparente",
+                    "12–19 mm x 20 m"
+                  ]
+                },
+                {
+                  "nombre": "Cinta 500 transparente",
+                  "specs": [
+                    "Uso general",
+                    "12 y 18 mm x 25 m"
+                  ]
+                },
+                {
+                  "nombre": "Súper Adhesiva",
+                  "specs": [
+                    "Con dispensador, 19 mm x 16,5 m"
+                  ]
+                },
+                {
+                  "nombre": "Doble Cara",
+                  "specs": [
+                    "2,7 mm x 22,8 m"
+                  ]
+                },
+                {
+                  "nombre": "Cinta Transferible 9945",
+                  "specs": [
+                    "18 mm"
+                  ]
+                },
+                {
+                  "nombre": "Scotch-Mount doble faz",
+                  "specs": [
+                    "Montaje interior / extrema"
+                  ]
+                },
+                {
+                  "nombre": "Embalaje transparente / café",
+                  "specs": [
+                    "48 mm x 40 m"
+                  ]
+                },
+                {
+                  "nombre": "Embalaje 600 / 311 / 371",
+                  "specs": [
+                    "Uso liviano a industrial"
+                  ]
+                },
+                {
+                  "nombre": "Dispensador C60",
+                  "specs": [
+                    "De escritorio"
+                  ]
+                }
+              ],
+              "fuente": "https://www.3mchile.cl/3M/es_CL/p/c/cintas/b/scotch/i/productos-para-el-hogar-y-de-oficina/"
             },
             {
               "marca": "Tesa",
@@ -5022,13 +5589,6 @@
           "nombre": "Premium",
           "descripcion": "Especiales.",
           "opciones": [
-            {
-              "marca": "Scotch (3M)",
-              "modelo": "Doble contacto / montaje",
-              "detalle": [
-                "Alta adherencia"
-              ]
-            },
             {
               "marca": "3M",
               "modelo": "Cinta de enmascarar",
@@ -5175,17 +5735,156 @@
           "opciones": [
             {
               "marca": "HP",
-              "modelo": "85A / 105A / 58A",
+              "modelo": "Línea completa · 10 modelos",
               "detalle": [
-                "Original"
-              ]
+                "Tóner negro original"
+              ],
+              "modelos": [
+                {
+                  "nombre": "85A (CE285A)",
+                  "specs": [
+                    "Tóner negro original",
+                    "LaserJet P1102 / M1132"
+                  ]
+                },
+                {
+                  "nombre": "83A (CF283A)",
+                  "specs": [
+                    "Tóner negro original",
+                    "LaserJet Pro M127 / M201"
+                  ]
+                },
+                {
+                  "nombre": "78A (CE278A)",
+                  "specs": [
+                    "Tóner negro original"
+                  ]
+                },
+                {
+                  "nombre": "17A (CF217A)",
+                  "specs": [
+                    "Tóner negro original",
+                    "LaserJet Pro M102 / M130"
+                  ]
+                },
+                {
+                  "nombre": "30A / 30X (CF230A/X)",
+                  "specs": [
+                    "Tóner negro original",
+                    "LaserJet Pro M203 / M227"
+                  ]
+                },
+                {
+                  "nombre": "48A (CF248A)",
+                  "specs": [
+                    "Tóner negro original",
+                    "LaserJet Pro M15 / M28"
+                  ]
+                },
+                {
+                  "nombre": "58A / 58X (CF258A/X)",
+                  "specs": [
+                    "Tóner negro original",
+                    "LaserJet Pro M404 / M428"
+                  ]
+                },
+                {
+                  "nombre": "103A / 105A (W1103A/W1105A)",
+                  "specs": [
+                    "Tóner negro original",
+                    "Neverstop / LaserJet 107"
+                  ]
+                },
+                {
+                  "nombre": "150A (W1500A)",
+                  "specs": [
+                    "Tóner negro original",
+                    "LaserJet M111 / M141"
+                  ]
+                },
+                {
+                  "nombre": "26A / 26X (CF226A/X)",
+                  "specs": [
+                    "Tóner negro original",
+                    "LaserJet Pro M402 / M426"
+                  ]
+                }
+              ],
+              "fuente": "https://www.todotoner.cl/hp-1"
             },
             {
               "marca": "Brother",
-              "modelo": "TN-1060 / TN-660",
+              "modelo": "Línea completa · 9 modelos",
               "detalle": [
-                "Original"
-              ]
+                "Tóner negro",
+                "Tóner negro alto rendimiento",
+                "Tóner negro ultra alto rendimiento"
+              ],
+              "modelos": [
+                {
+                  "nombre": "TN-1060",
+                  "specs": [
+                    "Tóner negro",
+                    "1.000 páginas, HL-1200 / DCP-1600"
+                  ]
+                },
+                {
+                  "nombre": "TN-2340",
+                  "specs": [
+                    "Tóner negro",
+                    "1.200 páginas"
+                  ]
+                },
+                {
+                  "nombre": "TN-2370",
+                  "specs": [
+                    "Tóner negro alto rendimiento",
+                    "2.600 páginas"
+                  ]
+                },
+                {
+                  "nombre": "TN-3429",
+                  "specs": [
+                    "Tóner negro",
+                    "3.000 páginas"
+                  ]
+                },
+                {
+                  "nombre": "TN-3479",
+                  "specs": [
+                    "Tóner negro alto rendimiento",
+                    "12.000 páginas"
+                  ]
+                },
+                {
+                  "nombre": "TN-3499",
+                  "specs": [
+                    "Tóner negro ultra alto rendimiento",
+                    "20.000 páginas"
+                  ]
+                },
+                {
+                  "nombre": "TN-221 BK / C / M / Y",
+                  "specs": [
+                    "Tóner color",
+                    "1.400–2.500 páginas"
+                  ]
+                },
+                {
+                  "nombre": "TN-419 BK / C / M / Y",
+                  "specs": [
+                    "Tóner color alto rendimiento"
+                  ]
+                },
+                {
+                  "nombre": "DR-1060 / DR-2340",
+                  "specs": [
+                    "Tambor (drum)",
+                    "10.000–12.000 páginas"
+                  ]
+                }
+              ],
+              "fuente": "https://www.todotoner.cl/toner-original"
             },
             {
               "marca": "Epson",
@@ -5200,13 +5899,6 @@
           "nombre": "Premium",
           "descripcion": "Alto rendimiento.",
           "opciones": [
-            {
-              "marca": "HP",
-              "modelo": "Tóner XL / X",
-              "detalle": [
-                "Más páginas por cartucho"
-              ]
-            },
             {
               "marca": "Canon",
               "modelo": "Tóner original",
