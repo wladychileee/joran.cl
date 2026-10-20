@@ -116,6 +116,9 @@
   .campaign-banner { font-size: .85rem; gap: 8px; padding: 8px 40px 8px 12px; }
   .hero-buttons { justify-content: center; }
   .product-page li { flex-wrap: wrap; }
+  .search-result { flex-wrap: wrap; }
+  .search-result-name { flex-basis: 100%; }
+  .search-result .ql-add { margin-left: auto; }
 }
 @media (prefers-reduced-motion: reduce) {
   .ql-toggle.bump, .wa-bubble { animation: none; }

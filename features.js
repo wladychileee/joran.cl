@@ -7,6 +7,7 @@
     const LIST_KEY = 'joran-quote-list';
     const CAMPAIGN_KEY = 'joran-campaign-dismissed';
     const GREETED_KEY = 'joran-wa-greeted';
+    const NOTES_KEY = 'joran-quote-notes';
     const DEFAULT_WA_TEXT = 'Hola, necesito cotizar productos para mi empresa';
 
     const norm = (s) => String(s).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim();
@@ -123,6 +124,8 @@
         itemsEl = panel.querySelector('.ql-items');
         emptyEl = panel.querySelector('.ql-empty');
         notesEl = panel.querySelector('.ql-notes');
+        notesEl.value = storage.get('localStorage', NOTES_KEY) || '';
+        notesEl.addEventListener('input', () => storage.set('localStorage', NOTES_KEY, notesEl.value));
 
         document.body.append(toggleBtn, backdrop, panel);
 
@@ -153,6 +156,7 @@
             if (!list.length || !window.confirm('¿Vaciar tu lista de cotización?')) return;
             list = [];
             notesEl.value = '';
+            storage.set('localStorage', NOTES_KEY, '');
             saveList();
         });
     }
