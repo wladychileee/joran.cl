@@ -3,11 +3,15 @@
 (function () {
     'use strict';
 
-    const DATA_URL = 'data/alternativas.json?v=20261020e';
+    const DATA_URL = 'data/alternativas.json?v=20261020f';
     const TIERS = {
         economica: { icon: 'fa-tag', label: 'Económica' },
         estandar: { icon: 'fa-check-circle', label: 'Estándar' },
-        premium: { icon: 'fa-crown', label: 'Premium' }
+        premium: { icon: 'fa-crown', label: 'Premium' },
+        cementos: { icon: 'fa-cubes', label: 'Cementos' },
+        'morteros y hormigones': { icon: 'fa-fill-drip', label: 'Morteros y hormigones' },
+        adhesivos: { icon: 'fa-th-large', label: 'Adhesivos' },
+        martillos: { icon: 'fa-hammer', label: 'Martillos' }
     };
     const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
     const slug = (s) => String(s).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
@@ -130,8 +134,23 @@
 
     function card(product, o) {
         const label = `${o.marca}${o.modelo ? ' ' + o.modelo : ''}`;
+        const models = o.modelos || [];
+        const list = models.length ? `
+                <details class="opt-models">
+                    <summary><span>Ver los ${models.length} modelos</span><i class="fas fa-chevron-down" aria-hidden="true"></i></summary>
+                    <ul class="opt-model-list">${models.map((md) => `
+                        <li>
+                            <div class="opt-model-info">
+                                <strong>${esc(md.nombre)}</strong>
+                                ${(md.specs || []).length ? `<span>${md.specs.map(esc).join(' · ')}</span>` : ''}
+                            </div>
+                            ${addBtn('<i class="fas fa-plus" aria-hidden="true"></i> Agregar', `${product} — ${o.marca} ${md.nombre}`, 'opt-add-model')}
+                        </li>`).join('')}
+                    </ul>
+                    ${o.fuente ? `<a class="opt-source" href="${esc(o.fuente)}" target="_blank" rel="noopener">Ver catálogo oficial de ${esc(o.marca)} <i class="fas fa-external-link-alt" aria-hidden="true"></i></a>` : ''}
+                </details>` : '';
         return `
-            <article class="opt-card">
+            <article class="opt-card${models.length ? ' opt-card-wide' : ''}">
                 <div class="opt-card-top">
                     <span class="opt-avatar" style="--h:${hue(o.marca)}" aria-hidden="true">${esc(initials(o.marca))}</span>
                     <div class="opt-card-title">
@@ -140,7 +159,10 @@
                     </div>
                 </div>
                 ${(o.detalle || []).length ? `<ul class="opt-tags">${o.detalle.map((d) => `<li>${esc(d)}</li>`).join('')}</ul>` : ''}
-                ${addBtn('<i class="fas fa-plus" aria-hidden="true"></i> Agregar', `${product} — ${label}`, 'opt-add')}
+                ${models.length
+                    ? addBtn('<i class="fas fa-plus" aria-hidden="true"></i> Agregar marca', `${product} — ${o.marca} (modelo a recomendar)`, 'opt-add')
+                    : addBtn('<i class="fas fa-plus" aria-hidden="true"></i> Agregar', `${product} — ${label}`, 'opt-add')}
+                ${list}
             </article>`;
     }
 
@@ -148,12 +170,14 @@
         current = { product, category };
         lastFocus = document.activeElement;
         const brands = new Set();
-        info.gamas.forEach((g) => g.opciones.forEach((o) => brands.add(o.marca)));
+        let models = 0;
+        info.gamas.forEach((g) => g.opciones.forEach((o) => { brands.add(o.marca); models += (o.modelos || []).length; }));
 
         modal.querySelector('.opt-kicker').textContent = category || 'Opciones';
         modal.querySelector('#opt-title').textContent = product;
         modal.querySelector('.opt-summary').textContent =
-            `${brands.size} ${brands.size === 1 ? 'marca' : 'marcas'} en ${info.gamas.length} ${info.gamas.length === 1 ? 'gama' : 'gamas'}`;
+            `${brands.size} ${brands.size === 1 ? 'marca' : 'marcas'} en ${info.gamas.length} ${info.gamas.length === 1 ? 'gama' : 'gamas'}` +
+            (models ? ` · ${models} modelos` : '');
 
         modal.querySelector('.opt-filters').innerHTML =
             '<button type="button" class="opt-chip active" role="tab" aria-selected="true" data-filter="all">Todas</button>' +
@@ -170,14 +194,15 @@
             ${info.gamas.map((g) => {
                 const key = slug(g.nombre);
                 const t = TIERS[key] || { icon: 'fa-circle' };
+                const badge = ['economica', 'estandar', 'premium'].includes(key) ? `Gama ${esc(g.nombre)}` : esc(g.nombre);
                 return `
                 <section class="opt-tier opt-tier-${esc(key)}" data-tier="${esc(key)}">
                     <div class="opt-tier-head">
-                        <span class="opt-tier-badge"><i class="fas ${t.icon}" aria-hidden="true"></i> Gama ${esc(g.nombre)}</span>
+                        <span class="opt-tier-badge"><i class="fas ${t.icon}" aria-hidden="true"></i> ${badge}</span>
                         ${g.descripcion ? `<p>${esc(g.descripcion)}</p>` : ''}
                     </div>
                     <div class="opt-cards">${g.opciones.map((o) => card(product, o)).join('')}</div>
-                    ${addBtn(`<i class="fas fa-random" aria-hidden="true"></i> Cotizar gama ${esc(g.nombre)} con la marca que nos recomiendes`, `${product} — gama ${g.nombre} (marca a elección)`, 'opt-add-tier')}
+                    ${addBtn(`<i class="fas fa-random" aria-hidden="true"></i> Cotizar ${badge.startsWith('Gama') ? 'gama ' + esc(g.nombre) : esc(g.nombre.toLowerCase())} con la marca que nos recomiendes`, `${product} — ${g.nombre} (marca a elección)`, 'opt-add-tier')}
                 </section>`;
             }).join('')}`;
 
