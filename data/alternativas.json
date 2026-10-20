@@ -4488,10 +4488,63 @@
           "opciones": [
             {
               "marca": "Rhein",
-              "modelo": "Carpeta plastificada",
+              "modelo": "Línea completa · 8 modelos",
               "detalle": [
-                "Oficio y carta"
-              ]
+                "Palanca, burdeo",
+                "Lomo con ventana",
+                "Palanca"
+              ],
+              "modelos": [
+                {
+                  "nombre": "Archivador carta ancho",
+                  "specs": [
+                    "Palanca, burdeo"
+                  ]
+                },
+                {
+                  "nombre": "Archivador oficio ancho / angosto",
+                  "specs": [
+                    "Palanca, burdeo"
+                  ]
+                },
+                {
+                  "nombre": "Archivador oficio Rado ancho / angosto",
+                  "specs": [
+                    "Lomo con ventana"
+                  ]
+                },
+                {
+                  "nombre": "Archivador letra ancho",
+                  "specs": [
+                    "Palanca"
+                  ]
+                },
+                {
+                  "nombre": "Archivador catálogo carta 2 anillos D",
+                  "specs": [
+                    "0,5\" a 1,5\", blanco"
+                  ]
+                },
+                {
+                  "nombre": "Anotador simple / doble vinil oficio",
+                  "specs": [
+                    "Azul o negro"
+                  ]
+                },
+                {
+                  "nombre": "Carpeta cartulina pigmentada",
+                  "specs": [
+                    "Certificada PEFC"
+                  ]
+                },
+                {
+                  "nombre": "Accoclip metálico",
+                  "specs": [
+                    "Caja 50 unidades"
+                  ]
+                }
+              ],
+              "fuente": "https://rhein.cl/categoria-producto/oficina/"
             },
             {
               "marca": "Isofit",
@@ -4840,6 +4893,48 @@
           "nombre": "Estándar",
           "descripcion": "Uso intensivo.",
           "opciones": [
+            {
+              "marca": "Maped",
+              "modelo": "Línea completa · 5 modelos",
+              "detalle": [
+                "Corchetera de escritorio",
+                "Corchetera media",
+                "Corchetera tira completa"
+              ],
+              "modelos": [
+                {
+                  "nombre": "Vivo 24/6 y 26/6",
+                  "specs": [
+                    "Corchetera de escritorio"
+                  ]
+                },
+                {
+                  "nombre": "Essentials 24–26/6",
+                  "specs": [
+                    "Corchetera media"
+                  ]
+                },
+                {
+                  "nombre": "Essentials gran 24–26/6",
+                  "specs": [
+                    "Corchetera tira completa"
+                  ]
+                },
+                {
+                  "nombre": "Corchetera metálica 24/6 26/6",
+                  "specs": [
+                    "Uso intensivo"
+                  ]
+                },
+                {
+                  "nombre": "Mini Ergologic",
+                  "specs": [
+                    "Mini corchetera con corchetes"
+                  ]
+                }
+              ],
+              "fuente": "https://nacional.cl/collections/perforadora"
+            },
             {
               "marca": "Rexel",
               "modelo": "Línea completa · 9 modelos",
@@ -5389,10 +5484,60 @@
           "opciones": [
             {
               "marca": "Maped",
-              "modelo": "Advanced",
+              "modelo": "Línea completa · 7 modelos",
               "detalle": [
-                "Mango soft-grip"
-              ]
+                "Tijera escolar punta roma",
+                "Tijera escolar mango suave",
+                "Tijera de oficina"
+              ],
+              "modelos": [
+                {
+                  "nombre": "Essentials 13 cm",
+                  "specs": [
+                    "Tijera escolar punta roma"
+                  ]
+                },
+                {
+                  "nombre": "Essentials Soft Neon 13 cm",
+                  "specs": [
+                    "Tijera escolar mango suave"
+                  ]
+                },
+                {
+                  "nombre": "Advanced Green 17 cm",
+                  "specs": [
+                    "Tijera de oficina",
+                    "Plástico reciclado"
+                  ]
+                },
+                {
+                  "nombre": "Advanced Green 21 cm",
+                  "specs": [
+                    "Tijera de oficina",
+                    "Plástico reciclado"
+                  ]
+                },
+                {
+                  "nombre": "Office Advanced 21 cm (8¼\")",
+                  "specs": [
+                    "Tijera de oficina",
+                    "Hoja acero inoxidable"
+                  ]
+                },
+                {
+                  "nombre": "Creative Cut",
+                  "specs": [
+                    "Tijera de corte decorativo"
+                  ]
+                },
+                {
+                  "nombre": "Guillotina Precise Cut A4",
+                  "specs": [
+                    "Guillotina de 30 cm"
+                  ]
+                }
+              ],
+              "fuente": "https://www.aldocarla.cl/brand/maped?limit=24&order=id&way=ASC"
             },
             {
               "marca": "Fiskars",
@@ -5446,10 +5591,39 @@
             },
             {
               "marca": "Maped",
-              "modelo": "Perforadora",
+              "modelo": "Línea completa · 4 modelos",
               "detalle": [
-                "Guía de papel"
-              ]
+                "Perforadora 10–12 hojas",
+                "Perforadora metálica",
+                "Perforadora 2 agujeros"
+              ],
+              "modelos": [
+                {
+                  "nombre": "Essentials 2 agujeros",
+                  "specs": [
+                    "Perforadora 10–12 hojas"
+                  ]
+                },
+                {
+                  "nombre": "Essentials 20–25 hojas",
+                  "specs": [
+                    "Perforadora metálica"
+                  ]
+                },
+                {
+                  "nombre": "Perforadora Universal",
+                  "specs": [
+                    "Perforadora 2 agujeros"
+                  ]
+                },
+                {
+                  "nombre": "Perforadora gran capacidad",
+                  "specs": [
+                    "Uso intensivo"
+                  ]
+                }
+              ],
+              "fuente": "https://nacional.cl/collections/perforadora"
             }
           ]
         },
@@ -5658,10 +5832,51 @@
           "opciones": [
             {
               "marca": "Torre",
-              "modelo": "Cuaderno universitario",
+              "modelo": "Línea completa · 6 modelos",
               "detalle": [
-                "100 hojas, 7 mm"
-              ]
+                "Cuaderno espiral",
+                "Cuaderno universitario tapa dura",
+                "Cuaderno tipo libro"
+              ],
+              "modelos": [
+                {
+                  "nombre": "Universitario Clásico 7 mm 100 h",
+                  "specs": [
+                    "Cuaderno espiral"
+                  ]
+                },
+                {
+                  "nombre": "Top 7 mm 150 h",
+                  "specs": [
+                    "Cuaderno universitario tapa dura"
+                  ]
+                },
+                {
+                  "nombre": "Book 7 mm 150 h",
+                  "specs": [
+                    "Cuaderno tipo libro"
+                  ]
+                },
+                {
+                  "nombre": "College 7 mm / liso 80 h",
+                  "specs": [
+                    "Cuaderno college"
+                  ]
+                },
+                {
+                  "nombre": "Pocket Office 7 mm 100 h",
+                  "specs": [
+                    "Libreta de bolsillo"
+                  ]
+                },
+                {
+                  "nombre": "Multimateria / especiales",
+                  "specs": [
+                    "Separadores por materia"
+                  ]
+                }
+              ],
+              "fuente": "https://www.torre.cl/product-category/cuadernos/"
             },
             {
               "marca": "Colón",
@@ -5678,10 +5893,45 @@
           "opciones": [
             {
               "marca": "Rhein",
-              "modelo": "Agenda / cuaderno ejecutivo",
+              "modelo": "Línea completa · 5 modelos",
               "detalle": [
-                "Tapa dura"
-              ]
+                "Cuaderno ejecutivo",
+                "Cuaderno ejecutivo, tapa leather",
+                "Cuaderno college"
+              ],
+              "modelos": [
+                {
+                  "nombre": "Super Class carta 120 h",
+                  "specs": [
+                    "Cuaderno ejecutivo"
+                  ]
+                },
+                {
+                  "nombre": "Super Class ½ oficio 120–150 h",
+                  "specs": [
+                    "Cuaderno ejecutivo, tapa leather"
+                  ]
+                },
+                {
+                  "nombre": "College One Color 5 / 7 mm",
+                  "specs": [
+                    "Cuaderno college"
+                  ]
+                },
+                {
+                  "nombre": "College caligrafía / croquis",
+                  "specs": [
+                    "Cuaderno college"
+                  ]
+                },
+                {
+                  "nombre": "Block de apuntes carta / oficio 80 h",
+                  "specs": [
+                    "Block de oficina"
+                  ]
+                }
+              ],
+              "fuente": "https://rhein.cl/productos/"
             },
             {
               "marca": "Artel",
