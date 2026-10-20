@@ -5490,14 +5490,195 @@
               "modelo": "Silirub",
               "detalle": [
                 "Antihongos"
-              ]
+              ],
+              "modelos": [
+                {
+                  "nombre": "Silirub 2",
+                  "specs": [
+                    "Silicona neutra",
+                    "Construcción, ventanas y fachadas"
+                  ]
+                },
+                {
+                  "nombre": "Silirub AC",
+                  "specs": [
+                    "Silicona acética",
+                    "Sanitarios y vidrio"
+                  ]
+                },
+                {
+                  "nombre": "Silirub HT",
+                  "specs": [
+                    "Silicona alta temperatura",
+                    "Hasta ~250 °C"
+                  ]
+                },
+                {
+                  "nombre": "Silirub NFS",
+                  "specs": [
+                    "Silicona neutra para piedra natural",
+                    "No mancha"
+                  ]
+                },
+                {
+                  "nombre": "Soudaflex 40 FC",
+                  "specs": [
+                    "Sellador poliuretano",
+                    "Juntas de construcción"
+                  ]
+                },
+                {
+                  "nombre": "Fix ALL Classic",
+                  "specs": [
+                    "Polímero híbrido sella y pega",
+                    "Superficies húmedas"
+                  ]
+                },
+                {
+                  "nombre": "Fix ALL High Tack",
+                  "specs": [
+                    "Polímero híbrido de agarre alto"
+                  ]
+                },
+                {
+                  "nombre": "Sin Clavos ni Tornillos",
+                  "specs": [
+                    "Adhesivo de montaje"
+                  ]
+                },
+                {
+                  "nombre": "Soudafoam FR",
+                  "specs": [
+                    "Espuma poliuretano cortafuego"
+                  ]
+                }
+              ],
+              "fuente": "https://www.soudal.cl/pro/productos/selladores"
             },
             {
               "marca": "Sika",
               "modelo": "Sikasil",
               "detalle": [
                 "Sellado general"
-              ]
+              ],
+              "modelos": [
+                {
+                  "nombre": "Sikaflex-1A",
+                  "specs": [
+                    "Sellador poliuretano elástico",
+                    "Juntas de hormigón y fachadas"
+                  ]
+                },
+                {
+                  "nombre": "Sikaflex-11 FC",
+                  "specs": [
+                    "Sellador/adhesivo poliuretano multiuso",
+                    "Pega y sella en un producto"
+                  ]
+                },
+                {
+                  "nombre": "Sikaflex-11 FC Purform",
+                  "specs": [
+                    "Poliuretano de nueva generación",
+                    "Bajo contenido de monómeros"
+                  ]
+                },
+                {
+                  "nombre": "Sikaflex PRO-3 Purform",
+                  "specs": [
+                    "Sellador de pisos y juntas de tránsito",
+                    "Alta resistencia mecánica y química"
+                  ]
+                },
+                {
+                  "nombre": "Sikaflex-1c SL",
+                  "specs": [
+                    "Autonivelante para juntas horizontales",
+                    "Pisos y pavimentos"
+                  ]
+                },
+                {
+                  "nombre": "Sikaflex-111 Stick",
+                  "specs": [
+                    "Adhesivo/sellador multiuso",
+                    "Interior y exterior"
+                  ]
+                },
+                {
+                  "nombre": "Sikaflex-112 Crystal Clear",
+                  "specs": [
+                    "Adhesivo/sellador transparente",
+                    "Vidrio, cerámica, metal"
+                  ]
+                },
+                {
+                  "nombre": "Sikaflex-116 High Grab",
+                  "specs": [
+                    "Adhesivo de agarre inicial alto"
+                  ]
+                },
+                {
+                  "nombre": "Sikaflex-117 Metal Force",
+                  "specs": [
+                    "Adhesivo para metales"
+                  ]
+                },
+                {
+                  "nombre": "Sikaflex-118 Extreme Grab",
+                  "specs": [
+                    "Agarre inmediato extremo",
+                    "Elementos pesados"
+                  ]
+                },
+                {
+                  "nombre": "Sikaflex-403 Tank",
+                  "specs": [
+                    "Sellado de estanques de agua"
+                  ]
+                },
+                {
+                  "nombre": "Sikaflex-521 UV",
+                  "specs": [
+                    "Sellador resistente a rayos UV",
+                    "Exteriores"
+                  ]
+                },
+                {
+                  "nombre": "Sikasil-C",
+                  "specs": [
+                    "Silicona construcción",
+                    "Ventanas y sanitarios"
+                  ]
+                },
+                {
+                  "nombre": "Sikasil-100",
+                  "specs": [
+                    "Silicona multiuso"
+                  ]
+                },
+                {
+                  "nombre": "Sikasil Pool",
+                  "specs": [
+                    "Silicona para piscinas",
+                    "Inmersión permanente"
+                  ]
+                },
+                {
+                  "nombre": "Sikasil-670 Fire",
+                  "specs": [
+                    "Silicona cortafuego",
+                    "Pasadas y juntas resistentes al fuego"
+                  ]
+                },
+                {
+                  "nombre": "Sikacryl PRO",
+                  "specs": [
+                    "Sellador acrílico pintable",
+                    "Juntas interiores y fisuras"
+                  ]
+                }
+              ],
+              "fuente": "https://chl.sika.com/es/construccion/sellado-y-pegadoelastico.html"
             }
           ]
         },
@@ -5640,7 +5821,35 @@
               "modelo": "Fierro estriado",
               "detalle": [
                 "Varios diámetros"
-              ]
+              ],
+              "modelos": [
+                {
+                  "nombre": "Barras de refuerzo A630-420H",
+                  "specs": [
+                    "Con resaltes, Ø 8–36 mm",
+                    "Hormigón armado (NCh204)"
+                  ]
+                },
+                {
+                  "nombre": "Barras A440-280H",
+                  "specs": [
+                    "Ø 6–12 mm, uso habitacional"
+                  ]
+                },
+                {
+                  "nombre": "Barra lisa",
+                  "specs": [
+                    "Ø 6 mm, estribos y amarras"
+                  ]
+                },
+                {
+                  "nombre": "Barra cortada y doblada",
+                  "specs": [
+                    "A medida según plano"
+                  ]
+                }
+              ],
+              "fuente": "https://www.aza.cl/clientes/productos/barras-de-refuerzo/"
             },
             {
               "marca": "Inchalam",
@@ -5690,7 +5899,60 @@
               "modelo": "Tubos y fittings PVC",
               "detalle": [
                 "Fabricación nacional"
-              ]
+              ],
+              "modelos": [
+                {
+                  "nombre": "PVC Hidráulico (presión)",
+                  "specs": [
+                    "Agua potable, 20–50 mm",
+                    "PN8 · PN10 · PN12,5 · PN16 (NCh399)"
+                  ]
+                },
+                {
+                  "nombre": "Fittings hidráulicos",
+                  "specs": [
+                    "Codos, tees, uniones, reducciones",
+                    "Unión cementar"
+                  ]
+                },
+                {
+                  "nombre": "PVC Sanitario",
+                  "specs": [
+                    "Descargas y alcantarillado domiciliario"
+                  ]
+                },
+                {
+                  "nombre": "Aguas lluvias",
+                  "specs": [
+                    "Bajadas y canaletas PVC"
+                  ]
+                },
+                {
+                  "nombre": "Conduit eléctrico",
+                  "specs": [
+                    "Electricidad y datos"
+                  ]
+                },
+                {
+                  "nombre": "Redes contra incendio",
+                  "specs": [
+                    "Sistemas de presión"
+                  ]
+                },
+                {
+                  "nombre": "Ventilación activa",
+                  "specs": [
+                    "Ventilación de redes sanitarias"
+                  ]
+                },
+                {
+                  "nombre": "Adhesivo y limpiador PVC",
+                  "specs": [
+                    "Para unión cementar"
+                  ]
+                }
+              ],
+              "fuente": "https://www.vinilit.cl/productos/tuberias-y-accesorios-pvc/"
             },
             {
               "marca": "Duratec",
@@ -5740,7 +6002,51 @@
               "modelo": "Aislanglass (lana de vidrio)",
               "detalle": [
                 "Rollos y paneles"
-              ]
+              ],
+              "modelos": [
+                {
+                  "nombre": "Aislanglass Rollo Libre",
+                  "specs": [
+                    "Lana de vidrio 40–170 mm",
+                    "Tabiquería interior y techumbres"
+                  ]
+                },
+                {
+                  "nombre": "Aislanglass Rollo Papel 1 Cara",
+                  "specs": [
+                    "Con barrera de vapor",
+                    "Muros perimetrales y techos"
+                  ]
+                },
+                {
+                  "nombre": "Aislanglass Panel",
+                  "specs": [
+                    "Panel rígido/flexible",
+                    "Muros y cielos"
+                  ]
+                },
+                {
+                  "nombre": "Aislan Colchoneta Libre",
+                  "specs": [
+                    "Lana mineral, ej. 80 mm",
+                    "No combustible"
+                  ]
+                },
+                {
+                  "nombre": "Aislan Panel",
+                  "specs": [
+                    "Lana mineral, panel no combustible",
+                    "Protección al fuego y acústica"
+                  ]
+                },
+                {
+                  "nombre": "Aislanroll",
+                  "specs": [
+                    "Rollo de lana mineral"
+                  ]
+                }
+              ],
+              "fuente": "https://volcan.cl/aislanglass/"
             },
             {
               "marca": "Knauf Insulation",
@@ -5777,7 +6083,37 @@
               "modelo": "Placa de yeso estándar",
               "detalle": [
                 "10–15 mm"
-              ]
+              ],
+              "modelos": [
+                {
+                  "nombre": "Knauf Estándar (ST)",
+                  "specs": [
+                    "Placa yeso-cartón uso general",
+                    "Tabiques y cielos interiores"
+                  ]
+                },
+                {
+                  "nombre": "Knauf RH",
+                  "specs": [
+                    "Resistente a la humedad",
+                    "Recintos húmedos"
+                  ]
+                },
+                {
+                  "nombre": "Knauf RF",
+                  "specs": [
+                    "Resistente al fuego",
+                    "Protección pasiva"
+                  ]
+                },
+                {
+                  "nombre": "Knauf cielorrasos",
+                  "specs": [
+                    "Placas para cielos"
+                  ]
+                }
+              ],
+              "fuente": "https://www.knauf.cl/"
             }
           ]
         },
@@ -5790,7 +6126,79 @@
               "modelo": "Volcanita ST",
               "detalle": [
                 "Tabiques y cielos"
-              ]
+              ],
+              "modelos": [
+                {
+                  "nombre": "Volcanita ST 8 mm",
+                  "specs": [
+                    "Estándar, borde bicelado",
+                    "1,2 × 2,4/3,0 m · 6,5 kg/m²"
+                  ]
+                },
+                {
+                  "nombre": "Volcanita ST 10 mm",
+                  "specs": [
+                    "Estándar, borde rebajado/bicelado/cuadrado",
+                    "1,2 × 2,4/3,0 m · 7,5 kg/m²"
+                  ]
+                },
+                {
+                  "nombre": "Volcanita ST 12,5 mm",
+                  "specs": [
+                    "Estándar, tabiques y cielos",
+                    "1,2 × 2,4/3,0 m · 9,5 kg/m²"
+                  ]
+                },
+                {
+                  "nombre": "Volcanita RF 12,5 / 15 mm",
+                  "specs": [
+                    "Resistente al fuego",
+                    "Cajas de escala, shafts, estructuras metálicas"
+                  ]
+                },
+                {
+                  "nombre": "Volcanita RH 12,5 / 15 mm",
+                  "specs": [
+                    "Resistente a la humedad",
+                    "Baños y cocinas"
+                  ]
+                },
+                {
+                  "nombre": "Volcanita XR / XR RH",
+                  "specs": [
+                    "Extra resistente a impactos, fuego y humedad",
+                    "Hospitales, colegios, hoteles"
+                  ]
+                },
+                {
+                  "nombre": "Volcanita ACU 10 mm",
+                  "specs": [
+                    "Alta densidad acústica",
+                    "Rehabilitación de muros"
+                  ]
+                },
+                {
+                  "nombre": "Volcanita Hábito",
+                  "specs": [
+                    "Alta resistencia y capacidad de carga",
+                    "Colgar TV, muebles, repisas"
+                  ]
+                },
+                {
+                  "nombre": "Volcanita Decorada",
+                  "specs": [
+                    "Papel vinílico decorativo",
+                    "Sin pintura ni terminaciones"
+                  ]
+                },
+                {
+                  "nombre": "Volcanita PR-B / PR-B X",
+                  "specs": [
+                    "Placas de aplicación especial (ver catálogo)"
+                  ]
+                }
+              ],
+              "fuente": "https://volcan.cl/tipo-producto/volcanitas/"
             }
           ]
         },
@@ -5840,7 +6248,54 @@
               "modelo": "Volcometal / Metalcon",
               "detalle": [
                 "Fabricación nacional"
-              ]
+              ],
+              "modelos": [
+                {
+                  "nombre": "Metalcon Estructural – Montante (C)",
+                  "specs": [
+                    "Acero galvanizado 0,85 / 1,0 / 1,6 mm",
+                    "Muros estructurales"
+                  ]
+                },
+                {
+                  "nombre": "Metalcon Estructural – Canal (U)",
+                  "specs": [
+                    "Solera para montantes estructurales"
+                  ]
+                },
+                {
+                  "nombre": "Metalcon Tabiquería – Montante",
+                  "specs": [
+                    "Acero galvanizado 0,5 mm",
+                    "Divisiones interiores"
+                  ]
+                },
+                {
+                  "nombre": "Metalcon Tabiquería – Canal",
+                  "specs": [
+                    "Solera para tabiques 0,5 mm"
+                  ]
+                },
+                {
+                  "nombre": "Metalcon Cielos – Omega",
+                  "specs": [
+                    "Perfil para cielos 0,5 mm"
+                  ]
+                },
+                {
+                  "nombre": "Metalcon Cielos – Perfil TI portante / AT",
+                  "specs": [
+                    "Estructura de cielo con nivelación"
+                  ]
+                },
+                {
+                  "nombre": "Tornillos autoperforantes galvanizados",
+                  "specs": [
+                    "Fijaciones según norma AISI"
+                  ]
+                }
+              ],
+              "fuente": "https://www.cintac.cl/perfiles-y-accesorios-metalcon/"
             }
           ]
         },
@@ -5926,7 +6381,28 @@
               "modelo": "Masilla base / terminación",
               "detalle": [
                 "Lista para usar"
-              ]
+              ],
+              "modelos": [
+                {
+                  "nombre": "Cinta de papel microperforado Volcan",
+                  "specs": [
+                    "Refuerzo de juntas de volcanita"
+                  ]
+                },
+                {
+                  "nombre": "Compuesto para juntas Volcan",
+                  "specs": [
+                    "Masilla para tratamiento de juntas"
+                  ]
+                },
+                {
+                  "nombre": "Volcansello Híbrido",
+                  "specs": [
+                    "Sellador híbrido de terminación"
+                  ]
+                }
+              ],
+              "fuente": "https://volcan.cl/"
             },
             {
               "marca": "Topex",
@@ -6019,14 +6495,95 @@
               "modelo": "Látex / esmalte al agua",
               "detalle": [
                 "Lavable"
-              ]
+              ],
+              "modelos": [
+                {
+                  "nombre": "Látex Experto",
+                  "specs": [
+                    "Base agua, interior/exterior",
+                    "Fungicida, alto rendimiento"
+                  ]
+                },
+                {
+                  "nombre": "Látex Extracubriente",
+                  "specs": []
+                },
+                {
+                  "nombre": "Látex Satinado",
+                  "specs": []
+                },
+                {
+                  "nombre": "Esmalte al Agua",
+                  "specs": []
+                },
+                {
+                  "nombre": "Sellador para Muros 250",
+                  "specs": []
+                },
+                {
+                  "nombre": "Pasta Mural",
+                  "specs": []
+                }
+              ],
+              "fuente": "https://www.ceresita.com/nuestros-productos/esmalte-al-agua"
             },
             {
               "marca": "Sipa",
               "modelo": "Látex",
               "detalle": [
                 "Buena cobertura"
-              ]
+              ],
+              "modelos": [
+                {
+                  "nombre": "Látex Sipa",
+                  "specs": []
+                },
+                {
+                  "nombre": "Esmalte al agua",
+                  "specs": []
+                },
+                {
+                  "nombre": "Esmalte sintético",
+                  "specs": []
+                },
+                {
+                  "nombre": "Óleo",
+                  "specs": []
+                },
+                {
+                  "nombre": "Antióxido",
+                  "specs": []
+                },
+                {
+                  "nombre": "Antihumedad",
+                  "specs": []
+                },
+                {
+                  "nombre": "Maderas (barnices y protectores)",
+                  "specs": []
+                },
+                {
+                  "nombre": "Pasta muro y selladores",
+                  "specs": []
+                },
+                {
+                  "nombre": "Pisos",
+                  "specs": []
+                },
+                {
+                  "nombre": "Techos",
+                  "specs": []
+                },
+                {
+                  "nombre": "Piscinas",
+                  "specs": []
+                },
+                {
+                  "nombre": "Texturas",
+                  "specs": []
+                }
+              ],
+              "fuente": "https://www.sipa.cl/productos"
             }
           ]
         },
@@ -6039,7 +6596,66 @@
               "modelo": "Látex premium",
               "detalle": [
                 "Alta lavabilidad"
-              ]
+              ],
+              "modelos": [
+                {
+                  "nombre": "SuperPaint Exterior",
+                  "specs": [
+                    "Látex premium exterior"
+                  ]
+                },
+                {
+                  "nombre": "SuperPaint Interior",
+                  "specs": [
+                    "Látex premium interior"
+                  ]
+                },
+                {
+                  "nombre": "Super Kem Tone Látex",
+                  "specs": [
+                    "Látex interior/exterior"
+                  ]
+                },
+                {
+                  "nombre": "Super Kem Tone Esmalte al Agua Mate",
+                  "specs": []
+                },
+                {
+                  "nombre": "Super Kem Tone Esmalte al Agua Satín",
+                  "specs": []
+                },
+                {
+                  "nombre": "Super Kem Tone Esmalte Sintético Brillante",
+                  "specs": []
+                },
+                {
+                  "nombre": "Super Kem Tone Óleo Sintético Semibrillo",
+                  "specs": []
+                },
+                {
+                  "nombre": "Kem Pro Esmalte al Agua Cubriente Total",
+                  "specs": [
+                    "Línea profesional"
+                  ]
+                },
+                {
+                  "nombre": "Kem Pro Esmalte al Agua Tradicional",
+                  "specs": [
+                    "Línea profesional"
+                  ]
+                },
+                {
+                  "nombre": "Kem Pro Látex Construcción",
+                  "specs": [
+                    "Obra gruesa y grandes superficies"
+                  ]
+                },
+                {
+                  "nombre": "Látex Súper Cubriente",
+                  "specs": []
+                }
+              ],
+              "fuente": "https://sherwin.cl/productos/"
             },
             {
               "marca": "Tricolor",
