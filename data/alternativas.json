@@ -2411,17 +2411,85 @@
           "opciones": [
             {
               "marca": "3M",
-              "modelo": "1860 (N95 quirúrgica)",
+              "modelo": "Línea completa · 10 modelos",
               "detalle": [
-                "Respirador médico"
-              ]
-            },
-            {
-              "marca": "3M",
-              "modelo": "Aura 1870+",
-              "detalle": [
-                "Plegable, alta comodidad"
-              ]
+                "Respirador N95 + mascarilla quirúrgica",
+                "Respirador P3 médico",
+                "Respirador tipo copa"
+              ],
+              "modelos": [
+                {
+                  "nombre": "1860",
+                  "specs": [
+                    "Respirador N95 + mascarilla quirúrgica",
+                    "Uso clínico, 120/caja"
+                  ]
+                },
+                {
+                  "nombre": "Aura 1870+",
+                  "specs": [
+                    "Respirador N95 + mascarilla quirúrgica",
+                    "Plegable 3 paneles, 240/caja"
+                  ]
+                },
+                {
+                  "nombre": "Aura 1863+",
+                  "specs": [
+                    "Respirador P3 médico",
+                    "120/caja"
+                  ]
+                },
+                {
+                  "nombre": "8822",
+                  "specs": [
+                    "Respirador tipo copa",
+                    "Con válvula"
+                  ]
+                },
+                {
+                  "nombre": "9010",
+                  "specs": [
+                    "Respirador N95 plegable",
+                    "500/caja"
+                  ]
+                },
+                {
+                  "nombre": "Aura 9205+",
+                  "specs": [
+                    "Respirador N95 plegable",
+                    "440/caja"
+                  ]
+                },
+                {
+                  "nombre": "8210V",
+                  "specs": [
+                    "Respirador N95 con válvula",
+                    "80/caja"
+                  ]
+                },
+                {
+                  "nombre": "8511",
+                  "specs": [
+                    "Respirador N95 con válvula",
+                    "80/caja"
+                  ]
+                },
+                {
+                  "nombre": "8233",
+                  "specs": [
+                    "Respirador N100 con válvula",
+                    "20/caja"
+                  ]
+                },
+                {
+                  "nombre": "8293",
+                  "specs": [
+                    "Respirador P100 con válvula",
+                    "20/caja"
+                  ]
+                }
+              ],
+              "fuente": "https://www.3mchile.cl/3M/es_CL/p/c/epp/proteccion-respiratoria/respiradores-desechables/i/cuidado-de-la-salud/"
             }
           ]
         }
@@ -2468,10 +2536,62 @@
           "opciones": [
             {
               "marca": "Ansell",
-              "modelo": "TouchNTuff / MicroFlex",
+              "modelo": "Línea completa · 7 modelos",
               "detalle": [
-                "Alta resistencia química"
-              ]
+                "Nitrilo sin polvo, 5 mil",
+                "Nitrilo sin polvo, puño largo 300 mm",
+                "Nitrilo con dedos texturizados"
+              ],
+              "modelos": [
+                {
+                  "nombre": "TouchNTuff 92-600",
+                  "specs": [
+                    "Nitrilo sin polvo, 5 mil",
+                    "AQL 1,5, 100/caja"
+                  ]
+                },
+                {
+                  "nombre": "TouchNTuff 92-605",
+                  "specs": [
+                    "Nitrilo sin polvo, puño largo 300 mm"
+                  ]
+                },
+                {
+                  "nombre": "TouchNTuff 92-670",
+                  "specs": [
+                    "Nitrilo con dedos texturizados",
+                    "Mejor agarre en húmedo"
+                  ]
+                },
+                {
+                  "nombre": "TouchNTuff 93-250",
+                  "specs": [
+                    "Nitrilo con Grip Technology"
+                  ]
+                },
+                {
+                  "nombre": "MicroFlex 93-843",
+                  "specs": [
+                    "Nitrilo grueso, morado",
+                    "Tareas exigentes"
+                  ]
+                },
+                {
+                  "nombre": "MicroFlex 93-260",
+                  "specs": [
+                    "Nitrilo/neopreno 3 capas",
+                    "AQL 0,65, protección química"
+                  ]
+                },
+                {
+                  "nombre": "MicroFlex NeoTouch 25-101",
+                  "specs": [
+                    "Neopreno sin polvo",
+                    "Alternativa sin látex"
+                  ]
+                }
+              ],
+              "fuente": "https://www.kds.cl/producto-detalle.php?categoria=guantes-de-uso-quimico&id_producto=2413&producto=guante-ansell-microflex-93-260-&seccion=guantes"
             },
             {
               "marca": "Medline",
@@ -2747,10 +2867,51 @@
             },
             {
               "marca": "Hartmann",
-              "modelo": "Gasa Medicomp",
+              "modelo": "Línea completa · 6 modelos",
               "detalle": [
-                "No tejida, suave"
-              ]
+                "Gasa de algodón, bordes doblados",
+                "Gasa de algodón, uso general",
+                "Compresa no tejida absorbente"
+              ],
+              "modelos": [
+                {
+                  "nombre": "Sterilux ES estéril",
+                  "specs": [
+                    "Gasa de algodón, bordes doblados"
+                  ]
+                },
+                {
+                  "nombre": "Sterilux ES no estéril",
+                  "specs": [
+                    "Gasa de algodón, uso general"
+                  ]
+                },
+                {
+                  "nombre": "Medicomp estéril",
+                  "specs": [
+                    "Compresa no tejida absorbente"
+                  ]
+                },
+                {
+                  "nombre": "Medicomp no estéril",
+                  "specs": [
+                    "Compresa no tejida absorbente"
+                  ]
+                },
+                {
+                  "nombre": "Cosmopor E",
+                  "specs": [
+                    "Apósito adhesivo estéril"
+                  ]
+                },
+                {
+                  "nombre": "Hydrofilm / Hydrofilm Plus",
+                  "specs": [
+                    "Apósito transparente"
+                  ]
+                }
+              ],
+              "fuente": "https://www.hartmann.info/es-cl/products/tratamiento-de-heridas/gasas"
             }
           ]
         },
@@ -2758,13 +2919,6 @@
           "nombre": "Premium",
           "descripcion": "Curaciones avanzadas.",
           "opciones": [
-            {
-              "marca": "Hartmann",
-              "modelo": "Línea curaciones",
-              "detalle": [
-                "Alta absorción"
-              ]
-            },
             {
               "marca": "3M",
               "modelo": "Tegaderm (apósitos)",
@@ -2797,10 +2951,57 @@
           "opciones": [
             {
               "marca": "Hartmann",
-              "modelo": "Venda elástica",
+              "modelo": "Línea completa · 7 modelos",
               "detalle": [
-                "Varias medidas"
-              ]
+                "Venda de crepé elástica",
+                "Venda superelástica de fijación",
+                "Venda altamente elástica"
+              ],
+              "modelos": [
+                {
+                  "nombre": "Tensocrepe",
+                  "specs": [
+                    "Venda de crepé elástica"
+                  ]
+                },
+                {
+                  "nombre": "Peha-Fix",
+                  "specs": [
+                    "Venda superelástica de fijación"
+                  ]
+                },
+                {
+                  "nombre": "Peha-Lastotel",
+                  "specs": [
+                    "Venda altamente elástica"
+                  ]
+                },
+                {
+                  "nombre": "Peha-haft",
+                  "specs": [
+                    "Venda cohesiva, con o sin látex"
+                  ]
+                },
+                {
+                  "nombre": "Lusan",
+                  "specs": [
+                    "Venda de gasa clásica de fijación"
+                  ]
+                },
+                {
+                  "nombre": "Stülpa / Stülpa-fix",
+                  "specs": [
+                    "Venda tubular"
+                  ]
+                },
+                {
+                  "nombre": "Coverflex Grip",
+                  "specs": [
+                    "Venda tubular elástica"
+                  ]
+                }
+              ],
+              "fuente": "https://www.hartmann.info/es-cl/products/tratamiento-de-heridas/vendas"
             },
             {
               "marca": "Medline",
@@ -2817,17 +3018,26 @@
           "opciones": [
             {
               "marca": "3M",
-              "modelo": "Coban (cohesiva)",
+              "modelo": "Línea completa · 2 modelos",
               "detalle": [
-                "Se adhiere a sí misma"
-              ]
-            },
-            {
-              "marca": "Hartmann",
-              "modelo": "Venda de compresión",
-              "detalle": [
-                "Alta elasticidad"
-              ]
+                "Venda autoadherente cohesiva",
+                "Sistema de compresión de 2 capas"
+              ],
+              "modelos": [
+                {
+                  "nombre": "Coban",
+                  "specs": [
+                    "Venda autoadherente cohesiva"
+                  ]
+                },
+                {
+                  "nombre": "Coban 2",
+                  "specs": [
+                    "Sistema de compresión de 2 capas"
+                  ]
+                }
+              ],
+              "fuente": "https://www.3mchile.cl/"
             }
           ]
         }
@@ -2874,17 +3084,63 @@
           "opciones": [
             {
               "marca": "BD",
-              "modelo": "Plastipak / Luer-Lok",
+              "modelo": "Línea completa · 8 modelos",
               "detalle": [
-                "Estándar hospitalario"
-              ]
-            },
-            {
-              "marca": "BD",
-              "modelo": "Insulina Ultra-Fine",
-              "detalle": [
-                "Aguja ultrafina"
-              ]
+                "Con aguja 25G x 5/8\"",
+                "Luer Lock o Luer Slip, aguja 21G/23G",
+                "Luer Lock o Luer Slip, aguja 21G"
+              ],
+              "modelos": [
+                {
+                  "nombre": "Plastipak 1 ml tuberculina",
+                  "specs": [
+                    "Con aguja 25G x 5/8\""
+                  ]
+                },
+                {
+                  "nombre": "Plastipak 3 ml",
+                  "specs": [
+                    "Luer Lock o Luer Slip, aguja 21G/23G"
+                  ]
+                },
+                {
+                  "nombre": "Plastipak 5 ml",
+                  "specs": [
+                    "Luer Lock o Luer Slip, aguja 21G"
+                  ]
+                },
+                {
+                  "nombre": "Plastipak 10 ml",
+                  "specs": [
+                    "Luer Lock o Luer Slip, aguja 21G"
+                  ]
+                },
+                {
+                  "nombre": "Plastipak 20 ml",
+                  "specs": [
+                    "Sin aguja, Luer Lock o Slip"
+                  ]
+                },
+                {
+                  "nombre": "Plastipak 50 / 60 ml",
+                  "specs": [
+                    "Punta catéter o excéntrica"
+                  ]
+                },
+                {
+                  "nombre": "Insulina Ultra-Fine 30 / 50 / 100 UI",
+                  "specs": [
+                    "Aguja 30G x 6–8 mm"
+                  ]
+                },
+                {
+                  "nombre": "Jeringa gases sanguíneos 1 ml",
+                  "specs": [
+                    "Con aguja 25G"
+                  ]
+                }
+              ],
+              "fuente": "https://vidamedica.cl/categoria-producto/jeringas/"
             }
           ]
         }
@@ -3719,10 +3975,34 @@
           "opciones": [
             {
               "marca": "Diversey",
-              "modelo": "Oxivir",
+              "modelo": "Línea completa · 3 modelos",
               "detalle": [
-                "Peróxido de hidrógeno acelerado"
-              ]
+                "Peróxido de hidrógeno acelerado",
+                "Listo para usar, tuberculocida",
+                "Desinfección de superficies"
+              ],
+              "modelos": [
+                {
+                  "nombre": "Oxivir Five 16",
+                  "specs": [
+                    "Peróxido de hidrógeno acelerado",
+                    "Desinfecta en 5 min, 1,5 L / 5 L"
+                  ]
+                },
+                {
+                  "nombre": "Oxivir Tb",
+                  "specs": [
+                    "Listo para usar, tuberculocida"
+                  ]
+                },
+                {
+                  "nombre": "Oxivir Tb toallitas",
+                  "specs": [
+                    "Desinfección de superficies"
+                  ]
+                }
+              ],
+              "fuente": "https://www.cintecsa.cl/desinfectante-div-oxivir-five-16-x-15-lt-x-1-un"
             },
             {
               "marca": "Ecolab",
