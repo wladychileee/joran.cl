@@ -13343,6 +13343,1126 @@
           ]
         }
       ]
+    },
+    "Desbrozadoras a bencina": {
+      "gamas": [
+        {
+          "nombre": "Económica",
+          "descripcion": "Uso ocasional en patios y terrenos pequeños.",
+          "opciones": [
+            {
+              "marca": "Bauker",
+              "modelo": "Línea completa · 3 modelos",
+              "detalle": [
+                "Motor 2T a combustión",
+                "Marca Sodimac"
+              ],
+              "modelos": [
+                {
+                  "nombre": "Desbrozadora 33 cc",
+                  "specs": [
+                    "1,2 HP",
+                    "Motor 2T"
+                  ]
+                },
+                {
+                  "nombre": "Desbrozadora 43 cc",
+                  "specs": [
+                    "1,7 HP",
+                    "Motor 2T"
+                  ]
+                },
+                {
+                  "nombre": "Desbrozadora 53 cc",
+                  "specs": [
+                    "1,8 HP",
+                    "Motor 2T"
+                  ]
+                }
+              ],
+              "fuente": "https://www.sodimac.cl/sodimac-cl/lista/cat18380043/Desbrozadoras-y-Orilladoras"
+            },
+            {
+              "marca": "Van Beek",
+              "modelo": "Línea completa · 3 modelos",
+              "detalle": [
+                "Orilladora/desbrozadora semiprofesional"
+              ],
+              "modelos": [
+                {
+                  "nombre": "vB430A",
+                  "specs": [
+                    "Orilladora desbrozadora",
+                    "Motor 2T"
+                  ]
+                },
+                {
+                  "nombre": "3vB400",
+                  "specs": [
+                    "Desbrozadora profesional",
+                    "Motor 2T"
+                  ]
+                },
+                {
+                  "nombre": "3vB520",
+                  "specs": [
+                    "Desbrozadora profesional",
+                    "Motor 2T"
+                  ]
+                }
+              ],
+              "fuente": "https://www.sodimac.cl/sodimac-cl/lista/cat18380043/Desbrozadoras-y-Orilladoras"
+            }
+          ]
+        },
+        {
+          "nombre": "Estándar",
+          "descripcion": "Mantención frecuente de áreas verdes y predios.",
+          "opciones": [
+            {
+              "marca": "Stihl",
+              "modelo": "Línea completa · 4 modelos",
+              "detalle": [
+                "Desmalezadoras 2T y 2-MIX",
+                "Incluyen cabezal de nylon y/o cuchillo 3 puntas"
+              ],
+              "modelos": [
+                {
+                  "nombre": "FS 120",
+                  "specs": [
+                    "30,8 cc · 1,8 HP",
+                    "6,3 kg",
+                    "Cabezal nylon 2,4 mm + cuchillo 3 puntas"
+                  ]
+                },
+                {
+                  "nombre": "FS 235",
+                  "specs": [
+                    "Motor 2-MIX 36,3 cc · 2,0 HP",
+                    "6,8 kg",
+                    "Cabezal nylon + cuchillo 3 puntas"
+                  ]
+                },
+                {
+                  "nombre": "FS 250",
+                  "specs": [
+                    "40,2 cc · 2,2 HP",
+                    "6,3 kg",
+                    "Cabezal nylon + cuchillo 3 puntas"
+                  ]
+                },
+                {
+                  "nombre": "FS 255",
+                  "specs": [
+                    "Motor 2-MIX 36,3 cc · 2,0 HP",
+                    "7,9 kg",
+                    "Cuchillo 3 puntas"
+                  ]
+                }
+              ],
+              "fuente": "https://redstihl.cl/categoria-producto/desmalezadoras/"
+            },
+            {
+              "marca": "Husqvarna",
+              "modelo": "Línea completa · 3 modelos",
+              "detalle": [
+                "Desbrozadoras a gasolina para trabajo duro"
+              ],
+              "modelos": [
+                {
+                  "nombre": "143R-II",
+                  "specs": [
+                    "Robusta, para trabajo arduo",
+                    "Manillar asimétrico"
+                  ]
+                },
+                {
+                  "nombre": "236R",
+                  "specs": [
+                    "Para trabajo duro",
+                    "Embrague de trabajo pesado"
+                  ]
+                },
+                {
+                  "nombre": "226R",
+                  "specs": [
+                    "Gran durabilidad",
+                    "Embrague de servicio pesado"
+                  ]
+                }
+              ],
+              "fuente": "https://www.husqvarna.com/cl/desbrozadoras/"
+            }
+          ]
+        },
+        {
+          "nombre": "Premium",
+          "descripcion": "Uso profesional intensivo, forestal y municipal.",
+          "opciones": [
+            {
+              "marca": "Stihl",
+              "modelo": "Línea completa · 3 modelos",
+              "detalle": [
+                "Motores 2-MIX profesionales",
+                "Cuchillo 3 puntas incluido"
+              ],
+              "modelos": [
+                {
+                  "nombre": "FS 161",
+                  "specs": [
+                    "2-MIX 37,7 cc · 2,0 HP",
+                    "7,5 kg"
+                  ]
+                },
+                {
+                  "nombre": "FS 351",
+                  "specs": [
+                    "2-MIX 37,7 cc · 2,3 HP",
+                    "8,8 kg"
+                  ]
+                },
+                {
+                  "nombre": "FS 460",
+                  "specs": [
+                    "2-MIX 45,6 cc · 3,0 HP",
+                    "8,8 kg"
+                  ]
+                }
+              ],
+              "fuente": "https://redstihl.cl/categoria-producto/desmalezadoras/"
+            },
+            {
+              "marca": "Husqvarna",
+              "modelo": "Línea completa · 2 modelos",
+              "detalle": [
+                "Serie profesional X-Torq"
+              ],
+              "modelos": [
+                {
+                  "nombre": "545RX",
+                  "specs": [
+                    "Motor X-Torq 45,7 cc · 2,1 kW",
+                    "Ancho de corte 49 cm",
+                    "Bujía NGK CMR6H"
+                  ]
+                },
+                {
+                  "nombre": "555RXT",
+                  "specs": [
+                    "Uso profesional",
+                    "Motor X-Torq de bajas emisiones"
+                  ]
+                }
+              ],
+              "fuente": "https://www.husqvarna.com/cl/desbrozadoras/"
+            },
+            {
+              "marca": "Makita",
+              "modelo": "EM4351UH",
+              "detalle": [
+                "Motor 4 tiempos, sin mezcla"
+              ],
+              "modelos": [
+                {
+                  "nombre": "EM4351UH",
+                  "specs": [
+                    "43 cc · 1,5 kW / 2,0 HP",
+                    "Motor 4T",
+                    "8,5 kg, mango U"
+                  ]
+                }
+              ],
+              "fuente": "https://toolmania.cl/desbrozadoras/desmalezadora-o-desbrozadora-4-tiempos-430-cc-makita-em4351uh-64.html"
+            }
+          ]
+        }
+      ]
+    },
+    "Orilladoras a bencina": {
+      "gamas": [
+        {
+          "nombre": "Estándar",
+          "descripcion": "Terminaciones de bordes y césped.",
+          "opciones": [
+            {
+              "marca": "Stihl",
+              "modelo": "FS 38",
+              "detalle": [
+                "Orilladora liviana 2T"
+              ],
+              "modelos": [
+                {
+                  "nombre": "FS 38",
+                  "specs": [
+                    "27,2 cc · 0,9 HP",
+                    "4,2 kg"
+                  ]
+                }
+              ],
+              "fuente": "https://redstihl.cl/categoria-producto/orilladoras/"
+            },
+            {
+              "marca": "Husqvarna",
+              "modelo": "122C",
+              "detalle": [
+                "Recortadora a gasolina, eje curvo"
+              ],
+              "modelos": [
+                {
+                  "nombre": "122C",
+                  "specs": [
+                    "Tubo curvo, uso particular",
+                    "Arranque Smart Start"
+                  ]
+                }
+              ],
+              "fuente": "https://www.husqvarna.com/cl/orilladoras/"
+            }
+          ]
+        },
+        {
+          "nombre": "Premium",
+          "descripcion": "Paisajismo profesional.",
+          "opciones": [
+            {
+              "marca": "Echo",
+              "modelo": "SRM-2620",
+              "detalle": [
+                "Serie X profesional"
+              ],
+              "modelos": [
+                {
+                  "nombre": "SRM-2620",
+                  "specs": [
+                    "25,4 cc 2T profesional",
+                    "Cabezal Speed-Feed 400",
+                    "Ancho de corte 43,1 cm"
+                  ]
+                }
+              ],
+              "fuente": "https://www.echo-latinamerica.com/es/trimmers-brushcutters/srm-2620"
+            }
+          ]
+        }
+      ]
+    },
+    "Desmalezadoras y orilladoras a batería": {
+      "gamas": [
+        {
+          "nombre": "Económica",
+          "descripcion": "Jardines pequeños, sin ruido ni emisiones.",
+          "opciones": [
+            {
+              "marca": "Stihl",
+              "detalle": [
+                "Orilladoras a batería"
+              ],
+              "modelos": [
+                {
+                  "nombre": "FSA 30",
+                  "specs": [
+                    "10,8 V · 2,1 kg",
+                    "Cabezal PolyCut",
+                    "Corte 23 cm"
+                  ]
+                },
+                {
+                  "nombre": "FSA 57",
+                  "specs": [
+                    "36 V · 2,7 kg",
+                    "AutoCut C 3-2 (1,6 mm)",
+                    "Corte 28 cm"
+                  ]
+                }
+              ],
+              "fuente": "https://redstihl.cl/categoria-producto/orilladoras/",
+              "modelo": "Línea completa · 2 modelos"
+            },
+            {
+              "marca": "Black+Decker",
+              "detalle": [
+                "Orilladora inalámbrica 20 V"
+              ],
+              "modelos": [
+                {
+                  "nombre": "LST201-B2C",
+                  "specs": [
+                    "20 V",
+                    "Inalámbrica"
+                  ]
+                }
+              ],
+              "fuente": "https://www.sodimac.cl/sodimac-cl/lista/cat18380043/Desbrozadoras-y-Orilladoras",
+              "modelo": "LST201-B2C"
+            },
+            {
+              "marca": "Bauker",
+              "detalle": [
+                "Orilladora inalámbrica 20 V con batería"
+              ],
+              "modelos": [
+                {
+                  "nombre": "Orilladora 20V",
+                  "specs": [
+                    "Inalámbrica",
+                    "Incluye batería"
+                  ]
+                }
+              ],
+              "fuente": "https://www.sodimac.cl/sodimac-cl/lista/cat18380043/Desbrozadoras-y-Orilladoras",
+              "modelo": "Orilladora 20V"
+            }
+          ]
+        },
+        {
+          "nombre": "Estándar",
+          "descripcion": "Mantención profesional de áreas verdes.",
+          "opciones": [
+            {
+              "marca": "Makita",
+              "modelo": "Línea completa · 7 modelos",
+              "detalle": [
+                "Plataformas 12 V CXT, 18 V LXT y 40 V XGT",
+                "Motor sin carbones (BL)"
+              ],
+              "modelos": [
+                {
+                  "nombre": "UR100DZ",
+                  "specs": [
+                    "12 V CXT, mango O",
+                    "Corte 280 mm"
+                  ]
+                },
+                {
+                  "nombre": "DUR193Z",
+                  "specs": [
+                    "18 V LXT, motor BL",
+                    "Corte 260 mm"
+                  ]
+                },
+                {
+                  "nombre": "DUR194ZX3",
+                  "specs": [
+                    "18 V LXT",
+                    "Corte 260 mm"
+                  ]
+                },
+                {
+                  "nombre": "DUR368AZ",
+                  "specs": [
+                    "18 V x2 (36 V), mango U, motor BL",
+                    "Corte 350 mm"
+                  ]
+                },
+                {
+                  "nombre": "DUR369LZ",
+                  "specs": [
+                    "18 V x2 (36 V), mango O, motor BL",
+                    "Corte 430 mm"
+                  ]
+                },
+                {
+                  "nombre": "UR003GZ",
+                  "specs": [
+                    "40 V XGT, motor BL",
+                    "Corte 350 mm"
+                  ]
+                },
+                {
+                  "nombre": "UR012GZ02",
+                  "specs": [
+                    "40 V x2 (80 V) XGT, mango U",
+                    "Corte 305 mm"
+                  ]
+                }
+              ],
+              "fuente": "https://maquinaespecialista.cl/orilladoras-de-malezadora-inalambricas-makita"
+            },
+            {
+              "marca": "Bosch Professional",
+              "modelo": "GFR 18V-23",
+              "detalle": [
+                "Línea 18 V profesional"
+              ],
+              "modelos": [
+                {
+                  "nombre": "GFR 18V-23",
+                  "specs": [
+                    "Desbrozadora inalámbrica 18 V",
+                    "Diámetro de corte 23 cm"
+                  ]
+                }
+              ],
+              "fuente": "https://www.bosch-professional.com/cl/es/searchfrontend/?q=GFR%2018V-23"
+            }
+          ]
+        },
+        {
+          "nombre": "Premium",
+          "descripcion": "Alto rendimiento a batería.",
+          "opciones": [
+            {
+              "marca": "Stihl",
+              "modelo": "FSA 80",
+              "detalle": [
+                "Sistema AK 36 V"
+              ],
+              "modelos": [
+                {
+                  "nombre": "FSA 80",
+                  "specs": [
+                    "36 V",
+                    "5 kg",
+                    "Corte 23 / 38 cm"
+                  ]
+                }
+              ],
+              "fuente": "https://redstihl.cl/categoria-producto/desmalezadoras/"
+            },
+            {
+              "marca": "Husqvarna",
+              "modelo": "520iRX",
+              "detalle": [
+                "Desbrozadora a batería profesional"
+              ],
+              "modelos": [
+                {
+                  "nombre": "520iRX",
+                  "specs": [
+                    "Liviana y de alto rendimiento",
+                    "Para jardineros y paisajistas"
+                  ]
+                }
+              ],
+              "fuente": "https://www.husqvarna.com/cl/desbrozadoras/"
+            }
+          ]
+        }
+      ]
+    },
+    "Desbrozadoras de mochila": {
+      "gamas": [
+        {
+          "nombre": "Premium",
+          "descripcion": "Motor a la espalda para terrenos difíciles y jornadas largas.",
+          "opciones": [
+            {
+              "marca": "Husqvarna",
+              "modelo": "Línea completa · 3 modelos",
+              "detalle": [
+                "Motor tipo mochila",
+                "Menor carga en brazos"
+              ],
+              "modelos": [
+                {
+                  "nombre": "531RB",
+                  "specs": [
+                    "Mochila profesional",
+                    "Diseño compacto, ideal en pendientes"
+                  ]
+                },
+                {
+                  "nombre": "541RB",
+                  "specs": [
+                    "Mochila profesional",
+                    "Ideal en pendientes"
+                  ]
+                },
+                {
+                  "nombre": "553RBX",
+                  "specs": [
+                    "La desbrozadora de mochila más potente de Husqvarna",
+                    "Terrenos difíciles"
+                  ]
+                }
+              ],
+              "fuente": "https://www.husqvarna.com/cl/desbrozadoras/"
+            },
+            {
+              "marca": "Makita",
+              "modelo": "EBH340R",
+              "detalle": [
+                "Motor 4T tipo mochila"
+              ],
+              "modelos": [
+                {
+                  "nombre": "EBH340R",
+                  "specs": [
+                    "Motor 4 tiempos",
+                    "Desbrozadora con mochila"
+                  ]
+                }
+              ],
+              "fuente": "https://www.makita.com.mx/categoria-producto/desbrozadoras/"
+            }
+          ]
+        }
+      ]
+    },
+    "Orilladoras eléctricas": {
+      "gamas": [
+        {
+          "nombre": "Económica",
+          "descripcion": "Jardines pequeños con enchufe cercano.",
+          "opciones": [
+            {
+              "marca": "Bauker",
+              "detalle": [
+                "Eléctrica con cable"
+              ],
+              "modelos": [
+                {
+                  "nombre": "Orilladora Eléctrica 1000 W",
+                  "specs": [
+                    "Eléctrica"
+                  ]
+                }
+              ],
+              "fuente": "https://www.sodimac.cl/sodimac-cl/lista/cat18380043/Desbrozadoras-y-Orilladoras",
+              "modelo": "Orilladora Eléctrica 1000 W"
+            }
+          ]
+        }
+      ]
+    },
+    "Hilo / nylon de corte": {
+      "gamas": [
+        {
+          "nombre": "Económica",
+          "descripcion": "Rollos de 15 m para reposición.",
+          "opciones": [
+            {
+              "marca": "Raisman",
+              "modelo": "Nylon 3,0 mm × 15 m",
+              "detalle": [
+                "Redondo, compatible Stihl, Husqvarna y otras"
+              ],
+              "modelos": [
+                {
+                  "nombre": "Nylon 3,0 mm × 15 m",
+                  "specs": [
+                    "Redondo",
+                    "Uso medio y pesado"
+                  ]
+                }
+              ],
+              "fuente": "https://raismanchile.cl/producto/nylon-3-0mm-para-desbrozadoras-15-metros-redondo/"
+            }
+          ]
+        },
+        {
+          "nombre": "Estándar",
+          "descripcion": "Rollos y carretes para uso frecuente.",
+          "opciones": [
+            {
+              "marca": "Van Beek",
+              "modelo": "Nylon cuadrado y redondo",
+              "detalle": [
+                "Hilos para orilladoras y desbrozadoras"
+              ],
+              "modelos": [
+                {
+                  "nombre": "Nylon cuadrado y redondo",
+                  "specs": [
+                    "Diámetros de 1,65 a 3,0 mm",
+                    "Rollos y carretes"
+                  ]
+                }
+              ],
+              "fuente": "https://vanbeek.cl/collections/nylon"
+            },
+            {
+              "marca": "Ferven",
+              "modelo": "Nylon profesional",
+              "detalle": [
+                "Nylon profesional redondo y 4 puntas"
+              ],
+              "modelos": [
+                {
+                  "nombre": "Nylon profesional",
+                  "specs": [
+                    "Redondo y 4 puntas",
+                    "Distintos diámetros"
+                  ]
+                }
+              ],
+              "fuente": "https://ferven.cl/categoria-producto/insumos/nylon-y-piolas-de-arranque/"
+            }
+          ]
+        }
+      ]
+    },
+    "Cabezales de nylon": {
+      "gamas": [
+        {
+          "nombre": "Originales",
+          "descripcion": "Cabezales del fabricante, según modelo de máquina.",
+          "opciones": [
+            {
+              "marca": "Stihl",
+              "modelo": "Línea completa · 4 modelos",
+              "detalle": [
+                "AutoCut, TrimCut, SuperCut y PolyCut"
+              ],
+              "modelos": [
+                {
+                  "nombre": "AutoCut C 3-2",
+                  "specs": [
+                    "Incluido en FSA 57"
+                  ]
+                },
+                {
+                  "nombre": "AutoCut 27-2 / AutoCut C 36-2 / AutoCut 46-2",
+                  "specs": [
+                    "Cabezales de alimentación automática"
+                  ]
+                },
+                {
+                  "nombre": "TrimCut C 32-2 / C 42-2",
+                  "specs": [
+                    "Recarga rápida de hilo"
+                  ]
+                },
+                {
+                  "nombre": "SuperCut 40-2",
+                  "specs": [
+                    "Alimentación automática de hilo"
+                  ]
+                }
+              ],
+              "fuente": "https://tiendastihl.cl/stihl/desmalezadoras.html"
+            },
+            {
+              "marca": "Husqvarna",
+              "modelo": "Línea completa · 5 modelos",
+              "detalle": [
+                "Trimmy y TriCut"
+              ],
+              "modelos": [
+                {
+                  "nombre": "Trimmy T25 / T25B",
+                  "specs": [
+                    "Tap'n go semiautomático"
+                  ]
+                },
+                {
+                  "nombre": "Trimmy T35 / T35X",
+                  "specs": [
+                    "Tap'n go, alta durabilidad"
+                  ]
+                },
+                {
+                  "nombre": "Trimmy S35",
+                  "specs": [
+                    "Motores 30–42 cc",
+                    "Hilo mín. 2,4 mm"
+                  ]
+                },
+                {
+                  "nombre": "Trimmy T45X",
+                  "specs": [
+                    "Motores 42–50 cc",
+                    "Hilo mín. 2,7 mm"
+                  ]
+                },
+                {
+                  "nombre": "TriCut",
+                  "specs": [
+                    "Cuchillas extra",
+                    "Motores < 42 cc / < 55 cc"
+                  ]
+                }
+              ],
+              "fuente": "https://www.husqvarna.com/es/cabezales-corte/"
+            }
+          ]
+        }
+      ]
+    },
+    "Cuchillos y sierras circulares": {
+      "gamas": [
+        {
+          "nombre": "Originales",
+          "descripcion": "Herramientas de corte metálicas para maleza dura y arbustos.",
+          "opciones": [
+            {
+              "marca": "Stihl",
+              "modelo": "Línea completa · 4 modelos",
+              "detalle": [
+                "Acero, según modelo"
+              ],
+              "modelos": [
+                {
+                  "nombre": "Cuchillo 3 puntas 250 mm",
+                  "specs": [
+                    "FS 120 / FS 235 / FS 250"
+                  ]
+                },
+                {
+                  "nombre": "Cuchillo 3 puntas 300 mm",
+                  "specs": [
+                    "FS 160 / FS 220 / FS 280 / FS 300 / FS 350 / FS 450"
+                  ]
+                },
+                {
+                  "nombre": "Sierra circular 200 mm, eje 25,4 mm",
+                  "specs": [
+                    "Dientes tipo cincel",
+                    "FS 120 / FS 235 / FS 250"
+                  ]
+                },
+                {
+                  "nombre": "Sierra circular 200 mm, eje 20 mm",
+                  "specs": [
+                    "Dientes tipo cincel",
+                    "FS 160 / FS 300 / FS 350 / FS 460"
+                  ]
+                }
+              ],
+              "fuente": "https://redstihl.cl/productos/cuchillo-de-3-puntas/"
+            },
+            {
+              "marca": "Husqvarna",
+              "modelo": "Multi 300-3 (1\")",
+              "detalle": [
+                "Cuchillas para desbrozadoras"
+              ],
+              "modelos": [
+                {
+                  "nombre": "Multi 300-3 (1\")",
+                  "specs": [
+                    "Cuchilla incluida en 545RX"
+                  ]
+                }
+              ],
+              "fuente": "https://www.husqvarna.com/cl/asistencia/545rx/"
+            },
+            {
+              "marca": "Makita",
+              "modelo": "Línea completa · 2 modelos",
+              "detalle": [
+                "Accesorios originales"
+              ],
+              "modelos": [
+                {
+                  "nombre": "Sierra 225 mm × 1,8 mm",
+                  "specs": [
+                    "Para UR012G"
+                  ]
+                },
+                {
+                  "nombre": "Sierra 8 dientes 200 mm",
+                  "specs": [
+                    "Para DUR194"
+                  ]
+                }
+              ],
+              "fuente": "https://makita.cl/producto/sierra-225mm-18mm-p-ur012g/"
+            }
+          ]
+        }
+      ]
+    },
+    "Arneses": {
+      "gamas": [
+        {
+          "nombre": "Estándar",
+          "descripcion": "Para orilladoras y uso ocasional.",
+          "opciones": [
+            {
+              "marca": "Stihl",
+              "modelo": "Línea completa · 2 modelos",
+              "detalle": [
+                "Arneses de una banda"
+              ],
+              "modelos": [
+                {
+                  "nombre": "Arnés Simple",
+                  "specs": [
+                    "Una banda con gancho",
+                    "Orilladoras"
+                  ]
+                },
+                {
+                  "nombre": "Arnés Simple Acolchado",
+                  "specs": [
+                    "Hombro acolchado"
+                  ]
+                }
+              ],
+              "fuente": "https://redstihl.cl/productos/arnes/"
+            }
+          ]
+        },
+        {
+          "nombre": "Premium",
+          "descripcion": "Para desbrozadoras profesionales y jornadas largas.",
+          "opciones": [
+            {
+              "marca": "Stihl",
+              "modelo": "Línea completa · 2 modelos",
+              "detalle": [
+                "Doble banda"
+              ],
+              "modelos": [
+                {
+                  "nombre": "Arnés Doble",
+                  "specs": [
+                    "Doble banda acolchada, cierre al pecho"
+                  ]
+                },
+                {
+                  "nombre": "Arnés Profesional",
+                  "specs": [
+                    "Estructura rígida en la espalda y protector de cintura"
+                  ]
+                }
+              ],
+              "fuente": "https://redstihl.cl/productos/arnes/"
+            },
+            {
+              "marca": "Husqvarna",
+              "modelo": "Línea completa · 6 modelos",
+              "detalle": [
+                "Línea Balance"
+              ],
+              "modelos": [
+                {
+                  "nombre": "Balance XT2",
+                  "specs": []
+                },
+                {
+                  "nombre": "Balance XB",
+                  "specs": []
+                },
+                {
+                  "nombre": "Balance X",
+                  "specs": []
+                },
+                {
+                  "nombre": "Balance 55",
+                  "specs": []
+                },
+                {
+                  "nombre": "Balance 35",
+                  "specs": []
+                },
+                {
+                  "nombre": "Arnés Estándar",
+                  "specs": []
+                }
+              ],
+              "fuente": "https://www.husqvarna.com/es/arneses/arneses-desbrozadoras/"
+            }
+          ]
+        }
+      ]
+    },
+    "Casco, careta y protección": {
+      "gamas": [
+        {
+          "nombre": "Estándar",
+          "descripcion": "Protección del operador según norma de seguridad.",
+          "opciones": [
+            {
+              "marca": "Stihl",
+              "modelo": "Línea completa · 2 modelos",
+              "detalle": [
+                "Casco con protector facial y auditivo"
+              ],
+              "modelos": [
+                {
+                  "nombre": "Casco Function Basic",
+                  "specs": [
+                    "Visor y fonos"
+                  ]
+                },
+                {
+                  "nombre": "Casco Function Universal",
+                  "specs": [
+                    "Visor y fonos"
+                  ]
+                }
+              ],
+              "fuente": "https://redstihl.cl/categoria-producto/marcas/equipos-stihl/page/2/"
+            },
+            {
+              "marca": "Makita",
+              "modelo": "Máscara de seguridad para desmalezadores",
+              "detalle": [
+                "Protección facial"
+              ],
+              "modelos": [
+                {
+                  "nombre": "Máscara de seguridad para desmalezadores",
+                  "specs": [
+                    "Protector facial"
+                  ]
+                }
+              ],
+              "fuente": "https://makita.cl/producto/mascara-de-seguridad-para-desmalezadores/"
+            }
+          ]
+        }
+      ]
+    },
+    "Aceite de mezcla 2T": {
+      "gamas": [
+        {
+          "nombre": "Premium",
+          "descripcion": "Sintético para uso continuo a plena carga.",
+          "opciones": [
+            {
+              "marca": "Stihl",
+              "detalle": [
+                "Totalmente sintético, biodegradable"
+              ],
+              "modelos": [
+                {
+                  "nombre": "HP Ultra",
+                  "specs": [
+                    "JASO-FB, ISO-L-EGD",
+                    "Proporción de mezcla 1:50"
+                  ]
+                }
+              ],
+              "fuente": "https://www.stihl.es/es/ap/aceite-para-motores-de-dos-tiempos-hp-ultra-1824",
+              "modelo": "HP Ultra"
+            }
+          ]
+        }
+      ]
+    },
+    "Bujías y filtros de aire": {
+      "gamas": [
+        {
+          "nombre": "Originales",
+          "descripcion": "Mantención periódica del motor.",
+          "opciones": [
+            {
+              "marca": "NGK",
+              "modelo": "Línea completa · 2 modelos",
+              "detalle": [
+                "Bujías para motores 2T"
+              ],
+              "modelos": [
+                {
+                  "nombre": "BPMR7A",
+                  "specs": [
+                    "Equivale a Champion RCJ6Y / RCJ7Y",
+                    "Motores 2T Stihl"
+                  ]
+                },
+                {
+                  "nombre": "CMR6H",
+                  "specs": [
+                    "Husqvarna 545RX"
+                  ]
+                }
+              ],
+              "fuente": "https://plusstore.cl/producto/bujias-para-motosierras-bpmr7a-rcj6y/"
+            },
+            {
+              "marca": "Makita",
+              "modelo": "Set de mantenimiento TECHA1256",
+              "detalle": [
+                "Kits de mantención"
+              ],
+              "modelos": [
+                {
+                  "nombre": "Set de mantenimiento TECHA1256",
+                  "specs": [
+                    "Para EM4351UH / EM4350UH-LH"
+                  ]
+                }
+              ],
+              "fuente": "https://makita.cl/producto/set-de-mantenimiento-ope-p-em4351uh-em4350uh-lh-techa1256/"
+            }
+          ]
+        }
+      ]
+    },
+    "Carburadores, arranques y transmisión": {
+      "gamas": [
+        {
+          "nombre": "Compatibles",
+          "descripcion": "Repuestos de reposición por modelo de máquina.",
+          "opciones": [
+            {
+              "marca": "Ferven",
+              "modelo": "Línea completa · 3 modelos",
+              "detalle": [
+                "Repuestos para desmalezadoras"
+              ],
+              "modelos": [
+                {
+                  "nombre": "Carburador Stihl FS 120",
+                  "specs": []
+                },
+                {
+                  "nombre": "Carburador Husqvarna 143R",
+                  "specs": []
+                },
+                {
+                  "nombre": "Cilindro, pistón y anillo Stihl FS 250",
+                  "specs": []
+                }
+              ],
+              "fuente": "https://ferven.cl/categoria-producto/repuestos/carburadores/"
+            },
+            {
+              "marca": "Fueltek",
+              "modelo": "Línea completa · 3 modelos",
+              "detalle": [
+                "Repuestos motores 2T"
+              ],
+              "modelos": [
+                {
+                  "nombre": "Caja reductora",
+                  "specs": [
+                    "Stihl FS 120 a FS 250"
+                  ]
+                },
+                {
+                  "nombre": "Tapa de arranque",
+                  "specs": [
+                    "Stihl FS 120 / FS 200 / FS 350"
+                  ]
+                },
+                {
+                  "nombre": "Tapa de arranque",
+                  "specs": [
+                    "Stihl FS 160 / FS 220 / FS 280"
+                  ]
+                }
+              ],
+              "fuente": "https://fueltekchile.cl/etiqueta-producto/repuestos-motores-2-tiempos/"
+            }
+          ]
+        },
+        {
+          "nombre": "Originales",
+          "descripcion": "Repuestos del fabricante vía servicio técnico.",
+          "opciones": [
+            {
+              "marca": "Husqvarna",
+              "modelo": "Repuestos originales por modelo",
+              "detalle": [
+                "Piezas y manuales por modelo"
+              ],
+              "modelos": [
+                {
+                  "nombre": "Repuestos originales por modelo",
+                  "specs": [
+                    "Se cotizan con el número de pieza"
+                  ]
+                }
+              ],
+              "fuente": "https://www.husqvarna.com/cl/asistencia/545rx/"
+            }
+          ]
+        }
+      ]
     }
   }
 }
