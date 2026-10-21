@@ -5033,10 +5033,69 @@
           "opciones": [
             {
               "marca": "Isofit",
-              "modelo": "Clips metálicos 33 mm",
+              "modelo": "Línea completa · 9 modelos",
               "detalle": [
-                "Caja 100"
-              ]
+                "Caja 100 unidades",
+                "Caja 12 unidades",
+                "Caja 6 unidades"
+              ],
+              "modelos": [
+                {
+                  "nombre": "Clips metálicos 33 mm",
+                  "specs": [
+                    "Caja 100 unidades"
+                  ]
+                },
+                {
+                  "nombre": "Apretador 19 mm",
+                  "specs": [
+                    "Caja 12 unidades"
+                  ]
+                },
+                {
+                  "nombre": "Apretador 25 mm",
+                  "specs": [
+                    "Caja 6 unidades"
+                  ]
+                },
+                {
+                  "nombre": "Apretador Magic Clip + repuesto",
+                  "specs": [
+                    "Caja 40 unidades"
+                  ]
+                },
+                {
+                  "nombre": "Broches dorados 19 mm",
+                  "specs": [
+                    "Caja metálica"
+                  ]
+                },
+                {
+                  "nombre": "Push pins 11 mm",
+                  "specs": [
+                    "Caja plástica 40 unidades"
+                  ]
+                },
+                {
+                  "nombre": "Chinches dorados / colores",
+                  "specs": [
+                    "Caja"
+                  ]
+                },
+                {
+                  "nombre": "Alfileres cromados",
+                  "specs": [
+                    "Caja plástica"
+                  ]
+                },
+                {
+                  "nombre": "Set de escritorio",
+                  "specs": [
+                    "120 clips, 70 push pins y 20 apretadores"
+                  ]
+                }
+              ],
+              "fuente": "https://isofit.cl/catalogo/?product_category=10"
             },
             {
               "marca": "Torre",
@@ -5056,13 +5115,6 @@
               "modelo": "Apretadores (binder clips)",
               "detalle": [
                 "15 a 51 mm"
-              ]
-            },
-            {
-              "marca": "Isofit",
-              "modelo": "Apretadores",
-              "detalle": [
-                "Negros y de colores"
               ]
             }
           ]
@@ -5420,6 +5472,60 @@
           "descripcion": "Uso diario.",
           "opciones": [
             {
+              "marca": "Teknofas",
+              "modelo": "Línea completa · 7 modelos",
+              "detalle": [
+                "Pack 50 unidades",
+                "70 g, pack 50 unidades",
+                "Por unidad"
+              ],
+              "modelos": [
+                {
+                  "nombre": "Saco ½ oficio kraft 20 × 28 cm",
+                  "specs": [
+                    "Pack 50 unidades"
+                  ]
+                },
+                {
+                  "nombre": "Saco oficio kraft 24 × 34 cm",
+                  "specs": [
+                    "70 g, pack 50 unidades"
+                  ]
+                },
+                {
+                  "nombre": "Saco ½ oficio blanco 20 × 28 cm",
+                  "specs": [
+                    "Por unidad"
+                  ]
+                },
+                {
+                  "nombre": "Saco oficio blanco 25 × 36 cm",
+                  "specs": [
+                    "Por unidad"
+                  ]
+                },
+                {
+                  "nombre": "Saco revista 23 × 30 cm",
+                  "specs": [
+                    "Por unidad"
+                  ]
+                },
+                {
+                  "nombre": "Saco extra oficio blanco 30 × 40 cm",
+                  "specs": [
+                    "80 g, pack 25 o 50"
+                  ]
+                },
+                {
+                  "nombre": "Sobre americano con ventana 10 × 23 cm",
+                  "specs": [
+                    "Por unidad"
+                  ]
+                }
+              ],
+              "fuente": "https://www.chilenamayorista.cl/productos/libreria/papel-uso-manual/sobres-sacos"
+            },
+            {
               "marca": "Torre",
               "modelo": "Sobre manila",
               "detalle": [
@@ -5432,6 +5538,71 @@
           "nombre": "Estándar",
           "descripcion": "Más resistentes.",
           "opciones": [
+            {
+              "marca": "Unibol",
+              "modelo": "Línea completa · 9 modelos",
+              "detalle": [
+                "Paquete 200 unidades",
+                "Paquete 100 unidades"
+              ],
+              "modelos": [
+                {
+                  "nombre": "Manila pago 10,5 × 16,5 cm",
+                  "specs": [
+                    "Paquete 200 unidades"
+                  ]
+                },
+                {
+                  "nombre": "Manila media carta 17,5 × 24 cm",
+                  "specs": [
+                    "Paquete 100 unidades"
+                  ]
+                },
+                {
+                  "nombre": "Manila medio oficio 21 × 27 cm",
+                  "specs": [
+                    "Paquete 100 unidades"
+                  ]
+                },
+                {
+                  "nombre": "Manila carta 22,5 × 29,5 cm",
+                  "specs": [
+                    "Paquete 100 unidades"
+                  ]
+                },
+                {
+                  "nombre": "Manila carta especial 25 × 31 cm",
+                  "specs": [
+                    "Paquete 100 unidades"
+                  ]
+                },
+                {
+                  "nombre": "Manila oficio 25 × 35 cm",
+                  "specs": [
+                    "Paquete 100 unidades"
+                  ]
+                },
+                {
+                  "nombre": "Manila oficio especial 27 × 37 cm",
+                  "specs": [
+                    "Paquete 100 unidades"
+                  ]
+                },
+                {
+                  "nombre": "Manila gigante especial 30 × 42 cm",
+                  "specs": [
+                    "Paquete 100 unidades"
+                  ]
+                },
+                {
+                  "nombre": "Manila radiografía 36,5 × 44,5 cm",
+                  "specs": [
+                    "Paquete 100 unidades"
+                  ]
+                }
+              ],
+              "fuente": "https://distribuidoraelfaro.com/categoria-producto/sobres-de-manila/"
+            },
             {
               "marca": "Artel",
               "modelo": "Sobre manila con gomado",
@@ -5815,10 +5986,81 @@
           "opciones": [
             {
               "marca": "Fellowes",
-              "modelo": "Línea de escritorio",
+              "modelo": "Línea completa · 11 modelos",
               "detalle": [
-                "Malla metálica o madera"
-              ]
+                "Bandeja de alambre carta, 3\"",
+                "Alambre, 11 secciones",
+                "Bandeja doble con archivador escalonado"
+              ],
+              "modelos": [
+                {
+                  "nombre": "Workstation 60112",
+                  "specs": [
+                    "Bandeja de alambre carta, 3\""
+                  ]
+                },
+                {
+                  "nombre": "Desktop Organizer 72112",
+                  "specs": [
+                    "Alambre, 11 secciones"
+                  ]
+                },
+                {
+                  "nombre": "Wire Double Tray with Step File 72391",
+                  "specs": [
+                    "Bandeja doble con archivador escalonado"
+                  ]
+                },
+                {
+                  "nombre": "Side Load Double Tray 72371",
+                  "specs": [
+                    "Bandeja doble con sorter 5 secciones"
+                  ]
+                },
+                {
+                  "nombre": "Step File Junior 72613",
+                  "specs": [
+                    "Archivador escalonado, 6 secciones"
+                  ]
+                },
+                {
+                  "nombre": "Catalog Rack 1040201",
+                  "specs": [
+                    "Revistero 4 compartimentos, alambre"
+                  ]
+                },
+                {
+                  "nombre": "Office Suites Letter Tray 8031701",
+                  "specs": [
+                    "Bandeja carta"
+                  ]
+                },
+                {
+                  "nombre": "Office Suites Pencil Cup 8032301",
+                  "specs": [
+                    "Portalápices"
+                  ]
+                },
+                {
+                  "nombre": "Office Suites Paper Clip Cup 8032801",
+                  "specs": [
+                    "Porta clips"
+                  ]
+                },
+                {
+                  "nombre": "Office Suites Laptop Riser 8032001",
+                  "specs": [
+                    "Soporte para notebook"
+                  ]
+                },
+                {
+                  "nombre": "Office Suites Printer Stand 8032601",
+                  "specs": [
+                    "Soporte multiuso para impresora"
+                  ]
+                }
+              ],
+              "fuente": "https://www.fellowesbrandsworklife.com/product-category/workspace-accessories/desk-accessories/"
             }
           ]
         }
