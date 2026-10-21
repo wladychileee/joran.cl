@@ -8812,11 +8812,12 @@
           "nombre": "Económica",
           "opciones": [
             {
-              "marca": "Torre",
-              "modelo": "Carpeta manila",
+              "marca": "Rhein",
+              "modelo": "Carpeta cartulina pigmentada oficio",
               "detalle": [
-                "Carta / oficio"
-              ]
+                "Cartulina, varios colores"
+              ],
+              "fuente": "https://distribuidor.dimeiggs.cl/collections/archivadores-y-carpetas"
             }
           ]
         },
@@ -8824,11 +8825,12 @@
           "nombre": "Estándar",
           "opciones": [
             {
-              "marca": "Artel",
-              "modelo": "Carpeta colgante",
+              "marca": "Rhein",
+              "modelo": "Carpeta colgante fleje metal Kraft 300",
               "detalle": [
-                "Con visor"
-              ]
+                "Oficio, hasta 80 hojas"
+              ],
+              "fuente": "https://dlmcomercial.cl/producto/carpeta-colgante-rhein-fleje-metal-kraft-300/"
             }
           ]
         }
@@ -8887,26 +8889,23 @@
     "Papel carbón, papel calco": {
       "gamas": [
         {
-          "nombre": "Económica",
-          "opciones": [
-            {
-              "marca": "Torre",
-              "modelo": "Papel carbón",
-              "detalle": [
-                "Carta / oficio"
-              ]
-            }
-          ]
-        },
-        {
           "nombre": "Estándar",
           "opciones": [
             {
               "marca": "Pelikan",
-              "modelo": "Papel carbón",
+              "modelo": "Papel carbónico Ultrafilm oficio",
               "detalle": [
-                "Copias nítidas"
-              ]
+                "Pack 50 hojas, negro"
+              ],
+              "fuente": "https://www.mercadolibre.cl/papel-carbonico-pelikan-ultrafilm-oficio-x-50-hojas/p/MLC21633730"
+            },
+            {
+              "marca": "Pelikan",
+              "modelo": "Papel carbón para calco A4",
+              "detalle": [
+                "Azul o negro, 10 / 100 hojas"
+              ],
+              "fuente": "https://hartem.com/es-cl/marcas/pelikan.html"
             }
           ]
         }
@@ -8915,26 +8914,28 @@
     "Papel fotocopia, papel reciclado": {
       "gamas": [
         {
-          "nombre": "Económica",
+          "nombre": "Estándar",
           "opciones": [
             {
               "marca": "Equalit",
-              "modelo": "Línea eco / reciclado",
+              "modelo": "Multiuso carta 75 g",
               "detalle": [
-                "Menor impacto ambiental"
-              ]
+                "Resma 500 hojas, certificación PEFC"
+              ],
+              "fuente": "https://www.oltouch.cl/product.php?id=965"
             }
           ]
         },
         {
-          "nombre": "Estándar",
+          "nombre": "Premium",
           "opciones": [
             {
-              "marca": "Report",
-              "modelo": "75 g/m²",
+              "marca": "Reprograf",
+              "modelo": "Natural caña de azúcar 72 g",
               "detalle": [
-                "Alto rendimiento"
-              ]
+                "Carta, resma 520 hojas"
+              ],
+              "fuente": "https://www.arlib.cl/product/resma-papel-reciclado-natural-75g-carta-520hj"
             }
           ]
         }
@@ -12342,26 +12343,28 @@
     "Plumas fuente, cartuchos": {
       "gamas": [
         {
-          "nombre": "Económica",
+          "nombre": "Estándar",
           "opciones": [
             {
               "marca": "Pelikan",
-              "modelo": "Pluma escolar",
+              "modelo": "Pelikano P480M",
               "detalle": [
-                "Cartuchos estándar"
-              ]
+                "Plumín acero, cartuchos estándar"
+              ],
+              "fuente": "https://davisoffice.cl/categoria-producto/instrumentos-de-escritura/linea-pelikano/"
             }
           ]
         },
         {
-          "nombre": "Estándar",
+          "nombre": "Premium",
           "opciones": [
             {
               "marca": "Lamy",
               "modelo": "Safari",
               "detalle": [
-                "Diseño clásico"
-              ]
+                "Plumín F / M, cartucho T10"
+              ],
+              "fuente": "https://rupapel.cl/products/pluma-fuente-safari"
             }
           ]
         }
@@ -12764,17 +12767,24 @@
           "opciones": [
             {
               "marca": "Formaval",
-              "modelo": "Pizarra magnética",
+              "modelo": "Acrílica / magnética 70×100 y 90×120 cm",
               "detalle": [
-                "Varios tamaños"
-              ]
-            },
+                "Marco de aluminio, fabricación en Viña del Mar"
+              ],
+              "fuente": "https://formaval.cl/"
+            }
+          ]
+        },
+        {
+          "nombre": "Premium",
+          "opciones": [
             {
-              "marca": "Quartet",
-              "modelo": "Pizarra magnética",
+              "marca": "Bi-Silque",
+              "modelo": "Blanca magnética 60×45 a 240×120 cm",
               "detalle": [
-                "Fácil borrado"
-              ]
+                "Uso sala de reuniones"
+              ],
+              "fuente": "https://catalogo.faxonchile.cl/pizarras/"
             }
           ]
         }
@@ -12786,11 +12796,12 @@
           "nombre": "Económica",
           "opciones": [
             {
-              "marca": "Isofit",
-              "modelo": "Borrador de pizarra",
+              "marca": "Atlantik",
+              "modelo": "Borrador magnético 14,5 × 6,5 cm",
               "detalle": [
-                "Fieltro"
-              ]
+                "Fieltro, imán"
+              ],
+              "fuente": "https://www.libreriagiorgio.cl/index.php/ProductoDatos/Detalles?codigo=05099013"
             }
           ]
         },
@@ -12798,11 +12809,12 @@
           "nombre": "Estándar",
           "opciones": [
             {
-              "marca": "Artel",
-              "modelo": "Borrador magnético",
+              "marca": "Proarte",
+              "modelo": "Borrador de pizarra madera",
               "detalle": [
-                "Se adhiere a la pizarra"
-              ]
+                "Base de fieltro"
+              ],
+              "fuente": "https://www.matill.cl/collection/borradores"
             }
           ]
         }
@@ -13143,18 +13155,25 @@
           "nombre": "Económica",
           "opciones": [
             {
-              "marca": "Bic",
-              "modelo": "Evolution",
+              "marca": "Faber-Castell",
+              "modelo": "Goldfaber 1221",
               "detalle": [
-                "HB"
-              ]
-            },
+                "Grafito, varias durezas"
+              ],
+              "fuente": "https://libreriatrazolibre.cl/collections/grafito"
+            }
+          ]
+        },
+        {
+          "nombre": "Premium",
+          "opciones": [
             {
-              "marca": "Artel",
-              "modelo": "Lápiz grafito",
+              "marca": "Faber-Castell",
+              "modelo": "Castell 9000 HB",
               "detalle": [
-                "HB / 2B"
-              ]
+                "Mina encolada resistente a la rotura"
+              ],
+              "fuente": "https://www.faber-castell.cl/products/L%c3%a1pizCastell9000HB/119000"
             }
           ]
         }
@@ -13253,21 +13272,23 @@
     "Artículos de Librería · Pegamento en barra, líquido": {
       "gamas": [
         {
-          "nombre": "Económica",
+          "nombre": "Estándar",
           "opciones": [
             {
-              "marca": "Artel",
-              "modelo": "Pegamento en barra",
+              "marca": "Pritt",
+              "modelo": "Stic Fix 40 g",
               "detalle": [
-                "No tóxico"
-              ]
+                "Barra sin solventes"
+              ],
+              "fuente": "https://super.lider.cl/ip/libreria/00000007802720"
             },
             {
-              "marca": "Torre",
-              "modelo": "Cola fría",
+              "marca": "UHU",
+              "modelo": "Stic 40 g",
               "detalle": [
-                "Uso escolar"
-              ]
+                "Barra, tapa rosca"
+              ],
+              "fuente": "https://www.arlib.cl/product/pegamento-en-barra-stic-40g-uhu"
             }
           ]
         }
@@ -13276,21 +13297,23 @@
     "Artículos de Librería · Reglas, escuadras": {
       "gamas": [
         {
-          "nombre": "Económica",
+          "nombre": "Estándar",
           "opciones": [
             {
-              "marca": "Isofit",
-              "modelo": "Reglas plásticas",
+              "marca": "Artel",
+              "modelo": "Regla acero 30 cm",
               "detalle": [
-                "20–30 cm"
-              ]
+                "Metálica"
+              ],
+              "fuente": "https://www.mundoartel.cl/s/escolar/instrumentos-de-medicion/1"
             },
             {
-              "marca": "Artel",
-              "modelo": "Set geométrico",
+              "marca": "Maped",
+              "modelo": "Set geometría flexible 30 cm",
               "detalle": [
-                "Escuadras y transportador"
-              ]
+                "Regla, escuadras y transportador"
+              ],
+              "fuente": "https://www.mundoartel.cl/s/escolar/instrumentos-de-medicion/1"
             }
           ]
         }
