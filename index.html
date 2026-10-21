@@ -31,7 +31,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="styles.min.css?v=20261020">
     <link rel="stylesheet" href="overrides.css?v=20261020b">
-    <link rel="stylesheet" href="features.css?v=20261020r">
+    <link rel="stylesheet" href="features.css?v=20261020s">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
@@ -76,11 +76,13 @@
     </div>
 
     <!-- Banner de campaña: para cambiarlo, edita el texto y cambia data-campaign (así vuelve a mostrarse a quienes lo cerraron) -->
+    <!-- Banner desactivado temporalmente
     <div id="campaign-banner" class="campaign-banner" data-campaign="fin-de-ano-2026" hidden>
         <p><strong>Fin de año:</strong> cotiza regalos corporativos y canastas navideñas para tu equipo.</p>
         <a href="#kits" class="campaign-cta">Ver kits</a>
         <button type="button" class="campaign-close" aria-label="Cerrar aviso">&times;</button>
     </div>
+    -->
 
     <!-- Company Header -->
     <header class="company-header">
@@ -105,9 +107,6 @@
                 </li>
                 <li class="nav-item">
                     <a href="#productos" class="nav-link">Productos</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#kits" class="nav-link">Kits</a>
                 </li>
                 <li class="nav-item">
                     <a href="#preguntas-frecuentes" class="nav-link">Preguntas</a>
@@ -346,7 +345,7 @@
     </section>
 
     <!-- Kits -->
-    <section id="kits" class="kits">
+    <section id="kits" class="kits" hidden style="display:none">
         <div class="container">
             <div class="section-header">
                 <h2>Kits listos para cotizar</h2>
@@ -393,7 +392,8 @@
                             <li>Cafeteras automáticas, express</li>
                             <li>Hervidores eléctricos</li>
                             <li>Microondas, hornos eléctricos</li>
-                            <li>Refrigeradores compactos</li>
+                            <li>Televisores 50 pulgadas</li>
+                        <li>Refrigeradores y frigobares</li>
                             <li>Dispensadores de agua fría/caliente</li>
                             <li>Vajillas, cristalería</li>
                             <li>Cubiertos, utensilios de cocina</li>
@@ -430,7 +430,7 @@
             <div class="faq-list">
                     <details class="faq-item">
                         <summary>¿Cómo solicito una cotización?</summary>
-                        <p>Agrega productos a tu lista desde las categorías, el buscador o los kits y envíala por WhatsApp o correo. También puedes completar el formulario de contacto o escribirnos directamente.</p>
+                        <p>Agrega productos a tu lista desde las categorías o el buscador y envíala por WhatsApp o correo. También puedes completar el formulario de contacto o escribirnos directamente.</p>
                     </details>
                     <details class="faq-item">
                         <summary>¿Qué productos venden?</summary>
@@ -450,11 +450,11 @@
                     </details>
                     <details class="faq-item">
                         <summary>¿Hacen despacho?</summary>
-                        <p>Coordinamos la entrega según tu ubicación y el tipo de producto. Te informamos las condiciones junto con tu cotización.</p>
+                        <p>Sí, despachamos a todo Chile en un plazo de 48 horas.</p>
                     </details>
                     <details class="faq-item">
                         <summary>¿Cuáles son las formas de pago?</summary>
-                        <p>Te informamos las formas y condiciones de pago disponibles junto con tu cotización.</p>
+                        <p>Ofrecemos pago a crédito, previa verificación de la información de tu empresa.</p>
                     </details>
             </div>
         </div>
@@ -784,7 +784,8 @@
                 <div class="product-list">
                     <h4>Cocina de Oficina:</h4>
                     <ul>
-                        <li>Refrigeradores compactos</li>
+                        <li>Televisores 50 pulgadas</li>
+                        <li>Refrigeradores y frigobares</li>
                         <li>Microondas, hornos eléctricos</li>
                         <li>Cafeteras automáticas, express</li>
                         <li>Hervidores eléctricos</li>
@@ -792,9 +793,7 @@
                     </ul>
                     <h4>Electrodomésticos Menores:</h4>
                     <ul>
-                        <li>Licuadoras, procesadoras</li>
                         <li>Tostadoras, sandwicheras</li>
-                        <li>Planchas, vaporizadores</li>
                         <li>Aspiradoras de oficina</li>
                         <li>Ventiladores, calefactores</li>
                     </ul>
@@ -802,7 +801,6 @@
                     <ul>
                         <li>Aires acondicionados split</li>
                         <li>Purificadores de aire</li>
-                        <li>Humidificadores, deshumidificadores</li>
                         <li>Calefactores eléctricos</li>
                         <li>Ventiladores de techo</li>
                     </ul>
@@ -941,7 +939,7 @@
 
     <script src="script.js?v=20261020b"></script>
     <script src="features.js?v=20261020c"></script>
-    <script src="options.js?v=20261020r"></script>
+    <script src="options.js?v=20261020s"></script>
     <script>
       (function(){
         function initThanksBanner(){

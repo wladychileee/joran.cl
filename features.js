@@ -111,7 +111,7 @@
                 <button type="button" class="ql-close" aria-label="Cerrar">&times;</button>
             </div>
             <div class="ql-body">
-                <p class="ql-empty">Tu lista está vacía. Agrega productos desde las categorías, el buscador o los kits.</p>
+                <p class="ql-empty">Tu lista está vacía. Agrega productos desde las categorías, o el buscador.</p>
                 <ul class="ql-items"></ul>
                 <label class="ql-notes-label" for="ql-notes">Comentarios (opcional)</label>
                 <textarea id="ql-notes" class="ql-notes" rows="3" placeholder="Marcas, medidas, plazos de entrega, dirección..."></textarea>
