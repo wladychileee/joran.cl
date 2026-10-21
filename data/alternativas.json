@@ -6429,6 +6429,88 @@
           "descripcion": "Diseño de oficina.",
           "opciones": [
             {
+              "marca": "Multimuebles",
+              "modelo": "Línea completa · 11 modelos",
+              "detalle": [
+                "Melamina Masisa 18 mm",
+                "Cubierta engrosada 24 mm",
+                "Melamina 18 mm"
+              ],
+              "modelos": [
+                {
+                  "nombre": "Escritorio recto 18 mm (80 / 120 / 140 cm)",
+                  "specs": [
+                    "Melamina Masisa 18 mm",
+                    "Fabricación nacional"
+                  ]
+                },
+                {
+                  "nombre": "Escritorio recto 24 mm (80 a 200 cm)",
+                  "specs": [
+                    "Cubierta engrosada 24 mm",
+                    "6 largos: 80, 100, 120, 150 y 200 cm"
+                  ]
+                },
+                {
+                  "nombre": "Escritorio 1,00 / 1,20 / 1,60 m",
+                  "specs": [
+                    "Melamina 18 mm"
+                  ]
+                },
+                {
+                  "nombre": "Escritorio gota 36 mm",
+                  "specs": [
+                    "Cubierta engrosada 36 mm, canto Ergosoft"
+                  ]
+                },
+                {
+                  "nombre": "Centro de trabajo 1,60×1,60 m (cód. 237 / 250 / 239)",
+                  "specs": [
+                    "Pedestal metálico",
+                    "Con o sin 3 cajones con cierre centralizado"
+                  ]
+                },
+                {
+                  "nombre": "Centro de trabajo 160×160 CPU (cód. 242)",
+                  "specs": [
+                    "Espacio CPU y bandeja de teclado"
+                  ]
+                },
+                {
+                  "nombre": "Centro de trabajo gota 1,90×1,90 m (cód. 320)",
+                  "specs": [
+                    "Cubierta 36 mm, 3 cajones"
+                  ]
+                },
+                {
+                  "nombre": "Estación de trabajo con complemento 150×140 (cód. 514)",
+                  "specs": [
+                    "Cajonera 2 cajones (1 kardex)",
+                    "Estructura metálica blanca"
+                  ]
+                },
+                {
+                  "nombre": "Estación de trabajo base metálica 150×150 (cód. 405)",
+                  "specs": [
+                    "Cubierta 24 mm, faldón"
+                  ]
+                },
+                {
+                  "nombre": "Escritorio lateral complemento 140×47 (cód. 516)",
+                  "specs": [
+                    "Cajonera con cierre centralizado"
+                  ]
+                },
+                {
+                  "nombre": "Escritorio esquina 75×75 (cód. 414)",
+                  "specs": [
+                    "Pedestal metálico circular"
+                  ]
+                }
+              ],
+              "fuente": "https://www.multimuebles.cl/catalogos.php"
+            },
+            {
               "marca": "Fabricación nacional",
               "modelo": "Escritorio en L / con cubierta gruesa",
               "detalle": [
@@ -6626,6 +6708,23 @@
           "descripcion": "Básicos.",
           "opciones": [
             {
+              "marca": "Prido",
+              "modelo": "Línea completa · 1 modelos",
+              "detalle": [
+                "46×62×132 cm, 39 kg"
+              ],
+              "modelos": [
+                {
+                  "nombre": "Kardex vertical 4 cajones",
+                  "specs": [
+                    "46×62×132 cm, 39 kg",
+                    "Acero laminado en frío, cierre cam 2 llaves"
+                  ]
+                }
+              ],
+              "fuente": "https://www.prido.cl/wp-content/uploads/2026/09/FICHA-TECNICA-KARDEX-METALICO-4-CAJONES.pdf"
+            },
+            {
               "marca": "Fabricación nacional",
               "modelo": "Archivador metálico 3 cajones",
               "detalle": [
@@ -6638,6 +6737,38 @@
           "nombre": "Estándar",
           "descripcion": "Más capacidad.",
           "opciones": [
+            {
+              "marca": "Gesmetal",
+              "modelo": "Línea completa · 3 modelos",
+              "detalle": [
+                "Alto 1.030 mm, frente 460, fondo 600 mm",
+                "Alto 1.330 mm",
+                "Cierre centralizado y sistema antivuelco"
+              ],
+              "modelos": [
+                {
+                  "nombre": "Kardex metálico 3 cajones",
+                  "specs": [
+                    "Alto 1.030 mm, frente 460, fondo 600 mm",
+                    "Acero SAE 1010"
+                  ]
+                },
+                {
+                  "nombre": "Kardex metálico 4 cajones",
+                  "specs": [
+                    "Alto 1.330 mm",
+                    "Rieles telescópicos, 80 kg por cajón"
+                  ]
+                },
+                {
+                  "nombre": "Kardex metálico 5 cajones",
+                  "specs": [
+                    "Cierre centralizado y sistema antivuelco"
+                  ]
+                }
+              ],
+              "fuente": "https://gesmetal.cl/categoria-producto/kardex/"
+            },
             {
               "marca": "Fabricación nacional",
               "modelo": "Archivador 4 cajones",
@@ -6688,6 +6819,63 @@
           "nombre": "Estándar",
           "descripcion": "Sala de reuniones.",
           "opciones": [
+            {
+              "marca": "Multimuebles",
+              "modelo": "Línea completa · 7 modelos",
+              "detalle": [
+                "Pedestal metálico plato 500–600 mm",
+                "Cubierta engrosada 24 mm",
+                "Melamina 18 mm cerezo, canto Ergosoft"
+              ],
+              "modelos": [
+                {
+                  "nombre": "Mesa reunión redonda Ø 90 / 100 / 120 cm",
+                  "specs": [
+                    "Pedestal metálico plato 500–600 mm",
+                    "Cubierta 18, 24 o 36 mm"
+                  ]
+                },
+                {
+                  "nombre": "Mesa reunión 1,40 m 24 mm (cód. 227)",
+                  "specs": [
+                    "Cubierta engrosada 24 mm"
+                  ]
+                },
+                {
+                  "nombre": "Mesa reunión 1,60 a 2,40 m pedestal simple",
+                  "specs": [
+                    "Melamina 18 mm cerezo, canto Ergosoft",
+                    "Estructura metálica 2 mm"
+                  ]
+                },
+                {
+                  "nombre": "Mesa reunión 1,80 a 2,40 m 36 mm",
+                  "specs": [
+                    "Cubierta engrosada 36 mm"
+                  ]
+                },
+                {
+                  "nombre": "Mesa reunión 1,90 a 2,40 m pedestal doble plato",
+                  "specs": [
+                    "Melamina 18 o 36 mm"
+                  ]
+                },
+                {
+                  "nombre": "Mesa reunión 2,00 a 3,60 m 24 mm (cód. 1336–1339)",
+                  "specs": [
+                    "Pedestal doble o triple plato",
+                    "Hasta 360×120 cm"
+                  ]
+                },
+                {
+                  "nombre": "Mesa de centro / lateral 50×50 (cód. 512 / 516)",
+                  "specs": [
+                    "Melamina o estructura metálica, revistero"
+                  ]
+                }
+              ],
+              "fuente": "https://www.multimuebles.cl/catalogos.php"
+            },
             {
               "marca": "Fabricación nacional",
               "modelo": "Mesa 8–10 personas",
@@ -6824,6 +7012,68 @@
           "nombre": "Estándar",
           "descripcion": "Recepción.",
           "opciones": [
+            {
+              "marca": "Multimuebles",
+              "modelo": "Línea completa · 8 modelos",
+              "detalle": [
+                "Asiento tapizado alto tráfico",
+                "Tapizada o polipropileno",
+                "Viga metálica"
+              ],
+              "modelos": [
+                {
+                  "nombre": "Butaca Alice 2 a 5 asientos",
+                  "specs": [
+                    "Asiento tapizado alto tráfico",
+                    "Respaldo polipropileno perforado"
+                  ]
+                },
+                {
+                  "nombre": "Butaca ISO 2 a 5 asientos",
+                  "specs": [
+                    "Tapizada o polipropileno",
+                    "Travesaño metálico"
+                  ]
+                },
+                {
+                  "nombre": "Butaca Spring 2 a 5 asientos",
+                  "specs": [
+                    "Viga metálica"
+                  ]
+                },
+                {
+                  "nombre": "Sofá Arsenal 1, 2 y 3 cuerpos",
+                  "specs": [
+                    "Madera sólida, tevinil negro"
+                  ]
+                },
+                {
+                  "nombre": "Sofá Fiona 1, 2 y 3 cuerpos",
+                  "specs": [
+                    "Ecocuero o tela a elección"
+                  ]
+                },
+                {
+                  "nombre": "Sofá Cádiz 1, 2 y 3 cuerpos",
+                  "specs": [
+                    "Tapizado"
+                  ]
+                },
+                {
+                  "nombre": "Poltronas Amelia / Celine / Egg",
+                  "specs": [
+                    "Para recepción o sala de espera"
+                  ]
+                },
+                {
+                  "nombre": "Berger",
+                  "specs": [
+                    "Respaldo alto, madera seca"
+                  ]
+                }
+              ],
+              "fuente": "https://www.multimuebles.cl/catalogos.php"
+            },
             {
               "marca": "Fabricación nacional",
               "modelo": "Sillón tapizado 1–3 cuerpos",
@@ -7186,6 +7436,44 @@
           "descripcion": "Acústico.",
           "opciones": [
             {
+              "marca": "Multimuebles",
+              "modelo": "Línea completa · 4 modelos",
+              "detalle": [
+                "Alto 165 cm, vidrio 37,5 cm",
+                "Alto 165 cm, tapiz a elección",
+                "Une paneles"
+              ],
+              "modelos": [
+                {
+                  "nombre": "Separador mixto tela-vidrio 80 / 90 / 100 / 120 cm",
+                  "specs": [
+                    "Alto 165 cm, vidrio 37,5 cm",
+                    "Estructura gris o negra"
+                  ]
+                },
+                {
+                  "nombre": "Separador tapizado 80 / 90 / 100 / 120 cm",
+                  "specs": [
+                    "Alto 165 cm, tapiz a elección",
+                    "Pasacables y patines regulables"
+                  ]
+                },
+                {
+                  "nombre": "Pilar conector X / L / T (cód. 1406)",
+                  "specs": [
+                    "Une paneles"
+                  ]
+                },
+                {
+                  "nombre": "Pilar término (cód. 1407)",
+                  "specs": [
+                    "Remate de línea"
+                  ]
+                }
+              ],
+              "fuente": "https://www.multimuebles.cl/catalogos.php"
+            },
+            {
               "marca": "Fabricación nacional",
               "modelo": "Panel tapizado acústico",
               "detalle": [
@@ -7228,6 +7516,36 @@
           "nombre": "Estándar",
           "descripcion": "Diseño corporativo.",
           "opciones": [
+            {
+              "marca": "Multimuebles",
+              "modelo": "Línea completa · 3 modelos",
+              "detalle": [
+                "Cajonera 3 cajones y bandeja teclado",
+                "2 cajoneras y 2 bandejas de teclado"
+              ],
+              "modelos": [
+                {
+                  "nombre": "Mesón recepción 1,50 m (cód. 1330)",
+                  "specs": [
+                    "Cajonera 3 cajones y bandeja teclado",
+                    "Frente en dos tonos, alto 110 cm"
+                  ]
+                },
+                {
+                  "nombre": "Mesón recepción 2,00 m (cód. 1331)",
+                  "specs": [
+                    "Cajonera 3 cajones y bandeja teclado"
+                  ]
+                },
+                {
+                  "nombre": "Mesón recepción 3,00 m (cód. 1332)",
+                  "specs": [
+                    "2 cajoneras y 2 bandejas de teclado"
+                  ]
+                }
+              ],
+              "fuente": "https://www.multimuebles.cl/catalogos.php"
+            },
             {
               "marca": "Fabricación nacional",
               "modelo": "Mesón con logo / curvo",
@@ -7407,6 +7725,66 @@
           "descripcion": "Taller / bodega.",
           "opciones": [
             {
+              "marca": "Multimuebles",
+              "modelo": "Línea completa · 8 modelos",
+              "detalle": [
+                "Melamina cerezo/negro",
+                "Cubierta engrosada",
+                "Estructura metálica, sin faldón"
+              ],
+              "modelos": [
+                {
+                  "nombre": "Paleta de trabajo 1,20×0,60 m 18 mm (cód. 235)",
+                  "specs": [
+                    "Melamina cerezo/negro"
+                  ]
+                },
+                {
+                  "nombre": "Paleta de trabajo 1,20×0,60 m 24 mm (cód. 240)",
+                  "specs": [
+                    "Cubierta engrosada"
+                  ]
+                },
+                {
+                  "nombre": "Paleta de trabajo 1,60×0,60 m 24 mm (cód. 243)",
+                  "specs": [
+                    "Cubierta engrosada"
+                  ]
+                },
+                {
+                  "nombre": "Escritorio bench 110×50 (cód. 1234)",
+                  "specs": [
+                    "Estructura metálica, sin faldón"
+                  ]
+                },
+                {
+                  "nombre": "Escritorio base metálica 120×60 / 150×60",
+                  "specs": [
+                    "Cubierta 24 mm, patines regulables"
+                  ]
+                },
+                {
+                  "nombre": "Mesa plegable cuadrada 86×86 (cód. 1231)",
+                  "specs": [
+                    "Polipropileno alto impacto"
+                  ]
+                },
+                {
+                  "nombre": "Mesa plegable rectangular 152×74 (cód. 1232)",
+                  "specs": [
+                    "Estructura de acero, sistema de bloqueo"
+                  ]
+                },
+                {
+                  "nombre": "Mesa plegable redonda Ø 150 (cód. 1233)",
+                  "specs": [
+                    "Polipropileno blanco"
+                  ]
+                }
+              ],
+              "fuente": "https://www.multimuebles.cl/catalogos.php"
+            },
+            {
               "marca": "Fabricación nacional",
               "modelo": "Mesa de trabajo reforzada",
               "detalle": [
@@ -7449,6 +7827,86 @@
           "nombre": "Estándar",
           "descripcion": "Aluminio y vidrio.",
           "opciones": [
+            {
+              "marca": "Exhibidores Chile",
+              "modelo": "Línea completa · 11 modelos",
+              "detalle": [
+                "Panel ranurado para ganchos",
+                "Gabinete inferior para stock",
+                "Repisas de vidrio"
+              ],
+              "modelos": [
+                {
+                  "nombre": "Vitrina con ranurado 40 a 150 × 40 × 196 cm",
+                  "specs": [
+                    "Panel ranurado para ganchos",
+                    "6 anchos: 40, 60, 80, 100, 120 y 150 cm"
+                  ]
+                },
+                {
+                  "nombre": "Vitrina con ranurado y bodega 40 a 150 × 40 × 196 cm",
+                  "specs": [
+                    "Gabinete inferior para stock"
+                  ]
+                },
+                {
+                  "nombre": "Vitrina con repisas y bodega 40 a 150 × 40 × 196 cm",
+                  "specs": [
+                    "Repisas de vidrio"
+                  ]
+                },
+                {
+                  "nombre": "Vitrina panorámica 40 a 150 × 40 × 196 cm",
+                  "specs": [
+                    "Vidrio en todas sus caras",
+                    "También con bodega o base metálica"
+                  ]
+                },
+                {
+                  "nombre": "Vitrina panorámica de mesa 50×35 (66 / 96 cm)",
+                  "specs": [
+                    "Una o dos repisas"
+                  ]
+                },
+                {
+                  "nombre": "Vitrina mural con repisas 40 a 150 × 40 × 196 cm",
+                  "specs": [
+                    "Para muro"
+                  ]
+                },
+                {
+                  "nombre": "Vitrina mural melamínica 50 a 100 cm de ancho",
+                  "specs": [
+                    "Altos 120 a 200 cm, con o sin bodega"
+                  ]
+                },
+                {
+                  "nombre": "Vitrina mostrador 106 / 126 / 156 × 43 × 106 cm",
+                  "specs": [
+                    "Mesón de atención"
+                  ]
+                },
+                {
+                  "nombre": "Vitrina mostrador cúpula 106 / 126 cm",
+                  "specs": [
+                    "Base metálica o con bodega"
+                  ]
+                },
+                {
+                  "nombre": "Vitrina mostrador + mueble de caja 192 / 212 / 232 cm",
+                  "specs": [
+                    "Conjunto para punto de venta"
+                  ]
+                },
+                {
+                  "nombre": "Traseras murales 106 / 126 × 30 × 230 cm",
+                  "specs": [
+                    "Ranurado, repisas, puertas y bodega"
+                  ]
+                }
+              ],
+              "fuente": "https://exhibidoreschile.cl/collections/vitrinas"
+            },
             {
               "marca": "Fabricación nacional",
               "modelo": "Vitrina de aluminio",
@@ -7603,6 +8061,79 @@
           "nombre": "Estándar",
           "descripcion": "Estaciones de trabajo.",
           "opciones": [
+            {
+              "marca": "Multimuebles",
+              "modelo": "Línea completa · 10 modelos",
+              "detalle": [
+                "Alto 210 cm, base con puertas correderas con llave",
+                "Cubierta engrosada, peral/grafito",
+                "Alto 210 cm"
+              ],
+              "modelos": [
+                {
+                  "nombre": "Biblioteca alta 0,80 a 1,50 m",
+                  "specs": [
+                    "Alto 210 cm, base con puertas correderas con llave",
+                    "Repisas regulables"
+                  ]
+                },
+                {
+                  "nombre": "Biblioteca alta 1,20 / 1,40 m 24 mm",
+                  "specs": [
+                    "Cubierta engrosada, peral/grafito"
+                  ]
+                },
+                {
+                  "nombre": "Biblioteca alta 1,20 m 3 puertas abatir",
+                  "specs": [
+                    "Alto 210 cm"
+                  ]
+                },
+                {
+                  "nombre": "Biblioteca baja 0,80 a 1,40 m",
+                  "specs": [
+                    "Alto 90 cm, 2 puertas correderas con llave"
+                  ]
+                },
+                {
+                  "nombre": "Gabinete aéreo 0,80 m",
+                  "specs": [
+                    "Puertas correderas, abatibles, vidriadas o articuladas"
+                  ]
+                },
+                {
+                  "nombre": "Gabinete aéreo 1,00 m",
+                  "specs": [
+                    "2 puertas de abatir o puerta articulada"
+                  ]
+                },
+                {
+                  "nombre": "Gabinete aéreo 1,20 m",
+                  "specs": [
+                    "3 puertas abatibles o vidriadas"
+                  ]
+                },
+                {
+                  "nombre": "Gabinete aéreo 2,00 m 4 puertas vidriadas",
+                  "specs": [
+                    "Blanco, repisas regulables"
+                  ]
+                },
+                {
+                  "nombre": "Cajonera 2, 3 y 4 cajones / móvil",
+                  "specs": [
+                    "Con kardex y cierre centralizado"
+                  ]
+                },
+                {
+                  "nombre": "Kardex melamina 2, 3 y 4 cajones (cód. 1012–1014)",
+                  "specs": [
+                    "Melamina 18 mm, cierre con llave"
+                  ]
+                }
+              ],
+              "fuente": "https://www.multimuebles.cl/catalogos.php"
+            },
             {
               "marca": "Fabricación nacional",
               "modelo": "Estación de trabajo 2–4 puestos",
