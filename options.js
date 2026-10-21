@@ -3,7 +3,7 @@
 (function () {
     'use strict';
 
-    const DATA_URL = 'data/alternativas.json?v=20261020u';
+    const DATA_URL = 'data/alternativas.json?v=20261020v';
     const TIERS = {
         economica: { icon: 'fa-tag', label: 'Económica' },
         estandar: { icon: 'fa-check-circle', label: 'Estándar' },
@@ -11,7 +11,9 @@
         cementos: { icon: 'fa-cubes', label: 'Cementos' },
         'morteros y hormigones': { icon: 'fa-fill-drip', label: 'Morteros y hormigones' },
         adhesivos: { icon: 'fa-th-large', label: 'Adhesivos' },
-        martillos: { icon: 'fa-hammer', label: 'Martillos' }
+        martillos: { icon: 'fa-hammer', label: 'Martillos' },
+        originales: { icon: 'fa-certificate', label: 'Originales' },
+        compatibles: { icon: 'fa-puzzle-piece', label: 'Compatibles' }
     };
     const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
     const slug = (s) => String(s).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
@@ -137,7 +139,7 @@
         const models = o.modelos || [];
         const list = models.length ? `
                 <details class="opt-models">
-                    <summary><span>Ver los ${models.length} modelos</span><i class="fas fa-chevron-down" aria-hidden="true"></i></summary>
+                    <summary><span>${models.length === 1 ? 'Ver el modelo' : `Ver los ${models.length} modelos`}</span><i class="fas fa-chevron-down" aria-hidden="true"></i></summary>
                     <ul class="opt-model-list">${models.map((md) => `
                         <li>
                             <div class="opt-model-info">

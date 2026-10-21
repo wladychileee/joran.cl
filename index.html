@@ -31,7 +31,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="styles.min.css?v=20261020">
     <link rel="stylesheet" href="overrides.css?v=20261020b">
-    <link rel="stylesheet" href="features.css?v=20261020u">
+    <link rel="stylesheet" href="features.css?v=20261020v">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
@@ -323,6 +323,14 @@
                     <h3>Artículos de Librería</h3>
                     <p>Papelería, útiles escolares y materiales de oficina especializados.</p>
                     <button class="btn btn-primary view-products-btn" onclick="showProductPage('libreria')">Ver Productos</button>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3>Desbrozadoras y Desmalezadoras</h3>
+                    <p>Equipos a bencina, batería y eléctricos, con accesorios y repuestos.</p>
+                    <button class="btn btn-primary view-products-btn" onclick="showProductPage('desbrozadoras')">Ver Productos</button>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">
@@ -897,6 +905,54 @@
                 </div>
             </div>
         </div>
+        <div id="desbrozadoras-page" class="product-page">
+            <div class="container">
+                <button class="btn btn-primary back-btn" onclick="goBack()">
+                    <i class="fas fa-arrow-left"></i>
+                    Volver Atrás
+                </button>
+                <div class="section-header">
+                    <h2>Desbrozadoras y Desmalezadoras</h2>
+                    <p>Equipos para mantención de áreas verdes, con accesorios y repuestos</p>
+                </div>
+                <div class="product-list">
+                    <h4>Equipos:</h4>
+                    <ul>
+                        <li>Desbrozadoras a bencina</li>
+                        <li>Orilladoras a bencina</li>
+                        <li>Desmalezadoras y orilladoras a batería</li>
+                        <li>Desbrozadoras de mochila</li>
+                        <li>Orilladoras eléctricas</li>
+                    </ul>
+                    <h4>Accesorios:</h4>
+                    <ul>
+                        <li>Hilo / nylon de corte</li>
+                        <li>Cabezales de nylon</li>
+                        <li>Cuchillos y sierras circulares</li>
+                        <li>Arneses</li>
+                        <li>Casco, careta y protección</li>
+                        <li>Aceite de mezcla 2T</li>
+                    </ul>
+                    <h4>Repuestos:</h4>
+                    <ul>
+                        <li>Bujías y filtros de aire</li>
+                        <li>Carburadores, arranques y transmisión</li>
+                    </ul>
+                </div>
+                <!-- File Upload Section (Desbrozadoras) -->
+                <div class="file-upload-section">
+                    <h4>¿Tienes una cotización existente?</h4>
+                    <p>Sube tu archivo para ayudarnos a entender mejor tus necesidades</p>
+                    <div class="file-upload-area" onclick="document.getElementById('file-upload-desbrozadoras').click()">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                        <p>Click aquí o arrastra tu archivo</p>
+                        <small>PDF, Excel, Word, Imágenes</small>
+                        <input type="file" id="file-upload-desbrozadoras" accept=".pdf,.xlsx,.xls,.docx,.doc,.jpg,.jpeg,.png" onchange="handleFileUpload(this, 'desbrozadoras')" style="display: none;">
+                    </div>
+                    <div id="file-preview-desbrozadoras" class="file-preview"></div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Footer (moved to bottom) -->
@@ -929,7 +985,7 @@
 
     <script src="script.js?v=20261020b"></script>
     <script src="features.js?v=20261020c"></script>
-    <script src="options.js?v=20261020u"></script>
+    <script src="options.js?v=20261020v"></script>
     <script>
       (function(){
         function initThanksBanner(){
