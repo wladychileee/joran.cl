@@ -139,7 +139,7 @@
         const models = o.modelos || [];
         const list = models.length ? `
                 <details class="opt-models">
-                    <summary><span>Ver los ${models.length} modelos</span><i class="fas fa-chevron-down" aria-hidden="true"></i></summary>
+                    <summary><span>${models.length === 1 ? 'Ver el modelo' : `Ver los ${models.length} modelos`}</span><i class="fas fa-chevron-down" aria-hidden="true"></i></summary>
                     <ul class="opt-model-list">${models.map((md) => `
                         <li>
                             <div class="opt-model-info">
