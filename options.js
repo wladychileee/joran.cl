@@ -3,7 +3,7 @@
 (function () {
     'use strict';
 
-    const DATA_URL = 'data/alternativas.json?v=20261020v';
+    const DATA_URL = 'data/alternativas.json?v=20261020w';
     const TIERS = {
         economica: { icon: 'fa-tag', label: 'Económica' },
         estandar: { icon: 'fa-check-circle', label: 'Estándar' },
@@ -17,11 +17,11 @@
     };
     const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
     const slug = (s) => String(s).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
-    let modal, body, lastFocus, current, products = {};
+    let modal, body, lastFocus, current, products = {}, logos = {};
 
     function productName(li) {
         const clone = li.cloneNode(true);
-        clone.querySelectorAll('button').forEach((b) => b.remove());
+        clone.querySelectorAll('button, img').forEach((b) => b.remove());
         return clone.textContent.replace(/\s+/g, ' ').trim();
     }
 
@@ -57,6 +57,7 @@
             <div class="opt-backdrop"></div>
             <div class="opt-dialog" role="dialog" aria-modal="true" aria-labelledby="opt-title">
                 <header class="opt-header">
+                    <div class="opt-hero" hidden></div>
                     <div class="opt-header-text">
                         <p class="opt-kicker"></p>
                         <h3 id="opt-title"></h3>
@@ -130,6 +131,23 @@
         body.scrollTop = 0;
     }
 
+    const img = (src, alt, cls) => src
+        ? `<img class="${cls}" src="${esc(src)}" alt="${esc(alt)}" loading="lazy" decoding="async" width="72" height="72" onerror="this.remove()">`
+        : '';
+
+    function avatar(brand) {
+        return logos[brand]
+            ? `<span class="opt-logo"><img src="${esc(logos[brand])}" alt="${esc(brand)}" loading="lazy" decoding="async" onerror="this.parentNode.remove()"></span>`
+            : `<span class="opt-avatar" style="--h:${hue(brand)}" aria-hidden="true">${esc(initials(brand))}</span>`;
+    }
+
+    function gallery(o) {
+        const pics = [o.foto, ...(o.modelos || []).map((m) => m.foto)].filter(Boolean);
+        const uniq = [...new Set(pics)].slice(0, 4);
+        if (!uniq.length) return '';
+        return `<div class="opt-gallery${uniq.length === 1 ? ' single' : ''}">${uniq.map((src) => img(src, o.marca, 'opt-photo')).join('')}</div>`;
+    }
+
     function addBtn(html, value, cls) {
         return `<button type="button" class="${cls}" data-add="${esc(value)}" data-html="${esc(html)}">${html}</button>`;
     }
@@ -142,6 +160,7 @@
                     <summary><span>${models.length === 1 ? 'Ver el modelo' : `Ver los ${models.length} modelos`}</span><i class="fas fa-chevron-down" aria-hidden="true"></i></summary>
                     <ul class="opt-model-list">${models.map((md) => `
                         <li>
+                            ${img(md.foto, `${o.marca} ${md.nombre}`, 'opt-model-photo')}
                             <div class="opt-model-info">
                                 <strong>${esc(md.nombre)}</strong>
                                 ${(md.specs || []).length ? `<span>${md.specs.map(esc).join(' · ')}</span>` : ''}
@@ -149,17 +168,17 @@
                             ${addBtn('<i class="fas fa-plus" aria-hidden="true"></i> Agregar', `${product} — ${o.marca} ${md.nombre}`, 'opt-add-model')}
                         </li>`).join('')}
                     </ul>
-                    ${o.fuente ? `<a class="opt-source" href="${esc(o.fuente)}" target="_blank" rel="noopener">Ver catálogo oficial de ${esc(o.marca)} <i class="fas fa-external-link-alt" aria-hidden="true"></i></a>` : ''}
                 </details>` : '';
         return `
             <article class="opt-card${models.length ? ' opt-card-wide' : ''}">
                 <div class="opt-card-top">
-                    <span class="opt-avatar" style="--h:${hue(o.marca)}" aria-hidden="true">${esc(initials(o.marca))}</span>
+                    ${avatar(o.marca)}
                     <div class="opt-card-title">
                         <strong class="opt-brand">${esc(o.marca)}</strong>
                         ${o.modelo ? `<span class="opt-model">${esc(o.modelo)}</span>` : ''}
                     </div>
                 </div>
+                ${gallery(o)}
                 ${(o.detalle || []).length ? `<ul class="opt-tags">${o.detalle.map((d) => `<li>${esc(d)}</li>`).join('')}</ul>` : ''}
                 ${models.length
                     ? addBtn('<i class="fas fa-plus" aria-hidden="true"></i> Agregar marca', `${product} — ${o.marca} (modelo a recomendar)`, 'opt-add')
@@ -177,6 +196,9 @@
 
         modal.querySelector('.opt-kicker').textContent = category || 'Opciones';
         modal.querySelector('#opt-title').textContent = product;
+        const hero = modal.querySelector('.opt-hero');
+        hero.innerHTML = img(info.foto, product, 'opt-hero-img');
+        hero.hidden = !info.foto;
         modal.querySelector('.opt-summary').textContent =
             `${brands.size} ${brands.size === 1 ? 'marca' : 'marcas'} en ${info.gamas.length} ${info.gamas.length === 1 ? 'gama' : 'gamas'}` +
             (models ? ` · ${models} modelos` : '');
@@ -239,6 +261,7 @@
         const info = lookup(name, category);
         if (li.querySelector('.opt-open') || !info) return;
         li.insertBefore(makeButton(name, category, info), li.querySelector('.ql-add'));
+        if (info.foto && !li.querySelector('.li-thumb')) li.insertAdjacentHTML('afterbegin', img(info.foto, name, 'li-thumb'));
         li.classList.add('has-options');
     }
 
@@ -274,6 +297,7 @@
             .then((r) => (r.ok ? r.json() : null))
             .then((data) => {
                 products = (data && data.productos) || {};
+                logos = (data && data.logos) || {};
                 decoratePages();
                 decorateSearch();
             })
