@@ -3,7 +3,7 @@
 (function () {
     'use strict';
 
-    const DATA_URL = 'data/alternativas.json?v=20261020s';
+    const DATA_URL = 'data/alternativas.json?v=20261020t';
     const TIERS = {
         economica: { icon: 'fa-tag', label: 'Económica' },
         estandar: { icon: 'fa-check-circle', label: 'Estándar' },
@@ -221,19 +221,22 @@
         if (lastFocus && typeof lastFocus.focus === 'function' && document.contains(lastFocus)) lastFocus.focus();
     }
 
-    function makeButton(name, category) {
+    function makeButton(name, category, info) {
         const btn = document.createElement('button');
         btn.type = 'button';
         btn.className = 'opt-open';
         btn.setAttribute('aria-label', `Ver marcas y modelos de ${name}`);
         btn.innerHTML = '<i class="fas fa-layer-group" aria-hidden="true"></i><span>Ver marcas</span>';
-        btn.addEventListener('click', () => open(name, category, products[name]));
+        btn.addEventListener('click', () => open(name, category, info));
         return btn;
     }
 
+    const lookup = (name, category) => products[`${category} · ${name}`] || products[name];
+
     function decorateItem(li, name, category) {
-        if (li.querySelector('.opt-open') || !products[name]) return;
-        li.insertBefore(makeButton(name, category), li.querySelector('.ql-add'));
+        const info = lookup(name, category);
+        if (li.querySelector('.opt-open') || !info) return;
+        li.insertBefore(makeButton(name, category, info), li.querySelector('.ql-add'));
         li.classList.add('has-options');
     }
 
