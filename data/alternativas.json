@@ -8691,61 +8691,27 @@
       "gamas": [
         {
           "nombre": "Económica",
-          "descripcion": "Uso diario.",
           "opciones": [
             {
               "marca": "Equalit",
-              "modelo": "75 g/m²",
+              "modelo": "Multiuso carta 75 g",
               "detalle": [
-                "A4, carta y oficio"
-              ]
-            },
-            {
-              "marca": "Report",
-              "modelo": "75 g/m²",
-              "detalle": [
-                "Multipropósito"
-              ]
+                "Resma 500 hojas"
+              ],
+              "fuente": "https://www.dcolon.cl/157-resmas"
             }
           ]
         },
         {
           "nombre": "Estándar",
-          "descripcion": "Mayor blancura.",
           "opciones": [
             {
               "marca": "Chamex",
-              "modelo": "75 g/m²",
+              "modelo": "A4 75 g",
               "detalle": [
-                "Alta blancura"
-              ]
-            },
-            {
-              "marca": "Navigator",
-              "modelo": "Universal 80 g/m²",
-              "detalle": [
-                "Sin atascos"
-              ]
-            }
-          ]
-        },
-        {
-          "nombre": "Premium",
-          "descripcion": "Presentaciones.",
-          "opciones": [
-            {
-              "marca": "Navigator",
-              "modelo": "Premium 90 g/m²",
-              "detalle": [
-                "Más grueso"
-              ]
-            },
-            {
-              "marca": "Double A",
-              "modelo": "80 g/m²",
-              "detalle": [
-                "Impresión nítida"
-              ]
+                "Resma 500 hojas"
+              ],
+              "fuente": "https://www.laprincipal.cl/87-resmas-de-papel"
             }
           ]
         }
@@ -8818,41 +8784,23 @@
     "Blocks de notas, post-it": {
       "gamas": [
         {
-          "nombre": "Económica",
-          "descripcion": "Uso diario.",
-          "opciones": [
-            {
-              "marca": "Isofit",
-              "modelo": "Notas adhesivas 76x76",
-              "detalle": [
-                "Colores"
-              ]
-            }
-          ]
-        },
-        {
           "nombre": "Estándar",
-          "descripcion": "Referencia.",
           "opciones": [
             {
               "marca": "Post-it (3M)",
-              "modelo": "Notas 654",
+              "modelo": "654 76 × 76 mm",
               "detalle": [
-                "Adhesivo reposicionable"
-              ]
-            }
-          ]
-        },
-        {
-          "nombre": "Premium",
-          "descripcion": "Super Sticky.",
-          "opciones": [
+                "Notas adhesivas clásicas"
+              ],
+              "fuente": "https://www.post-it.com/"
+            },
             {
               "marca": "Post-it (3M)",
-              "modelo": "Super Sticky",
+              "modelo": "653 38 × 51 mm",
               "detalle": [
-                "Doble poder de adhesión"
-              ]
+                "Notas adhesivas pequeñas"
+              ],
+              "fuente": "https://www.post-it.com/"
             }
           ]
         }
@@ -8862,7 +8810,6 @@
       "gamas": [
         {
           "nombre": "Económica",
-          "descripcion": "Uso diario.",
           "opciones": [
             {
               "marca": "Torre",
@@ -8875,7 +8822,6 @@
         },
         {
           "nombre": "Estándar",
-          "descripcion": "Colgantes.",
           "opciones": [
             {
               "marca": "Artel",
@@ -8885,67 +8831,29 @@
               ]
             }
           ]
-        },
-        {
-          "nombre": "Premium",
-          "descripcion": "Archivo profesional.",
-          "opciones": [
-            {
-              "marca": "Esselte / Leitz",
-              "modelo": "Carpetas colgantes",
-              "detalle": [
-                "Fabricación europea"
-              ]
-            }
-          ]
         }
       ]
     },
     "Archivadores de palanca": {
       "gamas": [
         {
-          "nombre": "Económica",
-          "descripcion": "Uso diario.",
-          "opciones": [
-            {
-              "marca": "Torre",
-              "modelo": "Archivador palanca",
-              "detalle": [
-                "Lomo ancho"
-              ]
-            }
-          ]
-        },
-        {
           "nombre": "Estándar",
-          "descripcion": "Más resistentes.",
           "opciones": [
             {
               "marca": "Rhein",
-              "modelo": "Archivador palanca oficio",
+              "modelo": "Archivador carta ancho",
               "detalle": [
                 "Lomo ancho"
-              ]
+              ],
+              "fuente": "https://rhein.cl/categoria-producto/oficina/"
             },
             {
-              "marca": "Isofit",
-              "modelo": "Archivador palanca",
+              "marca": "Rhein",
+              "modelo": "Archivador oficio ancho / angosto",
               "detalle": [
-                "Varios colores"
-              ]
-            }
-          ]
-        },
-        {
-          "nombre": "Premium",
-          "descripcion": "Profesional.",
-          "opciones": [
-            {
-              "marca": "Leitz",
-              "modelo": "Archivador 180°",
-              "detalle": [
-                "Mecanismo europeo"
-              ]
+                "Tamaño oficio"
+              ],
+              "fuente": "https://rhein.cl/categoria-producto/oficina/"
             }
           ]
         }
@@ -8954,41 +8862,23 @@
     "Sobres manila, blancos": {
       "gamas": [
         {
-          "nombre": "Económica",
-          "descripcion": "Uso diario.",
-          "opciones": [
-            {
-              "marca": "Torre",
-              "modelo": "Sobres manila y blancos",
-              "detalle": [
-                "Varios tamaños"
-              ]
-            }
-          ]
-        },
-        {
           "nombre": "Estándar",
-          "descripcion": "Con cierre fácil.",
           "opciones": [
             {
-              "marca": "Artel",
-              "modelo": "Sobres autoadhesivos",
+              "marca": "Unibol",
+              "modelo": "Manila medio oficio 21 × 27 cm",
               "detalle": [
-                "Cierre con cinta"
-              ]
-            }
-          ]
-        },
-        {
-          "nombre": "Premium",
-          "descripcion": "Corporativos.",
-          "opciones": [
+                "Sobre kraft"
+              ],
+              "fuente": "https://distribuidoraelfaro.com/categoria-producto/sobres-de-manila/"
+            },
             {
-              "marca": "Impresión personalizada",
-              "modelo": "Sobres con logo",
+              "marca": "Teknofas",
+              "modelo": "Saco ½ oficio blanco 20 × 28 cm",
               "detalle": [
-                "Para tu empresa"
-              ]
+                "Sobre blanco"
+              ],
+              "fuente": "https://www.chilenamayorista.cl/productos/libreria/papel-uso-manual/sobres"
             }
           ]
         }
@@ -8998,7 +8888,6 @@
       "gamas": [
         {
           "nombre": "Económica",
-          "descripcion": "Uso general.",
           "opciones": [
             {
               "marca": "Torre",
@@ -9011,76 +8900,12 @@
         },
         {
           "nombre": "Estándar",
-          "descripcion": "Mayor duración.",
           "opciones": [
             {
               "marca": "Pelikan",
               "modelo": "Papel carbón",
               "detalle": [
                 "Copias nítidas"
-              ]
-            },
-            {
-              "marca": "Artel",
-              "modelo": "Papel calco",
-              "detalle": [
-                "Translúcido"
-              ]
-            }
-          ]
-        },
-        {
-          "nombre": "Premium",
-          "descripcion": "Técnico.",
-          "opciones": [
-            {
-              "marca": "Canson",
-              "modelo": "Papel diamante / calco",
-              "detalle": [
-                "Uso técnico y arquitectura"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "Papel milimetrado, cuadriculado": {
-      "gamas": [
-        {
-          "nombre": "Económica",
-          "descripcion": "Uso general.",
-          "opciones": [
-            {
-              "marca": "Torre",
-              "modelo": "Block milimetrado / cuadriculado",
-              "detalle": [
-                "Carta"
-              ]
-            }
-          ]
-        },
-        {
-          "nombre": "Estándar",
-          "descripcion": "Técnico.",
-          "opciones": [
-            {
-              "marca": "Artel",
-              "modelo": "Block técnico",
-              "detalle": [
-                "Mayor gramaje"
-              ]
-            }
-          ]
-        },
-        {
-          "nombre": "Premium",
-          "descripcion": "Profesional.",
-          "opciones": [
-            {
-              "marca": "Canson",
-              "modelo": "Papel milimetrado",
-              "detalle": [
-                "Alta precisión de impresión"
               ]
             }
           ]
@@ -9091,7 +8916,6 @@
       "gamas": [
         {
           "nombre": "Económica",
-          "descripcion": "Reciclado.",
           "opciones": [
             {
               "marca": "Equalit",
@@ -9104,33 +8928,12 @@
         },
         {
           "nombre": "Estándar",
-          "descripcion": "Fotocopia diaria.",
           "opciones": [
             {
               "marca": "Report",
               "modelo": "75 g/m²",
               "detalle": [
                 "Alto rendimiento"
-              ]
-            },
-            {
-              "marca": "Chamex",
-              "modelo": "75 g/m²",
-              "detalle": [
-                "Uso diario"
-              ]
-            }
-          ]
-        },
-        {
-          "nombre": "Premium",
-          "descripcion": "Certificado.",
-          "opciones": [
-            {
-              "marca": "Navigator",
-              "modelo": "Eco-Logical",
-              "detalle": [
-                "Certificación FSC"
               ]
             }
           ]
@@ -12434,55 +12237,28 @@
     "Plumones para pizarra": {
       "gamas": [
         {
-          "nombre": "Económica",
-          "descripcion": "Básicos.",
-          "opciones": [
-            {
-              "marca": "Artel",
-              "modelo": "Plumón de pizarra",
-              "detalle": [
-                "Varios colores"
-              ]
-            }
-          ]
-        },
-        {
           "nombre": "Estándar",
-          "descripcion": "Recargables.",
           "opciones": [
             {
-              "marca": "Pizzini",
-              "modelo": "Plumón de pizarra",
+              "marca": "Faber-Castell",
+              "modelo": "Winner 152",
               "detalle": [
-                "Recargable"
-              ]
-            },
-            {
-              "marca": "Expo",
-              "modelo": "Plumón de pizarra",
-              "detalle": [
-                "Borrado fácil"
-              ]
+                "Borrable en seco"
+              ],
+              "fuente": "https://www.faber-castell.cl/products/marking"
             }
           ]
         },
         {
           "nombre": "Premium",
-          "descripcion": "Bajo olor.",
           "opciones": [
             {
-              "marca": "Expo",
-              "modelo": "Low Odor",
+              "marca": "Pilot",
+              "modelo": "V-Board Master",
               "detalle": [
-                "Bajo olor"
-              ]
-            },
-            {
-              "marca": "Edding",
-              "modelo": "360 / 363",
-              "detalle": [
-                "Recargable"
-              ]
+                "Recargable, sin xileno"
+              ],
+              "fuente": "https://www.librenet.cl/plumon-pizarra-recargable-pilot-v-board-master"
             }
           ]
         }
@@ -12491,55 +12267,23 @@
     "Correctores líquidos, cintas": {
       "gamas": [
         {
-          "nombre": "Económica",
-          "descripcion": "Básicos.",
+          "nombre": "Estándar",
           "opciones": [
             {
-              "marca": "Artel",
-              "modelo": "Corrector líquido",
+              "marca": "Liquid Paper",
+              "modelo": "Lápiz corrector 7 ml",
               "detalle": [
-                "Pincel o lápiz"
-              ]
-            }
-          ]
-        },
-        {
-          "nombre": "Estándar",
-          "descripcion": "Cinta.",
-          "opciones": [
+                "Punta metálica"
+              ],
+              "fuente": "https://www.libreriamabeduna.cl/oficina/accesorios-escritorio/correctores"
+            },
             {
               "marca": "Bic",
-              "modelo": "Tipp-Ex cinta",
+              "modelo": "Exact Roller 5 mm × 6 m",
               "detalle": [
-                "Uso inmediato"
-              ]
-            },
-            {
-              "marca": "Paper Mate",
-              "modelo": "Liquid Paper",
-              "detalle": [
-                "Clásico"
-              ]
-            }
-          ]
-        },
-        {
-          "nombre": "Premium",
-          "descripcion": "Recargable.",
-          "opciones": [
-            {
-              "marca": "Pritt",
-              "modelo": "Cinta correctora recargable",
-              "detalle": [
-                "Ecológica"
-              ]
-            },
-            {
-              "marca": "Pentel",
-              "modelo": "Cinta correctora",
-              "detalle": [
-                "Precisa"
-              ]
+                "Cinta correctora"
+              ],
+              "fuente": "https://www.entrelapizypapel.cl/oficina/lapiceria-de-oficina/corrector"
             }
           ]
         }
@@ -12548,55 +12292,23 @@
     "Portaminas 0.5, 0.7, 0.9": {
       "gamas": [
         {
-          "nombre": "Económica",
-          "descripcion": "Básicos.",
-          "opciones": [
-            {
-              "marca": "Bic",
-              "modelo": "Portaminas",
-              "detalle": [
-                "0.5 / 0.7"
-              ]
-            }
-          ]
-        },
-        {
           "nombre": "Estándar",
-          "descripcion": "Uso frecuente.",
           "opciones": [
             {
               "marca": "Pentel",
-              "modelo": "P205 / P207",
+              "modelo": "P205 0,5 mm",
               "detalle": [
-                "Clásico técnico"
-              ]
-            },
-            {
-              "marca": "Faber-Castell",
-              "modelo": "Grip",
-              "detalle": [
-                "Agarre cómodo"
-              ]
-            }
-          ]
-        },
-        {
-          "nombre": "Premium",
-          "descripcion": "Técnico.",
-          "opciones": [
-            {
-              "marca": "Rotring",
-              "modelo": "300 / 500",
-              "detalle": [
-                "Cuerpo metálico"
-              ]
+                "Punta metálica 4 mm"
+              ],
+              "fuente": "https://www.prinorte.cl/catalog/ficha_products.php?id=10107"
             },
             {
               "marca": "Pentel",
-              "modelo": "GraphGear",
+              "modelo": "P207 0,7 mm",
               "detalle": [
-                "Retráctil"
-              ]
+                "Punta metálica 4 mm"
+              ],
+              "fuente": "https://www.prinorte.cl/catalog/ficha_products.php?id=10107"
             }
           ]
         }
@@ -12605,55 +12317,23 @@
     "Minas de repuesto": {
       "gamas": [
         {
-          "nombre": "Económica",
-          "descripcion": "Básicas.",
-          "opciones": [
-            {
-              "marca": "Bic",
-              "modelo": "Minas HB",
-              "detalle": [
-                "0.5 / 0.7"
-              ]
-            }
-          ]
-        },
-        {
           "nombre": "Estándar",
-          "descripcion": "Resistentes.",
           "opciones": [
             {
               "marca": "Pentel",
-              "modelo": "Hi-Polymer",
+              "modelo": "Ain 0,5 mm",
               "detalle": [
-                "No se quiebran"
-              ]
+                "Hi-Polymer, varias durezas"
+              ],
+              "fuente": "https://www.cromarti.cl/dibujo-escritura/accesorios/minas"
             },
             {
-              "marca": "Faber-Castell",
-              "modelo": "Minas",
+              "marca": "Pentel",
+              "modelo": "Ain 0,7 mm",
               "detalle": [
-                "Varias durezas"
-              ]
-            }
-          ]
-        },
-        {
-          "nombre": "Premium",
-          "descripcion": "Técnico.",
-          "opciones": [
-            {
-              "marca": "Pilot",
-              "modelo": "Neox Graphite",
-              "detalle": [
-                "Alta resistencia"
-              ]
-            },
-            {
-              "marca": "Staedtler",
-              "modelo": "Mars Micro Carbon",
-              "detalle": [
-                "Trazo preciso"
-              ]
+                "Hi-Polymer"
+              ],
+              "fuente": "https://www.cromarti.cl/dibujo-escritura/accesorios/minas"
             }
           ]
         }
@@ -12663,7 +12343,6 @@
       "gamas": [
         {
           "nombre": "Económica",
-          "descripcion": "Iniciación.",
           "opciones": [
             {
               "marca": "Pelikan",
@@ -12676,90 +12355,12 @@
         },
         {
           "nombre": "Estándar",
-          "descripcion": "Diario.",
           "opciones": [
             {
               "marca": "Lamy",
               "modelo": "Safari",
               "detalle": [
                 "Diseño clásico"
-              ]
-            },
-            {
-              "marca": "Parker",
-              "modelo": "Vector",
-              "detalle": [
-                "Cartuchos Parker"
-              ]
-            }
-          ]
-        },
-        {
-          "nombre": "Premium",
-          "descripcion": "Regalo / gerencia.",
-          "opciones": [
-            {
-              "marca": "Parker",
-              "modelo": "Sonnet",
-              "detalle": [
-                "Plumín de acero o oro"
-              ]
-            },
-            {
-              "marca": "Montblanc",
-              "modelo": "Línea clásica",
-              "detalle": [
-                "Alta gama"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "Marcadores de tela, CD": {
-      "gamas": [
-        {
-          "nombre": "Económica",
-          "descripcion": "Básicos.",
-          "opciones": [
-            {
-              "marca": "Artel",
-              "modelo": "Marcador permanente fino",
-              "detalle": [
-                "Uso general"
-              ]
-            }
-          ]
-        },
-        {
-          "nombre": "Estándar",
-          "descripcion": "Específicos.",
-          "opciones": [
-            {
-              "marca": "Sharpie",
-              "modelo": "Fine / Ultra Fine",
-              "detalle": [
-                "CD, plástico, tela"
-              ]
-            },
-            {
-              "marca": "Edding",
-              "modelo": "Marcador para tela 4500",
-              "detalle": [
-                "Resiste lavado"
-              ]
-            }
-          ]
-        },
-        {
-          "nombre": "Premium",
-          "descripcion": "Industrial.",
-          "opciones": [
-            {
-              "marca": "Edding",
-              "modelo": "Marcadores especiales",
-              "detalle": [
-                "Superficies difíciles"
               ]
             }
           ]
@@ -12769,48 +12370,23 @@
     "Grapas, clips, chinches": {
       "gamas": [
         {
-          "nombre": "Económica",
-          "descripcion": "Uso diario.",
+          "nombre": "Estándar",
           "opciones": [
             {
               "marca": "Isofit",
-              "modelo": "Corchetes, clips y chinches",
+              "modelo": "Clips metálicos 33 mm",
               "detalle": [
-                "Cajas surtidas"
-              ]
-            }
-          ]
-        },
-        {
-          "nombre": "Estándar",
-          "descripcion": "Variedad.",
-          "opciones": [
-            {
-              "marca": "Torre",
-              "modelo": "Clips y chinches",
-              "detalle": [
-                "Colores"
-              ]
+                "Caja"
+              ],
+              "fuente": "https://isofit.cl/catalogo/?product_category=10"
             },
             {
-              "marca": "Rexel",
-              "modelo": "Corchetes",
+              "marca": "Isofit",
+              "modelo": "Apretador 25 mm",
               "detalle": [
-                "26/6 y 24/6"
-              ]
-            }
-          ]
-        },
-        {
-          "nombre": "Premium",
-          "descripcion": "Alto volumen.",
-          "opciones": [
-            {
-              "marca": "Swingline",
-              "modelo": "Corchetes heavy duty",
-              "detalle": [
-                "Hasta 100 hojas"
-              ]
+                "Clip binder"
+              ],
+              "fuente": "https://isofit.cl/catalogo/?product_category=10"
             }
           ]
         }
@@ -12819,55 +12395,23 @@
     "Grapadoras, perforadoras": {
       "gamas": [
         {
-          "nombre": "Económica",
-          "descripcion": "Uso personal.",
-          "opciones": [
-            {
-              "marca": "Isofit",
-              "modelo": "Corchetera y perforadora",
-              "detalle": [
-                "Hasta 20 hojas"
-              ]
-            }
-          ]
-        },
-        {
           "nombre": "Estándar",
-          "descripcion": "Uso intensivo.",
           "opciones": [
             {
-              "marca": "Rexel",
-              "modelo": "Corchetera / perforadora",
+              "marca": "Maped",
+              "modelo": "Corchetera Vivo 24/6 y 26/6",
               "detalle": [
-                "Hasta 30 hojas"
-              ]
+                "Uso oficina"
+              ],
+              "fuente": "https://nacional.cl/collections/perforadora"
             },
             {
               "marca": "Maped",
-              "modelo": "Corchetera / perforadora",
+              "modelo": "Perforadora Essentials 2 agujeros",
               "detalle": [
-                "Ergonómicas"
-              ]
-            }
-          ]
-        },
-        {
-          "nombre": "Premium",
-          "descripcion": "Alto volumen.",
-          "opciones": [
-            {
-              "marca": "Rexel",
-              "modelo": "Heavy duty",
-              "detalle": [
-                "Hasta 100+ hojas"
-              ]
-            },
-            {
-              "marca": "Swingline",
-              "modelo": "Heavy duty",
-              "detalle": [
-                "Bajo esfuerzo"
-              ]
+                "20–25 hojas"
+              ],
+              "fuente": "https://nacional.cl/collections/perforadora"
             }
           ]
         }
@@ -12997,48 +12541,23 @@
     "Cinta adhesiva, cinta doble faz": {
       "gamas": [
         {
-          "nombre": "Económica",
-          "descripcion": "Uso diario.",
-          "opciones": [
-            {
-              "marca": "Isofit",
-              "modelo": "Cinta transparente",
-              "detalle": [
-                "12 / 18 mm"
-              ]
-            }
-          ]
-        },
-        {
           "nombre": "Estándar",
-          "descripcion": "Mayor adherencia.",
           "opciones": [
             {
               "marca": "Scotch (3M)",
-              "modelo": "Cinta mágica / doble faz",
+              "modelo": "Cinta Mágica 810",
               "detalle": [
-                "Uso de oficina"
-              ]
+                "Invisible, se puede escribir"
+              ],
+              "fuente": "https://www.3mchile.cl/3M/es_CL/p/c/cintas/b/scotch/"
             },
             {
-              "marca": "Tesa",
-              "modelo": "Cinta doble faz",
+              "marca": "Scotch (3M)",
+              "modelo": "Cinta Cristal",
               "detalle": [
-                "Alta adherencia"
-              ]
-            }
-          ]
-        },
-        {
-          "nombre": "Premium",
-          "descripcion": "Montaje.",
-          "opciones": [
-            {
-              "marca": "3M",
-              "modelo": "Cinta VHB / montaje",
-              "detalle": [
-                "Reemplaza tornillos"
-              ]
+                "Transparente"
+              ],
+              "fuente": "https://www.3mchile.cl/3M/es_CL/p/c/cintas/b/scotch/"
             }
           ]
         }
@@ -13111,48 +12630,28 @@
     "Calculadoras básicas, científicas": {
       "gamas": [
         {
-          "nombre": "Económica",
-          "descripcion": "Básicas.",
+          "nombre": "Estándar",
           "opciones": [
             {
               "marca": "Casio",
               "modelo": "MX-12B",
               "detalle": [
-                "12 dígitos"
-              ]
-            }
-          ]
-        },
-        {
-          "nombre": "Estándar",
-          "descripcion": "Científicas.",
-          "opciones": [
-            {
-              "marca": "Casio",
-              "modelo": "fx-82 / fx-570",
-              "detalle": [
-                "Uso escolar y técnico"
-              ]
+                "Escritorio, 12 dígitos"
+              ],
+              "fuente": "https://gerona.cl/"
             }
           ]
         },
         {
           "nombre": "Premium",
-          "descripcion": "Gráficas / financieras.",
           "opciones": [
             {
               "marca": "Casio",
-              "modelo": "fx-9750 / fx-CG",
+              "modelo": "DJ-120D Plus",
               "detalle": [
-                "Calculadora gráfica"
-              ]
-            },
-            {
-              "marca": "HP",
-              "modelo": "10bII+ / 12C",
-              "detalle": [
-                "Financiera"
-              ]
+                "Escritorio, revisión de cálculos"
+              ],
+              "fuente": "https://gerona.cl/"
             }
           ]
         }
@@ -13161,55 +12660,23 @@
     "Sellos automáticos, tampones": {
       "gamas": [
         {
-          "nombre": "Económica",
-          "descripcion": "Básicos.",
-          "opciones": [
-            {
-              "marca": "Shiny",
-              "modelo": "Timbre automático",
-              "detalle": [
-                "Personalizable"
-              ]
-            }
-          ]
-        },
-        {
           "nombre": "Estándar",
-          "descripcion": "Referencia.",
           "opciones": [
             {
               "marca": "Trodat",
-              "modelo": "Printy 4911 / 4912",
+              "modelo": "Printy 4911",
               "detalle": [
-                "Personalizable"
-              ]
-            },
-            {
-              "marca": "Colop",
-              "modelo": "Timbre automático",
-              "detalle": [
-                "Personalizable"
-              ]
-            }
-          ]
-        },
-        {
-          "nombre": "Premium",
-          "descripcion": "Metálicos / fechadores.",
-          "opciones": [
-            {
-              "marca": "Trodat",
-              "modelo": "Professional (metálico)",
-              "detalle": [
-                "Uso intensivo"
-              ]
+                "Timbre automático personalizado"
+              ],
+              "fuente": "https://www.timbrexpres.cl/timbres/trodat"
             },
             {
               "marca": "Trodat",
-              "modelo": "Fechador",
+              "modelo": "Printy 4912",
               "detalle": [
-                "Fecha ajustable"
-              ]
+                "Timbre automático mediano"
+              ],
+              "fuente": "https://www.timbrexpres.cl/timbres/trodat"
             }
           ]
         }
@@ -13218,48 +12685,23 @@
     "Bandejas porta documentos": {
       "gamas": [
         {
-          "nombre": "Económica",
-          "descripcion": "Básicas.",
-          "opciones": [
-            {
-              "marca": "Isofit",
-              "modelo": "Bandeja plástica",
-              "detalle": [
-                "Carta / oficio"
-              ]
-            }
-          ]
-        },
-        {
           "nombre": "Estándar",
-          "descripcion": "Apilables.",
-          "opciones": [
-            {
-              "marca": "Artel",
-              "modelo": "Bandejas apilables",
-              "detalle": [
-                "Varios colores"
-              ]
-            },
-            {
-              "marca": "Esselte",
-              "modelo": "Bandejas",
-              "detalle": [
-                "Línea oficina"
-              ]
-            }
-          ]
-        },
-        {
-          "nombre": "Premium",
-          "descripcion": "Ejecutivas.",
           "opciones": [
             {
               "marca": "Fellowes",
-              "modelo": "Bandejas de malla metálica",
+              "modelo": "Wire Double Tray with Step File 72391",
               "detalle": [
-                "Diseño ejecutivo"
-              ]
+                "Bandeja doble metálica"
+              ],
+              "fuente": "https://www.fellowesbrandsworklife.com/product-category/workspace-accessories/"
+            },
+            {
+              "marca": "Fellowes",
+              "modelo": "Desktop Organizer 72112",
+              "detalle": [
+                "Organizador con bandejas"
+              ],
+              "fuente": "https://www.fellowesbrandsworklife.com/product-category/workspace-accessories/"
             }
           ]
         }
@@ -13315,359 +12757,10 @@
         }
       ]
     },
-    "Papel crepe, papel seda": {
-      "gamas": [
-        {
-          "nombre": "Económica",
-          "descripcion": "Básicos.",
-          "opciones": [
-            {
-              "marca": "Torre",
-              "modelo": "Papel crepe / seda",
-              "detalle": [
-                "Colores surtidos"
-              ]
-            }
-          ]
-        },
-        {
-          "nombre": "Estándar",
-          "descripcion": "Variedad.",
-          "opciones": [
-            {
-              "marca": "Artel",
-              "modelo": "Papel crepe",
-              "detalle": [
-                "Colores firmes"
-              ]
-            },
-            {
-              "marca": "Proarte",
-              "modelo": "Papel seda",
-              "detalle": [
-                "Pliegos"
-              ]
-            }
-          ]
-        },
-        {
-          "nombre": "Premium",
-          "descripcion": "Decoración.",
-          "opciones": [
-            {
-              "marca": "Importado",
-              "modelo": "Papel crepe italiano",
-              "detalle": [
-                "Mayor gramaje"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "Témperas, acuarelas": {
-      "gamas": [
-        {
-          "nombre": "Económica",
-          "descripcion": "Escolares.",
-          "opciones": [
-            {
-              "marca": "Artel",
-              "modelo": "Témperas",
-              "detalle": [
-                "Set 6–12 colores"
-              ]
-            },
-            {
-              "marca": "Torre",
-              "modelo": "Témperas",
-              "detalle": [
-                "Lavables"
-              ]
-            }
-          ]
-        },
-        {
-          "nombre": "Estándar",
-          "descripcion": "Mejor pigmento.",
-          "opciones": [
-            {
-              "marca": "Proarte",
-              "modelo": "Témperas frasco 120 ml",
-              "detalle": [
-                "Colores intensos"
-              ]
-            },
-            {
-              "marca": "Giotto",
-              "modelo": "Témperas / acuarelas",
-              "detalle": [
-                "No tóxicas"
-              ]
-            }
-          ]
-        },
-        {
-          "nombre": "Premium",
-          "descripcion": "Arte.",
-          "opciones": [
-            {
-              "marca": "Winsor & Newton",
-              "modelo": "Cotman (acuarelas)",
-              "detalle": [
-                "Uso artístico"
-              ]
-            },
-            {
-              "marca": "Faber-Castell",
-              "modelo": "Acuarelas",
-              "detalle": [
-                "Alta pigmentación"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "Pinceles, brochas": {
-      "gamas": [
-        {
-          "nombre": "Económica",
-          "descripcion": "Escolares.",
-          "opciones": [
-            {
-              "marca": "Artel",
-              "modelo": "Set de pinceles",
-              "detalle": [
-                "Pelo sintético"
-              ]
-            }
-          ]
-        },
-        {
-          "nombre": "Estándar",
-          "descripcion": "Arte y manualidades.",
-          "opciones": [
-            {
-              "marca": "Proarte",
-              "modelo": "Pinceles",
-              "detalle": [
-                "Varias formas"
-              ]
-            },
-            {
-              "marca": "Pelikan",
-              "modelo": "Pinceles",
-              "detalle": [
-                "Uso escolar"
-              ]
-            }
-          ]
-        },
-        {
-          "nombre": "Premium",
-          "descripcion": "Profesionales.",
-          "opciones": [
-            {
-              "marca": "Winsor & Newton",
-              "modelo": "Pinceles",
-              "detalle": [
-                "Pelo sintético premium"
-              ]
-            },
-            {
-              "marca": "Escoda",
-              "modelo": "Pinceles",
-              "detalle": [
-                "Fabricación española"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "Plastilina, masas de modelar": {
-      "gamas": [
-        {
-          "nombre": "Económica",
-          "descripcion": "Escolares.",
-          "opciones": [
-            {
-              "marca": "Artel",
-              "modelo": "Plastilina",
-              "detalle": [
-                "Colores surtidos"
-              ]
-            },
-            {
-              "marca": "Torre",
-              "modelo": "Plastilina",
-              "detalle": [
-                "No tóxica"
-              ]
-            }
-          ]
-        },
-        {
-          "nombre": "Estándar",
-          "descripcion": "Masas.",
-          "opciones": [
-            {
-              "marca": "Play-Doh",
-              "modelo": "Masa para modelar",
-              "detalle": [
-                "Colores vivos"
-              ]
-            },
-            {
-              "marca": "Giotto",
-              "modelo": "Patplume / masas",
-              "detalle": [
-                "Suave"
-              ]
-            }
-          ]
-        },
-        {
-          "nombre": "Premium",
-          "descripcion": "Arcillas.",
-          "opciones": [
-            {
-              "marca": "Proarte",
-              "modelo": "Arcilla / masa endurecible",
-              "detalle": [
-                "Secado al aire"
-              ]
-            },
-            {
-              "marca": "Fimo",
-              "modelo": "Arcilla polimérica",
-              "detalle": [
-                "Hornable"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "Compases, transportadores": {
-      "gamas": [
-        {
-          "nombre": "Económica",
-          "descripcion": "Escolares.",
-          "opciones": [
-            {
-              "marca": "Isofit",
-              "modelo": "Compás escolar",
-              "detalle": [
-                "Con lápiz"
-              ]
-            }
-          ]
-        },
-        {
-          "nombre": "Estándar",
-          "descripcion": "Precisión.",
-          "opciones": [
-            {
-              "marca": "Maped",
-              "modelo": "Compás Stop System",
-              "detalle": [
-                "Bloqueo de apertura"
-              ]
-            },
-            {
-              "marca": "Staedtler",
-              "modelo": "Compás",
-              "detalle": [
-                "Metálico"
-              ]
-            }
-          ]
-        },
-        {
-          "nombre": "Premium",
-          "descripcion": "Técnico.",
-          "opciones": [
-            {
-              "marca": "Staedtler",
-              "modelo": "Mars Comfort",
-              "detalle": [
-                "Uso técnico"
-              ]
-            },
-            {
-              "marca": "Rotring",
-              "modelo": "Compass",
-              "detalle": [
-                "Precisión profesional"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "Mapas, láminas educativas": {
-      "gamas": [
-        {
-          "nombre": "Económica",
-          "descripcion": "Básicos.",
-          "opciones": [
-            {
-              "marca": "Editorial nacional",
-              "modelo": "Láminas escolares",
-              "detalle": [
-                "Temas variados"
-              ]
-            }
-          ]
-        },
-        {
-          "nombre": "Estándar",
-          "descripcion": "Mapas murales.",
-          "opciones": [
-            {
-              "marca": "Editorial nacional",
-              "modelo": "Mapa de Chile / mundo",
-              "detalle": [
-                "Plastificado"
-              ]
-            }
-          ]
-        },
-        {
-          "nombre": "Premium",
-          "descripcion": "Gran formato.",
-          "opciones": [
-            {
-              "marca": "Impresión personalizada",
-              "modelo": "Mapas y láminas a medida",
-              "detalle": [
-                "Gran formato"
-              ]
-            }
-          ]
-        }
-      ]
-    },
     "Pizarras acrílicas, magnéticas": {
       "gamas": [
         {
-          "nombre": "Económica",
-          "descripcion": "Básicas.",
-          "opciones": [
-            {
-              "marca": "Genérica",
-              "modelo": "Pizarra acrílica 60x90",
-              "detalle": [
-                "Marco de aluminio"
-              ]
-            }
-          ]
-        },
-        {
           "nombre": "Estándar",
-          "descripcion": "Magnéticas.",
           "opciones": [
             {
               "marca": "Formaval",
@@ -13684,76 +12777,6 @@
               ]
             }
           ]
-        },
-        {
-          "nombre": "Premium",
-          "descripcion": "Vidrio.",
-          "opciones": [
-            {
-              "marca": "Quartet",
-              "modelo": "Pizarra de vidrio",
-              "detalle": [
-                "No se mancha"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "Marcadores de pizarra": {
-      "gamas": [
-        {
-          "nombre": "Económica",
-          "descripcion": "Básicos.",
-          "opciones": [
-            {
-              "marca": "Artel",
-              "modelo": "Marcador de pizarra",
-              "detalle": [
-                "Colores surtidos"
-              ]
-            }
-          ]
-        },
-        {
-          "nombre": "Estándar",
-          "descripcion": "Recargables.",
-          "opciones": [
-            {
-              "marca": "Pizzini",
-              "modelo": "Marcador de pizarra",
-              "detalle": [
-                "Recargable"
-              ]
-            },
-            {
-              "marca": "Expo",
-              "modelo": "Marcador",
-              "detalle": [
-                "Borrado fácil"
-              ]
-            }
-          ]
-        },
-        {
-          "nombre": "Premium",
-          "descripcion": "Bajo olor.",
-          "opciones": [
-            {
-              "marca": "Expo",
-              "modelo": "Low Odor",
-              "detalle": [
-                "Bajo olor"
-              ]
-            },
-            {
-              "marca": "Edding",
-              "modelo": "360",
-              "detalle": [
-                "Recargable"
-              ]
-            }
-          ]
         }
       ]
     },
@@ -13761,7 +12784,6 @@
       "gamas": [
         {
           "nombre": "Económica",
-          "descripcion": "Básicos.",
           "opciones": [
             {
               "marca": "Isofit",
@@ -13774,33 +12796,12 @@
         },
         {
           "nombre": "Estándar",
-          "descripcion": "Magnéticos.",
           "opciones": [
             {
               "marca": "Artel",
               "modelo": "Borrador magnético",
               "detalle": [
                 "Se adhiere a la pizarra"
-              ]
-            },
-            {
-              "marca": "Expo",
-              "modelo": "Borrador",
-              "detalle": [
-                "Fieltro denso"
-              ]
-            }
-          ]
-        },
-        {
-          "nombre": "Premium",
-          "descripcion": "Kit de limpieza.",
-          "opciones": [
-            {
-              "marca": "Expo",
-              "modelo": "Kit borrador + limpiador",
-              "detalle": [
-                "Deja la pizarra como nueva"
               ]
             }
           ]
@@ -14041,6 +13042,280 @@
                 }
               ],
               "fuente": "https://www.samsung.com/cl/tvs/uhd-4k-tv/u8000f-50-inch-crystal-uhd-4k-smart-tv-un50u8000fgxzs/"
+            }
+          ]
+        }
+      ]
+    },
+    "Artículos de Librería · Cuadernos universitarios, espirales": {
+      "gamas": [
+        {
+          "nombre": "Estándar",
+          "opciones": [
+            {
+              "marca": "Torre",
+              "modelo": "Universitario Clásico 7 mm 100 h",
+              "detalle": [
+                "Espiral, cuadro 7 mm"
+              ],
+              "fuente": "https://www.torre.cl/product-category/cuadernos/"
+            }
+          ]
+        },
+        {
+          "nombre": "Premium",
+          "opciones": [
+            {
+              "marca": "Rhein",
+              "modelo": "Super Class carta 120 h",
+              "detalle": [
+                "Tapa dura"
+              ],
+              "fuente": "https://rhein.cl/productos/"
+            }
+          ]
+        }
+      ]
+    },
+    "Artículos de Librería · Etiquetas adhesivas": {
+      "gamas": [
+        {
+          "nombre": "Estándar",
+          "opciones": [
+            {
+              "marca": "Dymo",
+              "modelo": "LetraTag LT-100H",
+              "detalle": [
+                "Rotuladora portátil"
+              ],
+              "fuente": "https://www.dymo.com/label-makers-printers/view-all/"
+            }
+          ]
+        },
+        {
+          "nombre": "Premium",
+          "opciones": [
+            {
+              "marca": "Brother",
+              "modelo": "P-touch PT-H110",
+              "detalle": [
+                "Rotuladora de cinta TZe"
+              ],
+              "fuente": "https://storebrother.cl/categoria-producto/rotuladoras-y-etiquetadoras"
+            }
+          ]
+        }
+      ]
+    },
+    "Artículos de Librería · Bolígrafos azul, negro, rojo": {
+      "gamas": [
+        {
+          "nombre": "Económica",
+          "opciones": [
+            {
+              "marca": "Bic",
+              "modelo": "Cristal Original",
+              "detalle": [
+                "Punta media 1,0 mm"
+              ],
+              "fuente": "https://anyflip.com/cmugg/jfrq/basic"
+            }
+          ]
+        },
+        {
+          "nombre": "Premium",
+          "opciones": [
+            {
+              "marca": "Pilot",
+              "modelo": "G-2 0,7 mm",
+              "detalle": [
+                "Tinta gel, retráctil"
+              ],
+              "fuente": "https://www.imex.cl/product-brands/pilot/"
+            }
+          ]
+        }
+      ]
+    },
+    "Artículos de Librería · Lápices grafito HB, 2B, 4B": {
+      "gamas": [
+        {
+          "nombre": "Económica",
+          "opciones": [
+            {
+              "marca": "Bic",
+              "modelo": "Evolution",
+              "detalle": [
+                "HB"
+              ]
+            },
+            {
+              "marca": "Artel",
+              "modelo": "Lápiz grafito",
+              "detalle": [
+                "HB / 2B"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "Artículos de Librería · Marcadores permanentes": {
+      "gamas": [
+        {
+          "nombre": "Económica",
+          "opciones": [
+            {
+              "marca": "Isofit",
+              "modelo": "Permanente punta redonda",
+              "detalle": [
+                "Varios colores"
+              ],
+              "fuente": "https://www.entrelapizypapel.cl/oficina/lapiceria-de-oficina"
+            }
+          ]
+        },
+        {
+          "nombre": "Estándar",
+          "opciones": [
+            {
+              "marca": "Sharpie",
+              "modelo": "Fine Point",
+              "detalle": [
+                "Punta fina, secado rápido"
+              ],
+              "fuente": "https://embalados.cl/marca-sharpie/"
+            }
+          ]
+        }
+      ]
+    },
+    "Artículos de Librería · Resaltadores fluorescentes": {
+      "gamas": [
+        {
+          "nombre": "Estándar",
+          "opciones": [
+            {
+              "marca": "Faber-Castell",
+              "modelo": "Textliner 46",
+              "detalle": [
+                "Punta biselada"
+              ],
+              "fuente": "https://www.faber-castell.cl/products/marking"
+            }
+          ]
+        },
+        {
+          "nombre": "Premium",
+          "opciones": [
+            {
+              "marca": "Stabilo",
+              "modelo": "BOSS Original",
+              "detalle": [
+                "Trazo 2 y 5 mm, anti-secado 4 h"
+              ],
+              "fuente": "https://www.librerialvarez.cl/stabilo-boss-original"
+            }
+          ]
+        }
+      ]
+    },
+    "Artículos de Librería · Tijeras, cortadores": {
+      "gamas": [
+        {
+          "nombre": "Económica",
+          "opciones": [
+            {
+              "marca": "Maped",
+              "modelo": "Essentials 13 cm",
+              "detalle": [
+                "Uso general"
+              ],
+              "fuente": "https://www.aldocarla.cl/brand/maped?limit=24&order=id&way=ASC"
+            }
+          ]
+        },
+        {
+          "nombre": "Estándar",
+          "opciones": [
+            {
+              "marca": "Maped",
+              "modelo": "Advanced Green 17 cm",
+              "detalle": [
+                "Material reciclado"
+              ],
+              "fuente": "https://www.aldocarla.cl/brand/maped?limit=24&order=id&way=ASC"
+            }
+          ]
+        }
+      ]
+    },
+    "Artículos de Librería · Pegamento en barra, líquido": {
+      "gamas": [
+        {
+          "nombre": "Económica",
+          "opciones": [
+            {
+              "marca": "Artel",
+              "modelo": "Pegamento en barra",
+              "detalle": [
+                "No tóxico"
+              ]
+            },
+            {
+              "marca": "Torre",
+              "modelo": "Cola fría",
+              "detalle": [
+                "Uso escolar"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "Artículos de Librería · Reglas, escuadras": {
+      "gamas": [
+        {
+          "nombre": "Económica",
+          "opciones": [
+            {
+              "marca": "Isofit",
+              "modelo": "Reglas plásticas",
+              "detalle": [
+                "20–30 cm"
+              ]
+            },
+            {
+              "marca": "Artel",
+              "modelo": "Set geométrico",
+              "detalle": [
+                "Escuadras y transportador"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "Artículos de Librería · Organizadores de escritorio": {
+      "gamas": [
+        {
+          "nombre": "Estándar",
+          "opciones": [
+            {
+              "marca": "Fellowes",
+              "modelo": "Workstation 60112",
+              "detalle": [
+                "Organizador de escritorio"
+              ],
+              "fuente": "https://www.fellowesbrandsworklife.com/product-category/workspace-accessories/"
+            },
+            {
+              "marca": "Fellowes",
+              "modelo": "Desktop Organizer 72112",
+              "detalle": [
+                "Bandejas y compartimentos"
+              ],
+              "fuente": "https://www.fellowesbrandsworklife.com/product-category/workspace-accessories/"
             }
           ]
         }
