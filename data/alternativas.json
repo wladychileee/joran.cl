@@ -2139,10 +2139,33 @@
           "opciones": [
             {
               "marca": "Irwin",
-              "modelo": "Prensa Quick-Grip",
+              "modelo": "Línea completa · 3 modelos",
               "detalle": [
-                "Apriete con una mano"
-              ]
+                "Apriete por tornillo",
+                "Hierro fundido",
+                "Prensa de barra con una mano"
+              ],
+              "modelos": [
+                {
+                  "nombre": "Quick-Grip 6\" / 12\" / 24\"",
+                  "specs": [
+                    "Prensa de barra con una mano"
+                  ]
+                },
+                {
+                  "nombre": "Sargento tipo F",
+                  "specs": [
+                    "Apriete por tornillo"
+                  ]
+                },
+                {
+                  "nombre": "Prensa de banco Record",
+                  "specs": [
+                    "Hierro fundido"
+                  ]
+                }
+              ],
+              "fuente": "https://www.irwin.com/"
             },
             {
               "marca": "Stanley",
@@ -2162,13 +2185,6 @@
               "modelo": "Sargentos y prensas",
               "detalle": [
                 "Fabricación alemana"
-              ]
-            },
-            {
-              "marca": "Irwin",
-              "modelo": "Prensa de banco Record",
-              "detalle": [
-                "Fundición de alta resistencia"
               ]
             }
           ]
@@ -2216,10 +2232,33 @@
           "opciones": [
             {
               "marca": "Bahco",
-              "modelo": "Limas y escofinas",
+              "modelo": "Línea completa · 3 modelos",
               "detalle": [
-                "Acero sueco"
-              ]
+                "Corte grueso",
+                "Para metal",
+                "Superficies curvas"
+              ],
+              "modelos": [
+                {
+                  "nombre": "Lima plana bastarda",
+                  "specs": [
+                    "Para metal"
+                  ]
+                },
+                {
+                  "nombre": "Lima media caña",
+                  "specs": [
+                    "Superficies curvas"
+                  ]
+                },
+                {
+                  "nombre": "Escofina para madera",
+                  "specs": [
+                    "Corte grueso"
+                  ]
+                }
+              ],
+              "fuente": "https://www.bahco.com/"
             },
             {
               "marca": "Pferd",
@@ -2645,10 +2684,33 @@
           "opciones": [
             {
               "marca": "Purell",
-              "modelo": "Gel antiséptico",
+              "modelo": "Línea completa · 3 modelos",
               "detalle": [
-                "Sistema de dispensador"
-              ]
+                "Botella con dispensador",
+                "Dispensador de pared automático",
+                "Dispensador touch-free"
+              ],
+              "modelos": [
+                {
+                  "nombre": "Purell Advanced gel 70 %",
+                  "specs": [
+                    "Botella con dispensador"
+                  ]
+                },
+                {
+                  "nombre": "Purell ES8",
+                  "specs": [
+                    "Dispensador de pared automático"
+                  ]
+                },
+                {
+                  "nombre": "Purell LTX",
+                  "specs": [
+                    "Dispensador touch-free"
+                  ]
+                }
+              ],
+              "fuente": "https://www.purell.com/"
             },
             {
               "marca": "Tork",
@@ -8158,70 +8220,6 @@
         }
       ]
     },
-    "Refrigeradores compactos": {
-      "gamas": [
-        {
-          "nombre": "Económica",
-          "descripcion": "Frigobar.",
-          "opciones": [
-            {
-              "marca": "Mademsa",
-              "modelo": "Frigobar",
-              "detalle": [
-                "~90 L"
-              ]
-            },
-            {
-              "marca": "Midea",
-              "modelo": "Frigobar",
-              "detalle": [
-                "Bajo consumo"
-              ]
-            }
-          ]
-        },
-        {
-          "nombre": "Estándar",
-          "descripcion": "Refrigerador pequeño.",
-          "opciones": [
-            {
-              "marca": "Fensa",
-              "modelo": "Frigobar / refrigerador compacto",
-              "detalle": [
-                "Eficiencia energética"
-              ]
-            },
-            {
-              "marca": "Samsung",
-              "modelo": "Refrigerador 2 puertas",
-              "detalle": [
-                "Para cocina de oficina"
-              ]
-            }
-          ]
-        },
-        {
-          "nombre": "Premium",
-          "descripcion": "Mayor capacidad.",
-          "opciones": [
-            {
-              "marca": "LG",
-              "modelo": "Refrigerador No Frost",
-              "detalle": [
-                "Inverter"
-              ]
-            },
-            {
-              "marca": "Samsung",
-              "modelo": "No Frost Inverter",
-              "detalle": [
-                "Bajo consumo"
-              ]
-            }
-          ]
-        }
-      ]
-    },
     "Microondas, hornos eléctricos": {
       "gamas": [
         {
@@ -8229,11 +8227,27 @@
           "descripcion": "Básicos.",
           "opciones": [
             {
-              "marca": "Thomas",
-              "modelo": "Microondas 20 L",
+              "marca": "Mademsa",
+              "modelo": "Línea completa · 2 modelos",
               "detalle": [
-                "Perilla"
-              ]
+                "1050 W",
+                "Digital"
+              ],
+              "modelos": [
+                {
+                  "nombre": "MM20FBM 20 L",
+                  "specs": [
+                    "1050 W"
+                  ]
+                },
+                {
+                  "nombre": "MM28FB 28 L",
+                  "specs": [
+                    "Digital"
+                  ]
+                }
+              ],
+              "fuente": "https://www.solotodo.cl/hornos_y_microondas"
             },
             {
               "marca": "Midea",
@@ -8249,11 +8263,40 @@
           "descripcion": "Oficina.",
           "opciones": [
             {
-              "marca": "Samsung",
-              "modelo": "Microondas 23–28 L",
+              "marca": "Thomas",
+              "modelo": "Línea completa · 4 modelos",
               "detalle": [
-                "Digital"
-              ]
+                "2000 W, convección y grill",
+                "800 W, análogo",
+                "900 W, digital, bloqueo infantil"
+              ],
+              "modelos": [
+                {
+                  "nombre": "TH-20S01 20 L",
+                  "specs": [
+                    "800 W, análogo"
+                  ]
+                },
+                {
+                  "nombre": "TH-25DM 25 L",
+                  "specs": [
+                    "900 W, digital, bloqueo infantil"
+                  ]
+                },
+                {
+                  "nombre": "TH-34DMG 34 L",
+                  "specs": [
+                    "Digital + grill"
+                  ]
+                },
+                {
+                  "nombre": "Horno eléctrico TH-48N 48 L",
+                  "specs": [
+                    "2000 W, convección y grill"
+                  ]
+                }
+              ],
+              "fuente": "https://www.solotodo.cl/hornos_y_microondas"
             },
             {
               "marca": "Oster",
@@ -8268,6 +8311,36 @@
           "nombre": "Premium",
           "descripcion": "Mayor capacidad.",
           "opciones": [
+            {
+              "marca": "Samsung",
+              "modelo": "Línea completa · 3 modelos",
+              "detalle": [
+                "Con grill",
+                "Dual Dial",
+                "Sensor de cocción, digital"
+              ],
+              "modelos": [
+                {
+                  "nombre": "MS20A3010AL 20 L",
+                  "specs": [
+                    "Dual Dial"
+                  ]
+                },
+                {
+                  "nombre": "MS23DG4504AT 23 L",
+                  "specs": [
+                    "Sensor de cocción, digital"
+                  ]
+                },
+                {
+                  "nombre": "MG32DG4524AT 32 L",
+                  "specs": [
+                    "Con grill"
+                  ]
+                }
+              ],
+              "fuente": "https://www.abc.cl/linea-blanca/electrodomesticos/microondas/samsung/"
+            },
             {
               "marca": "LG",
               "modelo": "Microondas NeoChef",
@@ -8333,6 +8406,54 @@
           "descripcion": "Automática (granos).",
           "opciones": [
             {
+              "marca": "Nespresso Professional",
+              "modelo": "Línea completa · 6 modelos",
+              "detalle": [
+                "1 cabezal, pantalla táctil, reconoce cápsulas",
+                "1 cabezal, salas de reunión y oficinas pequeñas",
+                "2 cabezales, eventos y cocinas"
+              ],
+              "modelos": [
+                {
+                  "nombre": "Zenius",
+                  "specs": [
+                    "1 cabezal, salas de reunión y oficinas pequeñas"
+                  ]
+                },
+                {
+                  "nombre": "Momento 100",
+                  "specs": [
+                    "1 cabezal, pantalla táctil, reconoce cápsulas"
+                  ]
+                },
+                {
+                  "nombre": "Momento 200",
+                  "specs": [
+                    "2 cabezales, oficinas medianas"
+                  ]
+                },
+                {
+                  "nombre": "Momento Coffee & Milk 120",
+                  "specs": [
+                    "Con refrigerador de leche integrado"
+                  ]
+                },
+                {
+                  "nombre": "Gemini 223",
+                  "specs": [
+                    "2 cabezales, eventos y cocinas"
+                  ]
+                },
+                {
+                  "nombre": "Aguila 220",
+                  "specs": [
+                    "2 cabezales, oficinas grandes"
+                  ]
+                }
+              ],
+              "fuente": "https://www.nespresso.com/pro/cl/es/order/machines/pro"
+            },
+            {
               "marca": "De'Longhi",
               "modelo": "Magnifica",
               "detalle": [
@@ -8357,13 +8478,6 @@
           "descripcion": "Básicos.",
           "opciones": [
             {
-              "marca": "Thomas",
-              "modelo": "Hervidor 1,7 L",
-              "detalle": [
-                "Plástico"
-              ]
-            },
-            {
               "marca": "Ursus Trotter",
               "modelo": "Hervidor 1,8 L",
               "detalle": [
@@ -8378,17 +8492,55 @@
           "opciones": [
             {
               "marca": "Oster",
-              "modelo": "Hervidor acero",
+              "modelo": "BVSTKT673CR 1,7 L",
               "detalle": [
-                "1,7 L"
-              ]
+                "Acero inoxidable"
+              ],
+              "modelos": [
+                {
+                  "nombre": "BVSTKT673CR 1,7 L",
+                  "specs": [
+                    "Acero inoxidable"
+                  ]
+                }
+              ],
+              "fuente": "https://www.oster.cl/hervidor-electrico-oster-acero-inoxidable-bvstkt673cr/p"
             },
             {
-              "marca": "Philips",
-              "modelo": "Hervidor",
+              "marca": "Thomas",
+              "modelo": "Línea completa · 4 modelos",
               "detalle": [
-                "Filtro antisarro"
-              ]
+                "Acero inoxidable",
+                "Control táctil LED de temperatura",
+                "Exterior frío al tacto"
+              ],
+              "modelos": [
+                {
+                  "nombre": "TH-6250B Cool Touch 1,7 L",
+                  "specs": [
+                    "Exterior frío al tacto"
+                  ]
+                },
+                {
+                  "nombre": "TH-5415i Steel Diamond 1,7 L",
+                  "specs": [
+                    "Acero inoxidable"
+                  ]
+                },
+                {
+                  "nombre": "TH-6220DN digital",
+                  "specs": [
+                    "Control táctil LED de temperatura"
+                  ]
+                },
+                {
+                  "nombre": "Termo hervidor TH-TK50 5 L",
+                  "specs": [
+                    "Mantiene el agua caliente"
+                  ]
+                }
+              ],
+              "fuente": "https://www.thomas.cl/thomas/cocina/hervidores.html"
             }
           ]
         },
@@ -8396,6 +8548,22 @@
           "nombre": "Premium",
           "descripcion": "Temperatura regulable.",
           "opciones": [
+            {
+              "marca": "Philips",
+              "modelo": "HD9350/90 1,7 L",
+              "detalle": [
+                "Acero inoxidable, 2200 W, control Strix"
+              ],
+              "modelos": [
+                {
+                  "nombre": "HD9350/90 1,7 L",
+                  "specs": [
+                    "Acero inoxidable, 2200 W, control Strix"
+                  ]
+                }
+              ],
+              "fuente": "https://nht.cl/products/hervidor-electrico-philips-hd9350-90-acero-1-7l-2200w"
+            },
             {
               "marca": "Smeg",
               "modelo": "Hervidor retro",
@@ -8433,6 +8601,54 @@
           "nombre": "Estándar",
           "descripcion": "De pie, bidón superior.",
           "opciones": [
+            {
+              "marca": "Aqualitat",
+              "modelo": "Línea completa · 6 modelos",
+              "detalle": [
+                "Agua fría y caliente, bidón abajo",
+                "Conexión a red, sin bidones",
+                "Dispensador con hervidor para té"
+              ],
+              "modelos": [
+                {
+                  "nombre": "Bidón oculto con compresor",
+                  "specs": [
+                    "Agua fría y caliente, bidón abajo"
+                  ]
+                },
+                {
+                  "nombre": "Pedestal con compartimento",
+                  "specs": [
+                    "Para bidón de 20 L"
+                  ]
+                },
+                {
+                  "nombre": "Sobremesa DY-721",
+                  "specs": [
+                    "Refrigeración eléctrica"
+                  ]
+                },
+                {
+                  "nombre": "Ósmosis inversa sobremesa Tahoe One Mate",
+                  "specs": [
+                    "Conexión a red, sin bidones"
+                  ]
+                },
+                {
+                  "nombre": "Ósmosis inversa pedestal",
+                  "specs": [
+                    "Conexión a red, sin bidones"
+                  ]
+                },
+                {
+                  "nombre": "Tea Bar Machine",
+                  "specs": [
+                    "Dispensador con hervidor para té"
+                  ]
+                }
+              ],
+              "fuente": "https://aqualitat.cl/collections/dispensadores"
+            },
             {
               "marca": "Midea",
               "modelo": "Dispensador de pie",
@@ -11014,10 +11230,33 @@
           "opciones": [
             {
               "marca": "Purdy",
-              "modelo": "Brochas y rodillos",
+              "modelo": "Línea completa · 3 modelos",
               "detalle": [
-                "Acabado profesional"
-              ]
+                "Acabado liso",
+                "Corte limpio en bordes",
+                "Pinturas base agua y aceite"
+              ],
+              "modelos": [
+                {
+                  "nombre": "Brocha XL Glide",
+                  "specs": [
+                    "Pinturas base agua y aceite"
+                  ]
+                },
+                {
+                  "nombre": "Brocha Clearcut",
+                  "specs": [
+                    "Corte limpio en bordes"
+                  ]
+                },
+                {
+                  "nombre": "Rodillo White Dove",
+                  "specs": [
+                    "Acabado liso"
+                  ]
+                }
+              ],
+              "fuente": "https://www.purdy.com/"
             }
           ]
         }
@@ -11229,70 +11468,6 @@
         }
       ]
     },
-    "Licuadoras, procesadoras": {
-      "gamas": [
-        {
-          "nombre": "Económica",
-          "descripcion": "Básicas.",
-          "opciones": [
-            {
-              "marca": "Thomas",
-              "modelo": "Licuadora",
-              "detalle": [
-                "Vaso plástico"
-              ]
-            },
-            {
-              "marca": "Ursus Trotter",
-              "modelo": "Licuadora",
-              "detalle": [
-                "Uso diario"
-              ]
-            }
-          ]
-        },
-        {
-          "nombre": "Estándar",
-          "descripcion": "Más potencia.",
-          "opciones": [
-            {
-              "marca": "Oster",
-              "modelo": "Licuadora clásica",
-              "detalle": [
-                "Vaso de vidrio"
-              ]
-            },
-            {
-              "marca": "Philips",
-              "modelo": "Procesadora",
-              "detalle": [
-                "Varios accesorios"
-              ]
-            }
-          ]
-        },
-        {
-          "nombre": "Premium",
-          "descripcion": "Alta potencia.",
-          "opciones": [
-            {
-              "marca": "Ninja",
-              "modelo": "Licuadora profesional",
-              "detalle": [
-                "Gran potencia"
-              ]
-            },
-            {
-              "marca": "KitchenAid",
-              "modelo": "Licuadora / procesadora",
-              "detalle": [
-                "Diseño premium"
-              ]
-            }
-          ]
-        }
-      ]
-    },
     "Tostadoras, sandwicheras": {
       "gamas": [
         {
@@ -11351,63 +11526,6 @@
               "modelo": "Panini press",
               "detalle": [
                 "Alta calidad"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "Planchas, vaporizadores": {
-      "gamas": [
-        {
-          "nombre": "Económica",
-          "descripcion": "Básicas.",
-          "opciones": [
-            {
-              "marca": "Thomas",
-              "modelo": "Plancha a vapor",
-              "detalle": [
-                "Antiadherente"
-              ]
-            }
-          ]
-        },
-        {
-          "nombre": "Estándar",
-          "descripcion": "Uso frecuente.",
-          "opciones": [
-            {
-              "marca": "Philips",
-              "modelo": "Plancha a vapor",
-              "detalle": [
-                "Golpe de vapor"
-              ]
-            },
-            {
-              "marca": "Oster",
-              "modelo": "Plancha a vapor",
-              "detalle": [
-                "Base cerámica"
-              ]
-            }
-          ]
-        },
-        {
-          "nombre": "Premium",
-          "descripcion": "Vaporizadores.",
-          "opciones": [
-            {
-              "marca": "Philips",
-              "modelo": "Vaporizador vertical",
-              "detalle": [
-                "Sin tabla de planchar"
-              ]
-            },
-            {
-              "marca": "Rowenta",
-              "modelo": "Plancha / vaporizador",
-              "detalle": [
-                "Alta presión"
               ]
             }
           ]
@@ -11542,11 +11660,49 @@
           "descripcion": "Básicos.",
           "opciones": [
             {
-              "marca": "Midea",
-              "modelo": "Split on/off 9.000–12.000 BTU",
+              "marca": "Kendal",
+              "modelo": "Vesta inverter 12.000 BTU",
               "detalle": [
-                "Frío/calor"
-              ]
+                "R32, Wi-Fi"
+              ],
+              "modelos": [
+                {
+                  "nombre": "Vesta inverter 12.000 BTU",
+                  "specs": [
+                    "R32, Wi-Fi"
+                  ]
+                }
+              ],
+              "fuente": "https://www.eita.cl/aire-acondicionado/12000-btu"
+            },
+            {
+              "marca": "Midea",
+              "modelo": "Línea completa · 3 modelos",
+              "detalle": [
+                "Frío-calor",
+                "R32"
+              ],
+              "modelos": [
+                {
+                  "nombre": "Xtra inverter 12.000 BTU",
+                  "specs": [
+                    "R32"
+                  ]
+                },
+                {
+                  "nombre": "Comfee inverter 12.000 BTU",
+                  "specs": [
+                    "R32"
+                  ]
+                },
+                {
+                  "nombre": "Portátil 12.000 BTU Wi-Fi",
+                  "specs": [
+                    "Frío-calor"
+                  ]
+                }
+              ],
+              "fuente": "https://www.eita.cl/aire-acondicionado/12000-btu"
             }
           ]
         },
@@ -11555,18 +11711,27 @@
           "descripcion": "Inverter.",
           "opciones": [
             {
-              "marca": "Midea",
-              "modelo": "Split Inverter",
+              "marca": "Anwo",
+              "modelo": "Línea completa · 2 modelos",
               "detalle": [
-                "Ahorro de energía"
-              ]
-            },
-            {
-              "marca": "Samsung",
-              "modelo": "Split Inverter",
-              "detalle": [
-                "Bajo ruido"
-              ]
+                "Frío-calor",
+                "R32, Wi-Fi"
+              ],
+              "modelos": [
+                {
+                  "nombre": "Ecoflow inverter 12.000 BTU",
+                  "specs": [
+                    "R32, Wi-Fi"
+                  ]
+                },
+                {
+                  "nombre": "Portátil 12.000 BTU",
+                  "specs": [
+                    "Frío-calor"
+                  ]
+                }
+              ],
+              "fuente": "https://www.eita.cl/aire-acondicionado/12000-btu"
             }
           ]
         },
@@ -11574,6 +11739,22 @@
           "nombre": "Premium",
           "descripcion": "Alta eficiencia.",
           "opciones": [
+            {
+              "marca": "Samsung",
+              "modelo": "WindFree AR70F12C1DW/ZS 12.000 BTU",
+              "detalle": [
+                "Inverter, Wi-Fi, enfriamiento sin corrientes"
+              ],
+              "modelos": [
+                {
+                  "nombre": "WindFree AR70F12C1DW/ZS 12.000 BTU",
+                  "specs": [
+                    "Inverter, Wi-Fi, enfriamiento sin corrientes"
+                  ]
+                }
+              ],
+              "fuente": "https://www.samsung.com/cl/air-conditioners/wall-mount/ar9500t-ar70f12caawneu-ai-fast-comfort-cooling-ai-fast-comfort-cooling-comfort-drying-for-cold-free-dehumidification-ar70f12c1dw-zs/"
+            },
             {
               "marca": "Daikin",
               "modelo": "Split Inverter",
@@ -11599,11 +11780,40 @@
           "descripcion": "Espacios pequeños.",
           "opciones": [
             {
-              "marca": "Xiaomi",
-              "modelo": "Smart Air Purifier 4 Compact",
+              "marca": "LumiAIR",
+              "modelo": "Línea completa · 4 modelos",
               "detalle": [
-                "Filtro HEPA"
-              ]
+                "HEPA 4 etapas, hasta 50 m²",
+                "HEPA, hasta 27 m²",
+                "HEPA, hasta 85 m²"
+              ],
+              "modelos": [
+                {
+                  "nombre": "Garbí",
+                  "specs": [
+                    "HEPA, hasta 27 m²"
+                  ]
+                },
+                {
+                  "nombre": "Gregal",
+                  "specs": [
+                    "HEPA 4 etapas, hasta 50 m²"
+                  ]
+                },
+                {
+                  "nombre": "Gregal Smart Pro",
+                  "specs": [
+                    "Sensor de calidad del aire, 60 m²"
+                  ]
+                },
+                {
+                  "nombre": "Tramuntana",
+                  "specs": [
+                    "HEPA, hasta 85 m²"
+                  ]
+                }
+              ],
+              "fuente": "https://lumi.cl/2026/01/11/los-3-mejores-purificadores-de-aire-en-chile/"
             }
           ]
         },
@@ -11611,13 +11821,6 @@
           "nombre": "Estándar",
           "descripcion": "Oficinas.",
           "opciones": [
-            {
-              "marca": "Xiaomi",
-              "modelo": "Smart Air Purifier 4",
-              "detalle": [
-                "Control por app"
-              ]
-            },
             {
               "marca": "Philips",
               "modelo": "Serie 1000 / 2000",
@@ -11632,6 +11835,22 @@
           "descripcion": "Grandes espacios.",
           "opciones": [
             {
+              "marca": "Xiaomi",
+              "modelo": "Smart Air Purifier 4 Pro",
+              "detalle": [
+                "HEPA 99,97 %, 35–60 m², app"
+              ],
+              "modelos": [
+                {
+                  "nombre": "Smart Air Purifier 4 Pro",
+                  "specs": [
+                    "HEPA 99,97 %, 35–60 m², app"
+                  ]
+                }
+              ],
+              "fuente": "https://www.mi.com/cl/product/xiaomi-smart-air-purifier-4-pro/"
+            },
+            {
               "marca": "Philips",
               "modelo": "Serie 3000",
               "detalle": [
@@ -11643,63 +11862,6 @@
               "modelo": "Purifier",
               "detalle": [
                 "Purifica y ventila"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "Humidificadores, deshumidificadores": {
-      "gamas": [
-        {
-          "nombre": "Económica",
-          "descripcion": "Básicos.",
-          "opciones": [
-            {
-              "marca": "Ursus Trotter",
-              "modelo": "Humidificador ultrasónico",
-              "detalle": [
-                "Compacto"
-              ]
-            }
-          ]
-        },
-        {
-          "nombre": "Estándar",
-          "descripcion": "Oficina.",
-          "opciones": [
-            {
-              "marca": "Xiaomi",
-              "modelo": "Humidificador",
-              "detalle": [
-                "Control por app"
-              ]
-            },
-            {
-              "marca": "Midea",
-              "modelo": "Deshumidificador",
-              "detalle": [
-                "Control de humedad"
-              ]
-            }
-          ]
-        },
-        {
-          "nombre": "Premium",
-          "descripcion": "Alta capacidad.",
-          "opciones": [
-            {
-              "marca": "Philips",
-              "modelo": "Humidificador",
-              "detalle": [
-                "Alta cobertura"
-              ]
-            },
-            {
-              "marca": "Electrolux",
-              "modelo": "Deshumidificador",
-              "detalle": [
-                "Gran capacidad"
               ]
             }
           ]
@@ -13640,6 +13802,245 @@
               "detalle": [
                 "Deja la pizarra como nueva"
               ]
+            }
+          ]
+        }
+      ]
+    },
+    "Refrigeradores y frigobares": {
+      "gamas": [
+        {
+          "nombre": "Económica",
+          "descripcion": "Frigobar.",
+          "opciones": [
+            {
+              "marca": "Sindelen",
+              "modelo": "Línea completa · 2 modelos",
+              "detalle": [
+                "Compacto",
+                "Frío directo"
+              ],
+              "modelos": [
+                {
+                  "nombre": "Frigobar FB-55BL 46 L",
+                  "specs": [
+                    "Compacto"
+                  ]
+                },
+                {
+                  "nombre": "Frigobar FB-95BL 85 L",
+                  "specs": [
+                    "Frío directo"
+                  ]
+                }
+              ],
+              "fuente": "https://www.abc.cl/linea-blanca/refrigeradores/frigobar/"
+            }
+          ]
+        },
+        {
+          "nombre": "Estándar",
+          "descripcion": "Refrigerador pequeño.",
+          "opciones": [
+            {
+              "marca": "Mademsa",
+              "modelo": "Línea completa · 5 modelos",
+              "detalle": [
+                "2 puertas",
+                "2 puertas, frío directo",
+                "Bottom freezer, clase A"
+              ],
+              "modelos": [
+                {
+                  "nombre": "Minibar Celsius MR50",
+                  "specs": [
+                    "Compacto para escritorio"
+                  ]
+                },
+                {
+                  "nombre": "Minibar MMB91 90 L",
+                  "specs": [
+                    "Frío directo, inox black"
+                  ]
+                },
+                {
+                  "nombre": "Altus 1200 197 L",
+                  "specs": [
+                    "2 puertas, frío directo"
+                  ]
+                },
+                {
+                  "nombre": "Altus 1250 251 L",
+                  "specs": [
+                    "2 puertas"
+                  ]
+                },
+                {
+                  "nombre": "Nordik 480 Plus 303 L",
+                  "specs": [
+                    "Bottom freezer, clase A"
+                  ]
+                }
+              ],
+              "fuente": "https://www.construex.cl/exhibidores/mademsa/productos"
+            },
+            {
+              "marca": "Midea",
+              "modelo": "Línea completa · 4 modelos",
+              "detalle": [
+                "Frío directo",
+                "Frío directo, con cerradura",
+                "No Frost, puerta de vidrio"
+              ],
+              "modelos": [
+                {
+                  "nombre": "Frigobar MDRD86FGE50 43 L",
+                  "specs": [
+                    "Frío directo, con cerradura"
+                  ]
+                },
+                {
+                  "nombre": "Frigobar MDRD142FGE50 93 L",
+                  "specs": [
+                    "Frío directo"
+                  ]
+                },
+                {
+                  "nombre": "Frigobar MDRD142FGE30 93 L negro",
+                  "specs": [
+                    "Frío directo"
+                  ]
+                },
+                {
+                  "nombre": "Beer cooler MBC-960N125SEN 93 L",
+                  "specs": [
+                    "No Frost, puerta de vidrio"
+                  ]
+                }
+              ],
+              "fuente": "https://www.abc.cl/linea-blanca/refrigeradores/frigobar/"
+            },
+            {
+              "marca": "Fensa",
+              "modelo": "Frigobar / refrigerador compacto",
+              "detalle": [
+                "Eficiencia energética"
+              ]
+            },
+            {
+              "marca": "Samsung",
+              "modelo": "Refrigerador 2 puertas",
+              "detalle": [
+                "Para cocina de oficina"
+              ]
+            }
+          ]
+        },
+        {
+          "nombre": "Premium",
+          "descripcion": "Mayor capacidad.",
+          "opciones": [
+            {
+              "marca": "LG",
+              "modelo": "Refrigerador No Frost",
+              "detalle": [
+                "Inverter"
+              ]
+            },
+            {
+              "marca": "Samsung",
+              "modelo": "No Frost Inverter",
+              "detalle": [
+                "Bajo consumo"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "Televisores 50 pulgadas": {
+      "gamas": [
+        {
+          "nombre": "Económica",
+          "opciones": [
+            {
+              "marca": "TCL",
+              "modelo": "50P755",
+              "detalle": [
+                "4K LED, Google TV"
+              ],
+              "modelos": [
+                {
+                  "nombre": "50P755",
+                  "specs": [
+                    "4K LED, Google TV"
+                  ]
+                }
+              ],
+              "fuente": "https://www.solotodo.cl/products/242689-tcl-50p755"
+            }
+          ]
+        },
+        {
+          "nombre": "Estándar",
+          "opciones": [
+            {
+              "marca": "LG",
+              "modelo": "Línea completa · 2 modelos",
+              "detalle": [
+                "4K QNED, 2025",
+                "4K, webOS, 3 HDMI"
+              ],
+              "modelos": [
+                {
+                  "nombre": "UHD 50UA7300PSB",
+                  "specs": [
+                    "4K, webOS, 3 HDMI"
+                  ]
+                },
+                {
+                  "nombre": "QNED 50QNED70ASA",
+                  "specs": [
+                    "4K QNED, 2025"
+                  ]
+                }
+              ],
+              "fuente": "https://www.paris.cl/electro/elige-tu-pulgada/40-a-49-pulgadas/smart-tv/"
+            }
+          ]
+        },
+        {
+          "nombre": "Premium",
+          "opciones": [
+            {
+              "marca": "Samsung",
+              "modelo": "Línea completa · 3 modelos",
+              "detalle": [
+                "4K QLED, Vision AI",
+                "4K, Tizen, 2025",
+                "Mini LED 4K, gama alta"
+              ],
+              "modelos": [
+                {
+                  "nombre": "Crystal UHD U8000F 50\" (UN50U8000FGXZS)",
+                  "specs": [
+                    "4K, Tizen, 2025"
+                  ]
+                },
+                {
+                  "nombre": "QLED Q7F 50\"",
+                  "specs": [
+                    "4K QLED, Vision AI"
+                  ]
+                },
+                {
+                  "nombre": "Neo QLED QN90F 50\"",
+                  "specs": [
+                    "Mini LED 4K, gama alta"
+                  ]
+                }
+              ],
+              "fuente": "https://www.samsung.com/cl/tvs/uhd-4k-tv/u8000f-50-inch-crystal-uhd-4k-smart-tv-un50u8000fgxzs/"
             }
           ]
         }
