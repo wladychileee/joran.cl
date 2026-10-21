@@ -6491,13 +6491,6 @@
               "detalle": [
                 "Brazos regulables"
               ]
-            },
-            {
-              "marca": "Steelcase",
-              "modelo": "Series 1",
-              "detalle": [
-                "Ergonomía certificada"
-              ]
             }
           ]
         },
@@ -6506,18 +6499,121 @@
           "descripcion": "Alta gama.",
           "opciones": [
             {
-              "marca": "Herman Miller",
-              "modelo": "Aeron",
+              "marca": "Steelcase",
+              "modelo": "Línea completa · 6 modelos",
               "detalle": [
-                "Ergonomía de referencia"
-              ]
+                "Respaldo LiveBack",
+                "Brazos 360°",
+                "Textil técnico de alto rendimiento"
+              ],
+              "modelos": [
+                {
+                  "nombre": "Leap",
+                  "specs": [
+                    "Respaldo LiveBack",
+                    "Asiento deslizante al reclinar"
+                  ]
+                },
+                {
+                  "nombre": "Gesture",
+                  "specs": [
+                    "Brazos 360°",
+                    "Para uso con dispositivos"
+                  ]
+                },
+                {
+                  "nombre": "Steelcase Karman",
+                  "specs": [
+                    "Textil técnico de alto rendimiento",
+                    "Marco ultraliviano"
+                  ]
+                },
+                {
+                  "nombre": "Series 1",
+                  "specs": [
+                    "Ergonomía esencial",
+                    "Ajustes intuitivos"
+                  ]
+                },
+                {
+                  "nombre": "Series 2",
+                  "specs": [
+                    "Respaldo flexible 3D"
+                  ]
+                },
+                {
+                  "nombre": "Amia / Amia Air",
+                  "specs": [
+                    "Soporte lumbar LiveLumbar"
+                  ]
+                }
+              ],
+              "fuente": "https://www.steelcase.com/high-performance-seating/"
             },
             {
-              "marca": "Steelcase",
-              "modelo": "Leap / Gesture",
+              "marca": "Herman Miller",
+              "modelo": "Línea completa · 8 modelos",
               "detalle": [
-                "Ajuste completo"
-              ]
+                "Malla Pellicle, tallas A/B/C",
+                "Respaldo tipo columna con pixeles",
+                "Versión gamer de Embody"
+              ],
+              "modelos": [
+                {
+                  "nombre": "Aeron",
+                  "specs": [
+                    "Malla Pellicle, tallas A/B/C",
+                    "Soporte PostureFit SL"
+                  ]
+                },
+                {
+                  "nombre": "Embody",
+                  "specs": [
+                    "Respaldo tipo columna con pixeles",
+                    "Uso prolongado frente a pantalla"
+                  ]
+                },
+                {
+                  "nombre": "Embody Gaming",
+                  "specs": [
+                    "Versión gamer de Embody"
+                  ]
+                },
+                {
+                  "nombre": "Cosm",
+                  "specs": [
+                    "Ajuste automático al usuario",
+                    "Suspensión de malla"
+                  ]
+                },
+                {
+                  "nombre": "Sayl",
+                  "specs": [
+                    "Respaldo de suspensión 3D",
+                    "Diseño Yves Béhar"
+                  ]
+                },
+                {
+                  "nombre": "Mirra 2",
+                  "specs": [
+                    "Respaldo Butterfly",
+                    "Ajustes sincronizados"
+                  ]
+                },
+                {
+                  "nombre": "Setu",
+                  "specs": [
+                    "Silla multiuso sin ajustes manuales"
+                  ]
+                },
+                {
+                  "nombre": "Verus",
+                  "specs": [
+                    "Silla de trabajo esencial"
+                  ]
+                }
+              ],
+              "fuente": "https://www.hmuebles.cl/copia-de-sillas"
             }
           ]
         }
@@ -6636,6 +6732,56 @@
           "descripcion": "Bodega y archivo.",
           "opciones": [
             {
+              "marca": "Equimet",
+              "modelo": "Línea completa · 6 modelos",
+              "detalle": [
+                "Ángulo ranurado tipo mecano",
+                "Ángulo ranurado",
+                "Bandeja reforzada"
+              ],
+              "modelos": [
+                {
+                  "nombre": "ANRA 90×30×200 cm 0,5 mm",
+                  "specs": [
+                    "Ángulo ranurado tipo mecano",
+                    "120 kg por nivel"
+                  ]
+                },
+                {
+                  "nombre": "ANRA 90×40×200 cm 0,5 mm",
+                  "specs": [
+                    "Ángulo ranurado",
+                    "115 kg por nivel"
+                  ]
+                },
+                {
+                  "nombre": "ANRA 90×50×200 cm 0,5 mm",
+                  "specs": [
+                    "Ángulo ranurado"
+                  ]
+                },
+                {
+                  "nombre": "ANRA 90×50×200 cm 0,8 mm",
+                  "specs": [
+                    "Bandeja reforzada"
+                  ]
+                },
+                {
+                  "nombre": "Pilares 2 / 2,5 / 3 m",
+                  "specs": [
+                    "Módulos lineales o altillos"
+                  ]
+                },
+                {
+                  "nombre": "Kardex 4 cajones",
+                  "specs": [
+                    "Acero SAE 1010 0,75 mm, oficio"
+                  ]
+                }
+              ],
+              "fuente": "https://equimet.cl/collections/anra-sistema-mecano-estanteria-metalica"
+            },
+            {
               "marca": "Fabricación nacional",
               "modelo": "Estantería reforzada",
               "detalle": [
@@ -6723,10 +6869,58 @@
           "opciones": [
             {
               "marca": "Formaval",
-              "modelo": "Pizarra acrílica magnética",
+              "modelo": "Línea completa · 7 modelos",
               "detalle": [
-                "Varios tamaños"
-              ]
+                "Marco de aluminio mate",
+                "Marco de aluminio, porta borrador",
+                "Madera 12–15 mm"
+              ],
+              "modelos": [
+                {
+                  "nombre": "Acrílica / magnética 30×40 a 60×80 cm",
+                  "specs": [
+                    "Marco de aluminio mate",
+                    "Fabricación en Viña del Mar"
+                  ]
+                },
+                {
+                  "nombre": "Acrílica / magnética 70×100 y 90×120 cm",
+                  "specs": [
+                    "Marco de aluminio, porta borrador"
+                  ]
+                },
+                {
+                  "nombre": "Acrílica / magnética 100×150 y 120×150 cm",
+                  "specs": [
+                    "Madera 12–15 mm"
+                  ]
+                },
+                {
+                  "nombre": "Acrílica / magnética 120×200 a 120×300 cm",
+                  "specs": [
+                    "Formato sala de clases"
+                  ]
+                },
+                {
+                  "nombre": "Mixta acrílica + corcho",
+                  "specs": [
+                    "Medidas a pedido"
+                  ]
+                },
+                {
+                  "nombre": "Corcho (diario mural) 45×60 a 100×200 cm",
+                  "specs": [
+                    "Marco de aluminio"
+                  ]
+                },
+                {
+                  "nombre": "Pizarra con ruedas 90×120 a 120×200 cm",
+                  "specs": [
+                    "Estructura de aluminio, ruedas con freno"
+                  ]
+                }
+              ],
+              "fuente": "https://formaval.cl/"
             },
             {
               "marca": "Quartet",
@@ -6754,6 +6948,72 @@
               "detalle": [
                 "A medida"
               ]
+            },
+            {
+              "marca": "Bi-Silque",
+              "modelo": "Línea completa · 9 modelos",
+              "detalle": [
+                "Fabricación Portugal",
+                "Uso sala de reuniones",
+                "Superficie magnética"
+              ],
+              "modelos": [
+                {
+                  "nombre": "Blanca acrílica 60×45 / 90×60 cm",
+                  "specs": [
+                    "Fabricación Portugal"
+                  ]
+                },
+                {
+                  "nombre": "Blanca acrílica 150×120 / 240×120 cm",
+                  "specs": [
+                    "Uso sala de reuniones"
+                  ]
+                },
+                {
+                  "nombre": "Blanca magnética 60×45 a 240×120 cm",
+                  "specs": [
+                    "Superficie magnética"
+                  ]
+                },
+                {
+                  "nombre": "Acrílica cuadriculada 150×120 / 240×120 cm",
+                  "specs": [
+                    "Para planificación"
+                  ]
+                },
+                {
+                  "nombre": "Vidrio magnética 90×60 a 150×120 cm",
+                  "specs": [
+                    "Superficie de vidrio"
+                  ]
+                },
+                {
+                  "nombre": "Móvil rotativa 180×120 cm",
+                  "specs": [
+                    "Doble cara, con ruedas"
+                  ]
+                },
+                {
+                  "nombre": "Mixta blanca + corcho 60×45 cm",
+                  "specs": [
+                    "2 en 1"
+                  ]
+                },
+                {
+                  "nombre": "Corcho 60×45 cm",
+                  "specs": [
+                    "Diario mural"
+                  ]
+                },
+                {
+                  "nombre": "Papelógrafo caballete 70×100 cm",
+                  "specs": [
+                    "Con marco"
+                  ]
+                }
+              ],
+              "fuente": "https://catalogo.faxonchile.cl/pizarras/"
             }
           ]
         }
@@ -6767,10 +7027,53 @@
           "opciones": [
             {
               "marca": "Yale",
-              "modelo": "Caja de seguridad digital Home",
+              "modelo": "Línea completa · 6 modelos",
               "detalle": [
-                "~16 L"
-              ]
+                "Caja fuerte digital compacta",
+                "Caja fuerte digital",
+                "Digital sin visor, 8 kg"
+              ],
+              "modelos": [
+                {
+                  "nombre": "Mini digital 4 L",
+                  "specs": [
+                    "Caja fuerte digital compacta",
+                    "Negro o azul"
+                  ]
+                },
+                {
+                  "nombre": "Home digital 8 L",
+                  "specs": [
+                    "Caja fuerte digital"
+                  ]
+                },
+                {
+                  "nombre": "YSV/250/DB1 Home 16,3 L",
+                  "specs": [
+                    "Digital sin visor, 8 kg",
+                    "2 bulones de 16 mm"
+                  ]
+                },
+                {
+                  "nombre": "Digital 24 L",
+                  "specs": [
+                    "Caja fuerte digital"
+                  ]
+                },
+                {
+                  "nombre": "Office digital 40 L",
+                  "specs": [
+                    "Caja fuerte de oficina"
+                  ]
+                },
+                {
+                  "nombre": "YSB/200/EB1 y YSB/250/EB1",
+                  "specs": [
+                    "Serie YSB digital"
+                  ]
+                }
+              ],
+              "fuente": "https://yalechile.cl/collections/cajas-fuerte-de-seguridad-yale"
             }
           ]
         },
@@ -6779,18 +7082,72 @@
           "descripcion": "Oficina.",
           "opciones": [
             {
-              "marca": "Yale",
-              "modelo": "Caja fuerte electrónica",
-              "detalle": [
-                "Mayor capacidad"
-              ]
-            },
-            {
               "marca": "Sentry Safe",
-              "modelo": "Caja digital",
+              "modelo": "Línea completa · 8 modelos",
               "detalle": [
-                "Anclaje al piso"
-              ]
+                "Cofre portátil contra fuego y agua",
+                "Archivador portátil contra fuego y agua",
+                "Contra fuego y agua"
+              ],
+              "modelos": [
+                {
+                  "nombre": "H0100",
+                  "specs": [
+                    "Cofre portátil contra fuego y agua",
+                    "Llave de privacidad"
+                  ]
+                },
+                {
+                  "nombre": "HD4100",
+                  "specs": [
+                    "Archivador portátil contra fuego y agua",
+                    "Carpetas colgantes"
+                  ]
+                },
+                {
+                  "nombre": "SFW082 (0,81 pie³)",
+                  "specs": [
+                    "Contra fuego y agua",
+                    "Digital o combinación"
+                  ]
+                },
+                {
+                  "nombre": "SFW123 GSC / GTC (1,23 pie³)",
+                  "specs": [
+                    "Contra fuego y agua",
+                    "Teclado digital"
+                  ]
+                },
+                {
+                  "nombre": "SFW123 TTC (1,23 pie³)",
+                  "specs": [
+                    "Contra fuego y agua",
+                    "Pantalla táctil y alarma"
+                  ]
+                },
+                {
+                  "nombre": "SFW123 BSC / BTC (1,23 pie³)",
+                  "specs": [
+                    "Contra fuego y agua",
+                    "Huella digital"
+                  ]
+                },
+                {
+                  "nombre": "SFW123 CS / CTB (1,23 pie³)",
+                  "specs": [
+                    "Contra fuego y agua",
+                    "Combinación mecánica"
+                  ]
+                },
+                {
+                  "nombre": "SFW205 (2,05 pie³)",
+                  "specs": [
+                    "Contra fuego y agua",
+                    "Digital, con alarma"
+                  ]
+                }
+              ],
+              "fuente": "https://www.sentrysafe.com/products/fire-waterproof-safes"
             }
           ]
         },
@@ -6798,13 +7155,6 @@
           "nombre": "Premium",
           "descripcion": "Ignífuga / alta seguridad.",
           "opciones": [
-            {
-              "marca": "Sentry Safe",
-              "modelo": "Caja ignífuga y resistente al agua",
-              "detalle": [
-                "Protección contra fuego"
-              ]
-            },
             {
               "marca": "Fabricación nacional",
               "modelo": "Caja fuerte de alta seguridad",
@@ -6909,6 +7259,54 @@
           "descripcion": "Básicos.",
           "opciones": [
             {
+              "marca": "Metanek",
+              "modelo": "Línea completa · 6 modelos",
+              "detalle": [
+                "Gris",
+                "Gris o black",
+                "Línea white"
+              ],
+              "modelos": [
+                {
+                  "nombre": "Locker 1 cuerpo 1 puerta",
+                  "specs": [
+                    "Gris"
+                  ]
+                },
+                {
+                  "nombre": "Locker 1 cuerpo 2 puertas",
+                  "specs": [
+                    "Gris o black"
+                  ]
+                },
+                {
+                  "nombre": "Locker 1 cuerpo 3 puertas",
+                  "specs": [
+                    "Gris o black"
+                  ]
+                },
+                {
+                  "nombre": "Locker 1 cuerpo 4 puertas",
+                  "specs": [
+                    "Gris"
+                  ]
+                },
+                {
+                  "nombre": "Locker 1 cuerpo 5 puertas",
+                  "specs": [
+                    "Gris"
+                  ]
+                },
+                {
+                  "nombre": "Zapatero metálico 3 puertas 6 niveles",
+                  "specs": [
+                    "Línea white"
+                  ]
+                }
+              ],
+              "fuente": "https://www.metanek.cl/collections/lockers"
+            },
+            {
               "marca": "Fabricación nacional",
               "modelo": "Locker 1 cuerpo, 2–4 puertas",
               "detalle": [
@@ -6921,6 +7319,50 @@
           "nombre": "Estándar",
           "descripcion": "Uso intensivo.",
           "opciones": [
+            {
+              "marca": "Procesa",
+              "modelo": "Línea completa · 5 modelos",
+              "detalle": [
+                "Cuerpo simple, 1 a 5 puertas",
+                "Cuerpo doble, 2 a 10 casilleros",
+                "Cuerpo triple, 3 a 15 casilleros"
+              ],
+              "modelos": [
+                {
+                  "nombre": "LK-1 a LK-5",
+                  "specs": [
+                    "Cuerpo simple, 1 a 5 puertas",
+                    "Alto 1.660 mm, fondo 500 mm"
+                  ]
+                },
+                {
+                  "nombre": "LK-11 a LK-55",
+                  "specs": [
+                    "Cuerpo doble, 2 a 10 casilleros",
+                    "Acero SAE 1010"
+                  ]
+                },
+                {
+                  "nombre": "LK-111 a LK-555",
+                  "specs": [
+                    "Cuerpo triple, 3 a 15 casilleros"
+                  ]
+                },
+                {
+                  "nombre": "LK-1111 a LK-4444",
+                  "specs": [
+                    "Cuerpo cuádruple, 4 a 16 casilleros"
+                  ]
+                },
+                {
+                  "nombre": "Accesorios",
+                  "specs": [
+                    "Puerta malla, cerraduras especiales, zócalo, techo inclinado"
+                  ]
+                }
+              ],
+              "fuente": "https://www.procesa.cl/lockers_lk.html"
+            },
             {
               "marca": "Fabricación nacional",
               "modelo": "Locker 3 cuerpos",
@@ -7050,6 +7492,67 @@
           "nombre": "Estándar",
           "descripcion": "Visita / capacitación.",
           "opciones": [
+            {
+              "marca": "Muebles Rebe",
+              "modelo": "Línea completa · 8 modelos",
+              "detalle": [
+                "Silla de visita apilable",
+                "Silla apilable con mesita opcional",
+                "Silla de visita"
+              ],
+              "modelos": [
+                {
+                  "nombre": "ISO tapizada",
+                  "specs": [
+                    "Silla de visita apilable",
+                    "Fabricación nacional"
+                  ]
+                },
+                {
+                  "nombre": "ISO plástica",
+                  "specs": [
+                    "Silla de visita apilable"
+                  ]
+                },
+                {
+                  "nombre": "ISO Smart",
+                  "specs": [
+                    "Silla apilable con mesita opcional"
+                  ]
+                },
+                {
+                  "nombre": "Prisma fija",
+                  "specs": [
+                    "Silla de visita"
+                  ]
+                },
+                {
+                  "nombre": "Isósceles / Isósceles trineo",
+                  "specs": [
+                    "Base trineo"
+                  ]
+                },
+                {
+                  "nombre": "Victor polipropileno",
+                  "specs": [
+                    "Silla apilable"
+                  ]
+                },
+                {
+                  "nombre": "Cinque trineo",
+                  "specs": [
+                    "Base trineo"
+                  ]
+                },
+                {
+                  "nombre": "París trineo",
+                  "specs": [
+                    "Base trineo"
+                  ]
+                }
+              ],
+              "fuente": "https://mueblesrebe.cl/"
+            },
             {
               "marca": "Importada",
               "modelo": "Silla ISO tapizada",
