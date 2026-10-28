@@ -262,3 +262,8 @@ body.opt-lock { overflow: hidden; }
 
 /* Products with options are added from the options modal */
 .has-options > .ql-add { display: none; }
+
+/* "Sobre nosotros" only shows when requested from the menu */
+#sobre-nosotros:not(.open) { display: none; }
+.about-close { margin-top: 14px; display: inline-flex; align-items: center; gap: 6px; background: #fff; color: #1f2f4d; border: 1px solid #d6dde7; border-radius: 999px; padding: 7px 16px; font: inherit; font-size: .9rem; font-weight: 600; cursor: pointer; }
+.about-close:hover, .about-close:focus-visible { border-color: #1f2f4d; }
