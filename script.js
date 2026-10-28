@@ -142,6 +142,24 @@ function exitProductView() {
     }
 }
 
+// "Sobre nosotros" stays collapsed until requested
+function openAbout() {
+    const about = document.getElementById('sobre-nosotros');
+    if (about) about.classList.add('open');
+}
+document.addEventListener('click', (e) => {
+    if (e.target.closest('a[href="#sobre-nosotros"]')) openAbout();
+    if (e.target.closest('.about-close')) {
+        const about = document.getElementById('sobre-nosotros');
+        if (!about) return;
+        about.classList.remove('open');
+        if (location.hash === '#sobre-nosotros' && history.replaceState) history.replaceState(null, '', location.pathname + location.search);
+        const next = document.getElementById('productos');
+        if (next) next.scrollIntoView({ block: 'start' });
+    }
+}, true);
+if (location.hash === '#sobre-nosotros') openAbout();
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         const href = this.getAttribute('href');
@@ -939,6 +957,7 @@ function routeFromHash() {
         showProductPage(id);
     } else if (document.body.classList.contains('product-view')) {
         exitProductView();
+        if (id === 'sobre-nosotros') openAbout();
         const target = id && document.getElementById(id);
         if (target) target.scrollIntoView({ block: 'start' });
     }
