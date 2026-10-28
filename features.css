@@ -257,3 +257,6 @@ body.opt-lock { overflow: hidden; }
   .opt-gallery { grid-template-columns: repeat(4, 1fr); }
   .product-list li.has-options .li-thumb { width: 38px; height: 38px; margin-right: 8px; }
 }
+
+/* Products with options are added from the options modal */
+.has-options > .ql-add { display: none; }
