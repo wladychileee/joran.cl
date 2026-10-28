@@ -181,7 +181,7 @@
                 ${gallery(o)}
                 ${(o.detalle || []).length ? `<ul class="opt-tags">${o.detalle.map((d) => `<li>${esc(d)}</li>`).join('')}</ul>` : ''}
                 ${models.length
-                    ? addBtn('<i class="fas fa-plus" aria-hidden="true"></i> Agregar marca', `${product} — ${o.marca} (modelo a recomendar)`, 'opt-add')
+                    ? addBtn('<i class="fas fa-plus" aria-hidden="true"></i> Agregar', `${product} — ${o.marca} (modelo a recomendar)`, 'opt-add')
                     : addBtn('<i class="fas fa-plus" aria-hidden="true"></i> Agregar', `${product} — ${label}`, 'opt-add')}
                 ${list}
             </article>`;
@@ -249,8 +249,8 @@
         const btn = document.createElement('button');
         btn.type = 'button';
         btn.className = 'opt-open';
-        btn.setAttribute('aria-label', `Ver marcas y modelos de ${name}`);
-        btn.innerHTML = '<i class="fas fa-layer-group" aria-hidden="true"></i><span>Ver marcas</span>';
+        btn.setAttribute('aria-label', `Ver opciones de ${name}`);
+        btn.innerHTML = '<i class="fas fa-layer-group" aria-hidden="true"></i><span>Ver opciones</span>';
         btn.addEventListener('click', () => open(name, category, info));
         return btn;
     }
@@ -274,7 +274,7 @@
             });
             const header = page.querySelector('.section-header');
             if (header && !header.querySelector('.opt-hint') && page.querySelector('.opt-open')) {
-                header.insertAdjacentHTML('beforeend', '<p class="opt-hint"><i class="fas fa-layer-group" aria-hidden="true"></i> Toca <strong>Ver marcas</strong> para comparar marcas y modelos por gama.</p>');
+                header.insertAdjacentHTML('beforeend', '<p class="opt-hint"><i class="fas fa-layer-group" aria-hidden="true"></i> Toca <strong>Ver opciones</strong> para comparar marcas y modelos por gama.</p>');
             }
         });
     }
