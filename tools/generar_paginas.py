@@ -160,7 +160,7 @@ def page(cat, cats, products, logos):
 
 
 def layout(title, desc, url, img, ld, body):
-    og = f'{SITE}/{img}' if img else f'{SITE}/logo.png'
+    og = f'{SITE}/{img}' if img else f'{SITE}/og-image.png'
     return f'''<!DOCTYPE html>
 <html lang="es">
 <head>
@@ -177,7 +177,9 @@ def layout(title, desc, url, img, ld, body):
     <meta property="og:image" content="{og}">
     <meta property="og:locale" content="es_CL">
     <meta name="twitter:card" content="summary_large_image">
-    <link rel="icon" href="/logo.png" type="image/png">
+    <link rel="icon" href="/logo-icono.svg" type="image/svg+xml">
+    <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -187,7 +189,7 @@ def layout(title, desc, url, img, ld, body):
 </head>
 <body>
     <header class="top"><div class="wrap">
-        <a class="brand-home" href="/"><img src="/logo.png" alt="PRODUCTOS JORAN SPA" width="40" height="40"><span>PRODUCTOS JORAN SPA</span></a>
+        <a class="brand-home" href="/"><img src="/logo-icono.svg" alt="PRODUCTOS JORAN SPA" width="48" height="40"><span>PRODUCTOS JORAN SPA</span></a>
         <nav><a href="/productos/">Productos</a><a href="/#contacto">Contacto</a><a class="btn wa" href="{e(wa_link("Hola, necesito cotizar productos para mi empresa"))}" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> WhatsApp</a></nav>
     </div></header>
     <main class="wrap">{body}

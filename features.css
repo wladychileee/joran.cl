@@ -267,3 +267,7 @@ body.opt-lock { overflow: hidden; }
 #sobre-nosotros:not(.open) { display: none; }
 .about-close { margin-top: 14px; display: inline-flex; align-items: center; gap: 6px; background: #fff; color: #2a3138; border: 1px solid #dcd9d1; border-radius: 999px; padding: 7px 16px; font: inherit; font-size: .9rem; font-weight: 600; cursor: pointer; }
 .about-close:hover, .about-close:focus-visible { border-color: #2a3138; }
+
+/* Logo: icon is taller than wide, give it a bit more room in the header */
+.company-logo { height: 104px; }
+@media (max-width: 600px) { .company-logo { height: 88px; } }
