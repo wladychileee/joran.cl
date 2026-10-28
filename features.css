@@ -132,6 +132,8 @@ li.has-options .ql-add { margin-left: 8px; }
 .opt-open { display: inline-flex; align-items: center; gap: 6px; margin-left: auto; background: #eef4ff; color: #1e3a8a; border: 1px solid #c7dbff; border-radius: 999px; padding: 5px 12px; font: 600 .8rem/1.2 inherit; font-family: inherit; cursor: pointer; white-space: nowrap; flex-shrink: 0; transition: background .2s, border-color .2s, transform .2s; }
 .opt-open:hover, .opt-open:focus-visible { background: #dbe8ff; border-color: #93b4f5; transform: translateY(-1px); }
 .search-result .opt-open { margin-left: 0; }
+.product-page li.has-options .opt-open { margin-left: 14px; }
+@media (max-width: 600px) { .product-page li.has-options .opt-open { margin-left: auto; } }
 body.opt-lock { overflow: hidden; }
 .ql-toast { z-index: 2700; }
 
