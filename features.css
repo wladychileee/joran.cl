@@ -271,3 +271,5 @@ body.opt-lock { overflow: hidden; }
 /* Logo: icon is taller than wide, give it a bit more room in the header */
 .company-logo { height: 104px; }
 @media (max-width: 600px) { .company-logo { height: 88px; } }
+.company-motto { margin: -4px 0 2px; font-size: .95rem; font-weight: 600; letter-spacing: .32em; text-transform: uppercase; color: #9fcbc5; }
+@media (max-width: 600px) { .company-motto { font-size: .8rem; letter-spacing: .22em; } }
