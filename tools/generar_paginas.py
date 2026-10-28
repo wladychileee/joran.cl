@@ -165,6 +165,7 @@ def layout(title, desc, url, img, ld, body):
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <script src="/analytics.js?v=1"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{e(title)}</title>
     <meta name="description" content="{e(desc)}">
